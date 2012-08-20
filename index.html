@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1280, maximum-scale=1.0" />	
+	<!-- <base href = "http://www..com/" > -->
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+	<title>Crisis - What Crisis</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--
+	<meta property="og:image" content="http://www.crisis-whatcrisis.com/img/logo.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
+	<meta property="og:title" content="crisis-whatcrisis" />
+	-->
+	<script type="text/javascript" 
+		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
+	</script>
+	<script language="javascript" src="js/map.js"></script>
+		
+		<!-- Developed by Pepe Doval - http://about.me/pepellou -->
+</head>
+<body>
+	<div id="sheet">
+		<div id="logo">
+			<img src="img/logo.png"></img>
+		</div>
+		<div id="map_canvas"></div>
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+		var allPoints = [ 
+			{   
+				name: "Mijadoiro",
+				lat: 42.8478,
+				lng: -8.5748,
+				country: "Spain"
+			},  
+		];
+		setUpMap(allPoints);
+	</script>
+</body>
+</html>
