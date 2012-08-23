@@ -1,8 +1,11 @@
 body {
 	background: #aaa;
+	font-family: 'AvenirLTBook';
+	font-size: 16px;
 }
 #sheet {
 	width: 1200px;
+	height: 2700px;
 	margin: auto;
 	background: #ececec;
 }
@@ -21,4 +24,58 @@ body {
 	height: 154px;
 	width: 100%;
 	background: #1c1c1b;
+}
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+#menu ul li {
+	display: inline;
+	list-style: none;
+	padding: 0px 16px;
+}
+#menu ul li a {
+	font-family: 'TungstenMedium';
+	font-weight: normal;
+	font-size: 120px;
+	line-height: 190px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu ul li a strong {
+	font-family: 'TungstenBold';
+	font-size: 100px;
+	font-weight: normal;
+}
+
+.box {
+	background: #1c1c1b;
+	padding: 44px;
+	float: left;
+	text-align: justify;
+}
+.box .left {
+	float: left;
+}
+.box .right {
+	float: right;
+	width: 400px;
+	color: white;
+}
+
+.box.what {
+	width: 772px;
+	height: 415px;
+	margin-left: 300px;
+}
+p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.what {
+	display: none;
 }

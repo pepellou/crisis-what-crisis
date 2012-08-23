@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'AvenirLTBook';
+	src: url('fonts/avenirlt45book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirLTMedium';
+	src: url('fonts/avenirlt65medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirLTBlack';
+	src: url('fonts/avenirlt95black.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TungstenBlack';
+	src: url('fonts/Tungsten-Black.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TungstenBold';
+	src: url('fonts/Tungsten-Bold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TungstenMedium';
+	src: url('fonts/Tungsten-Medium.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TungstenSemibold';
+	src: url('fonts/Tungsten-Semibold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
