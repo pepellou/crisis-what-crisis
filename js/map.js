@@ -1,7 +1,7 @@
 var maps = [
 	{ id: 'videos',        name: 'Videos'        },
 	{ id: 'photos',        name: 'Photos'        },
-	{ id: 'characters',    name: 'Characters'    },
+	{ id: 'people',        name: 'People'        },
 	{ id: 'interviews',    name: 'Interviews'    },
 	{ id: 'collaborators', name: 'Collaborators' },
 	{ id: 'trip',          name: 'Trip'          }
@@ -19,20 +19,51 @@ function setType(
 setType(trip, "trip");
 setType(collaborators, "collaborators");
 setType(interviews, "interviews");
-setType(characters, "characters");
+setType(people, "people");
 setType(photos, "photos");
 setType(videos, "videos");
 
 var allPoints = trip
 		.concat(collaborators)
 		.concat(interviews)
-		.concat(characters)
+		.concat(people)
 		.concat(photos)
 		.concat(videos);
 
 var map_points;
 var pt_markers = [];
 var centerMap = new google.maps.LatLng(40.5472,8.920898);
+
+function AddControl(title, text, map, index) {
+	var controlDiv = document.createElement('div');
+
+	controlDiv.style.padding = '5px';
+
+	var controlUI = document.createElement('div');
+	controlUI.style.backgroundColor = '#1c1c1b';
+	controlUI.style.color = 'white';
+	controlUI.style.borderStyle = 'solid';
+	controlUI.style.borderWidth = '2px';
+	controlUI.style.cursor = 'pointer';
+	controlUI.style.textAlign = 'center';
+	controlUI.style.height = '39px';
+	controlUI.title = title;
+	controlDiv.appendChild(controlUI);
+
+	var controlText = document.createElement('div');
+	controlText.style.fontFamily = 'TungstenMedium,Arial,sans-serif';
+	controlText.style.fontSize = '35px';
+	controlText.style.paddingLeft = '4px';
+	controlText.style.paddingRight = '4px';
+	controlText.innerHTML = text;
+	controlUI.appendChild(controlText);
+
+	google.maps.event.addDomListener(controlUI, 'click', function() {
+	});
+
+	controlDiv.index = index;
+	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlDiv);
+}
 
 function showPoints(
         points
@@ -66,17 +97,109 @@ function setUpMap(
                                 { lightness: 8 },
                                 { visibility: 'on' }
                         ]   
-                }   
+                },
+  {
+    featureType: "water",
+    stylers: [
+      { "visibility": "on" },
+      { "invert_lightness": true }
+    ]
+  },{
+    featureType: "landscape.natural",
+    stylers: [
+      { visibility: "on" },
+      { color: "#f00" }
+    ]
+  },{
+    featureType: "landscape.man_made",
+    elementType: "geometry.fill",
+    stylers: [
+      { visibility: "on" },
+      { color: "#f00" }
+    ]
+  },{
+    featureType: "poi.park",
+    elementType: "geometry.fill",
+    stylers: [
+      { visibility: "on" },
+      { color: "#808080" }
+    ]
+  },{
+    featureType: "landscape.natural",
+    elementType: "labels.text.fill",
+    stylers: [
+      { visibility: "on" },
+      { color: "#f00" }
+    ]
+  },{
+    featureType: "road.highway",
+    elementType: "geometry.fill",
+    stylers: [
+      { visibility: "on" },
+      { weight: 1.2 },
+      { color: "#2c4390" },
+      { hue: "#00bbff" },
+      { saturation: 45 },
+      { lightness: -25 }
+    ]
+  },{
+    featureType: "road.highway.controlled_access",
+    stylers: [
+      { color: "#947f72" },
+      { visibility: "on" },
+      { hue: "#ff0000" },
+      { saturation: -81 },
+      { lightness: 30 }
+    ]
+  },{
+    featureType: "road.highway.controlled_access",
+    elementType: "geometry.stroke",
+    stylers: [
+      { color: "#e70000" }
+    ]
+  },{
+    featureType: "road.highway.controlled_access",
+    elementType: "labels.text.fill",
+    stylers: [
+      { visibility: "on" },
+      { invert_lightness: true },
+      { color: "#e9fdff" }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "geometry.fill",
+    stylers: [
+      { visibility: "on" },
+      { invert_lightness: true },
+      { color: "#e78557" }
+    ]
+  },{
+    featureType: "road.local",
+    elementType: "geometry.fill",
+    stylers: [
+      { visibility: "on" },
+      { invert_lightness: true },
+      { color: "#ada59e" }
+    ]
+  },{
+    featureType: "road.arterial",
+    stylers: [
+      { color: "#d98c6e" }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "labels.text.fill",
+    stylers: [
+      { visibility: "on" },
+      { color: "#130609" }
+    ]
+  }
         ];  
 
         var mapOptions = { 
                 zoom: 5,
                 center: centerMap,
-                mapTypeControlOptions: {
-                        mapTypeIds: ['videos', 'photos', 'characters', 'interviews', 'collaborators', 'trip'],
-			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR, 
-			position: google.maps.ControlPosition.RIGHT_BOTTOM
-                },  
+                mapTypeControl: false,
 		scrollwheel: false,
 		scaleControl: false,
                 mapTypeId: 'trip'
@@ -103,5 +226,12 @@ function setUpMap(
 			})
 		);
 	});
+
+	AddControl('Show videos',        'VIDEOS',        map_points, 6);
+	AddControl('Show photos',        'PHOTOS',        map_points, 5);
+	AddControl('Show people',        'PEOPLE',        map_points, 4);
+	AddControl('Show interviews',    'INTERVIEWS',    map_points, 3);
+	AddControl('Show collaborators', 'COLLABORATORS', map_points, 2);
+	AddControl('Show trip stops',    'TRIP',          map_points, 1);
 }
 
