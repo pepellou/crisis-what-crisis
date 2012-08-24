@@ -73,7 +73,9 @@ function setUpMap(
                 zoom: 5,
                 center: centerMap,
                 mapTypeControlOptions: {
-                        mapTypeIds: ['videos', 'photos', 'characters', 'interviews', 'collaborators', 'trip']
+                        mapTypeIds: ['videos', 'photos', 'characters', 'interviews', 'collaborators', 'trip'],
+			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR, 
+			position: google.maps.ControlPosition.RIGHT_BOTTOM
                 },  
                 mapTypeId: 'trip'
         };  
