@@ -78,11 +78,46 @@ function showPoints(
                 marker = new google.maps.Marker({
                         position: new google.maps.LatLng(point.lat, point.lng),
                         map: map_points,
-                        icon: '/crisis/img/pin-' + point.type + '.png',
+                        icon: new google.maps.MarkerImage(
+				'/crisis/img/pin-' + point.type + '.png',
+				new google.maps.Size(50, 50),
+				new google.maps.Point(0,0),
+				new google.maps.Point(25, 25)
+			),
                         title: point.name
                 }); 
                 pt_markers[i] = marker;
         }   
+}
+
+function drawTrip(
+	zoom
+) {
+	var itinerary = [];
+	for (var p in trip) {
+		var point = trip[p];
+		itinerary.push(new google.maps.LatLng(point.lat, point.lng));
+	}
+	new google.maps.Polyline({
+		path: itinerary,
+		strokeColor: "#2c4390",
+		strokeOpacity: 1.0,
+		strokeWeight: 9
+	}).setMap(map_points);
+	new google.maps.Polyline({
+		path: itinerary,
+		strokeColor: "#ffec00",
+		strokeOpacity: 1.0,
+		strokeWeight: 5
+	}).setMap(map_points);
+
+	if (zoom > 5) {
+	        showPoints(trip);
+	} else {
+		showPoints(trip.filter(function (elem, index, array) {
+			return (index % 2 == 0 && index != array.length - 2) || (index == array.length - 1);
+		}));
+	}
 }
 
 function setUpMap(
@@ -209,8 +244,6 @@ function setUpMap(
 
         var myLatLng = new google.maps.LatLng(43.367776,-8.406222);
 
-        showPoints(trip);
-
 	for (var m in maps) {
 		var map = maps[m];
 		map_points.mapTypes.set(
@@ -218,13 +251,8 @@ function setUpMap(
 			new google.maps.StyledMapType(basicStyle, { name: map.name })
 		);
 	}
-
-	google.maps.event.addListener(map_points, 'maptypeid_changed', function(e){
-		showPoints(
-			allPoints.filter(function (elem, index, array) {
-				return elem.type == map_points.getMapTypeId();
-			})
-		);
+	google.maps.event.addListener(map_points, 'zoom_changed', function(e){
+		drawTrip(map_points.getZoom());
 	});
 
 	AddControl('Show videos',        'VIDEOS',        map_points, 6);
@@ -233,5 +261,6 @@ function setUpMap(
 	AddControl('Show interviews',    'INTERVIEWS',    map_points, 3);
 	AddControl('Show collaborators', 'COLLABORATORS', map_points, 2);
 	AddControl('Show trip stops',    'TRIP',          map_points, 1);
-}
 
+	drawTrip(5);
+}
