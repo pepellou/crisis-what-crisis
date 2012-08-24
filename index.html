@@ -18,12 +18,19 @@
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
 	</script>
+	<script language="javascript" src="js/map/trip.js"></script>
+	<script language="javascript" src="js/map/collaborators.js"></script>
+	<script language="javascript" src="js/map/interviews.js"></script>
+	<script language="javascript" src="js/map/characters.js"></script>
+	<script language="javascript" src="js/map/photos.js"></script>
+	<script language="javascript" src="js/map/videos.js"></script>
 	<script language="javascript" src="js/map.js"></script>
 	<script type="text/javascript" >
 		$(function() {
 			$('a[name="what"]').hover(
 				function() { $('.what').css({'display':'block'}); }
 			);
+			setUpMap();
 		});
 	</script>
 		
@@ -71,17 +78,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript" charset="utf-8">
-		var allPoints = [ 
-			{   
-				name: "Mijadoiro",
-				lat: 42.8478,
-				lng: -8.5748,
-				country: "Spain"
-			},  
-		];
-		setUpMap(allPoints);
-	</script>
 </body>
 </html>

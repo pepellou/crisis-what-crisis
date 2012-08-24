@@ -1,12 +1,42 @@
+var maps = [
+	{ id: 'videos',        name: 'Videos'        },
+	{ id: 'photos',        name: 'Photos'        },
+	{ id: 'characters',    name: 'Characters'    },
+	{ id: 'interviews',    name: 'Interviews'    },
+	{ id: 'collaborators', name: 'Collaborators' },
+	{ id: 'trip',          name: 'Trip'          }
+];    
+
+function setType(
+	array,
+	type
+) {
+	for (var t in array) {
+		array[t].type = type;
+	}
+}
+
+setType(trip, "trip");
+setType(collaborators, "collaborators");
+setType(interviews, "interviews");
+setType(characters, "characters");
+setType(photos, "photos");
+setType(videos, "videos");
+
+var allPoints = trip
+		.concat(collaborators)
+		.concat(interviews)
+		.concat(characters)
+		.concat(photos)
+		.concat(videos);
+
 var map_points;
 var pt_markers = [];
 var centerMap = new google.maps.LatLng(40.5472,8.920898);
-var MAPTYPE_ID = 'points';
 
 function showPoints(
         points
 ) {
-        var image = '/crisis/img/pin.png';
         for (var i in pt_markers) {
                 marker = pt_markers[i];
                 marker.setMap(null);
@@ -17,7 +47,7 @@ function showPoints(
                 marker = new google.maps.Marker({
                         position: new google.maps.LatLng(point.lat, point.lng),
                         map: map_points,
-                        icon: image,
+                        icon: '/crisis/img/pin-' + point.type + '.png',
                         title: point.name
                 }); 
                 pt_markers[i] = marker;
@@ -25,9 +55,8 @@ function showPoints(
 }
 
 function setUpMap(
-        points
 ) {
-        var stylez = [ 
+        var basicStyle = [ 
                 {   
                         featureType: "water",
                         elementType: "all",
@@ -44,20 +73,31 @@ function setUpMap(
                 zoom: 5,
                 center: centerMap,
                 mapTypeControlOptions: {
-                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, MAPTYPE_ID]
+                        mapTypeIds: ['videos', 'photos', 'characters', 'interviews', 'collaborators', 'trip']
                 },  
-                mapTypeId: MAPTYPE_ID
+                mapTypeId: 'trip'
         };  
 
         map_points = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
         var myLatLng = new google.maps.LatLng(43.367776,-8.406222);
 
-        showPoints(points);
-    
-        var styledMapOptions = { name: "Startup" };
+        showPoints(trip);
 
-        var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);
-  
-        map_points.mapTypes.set(MAPTYPE_ID, jayzMapType);
+	for (var m in maps) {
+		var map = maps[m];
+		map_points.mapTypes.set(
+			map.id,
+			new google.maps.StyledMapType(basicStyle, { name: map.name })
+		);
+	}
+
+	google.maps.event.addListener(map_points, 'maptypeid_changed', function(e){
+		showPoints(
+			allPoints.filter(function (elem, index, array) {
+				return elem.type == map_points.getMapTypeId();
+			})
+		);
+	});
 }
+
