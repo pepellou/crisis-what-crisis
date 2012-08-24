@@ -77,6 +77,8 @@ function setUpMap(
 			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR, 
 			position: google.maps.ControlPosition.RIGHT_BOTTOM
                 },  
+		scrollwheel: false,
+		scaleControl: false,
                 mapTypeId: 'trip'
         };  
 
