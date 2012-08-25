@@ -2,6 +2,7 @@ body {
 	background: #aaa;
 	font-family: 'AvenirLTBook';
 	font-size: 16px;
+	padding-top: 25px;
 }
 #sheet {
 	width: 1200px;
