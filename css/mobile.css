@@ -42,7 +42,7 @@ p {
 	position: fixed;
 	top: 0;
 	float: left;
-	width: 100%;
+	width:320px;
 	height: 100px;
 	background: #3f3f33;
 	padding: 10px;
