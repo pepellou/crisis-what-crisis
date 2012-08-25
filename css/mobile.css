@@ -4,6 +4,7 @@ body {
 	font-size: 16px;
 	padding: 0;
 	margin: 0;
+	width: 320px;
 }
 #sheet {
 	width: 100%;
@@ -26,20 +27,6 @@ body {
 	padding: 44px;
 	float: left;
 	text-align: justify;
-}
-.box .left {
-	float: left;
-}
-.box .right {
-	float: right;
-	width: 400px;
-	color: white;
-}
-
-.box.what {
-	width: 772px;
-	height: 415px;
-	margin-left: 300px;
 }
 p {
 	padding-top: 0px;
