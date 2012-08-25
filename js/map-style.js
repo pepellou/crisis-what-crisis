@@ -1,16 +1,6 @@
 var map_style = [
 	{
 		featureType: "water",
-		elementType: "all",
-		stylers: [
-			{ hue: '#cdcdc1' },
-			{ saturation: -76 },
-			{ lightness: 8 },
-			{ visibility: 'on' }
-		]   
-	},
-	{
-		featureType: "water",
 		stylers: [
 			{ "visibility": "on" },
 			{ "invert_lightness": true }
