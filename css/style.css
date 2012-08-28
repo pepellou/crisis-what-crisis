@@ -10,6 +10,13 @@ body {
 	margin: auto;
 	background: #ececec;
 }
+#map_cover {
+	height: 365px;
+	width: 1200px;
+	background: black;
+	margin-top: -365px;
+	position: absolute;
+}
 #map_canvas {
 	height: 365px;
 	width: 1200px;

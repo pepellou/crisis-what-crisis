@@ -35,6 +35,17 @@
 				function() { $('.what').css({'display':'block'}); }
 			);
 			setUpMap();
+			var fadeMap = setInterval(
+				function () {
+					var theOpacity = $('#map_cover').css('opacity');
+					if (theOpacity == 0) {
+						clearInterval(fadeMap);
+					} else {
+						$('#map_cover').css('opacity', theOpacity - 0.01);
+					}
+				},
+				10
+			);
 		});
 	</script>
 		
@@ -44,6 +55,7 @@
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
+		<div id="map_cover"></div>
 		<div id="slider">
 			<img src="img/road.png" />
 		</div>
