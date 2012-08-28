@@ -25,6 +25,7 @@ body {
 #map_canvas img { max-width: none; }
 
 #slider {
+	background: black;
 	height: 610px;
 }
 
