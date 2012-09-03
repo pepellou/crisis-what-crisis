@@ -64,7 +64,9 @@ body {
 	background: #1c1c1b;
 	padding: 44px;
 	float: left;
+	color: white;
 	text-align: justify;
+	font-size: 30px;
 }
 .box .left {
 	float: left;
@@ -72,7 +74,6 @@ body {
 .box .right {
 	float: right;
 	width: 400px;
-	color: white;
 }
 
 .box.what {
@@ -80,11 +81,32 @@ body {
 	height: 415px;
 	margin-left: 300px;
 }
+.box.why {
+	width: 772px;
+	height: 490px;
+	margin-left: 300px;
+}
+.box.who {
+	width: 627px;
+	height: 390px;
+	margin-left: 300px;
+}
+.box.where {
+	width: 538px;
+	height: 280px;
+	margin-left: 300px;
+}
+.box.how {
+	width: 690px;
+	height: 415px;
+	margin-left: 300px;
+}
+
 p {
 	padding-top: 0px;
 	margin-top: 0px;
 }
 
-.what {
+.line, .box {
 	display: none;
 }

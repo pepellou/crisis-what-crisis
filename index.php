@@ -32,7 +32,39 @@
 	<script type="text/javascript" >
 		$(function() {
 			$('a[name="what"]').hover(
-				function() { $('.what').css({'display':'block'}); }
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.what').css({'display':'block'}); 
+				}
+			);
+			$('a[name="why"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.why').css({'display':'block'}); 
+				}
+			);
+			$('a[name="who"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.who').css({'display':'block'}); 
+				}
+			);
+			$('a[name="where"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.where').css({'display':'block'}); 
+				}
+			);
+			$('a[name="how"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.how').css({'display':'block'}); 
+				}
 			);
 			setUpMap();
 			var fadeMap = setInterval(
@@ -67,31 +99,87 @@
 				<li><a href="#" name="where">Where  </a></li>
 				<li><a href="#" name="how">  How    </a></li>
 		</div>
-		<img class="what" src="img/lineto-what.png" />
+		<img class="line what" src="img/lineto-what.png" />
 		<div class="box what">
-			<div class="left">
-				<img src="img/who.png" />
-			</div>
-			<div class="right">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo auctor mattis. 
-					Sed sem justo, pretium sit amet mattis ut, ullamcorper mattis libero. 
-					Aliquam sit amet felis a urna mattis accumsan ac ac velit. Quisque sem justo, imperdiet 
-					tristique sollicitudin sed, scelerisque quis magna. Nunc feugiat consectetur ipsum vitae 
-					vulputate. Nulla facilisi. Duis tempus mi vel mauris imperdiet in pellentesque nisi dapibus. 
-					Praesent scelerisque magna sit amet nisi ullamcorper posuere congue tortor faucibus. 
-					Suspendisse dictum leo non ipsum semper sed varius lectus ullamcorper.
-				</p>
-				<p>
-					Phasellus eros libero, malesuada nec pulvinar sit amet, dapibus sed risus. Quisque pulvinar 
-					nibh a nisl convallis ac congue orci mattis. Nam consequat mi et nisi venenatis in ultricies 
-					leo ultricies. Nam eu dolor sem. Cras sodales sagittis euismod.
-				</p>
-				<p>
-					Proin nunc orci, scelerisque vel volutpat eget, mattis in mauris. Nulla ut mi vel metus 
-					dictum tincidunt. Nam sit amet diam sit amet diam imperdiet scelerisque.
-				</p>
-			</div>
+			<p>
+				It's a documentary portraying the 2012's Europe.
+			</p>
+			<p>
+				A trip from Galicia, in the Iberian Peninsula's Northwest extreme, 
+				to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.
+				It's a critical eye to the crisis.
+			</p>
+			<p>
+				A practical and brave answer to that questions we should ask:<br/>
+				What is the crisis? <br/>
+				Where does it come from?<br/>
+				Where does it lead us? <br/>
+				And now what?
+			</p>
+		</div>
+		<img class="line why" src="img/lineto-why.png" />
+		<div class="box why">
+			<p>
+				The crisis that was a deceleration and now seems an hecatomb
+				had to last two years and it'll make six. We don't see the light
+				at the end of the tunnel, and if we saw it we would think that
+				it's the train coming to finish us.
+			</p>
+			<p>
+				The degree of collective pessimism gripping us is more desperate
+				and immobilizer than financial imponderables. We have fear, and as
+				british sociologist Frank Furedi said long before the crisis arose,
+				ubiquitous and persistent fear generates doom and resignation.
+			</p>
+			<p>
+				We need to visualize alternative answers, other possible futures,
+				because if we don't imagine them, we will never be able to make
+				them happen.
+			</p>
+		</div>
+		<img class="line who" src="img/lineto-who.png" />
+		<div class="box who">
+			<p>
+				Graphical and audiovisual creator Xavier Belho leads the motorbike 
+				and the camera.
+			</p>
+			<p>
+				Accompanying him from Galicia, Irmáns Karapatrov and the collective NóComún.
+			</p>
+			<p>
+				And along the way he will be meeting the main characters of this story:
+				PIGS inhabitants that refuse to see themselves reflected in the 
+				hopelessness mirror and face the crisis with courage and geat ideas.
+			</p>
+		</div>
+		<img class="line where" src="img/lineto-where.png" />
+		<div class="box where">
+			<p>
+				<strong>Entrepreneur</strong> .- Person who undertakes, with determination,
+				hard actions.
+			</p>
+			<p>
+				There where there is an intelligent answer to the crisis.
+			</p>
+			<p>
+				The route will be set by the main characters along the four countries.
+			</p>
+		</div>
+		<img class="line how" src="img/lineto-how.png" />
+		<div class="box how">
+			<p>
+				Videobooth style microinterviews with each one of the main characters, 
+				who will present their projects where they are developing them. They will
+				be recorded with a Canon 7D and a mobile phone.
+			</p>
+			<p>
+				They will be uploaded to the Web and Social networks, thus building an
+				interactive map of the trip. Each stage will be posted on the Web almost
+				realtime.
+			</p>
+			<p>
+				At the end, a documentary will be built from all the recorded material.
+			</p>
 		</div>
 	</div>
 </body>
