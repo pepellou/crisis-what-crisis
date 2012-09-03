@@ -67,6 +67,7 @@ body {
 	color: white;
 	text-align: justify;
 	font-size: 30px;
+	text-align: left;
 }
 .box .left {
 	float: left;
@@ -93,7 +94,7 @@ body {
 	margin-left: 300px;
 }
 .box.where {
-	width: 538px;
+	width: 552px;
 	height: 280px;
 	margin-left: 120px;
 	margin-top: -300px;
