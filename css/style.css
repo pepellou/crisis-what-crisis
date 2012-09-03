@@ -84,7 +84,8 @@ body {
 .box.why {
 	width: 772px;
 	height: 490px;
-	margin-left: 300px;
+	margin-left: 131px;
+	margin-top: -450px;
 }
 .box.who {
 	width: 627px;
@@ -94,12 +95,14 @@ body {
 .box.where {
 	width: 538px;
 	height: 280px;
-	margin-left: 300px;
+	margin-left: 120px;
+	margin-top: -300px;
 }
 .box.how {
 	width: 690px;
 	height: 415px;
-	margin-left: 300px;
+	margin-left: 135px;
+	margin-top: -340px;
 }
 
 p {
