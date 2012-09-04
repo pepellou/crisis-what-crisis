@@ -70,7 +70,8 @@
 			var fadeMap = setInterval(
 				function () {
 					var theOpacity = $('#map_cover').css('opacity');
-					if (theOpacity == 0) {
+					if (theOpacity < 0.02) {
+						$('#map_cover').css('display', 'none');
 						clearInterval(fadeMap);
 					} else {
 						$('#map_cover').css('opacity', theOpacity - 0.01);
