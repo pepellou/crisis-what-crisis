@@ -1,5 +1,42 @@
 <?php
 	require_once dirname(__FILE__)."/mobile-detection.php";
+
+	function getVideos(
+		$user,
+		$tag
+	) {
+		$selected_videos = array();
+		$xml = file_get_contents(
+			"https://gdata.youtube.com/feeds/api/users/{$user}/uploads"
+		);
+		$xml = preg_replace('/(<|<\/)([a-z0-9]+):/i','$1$2_',$xml);
+		$videos = simplexml_load_string($xml);
+		foreach ($videos->entry as $video) {
+			$current_video = array();
+			$current_video["title"] = $video->title;
+			foreach ($video->link as $link) {
+				$attributes = $link->attributes();
+				if ($attributes->rel == "alternate") {
+					$current_video['link'] = $attributes->href;
+				}
+			}
+			if (isset($video->georss_where)) {
+				$position = $video->georss_where->gml_Point->gml_pos;
+				list($current_video["lat"], $current_video["lng"]) = (explode(" ", $position));
+			}
+			foreach ($video->category as $category) {
+				$attributes = $category->attributes();
+				if ($attributes->scheme == "http://gdata.youtube.com/schemas/2007/keywords.cat") {
+					if ($attributes->term == $tag) {
+						$selected_videos[]= $current_video;
+					}
+				}
+			}
+		}
+		return $selected_videos;
+	}
+
+	$videos = getVideos("pepellou", "music");
 ?>
 <!DOCTYPE html>
 <html>
@@ -182,6 +219,22 @@
 				At the end, a documentary will be built from all the recorded material.
 			</p>
 		</div>
+	</div>
+	<div id="videos">
+<?php
+
+	foreach ($videos as $video) { ?>
+		<div class="video">
+			<div name="title"><?php echo $video['title']; ?></div>
+			<div name="link"><?php echo $video['link']; ?></div>
+			<div name="gps">
+				<div name="lat"><?php echo $video['lat']; ?></div>
+				<div name="lng"><?php echo $video['lng']; ?></div>
+			</div>
+		</div>
+	<?php }
+
+?>
 	</div>
 </body>
 </html>

@@ -75,13 +75,31 @@ function clearMap(
         pt_markers = []; 
 }
 
+function open_in_new_tab(
+	url
+) {
+	window.open(url, '_blank');
+	window.focus();
+}
+
+function clickOnMarker(
+	i,
+	marker
+) {
+	return function () {
+		if (currentMap == 'videos') {
+			open_in_new_tab(marker.url);
+		}
+	};
+}
+
 function showPoints(
         points
 ) {
 	clearMap();
         for (var i in points) {
-                point = points[i];
-                marker = new google.maps.Marker({
+                var point = points[i];
+                var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(point.lat, point.lng),
                         map: map_points,
                         icon: new google.maps.MarkerImage(
@@ -90,10 +108,41 @@ function showPoints(
 				new google.maps.Point(0,0),
 				new google.maps.Point(25, 25)
 			),
-                        title: point.name
+                        title: point.name,
+			url: point.url
                 }); 
                 pt_markers[i] = marker;
         }   
+        for (var i in pt_markers) {
+		var marker = pt_markers[i];
+		google.maps.event.addListener(
+			marker,
+			'click',
+			clickOnMarker(i, marker)
+		);
+	}
+}
+
+function drawVideos(
+) {
+	clearMap();
+	var videos = [];
+	$('#videos .video').each(function() {
+		var lat = $(this).find('div[name="lat"]').html();
+		if (lat != '') {
+			var title = $(this).find('div[name="title"]').html();
+			var lng = $(this).find('div[name="lng"]').html();
+			var url = $(this).find('div[name="link"]').html();
+			videos.push({ 
+				name: title, 
+				lat: lat, 
+				lng: lng, 
+				type: "videos",
+				url: url
+			});
+		}
+	        showPoints(videos);
+	});
 }
 
 function drawTrip(
@@ -125,6 +174,28 @@ function drawTrip(
 	}
 }
 
+var currentMap = "trip";
+
+function setCurrentMap(
+	type
+) {
+	return function() {
+		currentMap = type;
+		drawCurrentMap();
+	};
+}
+
+function drawCurrentMap(
+) {
+	if (currentMap == 'trip') {
+		drawTrip(map_points.getZoom());
+	} else if (currentMap == 'videos') {
+		drawVideos();
+	} else {
+		clearMap();
+	}
+}
+
 function setUpMap(
 ) {
         var mapOptions = { 
@@ -148,15 +219,15 @@ function setUpMap(
 		);
 	}
 	google.maps.event.addListener(map_points, 'zoom_changed', function(e){
-		drawTrip(map_points.getZoom());
+		drawCurrentMap();
 	});
 
-	AddControl('Show videos',        'VIDEOS',        map_points, 6, function() { clearMap(); } );
-	AddControl('Show photos',        'PHOTOS',        map_points, 5, function() { clearMap(); } );
-	AddControl('Show people',        'PEOPLE',        map_points, 4, function() { clearMap(); } );
-	AddControl('Show interviews',    'INTERVIEWS',    map_points, 3, function() { clearMap(); } );
-	AddControl('Show collaborators', 'COLLABORATORS', map_points, 2, function() { clearMap(); } );
-	AddControl('Show trip stops',    'TRIP',          map_points, 1, function() { drawTrip(); } );
+	AddControl('Show videos',        'VIDEOS',        map_points, 6, setCurrentMap('videos') );
+	AddControl('Show photos',        'PHOTOS',        map_points, 5, setCurrentMap('') );
+	AddControl('Show people',        'PEOPLE',        map_points, 4, setCurrentMap('') );
+	AddControl('Show interviews',    'INTERVIEWS',    map_points, 3, setCurrentMap('') );
+	AddControl('Show collaborators', 'COLLABORATORS', map_points, 2, setCurrentMap('') );
+	AddControl('Show trip stops',    'TRIP',          map_points, 1, setCurrentMap('trip') );
 
 	drawTrip();
 }

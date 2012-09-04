@@ -114,3 +114,7 @@ p {
 .line, .box {
 	display: none;
 }
+
+#videos {
+	display: none;
+}
