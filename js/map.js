@@ -1,3 +1,5 @@
+var photos = [];
+
 var maps = [
 	{ id: 'videos',        name: 'Videos'        },
 	{ id: 'photos',        name: 'Photos'        },
@@ -121,23 +123,7 @@ function showPoints(
 function drawPhotos(
 ) {
 	clearMap();
-	var photos = [];
-	$('#photos .photo').each(function() {
-		var lat = $(this).find('div[name="lat"]').html();
-		if (lat != '') {
-			var title = $(this).find('div[name="title"]').html();
-			var lng = $(this).find('div[name="lng"]').html();
-			var url = $(this).find('div[name="link"]').html();
-			photos.push({ 
-				name: title, 
-				lat: lat, 
-				lng: lng, 
-				type: "photos",
-				url: url
-			});
-		}
-	        showPoints(photos);
-	});
+	showPoints(photos);
 }
 
 function drawVideos(
