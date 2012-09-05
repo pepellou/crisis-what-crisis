@@ -129,7 +129,7 @@
 			<input type="hidden" name="item_name" value="Crisis What Crisis">
 			<input type="hidden" name="no_note" value="0">
 			<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-			<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+			<input type="image" src="img/donate.png" border="0" name="submit" class="donateImg" alt="PayPal. La forma rápida y segura de pagar en Internet.">
 			<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
 		</form>
 	</div>

@@ -125,5 +125,14 @@ p {
 }
 
 #paypal {
+	position: relative;
 	text-align: center;
+	width: 1200px;
+}
+
+.donateImg {
+	top: 47px;
+	position: absolute;
+	right: -118px;
+	width: 200px;
 }
