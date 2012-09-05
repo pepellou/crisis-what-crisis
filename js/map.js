@@ -2,8 +2,6 @@ var maps = [
 	{ id: 'videos',        name: 'Videos'        },
 	{ id: 'photos',        name: 'Photos'        },
 	{ id: 'people',        name: 'People'        },
-	{ id: 'interviews',    name: 'Interviews'    },
-	{ id: 'collaborators', name: 'Collaborators' },
 	{ id: 'trip',          name: 'Trip'          }
 ];
 
@@ -17,15 +15,11 @@ function setType(
 }
 
 setType(trip, "trip");
-setType(collaborators, "collaborators");
-setType(interviews, "interviews");
 setType(people, "people");
 setType(photos, "photos");
 setType(videos, "videos");
 
 var allPoints = trip
-		.concat(collaborators)
-		.concat(interviews)
 		.concat(people)
 		.concat(photos)
 		.concat(videos);
@@ -46,15 +40,16 @@ function AddControl(title, text, map, index, callback) {
 	controlUI.style.borderWidth = '2px';
 	controlUI.style.cursor = 'pointer';
 	controlUI.style.textAlign = 'center';
-	controlUI.style.height = '39px';
+	controlUI.style.height = '64px';
+	controlUI.style.marginTop = '6px';
 	controlUI.title = title;
 	controlDiv.appendChild(controlUI);
 
 	var controlText = document.createElement('div');
 	controlText.style.fontFamily = 'TungstenMedium,Arial,sans-serif';
-	controlText.style.fontSize = '35px';
-	controlText.style.paddingLeft = '4px';
-	controlText.style.paddingRight = '4px';
+	controlText.style.fontSize = '60px';
+	controlText.style.paddingLeft = '8px';
+	controlText.style.paddingRight = '8px';
 	controlText.innerHTML = text;
 	controlUI.appendChild(controlText);
 
@@ -225,8 +220,6 @@ function setUpMap(
 	AddControl('Show videos',        'VIDEOS',        map_points, 6, setCurrentMap('videos') );
 	AddControl('Show photos',        'PHOTOS',        map_points, 5, setCurrentMap('') );
 	AddControl('Show people',        'PEOPLE',        map_points, 4, setCurrentMap('') );
-	AddControl('Show interviews',    'INTERVIEWS',    map_points, 3, setCurrentMap('') );
-	AddControl('Show collaborators', 'COLLABORATORS', map_points, 2, setCurrentMap('') );
 	AddControl('Show trip stops',    'TRIP',          map_points, 1, setCurrentMap('trip') );
 
 	drawTrip();
