@@ -59,8 +59,6 @@
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
 	</script>
 	<script language="javascript" src="js/map/trip.js"></script>
-	<script language="javascript" src="js/map/collaborators.js"></script>
-	<script language="javascript" src="js/map/interviews.js"></script>
 	<script language="javascript" src="js/map/people.js"></script>
 	<script language="javascript" src="js/map/photos.js"></script>
 	<script language="javascript" src="js/map/videos.js"></script>
