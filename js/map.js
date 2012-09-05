@@ -82,7 +82,7 @@ function clickOnMarker(
 	marker
 ) {
 	return function () {
-		if (currentMap == 'videos') {
+		if (currentMap == 'videos' || currentMap == 'photos') {
 			open_in_new_tab(marker.url);
 		}
 	};
@@ -116,6 +116,28 @@ function showPoints(
 			clickOnMarker(i, marker)
 		);
 	}
+}
+
+function drawPhotos(
+) {
+	clearMap();
+	var photos = [];
+	$('#photos .photo').each(function() {
+		var lat = $(this).find('div[name="lat"]').html();
+		if (lat != '') {
+			var title = $(this).find('div[name="title"]').html();
+			var lng = $(this).find('div[name="lng"]').html();
+			var url = $(this).find('div[name="link"]').html();
+			photos.push({ 
+				name: title, 
+				lat: lat, 
+				lng: lng, 
+				type: "photos",
+				url: url
+			});
+		}
+	        showPoints(photos);
+	});
 }
 
 function drawVideos(
@@ -186,6 +208,8 @@ function drawCurrentMap(
 		drawTrip(map_points.getZoom());
 	} else if (currentMap == 'videos') {
 		drawVideos();
+	} else if (currentMap == 'photos') {
+		drawPhotos();
 	} else {
 		clearMap();
 	}
@@ -218,7 +242,7 @@ function setUpMap(
 	});
 
 	AddControl('Show videos',        'VIDEOS',        map_points, 6, setCurrentMap('videos') );
-	AddControl('Show photos',        'PHOTOS',        map_points, 5, setCurrentMap('') );
+	AddControl('Show photos',        'PHOTOS',        map_points, 5, setCurrentMap('photos') );
 	AddControl('Show people',        'PEOPLE',        map_points, 4, setCurrentMap('') );
 	AddControl('Show trip stops',    'TRIP',          map_points, 1, setCurrentMap('trip') );
 
