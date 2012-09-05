@@ -118,3 +118,12 @@ p {
 #videos {
 	display: none;
 }
+
+.center {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#paypal {
+	text-align: center;
+}

@@ -122,6 +122,19 @@
 		<!-- Developed by Pepe Doval - http://about.me/pepellou -->
 </head>
 <body>
+	<div id="paypal" class="center">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_donations">
+			<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
+			<input type="hidden" name="currency_code" value="EUR">
+			<input type="hidden" name="lc" value="ES">
+			<input type="hidden" name="item_name" value="Crisis What Crisis">
+			<input type="hidden" name="no_note" value="0">
+			<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+			<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+		</form>
+	</div>
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
