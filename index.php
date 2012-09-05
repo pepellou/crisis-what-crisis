@@ -45,6 +45,7 @@
 	<!-- <base href = "http://www..com/" > -->
 	<link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+	<link rel="icon" type="image/png" href="favicon.png">
 	<title>Crisis - What Crisis</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<!--
