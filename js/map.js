@@ -96,6 +96,10 @@ function showPoints(
 	clearMap();
         for (var i in points) {
                 var point = points[i];
+		var pinLocation = new google.maps.Point(25, 25);
+		if (point.type != 'trip') {
+			pinLocation = new google.maps.Point(25, 50);
+		}
                 var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(point.lat, point.lng),
                         map: map_points,
@@ -103,7 +107,7 @@ function showPoints(
 				'/crisis/img/pin-' + point.type + '.png',
 				new google.maps.Size(50, 50),
 				new google.maps.Point(0,0),
-				new google.maps.Point(25, 25)
+				pinLocation
 			),
                         title: point.name,
 			url: point.url
@@ -191,7 +195,7 @@ function setCurrentMap(
 function drawCurrentMap(
 ) {
 	if (currentMap == 'trip') {
-		drawTrip(map_points.getZoom());
+		drawTrip();
 	} else if (currentMap == 'videos') {
 		drawVideos();
 	} else if (currentMap == 'photos') {

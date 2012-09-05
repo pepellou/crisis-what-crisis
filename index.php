@@ -63,58 +63,6 @@
 	<script language="javascript" src="js/map/videos.js"></script>
 	<script language="javascript" src="js/map-style.js"></script>
 	<script language="javascript" src="js/map.js"></script>
-	<script type="text/javascript" >
-		$(function() {
-			$('a[name="what"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.what').css({'display':'block'}); 
-				}
-			);
-			$('a[name="why"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.why').css({'display':'block'}); 
-				}
-			);
-			$('a[name="who"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.who').css({'display':'block'}); 
-				}
-			);
-			$('a[name="where"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.where').css({'display':'block'}); 
-				}
-			);
-			$('a[name="how"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.how').css({'display':'block'}); 
-				}
-			);
-			setUpMap();
-			var fadeMap = setInterval(
-				function () {
-					var theOpacity = $('#map_cover').css('opacity');
-					if (theOpacity < 0.02) {
-						$('#map_cover').css('display', 'none');
-						clearInterval(fadeMap);
-					} else {
-						$('#map_cover').css('opacity', theOpacity - 0.01);
-					}
-				},
-				10
-			);
-		});
-	</script>
 		
 		<!-- Developed by Pepe Doval - http://about.me/pepellou -->
 </head>
@@ -244,7 +192,7 @@
 	<?php 	} ?>
 	</div>
 
-	<script language="javascript">
+	<script type="text/javascript" >
 		function addPhoto(
 			photo
 		) {
@@ -258,6 +206,56 @@
 		}
 
 		$(function() {
+			$('a[name="what"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.what').css({'display':'block'}); 
+				}
+			);
+			$('a[name="why"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.why').css({'display':'block'}); 
+				}
+			);
+			$('a[name="who"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.who').css({'display':'block'}); 
+				}
+			);
+			$('a[name="where"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.where').css({'display':'block'}); 
+				}
+			);
+			$('a[name="how"]').hover(
+				function() { 
+					$('.line').css({'display':'none'}); 
+					$('.box').css({'display':'none'}); 
+					$('.how').css({'display':'block'}); 
+				}
+			);
+
+			setUpMap();
+			var fadeMap = setInterval(
+				function () {
+					var theOpacity = $('#map_cover').css('opacity');
+					if (theOpacity < 0.02) {
+						$('#map_cover').css('display', 'none');
+						clearInterval(fadeMap);
+					} else {
+						$('#map_cover').css('opacity', theOpacity - 0.01);
+					}
+				},
+				10
+			);
+
 			$.ajax({ 
 				type: "POST", 
 				url:  "get-photos.php",
