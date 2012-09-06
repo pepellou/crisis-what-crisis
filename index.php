@@ -24,8 +24,11 @@
 	<script language="javascript" src="js/map/trip.js"></script>
 	<script language="javascript" src="js/map-style.js"></script>
 	<script language="javascript" src="js/map.js"></script>
+	<script language="javascript" src="js/menu.js"></script>
+	<script language="javascript" src="js/photos.js"></script>
 		
-		<!-- Developed by Pepe Doval - http://about.me/pepellou -->
+	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
+
 </head>
 <body>
 	<div id="paypal" class="center">
@@ -41,6 +44,7 @@
 			<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
 		</form>
 	</div>
+
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
@@ -153,125 +157,11 @@
 	<?php 	} ?>
 	</div>
 
-	<script type="text/javascript" >
-		function addPhoto(
-			photo
-		) {
-			photos.push({ 
-				name: photo.title, 
-				lat: photo.lat,
-				lng: photo.lng,
-				type: "photos",
-				url: photo.link,
-				img: photo.image,
-				width: photo.width,
-				height: photo.height
-			});
-		}
-
-		$(function() {
-			$('a[name="what"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.what').css({'display':'block'}); 
-				}
-			);
-			$('a[name="why"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.why').css({'display':'block'}); 
-				}
-			);
-			$('a[name="who"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.who').css({'display':'block'}); 
-				}
-			);
-			$('a[name="where"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.where').css({'display':'block'}); 
-				}
-			);
-			$('a[name="how"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.how').css({'display':'block'}); 
-				}
-			);
-
-			setUpMap();
-			var fadeMap = setInterval(
-				function () {
-					var theOpacity = $('#map_cover').css('opacity');
-					if (theOpacity < 0.02) {
-						$('#map_cover').css('display', 'none');
-						clearInterval(fadeMap);
-					} else {
-						$('#map_cover').css('opacity', theOpacity - 0.01);
-					}
-				},
-				10
-			);
-
-			$.ajax({ 
-				type: "POST", 
-				url:  "get-photos.php",
-				data: "",
-				success: function(msg) { 
-					var thePhotos = eval( "(" + msg + ")" );
-					for (var p in thePhotos) {
-						var photo = thePhotos[p];
-						$.ajax({ 
-							type: "POST", 
-							url:  "get-photos.php",
-							data: "photo_link=" + photo.link,
-							success: function(msg) { 
-								addPhoto(eval("(" + msg + ")" ));
-							}
-						});
-					}
-				}           
-			});
-		});
-	</script>
 	<div id="black-background" class="preview"></div>
 	<div id="previewPhoto" class="preview">
 		<div class="left"></div>
 		<div class="thePhoto"></div>
 		<div class="right"></div>
 	</div>
-	<script language="javascript">
-		function showPhoto(
-			photo
-		) {
-			$('#black-background').css("display", "block");
-			$('#previewPhoto').css({
-				"display": "block",
-				"margin-top": -photo.height / 2,
-				"margin-left": -(parseInt(photo.width) + 320) / 2
-			});
-			$('#previewPhoto .right').css("height", photo.height);
-			$('#previewPhoto .left').css("height", photo.height);
-			$('#previewPhoto .thePhoto').html(
-				'<a target="_blank" href="' + photo.url 
-					+ '" title="' + photo.title
-					+ '"><img src="' + photo.img
-					+ '" width="' + photo.width
-					+ '" height="' + photo.height
-					+ '" alt="' + photo.title
-					+ '"></a>'
-			);
-			$('#black-background').click(function () {
-				$('.preview').css("display", "none");
-			});
-		}
-	</script>
 </body>
 </html>
