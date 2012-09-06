@@ -3,7 +3,7 @@ var map_style = [
 		featureType: "water",
 		stylers: [
 			{ "visibility": "on" },
-			{ "invert_lightness": true }
+			{ color: "#444444" }
 		]
 	},{
 		featureType: "landscape.natural",
