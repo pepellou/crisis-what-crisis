@@ -18,7 +18,7 @@ var photos = [];
 
 var map_points;
 var pt_markers = [];
-var centerMap = new google.maps.LatLng(40.5472, 8.920898);
+var centerMap = new google.maps.LatLng(40.5472, 6);
 
 function setUpMap(
 ) {

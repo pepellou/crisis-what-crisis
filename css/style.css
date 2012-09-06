@@ -163,10 +163,11 @@ p {
 }
 
 .donateImg {
-	top: 62px;
+	top: 410px;
 	position: absolute;
-	right: 240px;
+	left: 210px;
 	width: 200px;
+	z-index: 2;
 }
 
 ul {
