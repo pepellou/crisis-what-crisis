@@ -25,13 +25,15 @@
 	<script language="javascript" src="js/map-style.js"></script>
 	<script language="javascript" src="js/map.js"></script>
 	<script language="javascript" src="js/menu.js"></script>
+	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
+	<script language="javascript" src="js/collaborate.js"></script>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
 
 </head>
 <body>
-	<div id="paypal" class="center">
+	<div id="collaborate_button" class="center">
 		<img src="img/donate.png" class="donateImg">
 	</div>
 
@@ -134,7 +136,9 @@
 		</div>
 	</div>
 
-	<div id="contact">
+	<div id="black-background" class="modal"></div>
+
+	<div id="contact" class="modal">
 		<div class="center content">
 			<div>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -207,22 +211,6 @@
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		var width = $("body").css("width");
-		var left = (parseInt(width) / 2) - (parseInt($("#contact").css("width")) / 2);
-    	$(window).resize(function() {
-			width = $("body").css("width");
-			left = (parseInt(width) / 2) - (parseInt($("#contact").css("width")) / 2);
-			$("#contact").css("left", left);
-    	});
-		$("#paypal").mouseup(function() {
-			$("#contact").css("display","inline");
-			$("#contact").css("z-index","10");
-			$("#contact").css("top","70px");
-			$("#contact").css("left", left);
-		});
-	</script>
-
 	<div id="videos">
 	<?php 	foreach (getVideos("pepellou", "music") as $video) { ?>
 			<div class="video">
@@ -236,8 +224,7 @@
 	<?php 	} ?>
 	</div>
 
-	<div id="black-background" class="preview"></div>
-	<div id="previewPhoto" class="preview">
+	<div id="previewPhoto" class="modal">
 		<div class="left"></div>
 		<div class="thePhoto"></div>
 		<div class="right"></div>

@@ -122,8 +122,10 @@ p {
 #contact {
 	background-color: white; 
 	display: none;
-	position: absolute;
+	position: fixed;
 	width: 600px;
+	z-index: 1049;
+	top: 70px;
 }
 
 #contact .paypal {
@@ -158,7 +160,7 @@ p {
 	width: 600px;
 }
 
-#paypal {
+#collaborate_button {
 	cursor: pointer;
 }
 

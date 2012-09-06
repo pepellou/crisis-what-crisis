@@ -38,24 +38,22 @@ function addPhoto(
 function showPhoto(
 	photo
 ) {
-	$('#black-background').css("display", "block");
-	$('#previewPhoto').css({
-		"display": "block",
-		"margin-top": -photo.height / 2,
-		"margin-left": -(parseInt(photo.width) + 320) / 2
-	});
-	$('#previewPhoto .right').css("height", photo.height);
-	$('#previewPhoto .left').css("height", photo.height);
-	$('#previewPhoto .thePhoto').html(
-		'<a target="_blank" href="' + photo.url 
-			+ '" title="' + photo.title
-			+ '"><img src="' + photo.img
-			+ '" width="' + photo.width
-			+ '" height="' + photo.height
-			+ '" alt="' + photo.title
-			+ '"></a>'
-	);
-	$('#black-background').click(function () {
-		$('.preview').css("display", "none");
+	doModal(function() {
+		$('#previewPhoto').css({
+			"display": "block",
+			"margin-top": -photo.height / 2,
+			"margin-left": -(parseInt(photo.width) + 320) / 2
+		});
+		$('#previewPhoto .right').css("height", photo.height);
+		$('#previewPhoto .left').css("height", photo.height);
+		$('#previewPhoto .thePhoto').html(
+			'<a target="_blank" href="' + photo.url 
+				+ '" title="' + photo.title
+				+ '"><img src="' + photo.img
+				+ '" width="' + photo.width
+				+ '" height="' + photo.height
+				+ '" alt="' + photo.title
+				+ '"></a>'
+		);
 	});
 }
