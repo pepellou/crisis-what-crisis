@@ -90,11 +90,11 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="#" name="what"> What<strong>is</strong> </a></li>
-				<li><a href="#" name="why">  Why    </a></li>
-				<li><a href="#" name="who">  Who    </a></li>
-				<li><a href="#" name="where">Where  </a></li>
-				<li><a href="#" name="how">  How    </a></li>
+				<li><a href="#" name="what">  What  </a></li>
+				<li><a href="#" name="why">   Why   </a></li>
+				<li><a href="#" name="who">   Who   </a></li>
+				<li><a href="#" name="where"> Where </a></li>
+				<li><a href="#" name="how">   How   </a></li>
 		</div>
 		<img class="line what" src="img/lineto-what.png" />
 		<div class="box what">
