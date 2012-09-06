@@ -84,8 +84,11 @@ function clickOnMarker(
 	marker
 ) {
 	return function () {
-		if (currentMap == 'videos' || currentMap == 'photos') {
+		if (currentMap == 'videos') {
 			open_in_new_tab(marker.url);
+		}
+		if (currentMap == 'photos') {
+			showPhoto();
 		}
 	};
 }

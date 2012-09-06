@@ -278,5 +278,42 @@
 			});
 		});
 	</script>
+	<div id="black-background" class="preview"></div>
+	<div id="previewPhoto" class="preview">
+		<div class="left"></div>
+		<div class="thePhoto"></div>
+		<div class="right"></div>
+	</div>
+	<script language="javascript">
+		function showPhoto(
+		) {
+			var url = 'http://www.flickr.com/photos/gallery_xavierbelho/7942599746/';
+			var title = 'motocrisisw by XavierBELHO';
+			var img = 'http://farm9.staticflickr.com/8296/7942599746_a1e054b61b.jpg';
+			var width = 333;
+			var height = 500;
+			$('#black-background').css("display", "block");
+			$('#previewPhoto').css({
+				"display": "block",
+				"margin-top": -height / 2,
+				"margin-left": -(width + 320) / 2
+			});
+			$('#previewPhoto .right').css("height", height);
+			$('#previewPhoto .left').css("height", height);
+			$('#previewPhoto .thePhoto').html(
+				'<a target="_blank" href="' + url 
+					+ '" title="' + title
+					+ '"><img src="' + img
+					+ '" width="' + width
+					+ '" height="' + height
+					+ '" alt="' + title
+					+ '"></a>'
+			);
+			$('#black-background').click(function () {
+				$('.preview').css("display", "none");
+			});
+		}
+		$(function() { });
+	</script>
 </body>
 </html>
