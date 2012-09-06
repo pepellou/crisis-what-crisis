@@ -6,19 +6,14 @@ var centerMap = new google.maps.LatLng(40.5472, 8.920898);
 
 function setUpMap(
 ) {
-	createMap();
-
-	AddControl('Show videos',     'VIDEOS', map_points, 6, setCurrentMap('videos') );
-	AddControl('Show photos',     'PHOTOS', map_points, 5, setCurrentMap('photos') );
-	AddControl('Show people',     'PEOPLE', map_points, 4, setCurrentMap('people') );
-	AddControl('Show trip stops', 'TRIP',   map_points, 1, setCurrentMap('trip') );
-
+	map_points = createMap();
+	addControlButtons(map_points);
 	drawTrip();
 }
 
 function createMap(
 ) {
-        map_points = new google.maps.Map(
+        map = new google.maps.Map(
 		document.getElementById("map_canvas"),
 		{ 
 			zoom: 5,
@@ -29,13 +24,23 @@ function createMap(
 			mapTypeId: 'trip'
 		}
 	);
-	map_points.mapTypes.set(
+	map.mapTypes.set(
 		'trip',
 		new google.maps.StyledMapType(map_style, { name: 'Trip' })
 	);
-	google.maps.event.addListener(map_points, 'zoom_changed', function(e){
+	google.maps.event.addListener(map, 'zoom_changed', function(e){
 		drawCurrentMap();
 	});
+	return map;
+}
+
+function addControlButtons(
+	map
+) {
+	AddControl('Show videos',     'VIDEOS', map, 6, setCurrentMap('videos') );
+	AddControl('Show photos',     'PHOTOS', map, 5, setCurrentMap('photos') );
+	AddControl('Show people',     'PEOPLE', map, 4, setCurrentMap('people') );
+	AddControl('Show trip stops', 'TRIP',   map, 1, setCurrentMap('trip') );
 }
 
 function AddControl(title, text, map, index, callback) {
@@ -80,13 +85,6 @@ function clearMap(
         pt_markers = []; 
 }
 
-function open_in_new_tab(
-	url
-) {
-	window.open(url, '_blank');
-	window.focus();
-}
-
 function clickOnMarker(
 	marker
 ) {
@@ -98,6 +96,13 @@ function clickOnMarker(
 			showPhoto(marker);
 		}
 	};
+}
+
+function open_in_new_tab(
+	url
+) {
+	window.open(url, '_blank');
+	window.focus();
 }
 
 function showPoints(
@@ -220,4 +225,3 @@ function drawCurrentMap(
 		clearMap();
 	}
 }
-
