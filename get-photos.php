@@ -15,15 +15,10 @@
 	}
 
 	function getPhotos(
-		$user,
-		$tag
 	) {
 		$selected_photos = array();
-		$user = "27418660@N05"; // xavierbelho
-		$user = "63176109@N03"; // pepellou
-		$tag = "acampadaobradoiro";
 		$xml = file_get_contents(
-			"http://api.flickr.com/services/feeds/photos_public.gne?id={$user}"
+			"http://api.flickr.com/services/feeds/photoset.gne?set=72157631434032090&nsid=49750261@N05&lang=en-us"
 		);
 		$xml = preg_replace('/(<|<\/)([a-z0-9]+):/i','$1$2_',$xml);
 		$photos = simplexml_load_string($xml);
@@ -35,19 +30,12 @@
 					$theLink = $attributes->href;
 				}
 			}
-			foreach ($photo->category as $category) {
-				$attributes = $category->attributes();
-				if ($attributes["scheme"] = "http://www.flickr.com/photos/tags/") {
-					if ($attributes["term"] == $tag) {
-						$selected_photos []= array(
-							"title" => (string) $photo->title,
-							"link" => (string) $theLink,
-							"lat" => $theLatitude,
-							"lng" => $theLongitude
-						);
-					}
-				}
-			}
+			$selected_photos []= array(
+				"title" => (string) $photo->title,
+				"link" => (string) $theLink,
+				"lat" => $theLatitude,
+				"lng" => $theLongitude
+			);
 		}
 		return $selected_photos;
 	}
