@@ -1,12 +1,17 @@
 body {
-	background: #aaa;
+	background: #2e2e2e;
 	font-family: 'AvenirLTBook';
 	font-size: 16px;
 	padding-top: 25px;
+	text-align: left;
 }
 h1, h2 {
 	font-family: 'TungstenMedium';
 	margin-left: 20px;
+	border-bottom: 0px;
+}
+h1 {
+	margin-top: 20px;
 }
 h2 {
 	margin-bottom: 0px;
@@ -184,11 +189,12 @@ form[name="contact"] {
 }
 
 .donateImg {
-	top: 410px;
-	position: absolute;
-	left: 210px;
+	position: relative;
 	width: 200px;
 	z-index: 2;
+	float: left;
+	margin-top: -230px;
+	margin-left: 10px;
 }
 
 ul {
@@ -282,4 +288,10 @@ ul li {
 }
 #previewPhoto .left:hover, #previewPhoto .right:hover {
 	opacity: 0.5;
+}
+
+#countdown_dashboard {
+	margin: auto;
+	width: 465px;
+	height: 300px;
 }

@@ -8,6 +8,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=1280, maximum-scale=1.0" />	
+	<link href="countdown/style/dark.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -28,19 +29,51 @@
 	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
 	<script language="javascript" src="js/collaborate.js"></script>
+	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
 
 </head>
 <body>
-	<div id="collaborate_button" class="center">
-		<img src="img/donate.png" class="donateImg">
+	<div id="countdown_dashboard">
+		<h1 style="color: white">Count-Down for the Trip</h1>
+		<div class="dash weeks_dash">
+			<span class="dash_title">weeks</span>
+			<div class="digit">1</div>
+			<div class="digit">6</div>
+		</div>
+
+		<div class="dash days_dash">
+			<span class="dash_title">days</span>
+			<div class="digit">0</div>
+			<div class="digit">4</div>
+		</div>
+
+		<div class="dash hours_dash">
+			<span class="dash_title">hours</span>
+			<div class="digit">1</div>
+			<div class="digit">1</div>
+		</div>
+
+		<div class="dash minutes_dash">
+			<span class="dash_title">minutes</span>
+			<div class="digit">3</div>
+			<div class="digit">9</div>
+		</div>
+
+		<div class="dash seconds_dash">
+			<span class="dash_title">seconds</span>
+			<div class="digit">1</div>
+			<div class="digit">8</div>
+		</div>
 	</div>
 
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
 		<div id="map_cover"></div>
+		<img id="collaborate_button" src="img/donate.png" class="donateImg" />
 		<div id="slider">
 			<img src="img/road.png" />
 		</div>
@@ -232,5 +265,20 @@
 		<div class="thePhoto"></div>
 		<div class="right"></div>
 	</div>
+
+	<script language="javascript" type="text/javascript">
+		$(function() {
+			$('#countdown_dashboard').countDown({
+				targetDate: {
+					'day': 1,
+					'month': 10,
+					'year': 2012,
+					'hour': 7,
+					'min': 0,
+					'sec': 7
+				}
+			});
+		});
+	</script>
 </body>
 </html>
