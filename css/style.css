@@ -172,7 +172,6 @@ p {
 	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
 	box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
-	background-color: rgba(0, 0, 0, 0.6);
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
@@ -183,9 +182,11 @@ p {
 }
 #previewPhoto .right {
 	background: url('../img/next.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 #previewPhoto .left {
 	background: url('../img/prev.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 #previewPhoto .left:hover, #previewPhoto .right:hover {
 	opacity: 0.5;
