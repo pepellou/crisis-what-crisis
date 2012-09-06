@@ -69,17 +69,7 @@
 </head>
 <body>
 	<div id="paypal" class="center">
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_donations">
-			<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
-			<input type="hidden" name="currency_code" value="EUR">
-			<input type="hidden" name="lc" value="ES">
-			<input type="hidden" name="item_name" value="Crisis What Crisis">
-			<input type="hidden" name="no_note" value="0">
-			<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-			<input type="image" src="img/donate.png" border="0" name="submit" class="donateImg" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-			<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-		</form>
+		<img src="img/donate.png" class="donateImg">
 	</div>
 	<div id="sheet">
 		<img src="img/header.png" />
@@ -179,6 +169,95 @@
 			</p>
 		</div>
 	</div>
+
+	<div id="contact">
+		<div class="center content">
+			<div>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
+					<input type="hidden" name="currency_code" value="EUR">
+					<input type="hidden" name="lc" value="ES">
+					<input type="hidden" name="item_name" value="Crisis What Crisis">
+					<input type="hidden" name="no_note" value="0">
+					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+					<input type="image" src="img/colabora.png" border="0" name="submit" class="paypal" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</div>
+			<div>
+				<p>Este proxecto vaise financiar de varios xeitos, por 
+				un lado o esforzo persoal
+				por outro queremos contar coa colaboraci&oacute;n de 
+				tod@s aqueles que queirades aportar algo a esta 
+				visi&oacute;n diferente dende os PIGS.</p>
+				<p>P&oacute;dese colaborar destos xeitos:</p>
+			</div>
+			<ul>
+				<li>
+					<div>
+						<img src="img/icon-fuel">
+						<span>Combustible. Cada 20 &euro; recorro 180 km.</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/icon-food">
+						<span>Comida. Men&uacute; do d&iacute;a 10 &euro; + cea 8 &euro;</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/icon-sleep">
+						<span>Dormida. Un lugar onde pasar a noite </span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/icon-camera">
+						<span>Contando a t&uacute;a historia &aacute; c&aacute;mara</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/icon-person">
+						<span>Co&ntilde;ezo a algu&eacute;n que pode colaborar dalgunha das formas anteriores</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="img/icon-talk">
+						<span>Difundindo o proxecto</span>
+					</div>
+				</li>
+			</ul>
+			<div id="formContact">
+				<form name="contact" method="post">
+					<div class="formLine"><span>Nombre:</span><input name="contant-name"></input></div>
+					<div class="formLine"><span>Telf:</span><input name="contant-phone"></input></div>
+					<div class="formLine"><span>Email:</span><input name="contant-email"></input></div>
+					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>
+					<div class="formLine"><span>&nbsp;</span><input type="submit" value="enviar" name="contant-button"></input></div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var width = $("body").css("width");
+		var left = (parseInt(width) / 2) - (parseInt($("#contact").css("width")) / 2);
+    	$(window).resize(function() {
+			width = $("body").css("width");
+			left = (parseInt(width) / 2) - (parseInt($("#contact").css("width")) / 2);
+			$("#contact").css("left", left);
+    	});
+		$("#paypal").mouseup(function() {
+			$("#contact").css("display","inline");
+			$("#contact").css("z-index","10");
+			$("#contact").css("top","70px");
+			$("#contact").css("left", left);
+		});
+	</script>
 
 	<div id="videos">
 	<?php 	foreach (getVideos("pepellou", "music") as $video) { ?>

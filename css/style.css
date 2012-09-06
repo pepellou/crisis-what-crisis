@@ -119,20 +119,90 @@ p {
 	display: none;
 }
 
+#contact {
+	background-color: white; 
+	display: none;
+	position: absolute;
+	width: 600px;
+}
+
+#contact .paypal {
+	float: right;
+	margin: 30px 30px 30px 260px;
+	width: 300px;
+}
+
+#contact p {
+	margin: 0px 30px 16px 30px; 
+	font-size: 16px;
+	text-align: center;
+}
+
+#contact ul img {
+	width: 40px;
+}
+
+#contact ul span {
+	position: relative;
+	top: -13px;
+	margin: 5px;
+}
+
 .center {
 	margin: 0 auto;
 	width: 100%;
 }
 
-#paypal {
+.content {
 	position: relative;
-	text-align: center;
-	width: 1200px;
+	width: 600px;
+}
+
+#paypal {
+	cursor: pointer;
 }
 
 .donateImg {
-	top: 47px;
+	top: 62px;
 	position: absolute;
-	right: -118px;
+	right: 240px;
 	width: 200px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	text-decoration: none;
+}
+
+#formContact {
+	position: relative;
+	margin-top: 30px;
+	height: 275px;
+}
+
+.formLine {
+	float: left;
+	width: 100%;
+}
+
+.formLine input {
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.formLine textarea {
+	border: 1px solid black;
+	width: 300px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.formLine span {
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	width: 175px;
 }
