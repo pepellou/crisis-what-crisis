@@ -1,9 +1,9 @@
 <?php
 
 	function getGpsForPhoto(
-		$theLink
+		$thePhotoPublicPage
 	) {
-		$public_page = file_get_contents($theLink);
+		$public_page = $thePhotoPublicPage;
 		$lat = strpos($public_page, '"perm_viewgeo":"0","geo"') + 35;
 		$lat = strpos($public_page, ":", $lat) + 1;
 		$end_lat = strpos($public_page, ",", $lat);
@@ -12,6 +12,32 @@
 		$theLatitude = substr($public_page, $lat, $end_lat - $lat);
 		$theLongitude = substr($public_page, $lng, $end_lng - $lng);
 		return array($theLatitude, $theLongitude);
+	}
+
+	function getSizeForPhoto(
+		$thePhotoPublicPage
+	) {
+		$public_page = $thePhotoPublicPage;
+		$start_width = strpos(
+			$public_page, 
+			'<meta property="og:image:width" content="'
+		) + strlen('<meta property="og:image:width" content="');
+		$end_width = strpos($public_page, "\"", $start_width);
+		$start_height = strpos(
+			$public_page, 
+			'<meta property="og:image:height" content="'
+		) + strlen('<meta property="og:image:height" content="');
+		$end_height = strpos($public_page, "\"", $start_height);
+		$start_image = strpos(
+			$public_page, 
+			'<meta property="og:image" content="'
+		) + strlen('<meta property="og:image" content="');
+		$end_image = strpos($public_page, "\"", $start_image);
+		return array(
+			substr($public_page, $start_width, $end_width - $start_width),
+			substr($public_page, $start_height, $end_height - $start_height),
+			substr($public_page, $start_image, $end_image - $start_image)
+		);
 	}
 
 	function getPhotos(
@@ -45,9 +71,14 @@
 	) {
 		foreach (getPhotos() as $photo) {
 			if ($photo["link"] == $theLink) {
-				list($lat, $lng) = getGpsForPhoto($theLink);
+				$public_page = file_get_contents($theLink);
+				list($lat, $lng) = getGpsForPhoto($public_page);
 				$photo["lat"] = $lat;
 				$photo["lng"] = $lng;
+				list($width, $height, $image) = getSizeForPhoto($public_page);
+				$photo["width"] = $width;
+				$photo["height"] = $height;
+				$photo["image"] = $image;
 				return $photo;
 			}
 		}

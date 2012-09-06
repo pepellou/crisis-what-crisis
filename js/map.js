@@ -88,7 +88,7 @@ function clickOnMarker(
 			open_in_new_tab(marker.url);
 		}
 		if (currentMap == 'photos') {
-			showPhoto();
+			showPhoto(marker);
 		}
 	};
 }
@@ -103,18 +103,22 @@ function showPoints(
 		if (point.type != 'trip') {
 			pinLocation = new google.maps.Point(25, 50);
 		}
-                var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(point.lat, point.lng),
-                        map: map_points,
-                        icon: new google.maps.MarkerImage(
-				'/crisis/img/pin-' + point.type + '.png',
-				new google.maps.Size(50, 50),
-				new google.maps.Point(0,0),
-				pinLocation
-			),
-                        title: point.name,
-			url: point.url
-                }); 
+                var marker = new google.maps.Marker(
+			$.extend(
+				{
+	                        	position: new google.maps.LatLng(point.lat, point.lng),
+		                        map: map_points,
+		                        icon: new google.maps.MarkerImage(
+						'/crisis/img/pin-' + point.type + '.png',
+						new google.maps.Size(50, 50),
+						new google.maps.Point(0,0),
+						pinLocation
+					),
+		                        title: point.name
+				}, 
+				point
+			)
+                ); 
                 pt_markers[i] = marker;
         }   
         for (var i in pt_markers) {

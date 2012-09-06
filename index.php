@@ -202,7 +202,10 @@
 				lat: photo.lat,
 				lng: photo.lng,
 				type: "photos",
-				url: photo.link
+				url: photo.link,
+				img: photo.image,
+				width: photo.width,
+				height: photo.height
 			});
 		}
 
@@ -286,34 +289,29 @@
 	</div>
 	<script language="javascript">
 		function showPhoto(
+			photo
 		) {
-			var url = 'http://www.flickr.com/photos/gallery_xavierbelho/7942599746/';
-			var title = 'motocrisisw by XavierBELHO';
-			var img = 'http://farm9.staticflickr.com/8296/7942599746_a1e054b61b.jpg';
-			var width = 333;
-			var height = 500;
 			$('#black-background').css("display", "block");
 			$('#previewPhoto').css({
 				"display": "block",
-				"margin-top": -height / 2,
-				"margin-left": -(width + 320) / 2
+				"margin-top": -photo.height / 2,
+				"margin-left": -(parseInt(photo.width) + 320) / 2
 			});
-			$('#previewPhoto .right').css("height", height);
-			$('#previewPhoto .left').css("height", height);
+			$('#previewPhoto .right').css("height", photo.height);
+			$('#previewPhoto .left').css("height", photo.height);
 			$('#previewPhoto .thePhoto').html(
-				'<a target="_blank" href="' + url 
-					+ '" title="' + title
-					+ '"><img src="' + img
-					+ '" width="' + width
-					+ '" height="' + height
-					+ '" alt="' + title
+				'<a target="_blank" href="' + photo.url 
+					+ '" title="' + photo.title
+					+ '"><img src="' + photo.img
+					+ '" width="' + photo.width
+					+ '" height="' + photo.height
+					+ '" alt="' + photo.title
 					+ '"></a>'
 			);
 			$('#black-background').click(function () {
 				$('.preview').css("display", "none");
 			});
 		}
-		$(function() { });
 	</script>
 </body>
 </html>
