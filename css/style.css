@@ -4,6 +4,13 @@ body {
 	font-size: 16px;
 	padding-top: 25px;
 }
+h1, h2 {
+	font-family: 'TungstenMedium';
+	margin-left: 20px;
+}
+h2 {
+	margin-bottom: 0px;
+}
 #sheet {
 	width: 1200px;
 	height: 2700px;
@@ -129,9 +136,8 @@ p {
 }
 
 #contact .paypal {
-	float: right;
-	margin: 30px 30px 30px 260px;
-	width: 300px;
+	text-align: center;
+	margin: 0px 30px 30px 30px;
 }
 
 #contact p {
@@ -148,6 +154,19 @@ p {
 	position: relative;
 	top: -13px;
 	margin: 5px;
+}
+
+form[name="contact"] {
+	background: red;
+	width: 440px;
+	height: 230px;
+	padding: 20px 5px;
+	background-color: #1c1c1b;
+	color: white;
+	border-style: solid;
+	border-width: 2px;
+	float: right;
+	margin-right: 25px;
 }
 
 .center {
@@ -183,7 +202,7 @@ ul li {
 #formContact {
 	position: relative;
 	margin-top: 30px;
-	height: 275px;
+	height: 320px;
 }
 
 .formLine {
@@ -207,7 +226,7 @@ ul li {
 	float: left;
 	margin-right: 10px;
 	text-align: right;
-	width: 175px;
+	width: 100px;
 }
 
 #black-background {

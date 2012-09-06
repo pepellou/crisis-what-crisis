@@ -141,19 +141,7 @@
 	<div id="contact" class="modal">
 		<div class="center content">
 			<div>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-					<input type="hidden" name="cmd" value="_donations">
-					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
-					<input type="hidden" name="currency_code" value="EUR">
-					<input type="hidden" name="lc" value="ES">
-					<input type="hidden" name="item_name" value="Crisis What Crisis">
-					<input type="hidden" name="no_note" value="0">
-					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-					<input type="image" src="img/colabora.png" border="0" name="submit" class="paypal" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-				</form>
-			</div>
-			<div>
+				<h1>Como podes colaborar?</h1>
 				<p>Este proxecto vaise financiar de varios xeitos, por 
 				un lado o esforzo persoal
 				por outro queremos contar coa colaboraci&oacute;n de 
@@ -200,12 +188,27 @@
 				</li>
 			</ul>
 			<div id="formContact">
+				<h2>Contacta con n&oacute;s</h2>
 				<form name="contact" method="post">
 					<div class="formLine"><span>Nombre:</span><input name="contant-name"></input></div>
 					<div class="formLine"><span>Telf:</span><input name="contant-phone"></input></div>
 					<div class="formLine"><span>Email:</span><input name="contant-email"></input></div>
 					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>
-					<div class="formLine"><span>&nbsp;</span><input type="submit" value="enviar" name="contant-button"></input></div>
+					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contant-button"></input></div>
+				</form>
+			</div>
+			<div>
+				<h2>Ou fai unha donaci&oacute;n:</h2>
+				<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
+					<input type="hidden" name="currency_code" value="EUR">
+					<input type="hidden" name="lc" value="ES">
+					<input type="hidden" name="item_name" value="Crisis What Crisis">
+					<input type="hidden" name="no_note" value="0">
+					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
 				</form>
 			</div>
 		</div>
