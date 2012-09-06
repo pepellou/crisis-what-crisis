@@ -1,34 +1,63 @@
+$(function() {
+	setUpMap();
+	var fadeMap = setInterval(
+		function () {
+			var theOpacity = $('#map_cover').css('opacity');
+			if (theOpacity < 0.02) {
+				$('#map_cover').css('display', 'none');
+				clearInterval(fadeMap);
+			} else {
+				$('#map_cover').css('opacity', theOpacity - 0.01);
+			}
+		},
+		10
+	);
+});
+
 var photos = [];
-
-var maps = [
-	{ id: 'videos',        name: 'Videos'        },
-	{ id: 'photos',        name: 'Photos'        },
-	{ id: 'people',        name: 'People'        },
-	{ id: 'trip',          name: 'Trip'          }
-];
-
-function setType(
-	array,
-	type
-) {
-	for (var t in array) {
-		array[t].type = type;
-	}
-}
-
-setType(trip, "trip");
-setType(people, "people");
-setType(photos, "photos");
-setType(videos, "videos");
-
-var allPoints = trip
-		.concat(people)
-		.concat(photos)
-		.concat(videos);
 
 var map_points;
 var pt_markers = [];
 var centerMap = new google.maps.LatLng(40.5472, 8.920898);
+
+function setUpMap(
+) {
+	map_points = createMap();
+	addControlButtons(map_points);
+	drawTrip();
+}
+
+function createMap(
+) {
+        map = new google.maps.Map(
+		document.getElementById("map_canvas"),
+		{ 
+			zoom: 5,
+			center: centerMap,
+			mapTypeControl: false,
+			scrollwheel: false,
+			scaleControl: false,
+			mapTypeId: 'trip'
+		}
+	);
+	map.mapTypes.set(
+		'trip',
+		new google.maps.StyledMapType(map_style, { name: 'Trip' })
+	);
+	google.maps.event.addListener(map, 'zoom_changed', function(e){
+		drawCurrentMap();
+	});
+	return map;
+}
+
+function addControlButtons(
+	map
+) {
+	AddControl('Show videos',     'VIDEOS', map, 6, setCurrentMap('videos') );
+	AddControl('Show photos',     'PHOTOS', map, 5, setCurrentMap('photos') );
+	AddControl('Show people',     'PEOPLE', map, 4, setCurrentMap('people') );
+	AddControl('Show trip stops', 'TRIP',   map, 1, setCurrentMap('trip') );
+}
 
 function AddControl(title, text, map, index, callback) {
 	var controlDiv = document.createElement('div');
@@ -72,6 +101,19 @@ function clearMap(
         pt_markers = []; 
 }
 
+function clickOnMarker(
+	marker
+) {
+	return function () {
+		if (currentMap == 'videos') {
+			open_in_new_tab(marker.url);
+		}
+		if (currentMap == 'photos') {
+			showPhoto(marker);
+		}
+	};
+}
+
 function open_in_new_tab(
 	url
 ) {
@@ -79,49 +121,44 @@ function open_in_new_tab(
 	window.focus();
 }
 
-function clickOnMarker(
-	i,
-	marker
-) {
-	return function () {
-		if (currentMap == 'videos' || currentMap == 'photos') {
-			open_in_new_tab(marker.url);
-		}
-	};
-}
-
 function showPoints(
         points
 ) {
 	clearMap();
         for (var i in points) {
-                var point = points[i];
-		var pinLocation = new google.maps.Point(25, 25);
-		if (point.type != 'trip') {
-			pinLocation = new google.maps.Point(25, 50);
-		}
-                var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(point.lat, point.lng),
-                        map: map_points,
-                        icon: new google.maps.MarkerImage(
-				'/crisis/img/pin-' + point.type + '.png',
-				new google.maps.Size(50, 50),
-				new google.maps.Point(0,0),
-				pinLocation
-			),
-                        title: point.name,
-			url: point.url
-                }); 
-                pt_markers[i] = marker;
+		drawMarker(points[i]);
         }   
-        for (var i in pt_markers) {
-		var marker = pt_markers[i];
-		google.maps.event.addListener(
-			marker,
-			'click',
-			clickOnMarker(i, marker)
-		);
+}
+
+function drawMarker(
+	point
+) {
+	var pinLocation = new google.maps.Point(25, 25);
+	if (point.type != 'trip') {
+		pinLocation = new google.maps.Point(25, 50);
 	}
+	var marker = new google.maps.Marker(
+		$.extend(
+			{
+				position: new google.maps.LatLng(point.lat, point.lng),
+				map: map_points,
+				icon: new google.maps.MarkerImage(
+					'/crisis/img/pin-' + point.type + '.png',
+					new google.maps.Size(50, 50),
+					new google.maps.Point(0,0),
+					pinLocation
+				),
+				title: point.name
+			}, 
+			point
+		)
+	); 
+	google.maps.event.addListener(
+		marker,
+		'click',
+		clickOnMarker(marker)
+	);
+	pt_markers.push(marker);
 }
 
 function drawPhotos(
@@ -203,38 +240,4 @@ function drawCurrentMap(
 	} else {
 		clearMap();
 	}
-}
-
-function setUpMap(
-) {
-        var mapOptions = { 
-                zoom: 5,
-                center: centerMap,
-                mapTypeControl: false,
-		scrollwheel: false,
-		scaleControl: false,
-                mapTypeId: 'trip'
-        };  
-
-        map_points = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-
-        var myLatLng = new google.maps.LatLng(43.367776,-8.406222);
-
-	for (var m in maps) {
-		var map = maps[m];
-		map_points.mapTypes.set(
-			map.id,
-			new google.maps.StyledMapType(map_style, { name: map.name })
-		);
-	}
-	google.maps.event.addListener(map_points, 'zoom_changed', function(e){
-		drawCurrentMap();
-	});
-
-	AddControl('Show videos',        'VIDEOS',        map_points, 6, setCurrentMap('videos') );
-	AddControl('Show photos',        'PHOTOS',        map_points, 5, setCurrentMap('photos') );
-	AddControl('Show people',        'PEOPLE',        map_points, 4, setCurrentMap('') );
-	AddControl('Show trip stops',    'TRIP',          map_points, 1, setCurrentMap('trip') );
-
-	drawTrip();
 }

@@ -206,3 +206,58 @@ ul li {
 	text-align: right;
 	width: 175px;
 }
+
+#black-background {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: black;
+	opacity: 0.8;	
+	cursor: pointer;
+	display: none;
+}
+
+#previewPhoto {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1050;
+	overflow: auto;
+	margin: -250px 0 0 -280px;
+	padding: 20px;
+	display: none;
+}
+#previewPhoto div {
+	float: left;
+	padding: 20px;
+}
+#previewPhoto .right, #previewPhoto .left {
+	width: 100px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	cursor: pointer;
+}
+#previewPhoto .right {
+	background: url('../img/next.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#previewPhoto .left {
+	background: url('../img/prev.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#previewPhoto .left:hover, #previewPhoto .right:hover {
+	opacity: 0.5;
+}

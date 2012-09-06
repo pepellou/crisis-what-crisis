@@ -1,76 +1,40 @@
 <?php
 	require_once dirname(__FILE__)."/mobile-detection.php";
 
-	function getVideos(
-		$user,
-		$tag
-	) {
-		$selected_videos = array();
-		$xml = file_get_contents(
-			"https://gdata.youtube.com/feeds/api/users/{$user}/uploads"
-		);
-		$xml = preg_replace('/(<|<\/)([a-z0-9]+):/i','$1$2_',$xml);
-		$videos = simplexml_load_string($xml);
-		foreach ($videos->entry as $video) {
-			$current_video = array();
-			$current_video["title"] = $video->title;
-			foreach ($video->link as $link) {
-				$attributes = $link->attributes();
-				if ($attributes->rel == "alternate") {
-					$current_video['link'] = $attributes->href;
-				}
-			}
-			if (isset($video->georss_where)) {
-				$position = $video->georss_where->gml_Point->gml_pos;
-				list($current_video["lat"], $current_video["lng"]) = (explode(" ", $position));
-			}
-			foreach ($video->category as $category) {
-				$attributes = $category->attributes();
-				if ($attributes->scheme == "http://gdata.youtube.com/schemas/2007/keywords.cat") {
-					if ($attributes->term == $tag) {
-						$selected_videos[]= $current_video;
-					}
-				}
-			}
-		}
-		return $selected_videos;
-	}
-
+	require_once dirname(__FILE__)."/get-videos.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=1280, maximum-scale=1.0" />	
-	<!-- <base href = "http://www..com/" > -->
 	<link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
 	<link rel="icon" type="image/png" href="favicon.png">
 	<title>Crisis - What Crisis</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!--
 	<meta property="og:image" content="http://www.crisis-whatcrisis.com/img/logo.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
-	<meta property="og:title" content="crisis-whatcrisis" />
-	-->
+	<meta property="og:title" content="Crisis - What crisis?" />
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
 	</script>
 	<script language="javascript" src="js/map/trip.js"></script>
-	<script language="javascript" src="js/map/people.js"></script>
-	<script language="javascript" src="js/map/photos.js"></script>
-	<script language="javascript" src="js/map/videos.js"></script>
 	<script language="javascript" src="js/map-style.js"></script>
 	<script language="javascript" src="js/map.js"></script>
+	<script language="javascript" src="js/menu.js"></script>
+	<script language="javascript" src="js/photos.js"></script>
 		
-		<!-- Developed by Pepe Doval - http://about.me/pepellou -->
+	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
+
 </head>
 <body>
 	<div id="paypal" class="center">
 		<img src="img/donate.png" class="donateImg">
 	</div>
+
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
@@ -80,11 +44,11 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="#" name="what"> What<strong>is</strong> </a></li>
-				<li><a href="#" name="why">  Why    </a></li>
-				<li><a href="#" name="who">  Who    </a></li>
-				<li><a href="#" name="where">Where  </a></li>
-				<li><a href="#" name="how">  How    </a></li>
+				<li><a href="#" name="what">  What  </a></li>
+				<li><a href="#" name="why">   Why   </a></li>
+				<li><a href="#" name="who">   Who   </a></li>
+				<li><a href="#" name="where"> Where </a></li>
+				<li><a href="#" name="how">   How   </a></li>
 		</div>
 		<img class="line what" src="img/lineto-what.png" />
 		<div class="box what">
@@ -272,90 +236,11 @@
 	<?php 	} ?>
 	</div>
 
-	<script type="text/javascript" >
-		function addPhoto(
-			photo
-		) {
-			photos.push({ 
-				name: photo.title, 
-				lat: photo.lat,
-				lng: photo.lng,
-				type: "photos",
-				url: photo.link
-			});
-		}
-
-		$(function() {
-			$('a[name="what"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.what').css({'display':'block'}); 
-				}
-			);
-			$('a[name="why"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.why').css({'display':'block'}); 
-				}
-			);
-			$('a[name="who"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.who').css({'display':'block'}); 
-				}
-			);
-			$('a[name="where"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.where').css({'display':'block'}); 
-				}
-			);
-			$('a[name="how"]').hover(
-				function() { 
-					$('.line').css({'display':'none'}); 
-					$('.box').css({'display':'none'}); 
-					$('.how').css({'display':'block'}); 
-				}
-			);
-
-			setUpMap();
-			var fadeMap = setInterval(
-				function () {
-					var theOpacity = $('#map_cover').css('opacity');
-					if (theOpacity < 0.02) {
-						$('#map_cover').css('display', 'none');
-						clearInterval(fadeMap);
-					} else {
-						$('#map_cover').css('opacity', theOpacity - 0.01);
-					}
-				},
-				10
-			);
-
-			$.ajax({ 
-				type: "POST", 
-				url:  "get-photos.php",
-				data: "",
-				success: function(msg) { 
-					var thePhotos = eval( "(" + msg + ")" );
-					for (var p in thePhotos) {
-						var photo = thePhotos[p];
-						$.ajax({ 
-							type: "POST", 
-							url:  "get-photos.php",
-							data: "photo_link=" + photo.link,
-							success: function(msg) { 
-								addPhoto(eval("(" + msg + ")" ));
-							}
-						});
-					}
-				}           
-			});
-		});
-	</script>
+	<div id="black-background" class="preview"></div>
+	<div id="previewPhoto" class="preview">
+		<div class="left"></div>
+		<div class="thePhoto"></div>
+		<div class="right"></div>
+	</div>
 </body>
 </html>
