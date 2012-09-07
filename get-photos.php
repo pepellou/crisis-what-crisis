@@ -58,9 +58,7 @@
 			}
 			$selected_photos []= array(
 				"title" => (string) $photo->title,
-				"link" => (string) $theLink,
-				"lat" => $theLatitude,
-				"lng" => $theLongitude
+				"link" => (string) $theLink
 			);
 		}
 		return $selected_photos;

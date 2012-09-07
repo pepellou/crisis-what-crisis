@@ -106,7 +106,7 @@ function clickOnMarker(
 ) {
 	return function () {
 		if (currentMap == 'videos') {
-			open_in_new_tab(marker.url);
+			open_in_self_page(marker.url);
 		}
 		if (currentMap == 'photos') {
 			showPhoto(marker);
@@ -119,6 +119,22 @@ function open_in_new_tab(
 ) {
 	window.open(url, '_blank');
 	window.focus();
+}
+
+function open_in_self_page(
+	url
+) {
+	doModal(function() {
+		$("#previewVideo").css("display","inline");
+		$("#previewVideo").css("left", (parseInt($("body").css("width")) / 2) - (parseInt($("#previewVideo").css("width")) / 2));
+
+		var embeddedUrl = url.replace("https", "http");
+		embeddedUrl = embeddedUrl.replace("&amp;feature=youtube_gdata", "");
+		embeddedUrl = embeddedUrl.replace(".com/", ".com/embed/");
+		embeddedUrl = embeddedUrl.replace("watch?v=", "");
+
+		$("#previewVideo .theVideo").html('<iframe width="420" height="315" src="' + embeddedUrl + '" frameborder="0"></iframe>');
+	});
 }
 
 function showPoints(

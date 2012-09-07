@@ -260,6 +260,12 @@
 	<?php 	} ?>
 	</div>
 
+	<div id="previewVideo" class="modal">
+		<div class="left"></div>
+		<div class="theVideo"></div>
+		<div class="right"></div>
+	</div>
+
 	<div id="previewPhoto" class="modal">
 		<div class="left"></div>
 		<div class="thePhoto"></div>

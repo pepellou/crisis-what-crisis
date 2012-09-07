@@ -290,6 +290,48 @@ ul li {
 	opacity: 0.5;
 }
 
+#previewVideo {
+	position: fixed;
+	top: 100px;
+	z-index: 1050;
+	display: none;
+}
+#previewVideo div {
+	float: left;
+	padding: 20px;
+}
+#previewVideo .right, #previewVideo .left {
+	width: 100px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 1);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	cursor: pointer;
+	height: 300px;
+}
+#previewVideo .right {
+	background: url('../img/next.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#previewVideo .left {
+	background: url('../img/prev.png') no-repeat center center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#previewVideo .left:hover, #previewVideo .right:hover {
+	opacity: 0.5;
+}
+#previewVideo .theVideo {
+	width: 420px;
+}
+
 #countdown_dashboard {
 	margin: auto;
 	width: 465px;
