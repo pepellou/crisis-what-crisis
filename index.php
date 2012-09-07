@@ -295,12 +295,10 @@
 		<div style="width: 100%; background: black;">
 			<div class="ground">
 				<div class="block">
-					<h1>Sponsors</h1><br/><br/>
 					<img src="img/sponsors/karapatrov.png" /><br/><br/><br/><br/>
 					<img src="img/sponsors/agil-az.png" />
 				</div>
 				<div class="block">
-					<h1>Lorem Ipsum</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac orci a urna dictum luctus vel at enim. Cras dictum quam et lectus suscipit vulputate. Nullam est dui, venenatis vitae aliquam ac, suscipit id erat. Nullam felis erat, porta euismod dignissim vitae, ornare quis elit. Curabitur et interdum purus. Aenean consectetur arcu eget eros viverra nec vehicula justo congue. In tempor, risus a elementum gravida, sapien quam euismod nisl, at lacinia dolor turpis vel augue. Nam erat diam, congue eu elementum non, cursus vitae lectus.
 					</p>
@@ -309,7 +307,6 @@
 					</p>
 				</div>
 				<div class="block">
-					<h1>Et secula seculorum</h1>
 					<p>
 						Praesent ullamcorper euismod lacus, quis gravida eros suscipit ut. Pellentesque malesuada, mauris sed porttitor interdum, urna ipsum dapibus lorem, vitae condimentum mi lacus id justo. Sed a faucibus leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vitae ornare mauris. Cras eget velit sed justo molestie vehicula. Curabitur dignissim neque sit amet nunc blandit viverra. Suspendisse potenti. Cras velit ante, scelerisque vel semper ac, rutrum eget augue. Proin semper euismod sagittis.
 					</p>

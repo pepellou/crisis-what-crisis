@@ -344,6 +344,7 @@ ul li {
 
 #footer {
 	width: 100%;
+	font-size: 12px;
 }
 @-webkit-keyframes mountains {
 	0% {
@@ -363,7 +364,6 @@ ul li {
 }
 #footer .mountains {
 	background: url('../img/skyline_mountains.png') repeat;
-		background-position-x: 0px;
 	height: 245px;
 	width: 100%;
 	-webkit-animation: mountains 250s infinite linear;
@@ -389,11 +389,14 @@ ul li {
 	margin-top: -245px;
 }
 #footer .ground {
-	height: 500px;
+	height: 400px;
 	width: 100%;
 	width: 1200px;
 	margin: auto;
 	color: white;
+}
+#footer .ground img {
+	margin-left: 10px;
 }
 #footer .ground .block {
 	width: 400px;
