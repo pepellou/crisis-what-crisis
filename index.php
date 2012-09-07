@@ -270,7 +270,7 @@
 		$(function() {
 			$('#countdown_dashboard').countDown({
 				targetDate: {
-					'day': 1,
+					'day': 15,
 					'month': 10,
 					'year': 2012,
 					'hour': 7,
