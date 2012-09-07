@@ -16,11 +16,15 @@ h1 {
 h2 {
 	margin-bottom: 0px;
 }
+#footer h1 {
+	margin-left: 0px;
+}
 #sheet {
 	width: 1200px;
-	height: 2700px;
+	height: 2150px;
 	margin: auto;
 	background: #ececec;
+	margin-bottom: 100px;
 }
 #map_cover {
 	height: 365px;
@@ -336,4 +340,66 @@ ul li {
 	margin: auto;
 	width: 465px;
 	height: 300px;
+}
+
+#footer {
+	width: 100%;
+}
+@-webkit-keyframes mountains {
+	0% {
+		background-position-x: 2980px;
+	}
+	100% {
+		background-position-x: 0px;
+	}
+}
+@-webkit-keyframes road {
+	0% {
+		background-position-x: 24px;
+	}
+	100% {
+		background-position-x: 0px;
+	}
+}
+#footer .mountains {
+	background: url('../img/skyline_mountains.png') repeat;
+		background-position-x: 0px;
+	height: 245px;
+	width: 100%;
+	-webkit-animation: mountains 250s infinite linear;
+}
+#footer .things {
+	background: url('../img/skyline_zings.png') repeat;
+	height: 245px;
+	width: 100%;
+	margin-top: -245px;
+	-webkit-animation: mountains 100s infinite linear;
+}
+#footer .road {
+	background: url('../img/skyline_road.png') repeat;
+	height: 245px;
+	width: 100%;
+	margin-top: -245px;
+	-webkit-animation: road 2s infinite linear;
+}
+#footer .moto {
+	background: url('../img/skyline_bike.png') no-repeat;
+	height: 245px;
+	width: 100%;
+	margin-top: -245px;
+}
+#footer .ground {
+	height: 500px;
+	width: 100%;
+	width: 1200px;
+	margin: auto;
+	color: white;
+}
+#footer .ground .block {
+	width: 400px;
+	float: left;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
