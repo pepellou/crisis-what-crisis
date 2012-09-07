@@ -373,14 +373,14 @@ ul li {
 	height: 245px;
 	width: 100%;
 	margin-top: -245px;
-	-webkit-animation: mountains 100s infinite linear;
+	-webkit-animation: mountains 124s infinite linear;
 }
 #footer .road {
 	background: url('../img/skyline_road.png') repeat;
 	height: 245px;
 	width: 100%;
 	margin-top: -245px;
-	-webkit-animation: road 2s infinite linear;
+	-webkit-animation: road 1s infinite linear;
 }
 #footer .moto {
 	background: url('../img/skyline_bike.png') no-repeat;
