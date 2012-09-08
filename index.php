@@ -29,6 +29,7 @@
 	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
 	<script language="javascript" src="js/collaborate.js"></script>
+	<script language="javascript" src="js/translate.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
 		
@@ -69,11 +70,16 @@
 		</div>
 	</div>
 
+	<div id="idiomas">
+		<a href="#" class="selected" name="idioma_en">english</a> |
+		<a href="#" name="idioma_gl">galego</a> |
+		<a href="#" name="idioma_es">espa&ntilde;ol</a>
+	</div>
 	<div id="sheet">
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
 		<div id="map_cover"></div>
-		<img id="collaborate_button" src="img/donate.png" class="donateImg" />
+		<img id="collaborate_button" src="img/donate_ing.png" class="donateImg" />
 		<div id="slider">
 			<img src="img/road.png" />
 		</div>
@@ -86,87 +92,15 @@
 				<li><a href="#" name="how">   How   </a></li>
 		</div>
 		<img class="line what" src="img/lineto-what.png" />
-		<div class="box what">
-			<p>
-				It's a documentary portraying the 2012's Europe.
-			</p>
-			<p>
-				A trip from Galicia, in the Iberian Peninsula's Northwest extreme, 
-				to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.
-				It's a critical eye to the crisis.
-			</p>
-			<p>
-				A practical and brave answer to that questions we should ask:<br/>
-				What is the crisis? <br/>
-				Where does it come from?<br/>
-				Where does it lead us? <br/>
-				And now what?
-			</p>
-		</div>
+		<div class="box what"> </div>
 		<img class="line why" src="img/lineto-why.png" />
-		<div class="box why">
-			<p>
-				The crisis that was a deceleration and now seems an hecatomb
-				had to last two years and it'll make six. We don't see the light
-				at the end of the tunnel, and if we saw it we would think that
-				it's the train coming to finish us.
-			</p>
-			<p>
-				The degree of collective pessimism gripping us is more desperate
-				and immobilizer than financial imponderables. We have fear, and as
-				british sociologist Frank Furedi said long before the crisis arose,
-				ubiquitous and persistent fear generates doom and resignation.
-			</p>
-			<p>
-				We need to visualize alternative answers, other possible futures,
-				because if we don't imagine them, we will never be able to make
-				them happen.
-			</p>
-		</div>
+		<div class="box why"> </div>
 		<img class="line who" src="img/lineto-who.png" />
-		<div class="box who">
-			<p>
-				Graphical and audiovisual creator Xavier Belho leads the motorbike 
-				and the camera.
-			</p>
-			<p>
-				Accompanying him from Galicia, Irmáns Karapatrov and the collective NóComún.
-			</p>
-			<p>
-				And along the way he will be meeting the main characters of this story:
-				PIGS inhabitants that refuse to see themselves reflected in the 
-				hopelessness mirror and face the crisis with courage and geat ideas.
-			</p>
-		</div>
+		<div class="box who"> </div>
 		<img class="line where" src="img/lineto-where.png" />
-		<div class="box where">
-			<p>
-				<strong>Entrepreneur</strong> .- Person who undertakes, with determination,
-				hard actions.
-			</p>
-			<p>
-				There where there is an intelligent answer to the crisis.
-			</p>
-			<p>
-				The route will be set by the main characters along the four countries.
-			</p>
-		</div>
+		<div class="box where"> </div>
 		<img class="line how" src="img/lineto-how.png" />
-		<div class="box how">
-			<p>
-				Videobooth style microinterviews with each one of the main characters, 
-				who will present their projects where they are developing them. They will
-				be recorded with a Canon 7D and a mobile phone.
-			</p>
-			<p>
-				They will be uploaded to the Web and Social networks, thus building an
-				interactive map of the trip. Each stage will be posted on the Web almost
-				realtime.
-			</p>
-			<p>
-				At the end, a documentary will be built from all the recorded material.
-			</p>
-		</div>
+		<div class="box how"> </div>
 	</div>
 
 	<div id="black-background" class="modal"></div>
