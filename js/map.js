@@ -17,6 +17,7 @@ $(function() {
 var photos = [];
 
 var map_points;
+var map_controls = [];
 var pt_markers = [];
 var centerMap = new google.maps.LatLng(40.5472, 6);
 
@@ -90,6 +91,10 @@ function AddControl(title, text, map, index, callback) {
 
 	controlDiv.index = index;
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlDiv);
+
+	map_controls.push(
+		{ name: text, controlUI: controlUI, controlText: controlText }
+	);
 }
 
 function clearMap(

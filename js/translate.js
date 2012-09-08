@@ -71,6 +71,22 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		control_VIDEOS: { 
+			title: 'Show videos',
+			text: 'VIDEOS'
+		},
+		control_PHOTOS: { 
+			title: 'Show photos',
+			text: 'PHOTOS'
+		},
+		control_PEOPLE: { 
+			title: 'Show people',
+			text: 'PEOPLE'
+		},
+		control_TRIP: { 
+			title: 'Show trip stops',
+			text: 'TRIP'
+		},
 	},
 	"gl": { 
 		countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
@@ -143,6 +159,22 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		control_VIDEOS: { 
+			title: 'Amosar videos',
+			text: 'VIDEOS'
+		},
+		control_PHOTOS: { 
+			title: 'Amosar fotos',
+			text: 'FOTOS'
+		},
+		control_PEOPLE: { 
+			title: 'Amosar xente',
+			text: 'XENTE'
+		},
+		control_TRIP: { 
+			title: 'Amosar paradas da viaxe',
+			text: 'VIAXE'
+		},
 	},
 	"es": { 
 		countDownTitle: 'Cuenta Atr&aacute;s para el Viaje',
@@ -215,6 +247,22 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		control_VIDEOS: { 
+			title: 'Mostrar videos',
+			text: 'VIDEOS'
+		},
+		control_PHOTOS: { 
+			title: 'Mostrar fotos',
+			text: 'FOTOS'
+		},
+		control_PEOPLE: { 
+			title: 'Mostrar gente',
+			text: 'GENTE'
+		},
+		control_TRIP: { 
+			title: 'Mostrar paraads del viaje',
+			text: 'VIAJE'
+		},
 	}
 };
 
@@ -231,6 +279,11 @@ function translate(
 	$('.box.who').html(translation.who);
 	$('.box.where').html(translation.where);
 	$('.box.how').html(translation.how);
+	for (var c in map_controls) {
+		var theControl = map_controls[c];
+		theControl.controlUI.title = translation['control_' + theControl.name].title;
+		theControl.controlText.innerHTML = translation['control_' + theControl.name].text;
+	};
 }
 
 $(function() {
