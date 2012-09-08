@@ -32,42 +32,78 @@
 	<script language="javascript" src="js/translate.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
+	<script language="Javascript">
+		$(function() {
+			var money = new Array(
+				[2500, '€ Estimated', '#2c4390'],
+				[380,  '€ Collected so far', '#666']
+			);
+			$('#money').jqBarGraph({
+				data: money,
+				colors: ['#2c4390'] ,
+				showValuesColor: '#2c4390',
+				width: 300,
+				height: 280
+			});
+		});
+	</script>
+	<style>
+		#money {
+			margin-top: 25px;
+		}
+		#graphValue0money, #graphValue1money { 
+			color: white;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.graphLabelmoney, .legendLabelmoney {
+			color: white;
+			font-weight: bold;
+		}
+		.graphLabelmoney {
+			margin-top: 10px;
+		}
+	</style>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
 
 </head>
 <body>
-	<div id="countdown_dashboard">
-		<h1 style="color: white">Count-Down for the Trip</h1>
-		<div class="dash weeks_dash">
-			<span class="dash_title">weeks</span>
-			<div class="digit">1</div>
-			<div class="digit">6</div>
-		</div>
+	<div id="top_block">
+		<div id="countdown_dashboard">
+			<h1 style="color: white">Count-Down for the Trip</h1>
+			<div class="dash weeks_dash">
+				<span class="dash_title">weeks</span>
+				<div class="digit">1</div>
+				<div class="digit">6</div>
+			</div>
 
-		<div class="dash days_dash">
-			<span class="dash_title">days</span>
-			<div class="digit">0</div>
-			<div class="digit">4</div>
-		</div>
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">4</div>
+			</div>
 
-		<div class="dash hours_dash">
-			<span class="dash_title">hours</span>
-			<div class="digit">1</div>
-			<div class="digit">1</div>
-		</div>
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">1</div>
+				<div class="digit">1</div>
+			</div>
 
-		<div class="dash minutes_dash">
-			<span class="dash_title">minutes</span>
-			<div class="digit">3</div>
-			<div class="digit">9</div>
-		</div>
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">3</div>
+				<div class="digit">9</div>
+			</div>
 
-		<div class="dash seconds_dash">
-			<span class="dash_title">seconds</span>
-			<div class="digit">1</div>
-			<div class="digit">8</div>
+			<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">1</div>
+				<div class="digit">8</div>
+			</div>
 		</div>
+		<div id="money"> </div>
 	</div>
 
 	<div id="idiomas">

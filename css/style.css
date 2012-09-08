@@ -335,10 +335,20 @@ ul li {
 	width: 420px;
 }
 
-#countdown_dashboard {
+#top_block {
+	width: 1200px;
 	margin: auto;
+	height: 290px;
+}
+#countdown_dashboard {
 	width: 465px;
 	height: 270px;
+	float: left;
+	margin-left: 0px;
+}
+#money {
+	float: left;
+	margin-left: 100px;
 }
 
 #footer {
