@@ -155,41 +155,55 @@
 			<ul>
 				<li>
 					<div>
-						<img src="img/icon-fuel">
-						<span>Combustible. Cada 20 &euro; recorro 180 km.</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/icon-food">
-						<span>Comida. Men&uacute; do d&iacute;a 10 &euro; + cea 8 &euro;</span>
+						<img src="img/icon-talk">
+						<span>Se contas a t&uacute;a historia, tes o teu recunchi&ntilde;o na web, con
+						datos de contacto (se queres) para difundir a t&uacute;a propos-
+						ta como “people”
+						</span>
 					</div>
 				</li>
 				<li>
 					<div>
 						<img src="img/icon-sleep">
-						<span>Dormida. Un lugar onde pasar a noite </span>
+						<span>Se ofreces un lugar onde pasar a noite e/ou axudas coa
+						comida (ben en especie, ben con 10 euros), aparecer&aacute;s
+						nos cr&eacute;ditos como “hosts”
+						</span>
 					</div>
 				</li>
 				<li>
 					<div>
-						<img src="img/icon-camera">
-						<span>Contando a t&uacute;a historia &aacute; c&aacute;mara</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/icon-person">
-						<span>Co&ntilde;ezo a algu&eacute;n que pode colaborar dalgunha das formas anteriores</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/icon-talk">
-						<span>Difundindo o proxecto</span>
+						<img src="img/icon-fuel">
+						<span>Se ofreces combustible ou 20 euros, aparecer&aacute;s como
+						“contributors”
+						</span>
 					</div>
 				</li>
 			</ul>
+			<div id="infoPayment">
+				<img src="img/icon-battery">
+				<h2>Aportando</h2>
+				<div>
+					<ul>
+						<li>
+							<p>30 euros, aparecerás como “contributors” e recibirás unha copia
+							do documental, unha vez estea montado</p>
+						</li>
+						<li>
+							<p>250 euros, aparecerás como “sponsor”, levarei a túa marca visible
+							na moto e recibirás dúas copias do documental</p>
+						</li>
+						<li>
+							<p>500 euros, aparecerás como “sponsor”, levarei a túa marca visible
+							na moto, recibirás 10 copias do documental e farei unha presen-
+							tación conxunta contigo.</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h6>Se queres participar doutro xeito no proxecto, ponte en contacto con n&oacute;s</h6>
+				</div>
+			</div>
 			<div id="formContact">
 				<h2>Contacta con n&oacute;s</h2>
 				<form name="contact" method="post">

@@ -19,6 +19,9 @@ h2 {
 #footer h1 {
 	margin-left: 0px;
 }
+h6 {
+	font-size: 12px;
+}
 #sheet {
 	width: 1200px;
 	height: 2150px;
@@ -138,14 +141,21 @@ ol li {
 	background-color: white; 
 	display: none;
 	position: fixed;
-	width: 600px;
+	width: 620px;
 	z-index: 1049;
 	top: 70px;
+	height: 600px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 #contact .paypal {
 	text-align: center;
 	margin: 0px 30px 30px 30px;
+}
+
+#contact ul li {
+	float: left;
 }
 
 #contact p {
@@ -156,12 +166,39 @@ ol li {
 
 #contact ul img {
 	width: 40px;
+	float: left;
+	margin-bottom: 21px;
 }
 
 #contact ul span {
-	position: relative;
-	top: -13px;
-	margin: 5px;
+	float: left;
+	width: 500px;
+	margin-left: 10px;
+}
+
+#infoPayment img {
+	width: 40px;
+	margin-left: 40px;
+	float: left;
+}
+
+#infoPayment h2 {
+	margin: 7px 424px 0px 7px;
+	float: left;
+}
+
+#infoPayment div {
+	margin: 0px 42px 0px 22px;
+}
+
+#infoPayment ul {
+	float: left;
+	list-style-type: square;
+}
+
+#infoPayment p {
+	text-align: justify;
+	margin: 0px 0px 10px 0px;
 }
 
 form[name="contact"] {
@@ -211,7 +248,7 @@ ul li {
 #formContact {
 	position: relative;
 	margin-top: 30px;
-	height: 320px;
+	height: 314px;
 }
 
 .formLine {
