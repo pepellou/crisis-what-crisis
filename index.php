@@ -143,91 +143,11 @@
 
 	<div id="contact" class="modal">
 		<div class="center content">
-			<div>
-				<h1>Como podes colaborar?</h1>
-				<p>Este proxecto vaise financiar de varios xeitos, por 
-				un lado o esforzo persoal
-				por outro queremos contar coa colaboraci&oacute;n de 
-				tod@s aqueles que queirades aportar algo a esta 
-				visi&oacute;n diferente dende os PIGS.</p>
-				<p>P&oacute;dese colaborar destos xeitos:</p>
-			</div>
-			<ul>
-				<li>
-					<div>
-						<img src="img/icon-talk">
-						<span>Se contas a t&uacute;a historia, tes o teu recunchi&ntilde;o na web, con
-						datos de contacto (se queres) para difundir a t&uacute;a propos-
-						ta como “people”
-						</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/icon-sleep">
-						<span>Se ofreces un lugar onde pasar a noite e/ou axudas coa
-						comida (ben en especie, ben con 10 euros), aparecer&aacute;s
-						nos cr&eacute;ditos como “hosts”
-						</span>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/icon-fuel">
-						<span>Se ofreces combustible ou 20 euros, aparecer&aacute;s como
-						“contributors”
-						</span>
-					</div>
-				</li>
-			</ul>
-			<div id="infoPayment">
-				<img src="img/icon-battery">
-				<h2>Aportando</h2>
-				<div>
-					<ul>
-						<li>
-							<p>30 euros, aparecerás como “contributors” e recibirás unha copia
-							do documental, unha vez estea montado</p>
-						</li>
-						<li>
-							<p>250 euros, aparecerás como “sponsor”, levarei a túa marca visible
-							na moto e recibirás dúas copias do documental</p>
-						</li>
-						<li>
-							<p>500 euros, aparecerás como “sponsor”, levarei a túa marca visible
-							na moto, recibirás 10 copias do documental e farei unha presen-
-							tación conxunta contigo.</p>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h6>Se queres participar doutro xeito no proxecto, ponte en contacto con n&oacute;s</h6>
-				</div>
-			</div>
-			<div id="formContact">
-				<h2>Contacta con n&oacute;s</h2>
-				<form name="contact" method="post">
-					<div class="formLine"><span>Nombre:</span><input name="contant-name"></input></div>
-					<div class="formLine"><span>Telf:</span><input name="contant-phone"></input></div>
-					<div class="formLine"><span>Email:</span><input name="contant-email"></input></div>
-					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>
-					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contant-button"></input></div>
-				</form>
-			</div>
-			<div>
-				<h2>Ou fai unha donaci&oacute;n:</h2>
-				<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-					<input type="hidden" name="cmd" value="_donations">
-					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">
-					<input type="hidden" name="currency_code" value="EUR">
-					<input type="hidden" name="lc" value="ES">
-					<input type="hidden" name="item_name" value="Crisis What Crisis">
-					<input type="hidden" name="no_note" value="0">
-					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-				</form>
-			</div>
+			<div id="infoContact"></div>
+			<div id="contactList"></div>
+			<div id="infoPayment"></div>
+			<div id="formContact"></div>
+			<div id="formDonation"></div>
 		</div>
 	</div>
 
