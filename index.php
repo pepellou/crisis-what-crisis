@@ -117,7 +117,7 @@
 		<div id="map_cover"></div>
 		<img id="collaborate_button" src="img/donate_ing.png" class="donateImg" />
 		<div id="slider">
-			<img src="img/road.png" />
+			<img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" />
 		</div>
 		<div id="menu">
 			<ul>
