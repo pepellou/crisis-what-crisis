@@ -88,19 +88,19 @@ var translations = {
 			text: 'TRIP'
 		},
 		infoContact: '<h1>How can you help?</h1>\
-			<p>This project will be financed in several ways, for\
-			aside personal effort\
-			on the other we have the cooperation of\
-			those you want to add something to this\
+			<p>This project will be financed in several ways: \
+			on one hand we\'ll have the personal effort,\
+			on the other hand we expect to have the cooperation of\
+			those of you who want to contribute to this\
 			different view from the PIGS.</p>\
 			<p>It can work in these ways:</p>',
 		contactList: '<ul>\
 						<li>\
 							<div>\
 								<img src="img/icon-talk">\
-								<span>If you tell your story, have your little corner of the web, \
-								with contact information (if you want) to spread your proposal \
-								as "people"\
+								<span>If you tell your story, you\'ll have your little corner in the web \
+								as "people", with contact information (if you want)\
+								to spread your proposal \
 								</span>\
 							</div>\
 						</li>\
@@ -108,7 +108,7 @@ var translations = {
 							<div>\
 								<img src="img/icon-sleep">\
 								<span>If you offer a place to spend the night and/or food aid \
-								(either in kind or with 10 euros), you will appear in the credits \
+								(either in food or with 10 euros), you\'ll be included in the credits \
 								as "hosts"\
 								</span>\
 							</div>\
@@ -116,7 +116,7 @@ var translations = {
 						<li>\
 							<div>\
 								<img src="img/icon-fuel">\
-								<span>If you offer fuel or 20 euros, you will appear as "contributors"\
+								<span>If you offer fuel or 20 euros, you\'ll be included as "contributors"\
 								</span>\
 							</div>\
 						</li>\
@@ -126,15 +126,15 @@ var translations = {
 				<div>\
 					<ul>\
 						<li>\
-							<p>30 euros, you will appear as "contributors" to receive a copy of the documentary, \
+							<p>30 euros, you\'ll be included as "contributors" to receive a copy of the documentary, \
 							once it is mounted</p>\
 						</li>\
 						<li>\
-							<p>250 euros, you will appear as a "sponsor", I take your marks visible on the bike \
+							<p>250 euros, you\'ll be included as a "sponsor", I take your marks visible on the bike \
 							and you will get two copies of the documentary</p>\
 						</li>\
 						<li>\
-							<p>500 euros, you will appear as "sponsor", I take your marks visible on the bike, \
+							<p>500 euros, you\'ll be included as "sponsor", I take your marks visible on the bike, \
 							you will receive 10 copies of the documentary and you will make a joint presentation with me.</p>\
 						</li>\
 					</ul>\
