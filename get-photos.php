@@ -44,7 +44,7 @@
 	) {
 		$selected_photos = array();
 		$xml = file_get_contents(
-			"http://api.flickr.com/services/feeds/photoset.gne?set=72157631434032090&nsid=49750261@N05&lang=en-us"
+			"http://api.flickr.com/services/feeds/photoset.gne?set=72157631496285776&nsid=49750261@N05&lang=en-us"
 		);
 		$xml = preg_replace('/(<|<\/)([a-z0-9]+):/i','$1$2_',$xml);
 		$photos = simplexml_load_string($xml);
