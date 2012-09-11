@@ -165,9 +165,15 @@ ol li {
 	margin-left: 10px;
 }
 
-#infoPayment img {
+#infoPayment .icon {
 	width: 40px;
 	margin-left: 40px;
+	float: left;
+}
+
+#infoPayment #supportTable {
+	width: 600px;
+	margin-bottom: 20px;
 	float: left;
 }
 
