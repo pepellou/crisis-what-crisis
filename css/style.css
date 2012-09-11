@@ -186,16 +186,6 @@ ol li {
 	margin: 0px 42px 0px 22px;
 }
 
-#infoPayment ul {
-	float: left;
-	list-style-type: square;
-}
-
-#infoPayment p {
-	text-align: justify;
-	margin: 0px 0px 10px 0px;
-}
-
 form[name="contact"] {
 	background: red;
 	width: 440px;

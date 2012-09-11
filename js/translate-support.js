@@ -1,11 +1,12 @@
 var translations = {
 	"en": { 
 		infoContact: '<h1>How can you help?</h1>\
-			<p>This project will be financed in several ways: \
-			on one hand we\'ll have the personal effort,\
-			on the other hand we expect to have the cooperation of\
-			those of you who want to contribute to this\
-			different view from the PIGS.</p>\
+			<p>The project can’t be made without your help.\
+			With this campaign I hope to cover the basic costs\
+			needed for such a project, which are: fuel, videographic\
+			materials, production of the final documentary and share\
+			with collaborators and general audience.\
+			</p>\
 			<p>It can work in these ways:</p>',
 		contactList: '<ul>\
 						<li>\
@@ -36,22 +37,6 @@ var translations = {
 					</ul>',
 		infoPayment: '<img class="icon" src="img/icon-battery">\
 				<h2>Providing</h2>\
-				<div>\
-					<ul>\
-						<li>\
-							<p>30 euros, you\'ll be included as "contributors" to receive a copy of the documentary, \
-							once it is mounted</p>\
-						</li>\
-						<li>\
-							<p>250 euros, you\'ll be included as a "sponsor", I take your marks visible on the bike \
-							and you will get two copies of the documentary</p>\
-						</li>\
-						<li>\
-							<p>500 euros, you\'ll be included as "sponsor", I take your marks visible on the bike, \
-							you will receive 10 copies of the documentary and you will make a joint presentation with me.</p>\
-						</li>\
-					</ul>\
-				</div>\
 				<img id="supportTable" src="img/support-table-en.png" />\
 				<div>\
 					<h6>If you want to otherwise participate in the project, please contact us</h6>\
@@ -79,11 +64,13 @@ var translations = {
 	},
 	"gl": { 
 		infoContact: '<h1>Como podes colaborar?</h1>\
-			<p>Este proxecto vaise financiar de varios xeitos, por \
-			un lado o esforzo persoal\
-			por outro queremos contar coa colaboraci&oacute;n de \
-			tod@s aqueles que queirades aportar algo a esta \
-			visi&oacute;n diferente dende os PIGS.</p>\
+			<p>O proxecto non se pode realizar sin a vosa axuda.\
+			Mediante esta campa&ntilde;a espero poder cubrir costes\
+			b&aacute;sicos para a realizaci&oacute;n dun proxecto destas caracter&iacute;sticas,\
+			como &eacute; o combustible, o material fotogr&aacute;fico e\
+			a producci&oacute;n do documental final a publicar, difundir e\
+			compartir cos colaboradores.\
+			</p>\
 			<p>P&oacute;dese colaborar destos xeitos:</p>',
 		contactList: '<ul>\
 						<li>\
@@ -115,22 +102,6 @@ var translations = {
 					</ul>',
 		infoPayment: '<img class="icon" src="img/icon-battery">\
 			<h2>Aportando</h2>\
-			<div>\
-				<ul>\
-					<li>\
-						<p>30 euros, aparecer&aacute;s como “contributors” e recibir&aacute;s unha copia\
-						do documental, unha vez estea montado</p>\
-					</li>\
-					<li>\
-						<p>250 euros, aparecer&aacute;s como “sponsor”, levarei a t&uacute;a marca visible\
-						na moto e recibir&aacute;s d&uacute;as copias do documental</p>\
-					</li>\
-					<li>\
-						<p>500 euros, aparecer&aacute;s como “sponsor”, levarei a t&uacute;a marca visible\
-						na moto, recibir&aacute;s 10 copias do documental e farei unha presentaci&oacute;n conxunta contigo.</p>\
-					</li>\
-				</ul>\
-			</div>\
 			<img id="supportTable" src="img/support-table-gl.png" />\
 			<div>\
 				<h6>Se queres participar doutro xeito no proxecto, ponte en contacto con n&oacute;s</h6>\
@@ -158,11 +129,13 @@ var translations = {
 	},
 	"es": { 
 		infoContact: '<h1>¿Cómo puedes colaborar?</h1>\
-			<p>Este proyecto se financiar&aacute; de varias maneras, por \
-			un lado el esfuerzo personal\
-			por otro queremos contar con la colaboraci&oacute;n de \
-			tod@s aquell@s que queráis aportar algo a esta \
-			visi&oacute;n diferente desde los PIGS.</p>\
+			<p>El proyecto no se puede realizar sin vuestra ayuda.\
+			Mediante esta campa&ntilde;a espero poder cubrir costes\
+			b&aacute;sicos para la realizaci&oacute;n de un proyecto de estas caracter&iacute;sticas,\
+			como es el combustible, el material fotogr&aacute;fico y\
+			la producci&oacute;n del documental final a publicar, difundir y\
+			compartir con los colaboradores.\
+			</p>\
 			<p>Se puede colaborar de estas maneras:</p>',
 		contactList: '<ul>\
 						<li>\
@@ -194,22 +167,6 @@ var translations = {
 					</ul>',
 		infoPayment: '<img class="icon" src="img/icon-battery">\
 				<h2>Aportando</h2>\
-				<div>\
-					<ul>\
-						<li>\
-							<p>30 euros, aparecer&aacute;s como “contributors” y recibir&aacute;s una copia\
-							del documental, una vez est&eacute; montado</p>\
-						</li>\
-						<li>\
-							<p>250 euros, aparecer&aacute;s como “sponsor”, llevar&eacute; tu marca visible\
-							en la moto y recibir&aacute;s dos copias del documental</p>\
-						</li>\
-						<li>\
-							<p>500 euros, aparecer&aacute;s como “sponsor”, llevar&eacute; tu marca visible\
-							en la moto, recibir&aacute;s 10 copias del documental y har&eacute; una presentaci&oacute;n conjunta contigo.</p>\
-						</li>\
-					</ul>\
-				</div>\
 				<img id="supportTable" src="img/support-table-es.png" />\
 				<div>\
 					<h6>Si quieres participar de otra forma en el proyecto, ponte en contacto con nosotros</h6>\

@@ -20,10 +20,10 @@
 </head>
 <body>
 	<input id="language" type="hidden" value="<?php echo $lan; ?>" />
-	<div id="sheet" style="height:1400px">
+	<div id="sheet" style="height:1460px">
+		<img src="img/header.png" />
 		<div id="contact" class="modal">
 			<div class="center content">
-				</br></br>
 				<div id="infoContact"></div>
 				<div id="contactList"></div>
 				<div id="infoPayment"></div>
