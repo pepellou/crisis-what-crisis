@@ -251,8 +251,13 @@ function translate(
 }
 
 $(function() {
-	$('a[name="idioma_en"]').click(function () { translate("en"); return false; });
-	$('a[name="idioma_gl"]').click(function () { translate("gl"); return false; });
-	$('a[name="idioma_es"]').click(function () { translate("es"); return false; });
-	translate("en");
+	if ($("#language").val() == "en") {
+		translate("en");
+	} else if ($("#language").val() == "gl") {
+		translate("gl");
+	} else if ($("#language").val() == "es") {
+		translate("es");
+	} else {
+		translate("en");
+	}
 });
