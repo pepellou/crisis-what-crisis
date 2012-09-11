@@ -36,13 +36,13 @@
 		$(function() {
 			var money = new Array(
 				[2500, '€ Estimated', '#2c4390'],
-				[380,  '€ Collected so far', '#666']
+				[100,  '€ Collected so far', '#666']
 			);
 			$('#money').jqBarGraph({
 				data: money,
 				colors: ['#2c4390'] ,
 				showValuesColor: '#2c4390',
-				width: 300,
+				width: 320,
 				height: 280
 			});
 		});
@@ -190,22 +190,6 @@
 				<div class="block">
 					<img src="img/sponsors/karapatrov.png" /><br/><br/><br/><br/>
 					<img src="img/sponsors/agil-az.png" />
-				</div>
-				<div class="block">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac orci a urna dictum luctus vel at enim. Cras dictum quam et lectus suscipit vulputate. Nullam est dui, venenatis vitae aliquam ac, suscipit id erat. Nullam felis erat, porta euismod dignissim vitae, ornare quis elit. Curabitur et interdum purus. Aenean consectetur arcu eget eros viverra nec vehicula justo congue. In tempor, risus a elementum gravida, sapien quam euismod nisl, at lacinia dolor turpis vel augue. Nam erat diam, congue eu elementum non, cursus vitae lectus.
-					</p>
-					<p>
-						Fusce gravida dui vel erat lobortis id dictum velit blandit. Cras id lacus lorem. Nullam nec mauris urna, et pellentesque orci. Donec eleifend feugiat quam, sit amet varius metus posuere sed. Nullam facilisis, odio non hendrerit mollis, justo eros lacinia arcu, vel ornare augue lacus ac ligula. Integer aliquam nisl vitae mauris ornare interdum. Sed vehicula purus et felis elementum nec lacinia tortor ultrices.
-					</p>
-				</div>
-				<div class="block">
-					<p>
-						Praesent ullamcorper euismod lacus, quis gravida eros suscipit ut. Pellentesque malesuada, mauris sed porttitor interdum, urna ipsum dapibus lorem, vitae condimentum mi lacus id justo. Sed a faucibus leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vitae ornare mauris. Cras eget velit sed justo molestie vehicula. Curabitur dignissim neque sit amet nunc blandit viverra. Suspendisse potenti. Cras velit ante, scelerisque vel semper ac, rutrum eget augue. Proin semper euismod sagittis.
-					</p>
-					<p>
-						Mauris adipiscing mollis tortor id ultrices. Aenean interdum auctor felis, non aliquam nibh tincidunt ut. Aenean mauris dui, pulvinar eu eleifend eleifend, vehicula ac dui. Donec posuere, nisl sit amet elementum mattis, ante diam euismod purus, iaculis fermentum orci turpis eget lorem. Maecenas pharetra aliquam diam, a imperdiet purus laoreet eu. Mauris placerat augue ac lorem condimentum eget tristique mauris iaculis. Ut congue blandit est ac bibendum.
-					</p>
 				</div>
 			</div>
 		</div>
