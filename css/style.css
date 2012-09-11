@@ -138,18 +138,6 @@ ol li {
 	display: none;
 }
 
-#contact {
-	background-color: white; 
-	display: none;
-	position: fixed;
-	width: 620px;
-	z-index: 1049;
-	top: 70px;
-	height: 600px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
 #contact .paypal {
 	text-align: center;
 	margin: 0px 30px 30px 30px;

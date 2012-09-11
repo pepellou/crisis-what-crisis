@@ -28,7 +28,6 @@
 	<script language="javascript" src="js/menu.js"></script>
 	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
-	<script language="javascript" src="js/collaborate.js"></script>
 	<script language="javascript" src="js/translate.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
@@ -115,7 +114,7 @@
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
 		<div id="map_cover"></div>
-		<img id="collaborate_button" src="img/donate_ing.png" class="donateImg" />
+		<a href="support.html" target="blank"><img id="collaborate_button" src="img/donate_ing.png" class="donateImg" /></a>
 		<div id="slider">
 			<img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" />
 		</div>
@@ -140,16 +139,6 @@
 	</div>
 
 	<div id="black-background" class="modal"></div>
-
-	<div id="contact" class="modal">
-		<div class="center content">
-			<div id="infoContact"></div>
-			<div id="contactList"></div>
-			<div id="infoPayment"></div>
-			<div id="formContact"></div>
-			<div id="formDonation"></div>
-		</div>
-	</div>
 
 	<div id="videos">
 	<?php 	foreach (getVideos("pepellou", "music") as $video) { ?>
