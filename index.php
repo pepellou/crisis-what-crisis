@@ -43,7 +43,7 @@
 				data: money,
 				colors: ['#2c4390'] ,
 				showValuesColor: '#2c4390',
-				width: 300,
+				width: 320,
 				height: 280
 			});
 		});
