@@ -132,7 +132,7 @@ var translations = {
 			<p>El proyecto no se puede realizar sin vuestra ayuda.\
 			Mediante esta campa&ntilde;a espero poder cubrir costes\
 			b&aacute;sicos para la realizaci&oacute;n de un proyecto de estas caracter&iacute;sticas,\
-			como es el combustible, el material fotogr&aacute;fico y\
+			como es el combustible, el material videogr&aacute;fico y\
 			la producci&oacute;n del documental final a publicar, difundir y\
 			compartir con los colaboradores.\
 			</p>\
