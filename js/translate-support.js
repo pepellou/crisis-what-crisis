@@ -49,8 +49,7 @@ var translations = {
 					<div class="formLine"><span>Comment:</span><textarea name="contant-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="I want to collaborate" name="contant-button"></input></div>\
 				</form>',
-		formDonation: '<h2>Or make a donation:</h2>\
-				<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
+		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
 					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
 					<input type="hidden" name="currency_code" value="EUR">\
@@ -114,8 +113,7 @@ var translations = {
 				<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>\
 				<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contant-button"></input></div>\
 			</form>',
-		formDonation: '<h2>Ou fai unha donaci&oacute;n:</h2>\
-			<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
+		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 				<input type="hidden" name="cmd" value="_donations">\
 				<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
 				<input type="hidden" name="currency_code" value="EUR">\
@@ -179,8 +177,7 @@ var translations = {
 					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quiero colaborar" name="contant-button"></input></div>\
 				</form>',
-		formDonation: '<h2>O haz una donaci&oacute;n:</h2>\
-				<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
+		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
 					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
 					<input type="hidden" name="currency_code" value="EUR">\

@@ -150,7 +150,7 @@ ol li {
 #contact p {
 	margin: 0px 30px 16px 30px; 
 	font-size: 16px;
-	text-align: center;
+	text-align: left;
 }
 
 #contact ul img {
@@ -165,21 +165,25 @@ ol li {
 	margin-left: 10px;
 }
 
+#infoPayment {
+	margin-left: 77px;
+	margin-top: 30px;
+}
+
 #infoPayment .icon {
 	width: 40px;
 	margin-left: 40px;
+	margin-right: 7px;
 	float: left;
 }
 
 #infoPayment #supportTable {
 	width: 600px;
 	margin-bottom: 20px;
-	float: left;
 }
 
 #infoPayment h2 {
 	margin: 7px 424px 0px 7px;
-	float: left;
 }
 
 #infoPayment div {
@@ -230,9 +234,15 @@ ul li {
 	text-decoration: none;
 }
 
+#formDonation {
+	margin-left: 509px;
+	margin-top: 48px;
+}
+
 #formContact {
 	position: relative;
 	margin-top: 30px;
+	margin-right: 30px;
 	height: 314px;
 }
 
@@ -370,7 +380,6 @@ ul li {
 }
 #money {
 	float: left;
-	margin-left: 100px;
 }
 
 #footer {

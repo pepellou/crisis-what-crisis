@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=1280, maximum-scale=1.0" />	
 	<link href="countdown/style/dark.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="css/money.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
 	<link rel="icon" type="image/png" href="favicon.png">
 	<title>Crisis - What Crisis</title>
@@ -28,42 +29,11 @@
 	<script language="javascript" src="js/menu.js"></script>
 	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
+	<script language="Javascript" src="js/money.js"></script>
 	<script language="javascript" src="js/translate.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
 	<script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
-	<script language="Javascript">
-		$(function() {
-			var money = new Array(
-				[2500, '€ Estimated', '#2c4390'],
-				[100,  '€ Collected so far', '#666']
-			);
-			$('#money').jqBarGraph({
-				data: money,
-				colors: ['#2c4390'] ,
-				showValuesColor: '#2c4390',
-				width: 320,
-				height: 280
-			});
-		});
-	</script>
-	<style>
-		#money {
-			margin-top: 25px;
-		}
-		#graphValue0money, #graphValue1money { 
-			color: white;
-			font-weight: bold;
-			margin-bottom: 5px;
-		}
-		.graphLabelmoney, .legendLabelmoney {
-			color: white;
-			font-weight: bold;
-		}
-		.graphLabelmoney {
-			margin-top: 10px;
-		}
-	</style>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
 
