@@ -1,0 +1,24 @@
+#money {
+	margin-top: 25px;
+}
+#graphValue0money, #graphValue1money { 
+	color: white;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.graphLabelmoney, .legendLabelmoney {
+	color: white;
+	font-weight: bold;
+}
+.graphLabelmoney {
+	margin-top: 10px;
+}
+#contact #graphValue0money, #contact #graphValue1money { 
+	color: black;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#contact .graphLabelmoney, #contact .legendLabelmoney {
+	color: black;
+	font-weight: bold;
+}
