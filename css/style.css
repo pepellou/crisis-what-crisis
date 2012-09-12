@@ -468,3 +468,36 @@ ul li {
 	color: #050505;
 	font-weight: bold;
 }
+
+#socialButtons {
+	height: 64px;
+	overflow: hidden;
+	float: right;
+}
+#socialButtons div, #socialButtons span {
+	height: 64px;
+	width: 75px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url('../img/social.png');
+	float: left;
+}
+#socialButtons span {
+	background-position-y: -64px;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+#socialButtons span:hover {
+	opacity: 0;
+}
+#socialButtons .google {
+	background-position-x: 0px;
+}
+#socialButtons .twitter {
+	background-position-x: -75px;
+}
+#socialButtons .facebook {
+	background-position-x: -150px;
+}

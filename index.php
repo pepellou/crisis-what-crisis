@@ -172,6 +172,23 @@
 					</object>
 					<div style="width:420px;text-align:left;">
 						<a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div></div>
+				<div id="socialButtons">
+					<div class="google">
+						<a href="https://plus.google.com/u/0/b/106162106682797002853/106162106682797002853/posts" target="blank">
+							<span class="google"></span>
+						</a>
+					</div>
+					<div class="twitter">
+						<a href="http://www.twitter.com/crisisWcrisis" target="blank">
+							<span class="twitter"></span>
+						</a>
+					</div>
+					<div class="facebook">
+						<a href="http://www.facebook.com/crisiswcrisis" target="blank">
+							<span class="facebook"></span>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
