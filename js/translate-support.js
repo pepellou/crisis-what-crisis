@@ -57,7 +57,7 @@ var translations = {
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
 					<input type="hidden" name="no_note" value="0">\
 					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">\
-					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=I%20support%20Crisis%20What%20Crisis%20@crisisWhatcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
+					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=I%20support%20Crisis%20What%20Crisis%20@crisisWcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. The fast and secure way to pay online.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
@@ -123,7 +123,7 @@ var translations = {
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
 					<input type="hidden" name="no_note" value="0">\
 					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">\
-					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=Eu%20apoio%20Crisis%20What%20Crisis%20@crisisWhatcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
+					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=Eu%20apoio%20Crisis%20What%20Crisis%20@crisisWcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. A forma rápida e segura de pagar en Internet.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
@@ -189,7 +189,7 @@ var translations = {
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
 					<input type="hidden" name="no_note" value="0">\
 					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">\
-					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=Yo%20apoyo%20Crisis%20What%20Crisis%20@crisisWhatcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
+					<input type="hidden" name="return" value="https://twitter.com/intent/tweet?source=webclient&text=Yo%20apoyo%20Crisis%20What%20Crisis%20@crisisWcrisis%20%23crisisWhatcrisis%20http://www.crisis-whatcrisis.com">\
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
