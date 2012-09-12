@@ -23,6 +23,11 @@
 </head>
 <body>
 	<input id="language" type="hidden" value="<?php echo $lan; ?>" />
+	<div id="idiomas">
+		<a href="#" class="selected" name="idioma_en">english</a> |
+		<a href="#" name="idioma_gl">galego</a> |
+		<a href="#" name="idioma_es">espa&ntilde;ol</a>
+	</div>
 	<div id="sheet" style="height:1200px">
 		<img src="img/header.png" />
 		<div id="contact" class="modal">
