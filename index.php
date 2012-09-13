@@ -166,17 +166,17 @@
 					<p class="title">SPONSORS</p>
 						<section style="margin-left:40px">
 							<div class="crechas">
-								<a href="http://www.casadascrechas.com" target="blank">
+								<a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
 									<span class="crechas"></span>
 								</a>
 							</div>
 							<div class="canefano">
-								<a href="#" target="blank">
+								<a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
 									<span class="canefano"></span>
 								</a>
 							</div>
 							<div class="tattoo">
-								<a href="#" target="blank">
+								<a href="http://www.behance.net/xavierbelho" target="blank">
 									<span class="tattoo"></span>
 								</a>
 							</div>
