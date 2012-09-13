@@ -43,11 +43,11 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contact us</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Name:</span><input name="contant-name"></input></div>\
-					<div class="formLine"><span>Phone:</span><input name="contant-phone"></input></div>\
-					<div class="formLine"><span>Mail:</span><input name="contant-email"></input></div>\
-					<div class="formLine"><span>Comment:</span><textarea name="contant-comment"></textarea></div>\
-					<div class="formLine"><span>&nbsp;</span><input type="submit" value="I want to collaborate" name="contant-button"></input></div>\
+					<div class="formLine"><span>Name:</span><input name="contact-name"></input></div>\
+					<div class="formLine"><span>Phone:</span><input name="contact-phone"></input></div>\
+					<div class="formLine"><span>Mail:</span><input name="contact-email"></input></div>\
+					<div class="formLine"><span>Comment:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>&nbsp;</span><input type="submit" value="I want to collaborate" name="contact-button"></input></div>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
@@ -109,11 +109,11 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contacta con n&oacute;s</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Nome:</span><input name="contant-name"></input></div>\
-					<div class="formLine"><span>Telf:</span><input name="contant-phone"></input></div>\
-					<div class="formLine"><span>Email:</span><input name="contant-email"></input></div>\
-					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>\
-					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contant-button"></input></div>\
+					<div class="formLine"><span>Nome:</span><input name="contact-name"></input></div>\
+					<div class="formLine"><span>Telf:</span><input name="contact-phone"></input></div>\
+					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
+					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contact-button"></input></div>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
@@ -175,11 +175,11 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contacta con nosotros</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Nombre:</span><input name="contant-name"></input></div>\
-					<div class="formLine"><span>Telf:</span><input name="contant-phone"></input></div>\
-					<div class="formLine"><span>Email:</span><input name="contant-email"></input></div>\
-					<div class="formLine"><span>Comentario:</span><textarea name="contant-comment"></textarea></div>\
-					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quiero colaborar" name="contant-button"></input></div>\
+					<div class="formLine"><span>Nombre:</span><input name="contact-name"></input></div>\
+					<div class="formLine"><span>Telf:</span><input name="contact-phone"></input></div>\
+					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
+					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quiero colaborar" name="contact-button"></input></div>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
