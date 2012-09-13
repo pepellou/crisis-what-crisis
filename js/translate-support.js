@@ -11,7 +11,7 @@ var translations = {
 		contactList: '<ul>\
 					<li>\
 						<div>\
-							<img src="img/icon-talk">\
+							<img src="img/icon-talk.png">\
 							<span>If you tell your story, you\'ll have your little corner in the web \
 							as "people", with contact information (if you want)\
 							to spread your proposal \
@@ -20,7 +20,7 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-sleep">\
+							<img src="img/icon-sleep.png">\
 							<span>If you offer a place to spend the night and/or food aid \
 							(either in food or with 10 euros), you\'ll be included in the credits \
 							as "hosts"\
@@ -29,13 +29,13 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-fuel">\
+							<img src="img/icon-fuel.png">\
 							<span>If you offer fuel or 20 euros, you\'ll be included as "contributors"\
 							</span>\
 						</div>\
 					</li>\
 				</ul>',
-		infoPayment: '<img class="icon" src="img/icon-battery">\
+		infoPayment: '<img class="icon" src="img/icon-battery.png">\
 				<h2>Providing</h2>\
 				<img id="supportTable" src="img/support-table-en.png" />\
 				<div>\
@@ -76,7 +76,7 @@ var translations = {
 		contactList: '<ul>\
 					<li>\
 						<div>\
-							<img src="img/icon-talk">\
+							<img src="img/icon-talk.png">\
 							<span>Se contas a t&uacute;a historia, tes o teu recunchi&ntilde;o na web, con\
 							datos de contacto (se queres) para difundir a t&uacute;a proposta\
 							como “people”\
@@ -85,7 +85,7 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-sleep">\
+							<img src="img/icon-sleep.png">\
 							<span>Se ofreces un lugar onde pasar a noite e/ou axudas coa\
 							comida (ben en especie, ben con 10 euros), aparecer&aacute;s\
 							nos cr&eacute;ditos como “hosts”\
@@ -94,14 +94,14 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-fuel">\
+							<img src="img/icon-fuel.png">\
 							<span>Se ofreces combustible ou 20 euros, aparecer&aacute;s como\
 							“contributors”\
 							</span>\
 						</div>\
 					</li>\
 				</ul>',
-		infoPayment: '<img class="icon" src="img/icon-battery">\
+		infoPayment: '<img class="icon" src="img/icon-battery.png">\
 				<h2>Aportando</h2>\
 				<img id="supportTable" src="img/support-table-gl.png" />\
 				<div>\
@@ -142,7 +142,7 @@ var translations = {
 		contactList: '<ul>\
 					<li>\
 						<div>\
-							<img src="img/icon-talk">\
+							<img src="img/icon-talk.png">\
 							<span>Si cuentas tu historia, tienes tu pequeño rinc&oacute;n en la web, con\
 							datos de contacto (si quieres) para difundir tu propuesta\
 							como “people”\
@@ -151,7 +151,7 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-sleep">\
+							<img src="img/icon-sleep.png">\
 							<span>Si ofreces un lugar donde pasar la noche y/o ayudas con la\
 							comida (bien en especie, bien con 10 euros), aparecer&aacute;s\
 							en los cr&eacute;ditos como “hosts”\
@@ -160,14 +160,14 @@ var translations = {
 					</li>\
 					<li>\
 						<div>\
-							<img src="img/icon-fuel">\
+							<img src="img/icon-fuel.png">\
 							<span>Si ofreces combustible o 20 euros, aparecer&aacute;s como\
 							“contributors”\
 							</span>\
 						</div>\
 					</li>\
 				</ul>',
-		infoPayment: '<img class="icon" src="img/icon-battery">\
+		infoPayment: '<img class="icon" src="img/icon-battery.png">\
 				<h2>Aportando</h2>\
 				<img id="supportTable" src="img/support-table-es.png" />\
 				<div>\
