@@ -1,5 +1,26 @@
 <?php
 	$lan = isset($_GET['lan'])?$_GET['lan']:'en';
+
+	if (isset($_POST['contact-button'])) {
+		if (isset($_POST['contact-name']) &&
+			isset($_POST['contact-phone']) &&
+			isset($_POST['contact-email']) &&
+			isset($_POST['contact-comment'])) {
+			$headers  = 'MIME-Version: 1.0' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+			$headers .= "From: info@galdoo.com\r\n" 
+				."Reply-To: no-reply@galdoo.com\r\n" 
+				."X-Mailer: PHP/".phpversion();
+			mail("dlagosuarez@gmail.com",
+				"Crisis What Crisis",
+				"Nombre: ".$_POST['contact-name']."<br>".
+				"Telf: ".$_POST['contact-phone']."<br>".
+				"Email: ".$_POST['contact-email']."<br>".
+				$_POST['contact-comment'],
+				$headers
+			);
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html>
