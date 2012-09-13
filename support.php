@@ -9,8 +9,8 @@
 			isset($_POST['contact-language'])) {
 			$headers  = 'MIME-Version: 1.0' . "\r\n";
 			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-			$headers .= "From: info@galdoo.com\r\n" 
-				."Reply-To: no-reply@galdoo.com\r\n" 
+			$headers .= "From: ".$_POST['contact-email']."\r\n" 
+				."Reply-To: ".$_POST['contact-email']."\r\n" 
 				."X-Mailer: PHP/".phpversion();
 			if (mail("project@crisis-whatcrisis.com",
 				"Crisis What Crisis",
