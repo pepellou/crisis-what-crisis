@@ -11,14 +11,36 @@
 			$headers .= "From: info@galdoo.com\r\n" 
 				."Reply-To: no-reply@galdoo.com\r\n" 
 				."X-Mailer: PHP/".phpversion();
-			mail("dlagosuarez@gmail.com",
+			if (mail("dlagosuarez@gmail.com",
 				"Crisis What Crisis",
 				"Nombre: ".$_POST['contact-name']."<br>".
 				"Telf: ".$_POST['contact-phone']."<br>".
 				"Email: ".$_POST['contact-email']."<br>".
 				$_POST['contact-comment'],
 				$headers
-			);
+			)) {
+			?>
+	<div class="responseMail">
+		<div class="textMail">
+			Hemos enviado su mensaje.<br>
+			En breve nos pondremos en contacto.<br>
+			Gracias.
+		</div>
+		<p class="buttonClose">Cerrar</p>
+	</div>
+			<?php
+			} else {
+			?>
+	<div class="responseMail">
+		<div class="textMail">
+			No hemos podido enviar el mensaje.<br>
+			Por favor int&eacute;ntelo m&aacute;s tarde.<br>
+			Gracias.
+		</div>
+		<p class="buttonClose">Cerrar</p>
+	</div>
+			<?php
+			};
 		}
 	}
 ?>

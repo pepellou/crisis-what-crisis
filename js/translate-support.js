@@ -43,10 +43,10 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contact us</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Name:</span><input name="contact-name"></input></div>\
-					<div class="formLine"><span>Phone:</span><input name="contact-phone"></input></div>\
-					<div class="formLine"><span>Mail:</span><input name="contact-email"></input></div>\
-					<div class="formLine"><span>Comment:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>Name:</span><input required type="text" name="contact-name"></input></div>\
+					<div class="formLine"><span>Phone:</span><input required type="text" name="contact-phone"></input></div>\
+					<div class="formLine"><span>Mail:</span><input required type="email" name="contact-email"></input></div>\
+					<div class="formLine"><span>Comment:</span><textarea required name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="I want to collaborate" name="contact-button"></input></div>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
@@ -231,5 +231,9 @@ $(function() {
 	$('a[name="idioma_es"]').click(function () { 
 		translate("es"); 
 		return false; 
+	});
+
+	$('.responseMail .buttonClose').click(function() {
+		$('.responseMail').css("display", "none");
 	});
 });
