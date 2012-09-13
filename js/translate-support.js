@@ -48,6 +48,7 @@ var translations = {
 					<div class="formLine"><span>Mail:</span><input required type="email" name="contact-email"></input></div>\
 					<div class="formLine"><span>Comment:</span><textarea required name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="I want to collaborate" name="contact-button"></input></div>\
+					<input type="hidden" name="contact-language" value="english"></input>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
@@ -114,6 +115,7 @@ var translations = {
 					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
 					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contact-button"></input></div>\
+					<input type="hidden" name="contact-language" value="galician"></input>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
@@ -180,6 +182,7 @@ var translations = {
 					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
 					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quiero colaborar" name="contact-button"></input></div>\
+					<input type="hidden" name="contact-language" value="spanish"></input>\
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\

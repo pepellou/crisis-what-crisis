@@ -5,7 +5,8 @@
 		if (isset($_POST['contact-name']) &&
 			isset($_POST['contact-phone']) &&
 			isset($_POST['contact-email']) &&
-			isset($_POST['contact-comment'])) {
+			isset($_POST['contact-comment']) &&
+			isset($_POST['contact-language'])) {
 			$headers  = 'MIME-Version: 1.0' . "\r\n";
 			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 			$headers .= "From: info@galdoo.com\r\n" 
@@ -13,10 +14,11 @@
 				."X-Mailer: PHP/".phpversion();
 			if (mail("dlagosuarez@gmail.com",
 				"Crisis What Crisis",
-				"Nombre: ".$_POST['contact-name']."<br>".
-				"Telf: ".$_POST['contact-phone']."<br>".
-				"Email: ".$_POST['contact-email']."<br>".
-				$_POST['contact-comment'],
+				"<h1>Nombre: ".$_POST['contact-name']."</h1><br>".
+				"<h2>Telf: ".$_POST['contact-phone']."</h2><br>".
+				"<h2>Email: ".$_POST['contact-email']."</h2><br>".
+				"<h2>Idioma: ".$_POST['contact-language']."</h2><br><br>".
+				"<h1>Comentario: ".$_POST['contact-comment']."</h1>",
 				$headers
 			)) {
 			?>
