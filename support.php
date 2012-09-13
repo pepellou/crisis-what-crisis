@@ -14,11 +14,11 @@
 				."X-Mailer: PHP/".phpversion();
 			if (mail("project@crisis-whatcrisis.com",
 				"Crisis What Crisis",
-				"<h1>Nombre: ".$_POST['contact-name']."</h1><br>".
-				"<h2>Telf: ".$_POST['contact-phone']."</h2><br>".
-				"<h2>Email: ".$_POST['contact-email']."</h2><br>".
-				"<h2>Idioma: ".$_POST['contact-language']."</h2><br><br>".
-				"<h1>Comentario: ".$_POST['contact-comment']."</h1>",
+				"<h3>Nombre: ".$_POST['contact-name']."</h3><br>".
+				"<h3>Telf: ".$_POST['contact-phone']."</h3><br>".
+				"<h3>Email: ".$_POST['contact-email']."</h3><br>".
+				"<h3>Idioma: ".$_POST['contact-language']."</h3><br><br>".
+				"<h4>Comentario: ".$_POST['contact-comment']."</h4>",
 				$headers
 			)) {
 			?>
