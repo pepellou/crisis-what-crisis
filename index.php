@@ -157,10 +157,6 @@
 		<div class="moto"></div>
 		<div style="width: 100%; background: black;">
 			<div class="ground">
-				<!--
-					<img src="img/sponsors/karapatrov.png" /><br/><br/><br/><br/>
-					<img src="img/sponsors/agil-az.png" />
-				-->
 				<div class="block" style="width:285px">
 					<div id="sponsorButtons">
 					<p class="title">SPONSORS</p>
