@@ -110,10 +110,10 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contacta con n&oacute;s</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Nome:</span><input name="contact-name"></input></div>\
-					<div class="formLine"><span>Telf:</span><input name="contact-phone"></input></div>\
-					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
-					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>Nome:</span><input required type="text" name="contact-name"></input></div>\
+					<div class="formLine"><span>Telf:</span><input required type="text" name="contact-phone"></input></div>\
+					<div class="formLine"><span>Email:</span><input required type="email" name="contact-email"></input></div>\
+					<div class="formLine"><span>Comentario:</span><textarea required name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quero colaborar" name="contact-button"></input></div>\
 					<input type="hidden" name="contact-language" value="galician"></input>\
 				</form>',
@@ -177,10 +177,10 @@ var translations = {
 				</div>',
 		formContact: '<h2>Contacta con nosotros</h2>\
 				<form name="contact" method="post">\
-					<div class="formLine"><span>Nombre:</span><input name="contact-name"></input></div>\
-					<div class="formLine"><span>Telf:</span><input name="contact-phone"></input></div>\
-					<div class="formLine"><span>Email:</span><input name="contact-email"></input></div>\
-					<div class="formLine"><span>Comentario:</span><textarea name="contact-comment"></textarea></div>\
+					<div class="formLine"><span>Nombre:</span><input required type="text" name="contact-name"></input></div>\
+					<div class="formLine"><span>Telf:</span><input required type="text" name="contact-phone"></input></div>\
+					<div class="formLine"><span>Email:</span><input required type="email" name="contact-email"></input></div>\
+					<div class="formLine"><span>Comentario:</span><textarea required name="contact-comment"></textarea></div>\
 					<div class="formLine"><span>&nbsp;</span><input type="submit" value="Quiero colaborar" name="contact-button"></input></div>\
 					<input type="hidden" name="contact-language" value="spanish"></input>\
 				</form>',
