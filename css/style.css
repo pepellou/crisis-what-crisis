@@ -5,7 +5,7 @@ body {
 	padding-top: 25px;
 	text-align: left;
 }
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'TungstenMedium';
 	margin-left: 20px;
 	border-bottom: 0px;
@@ -21,7 +21,14 @@ h2 {
 }
 #footer h2 {
 	margin-left: 0px;
-	font-size: 24px;
+	font-size: 16px;
+}
+#footer .title {
+	font-family: 'TungstenMedium';
+	font-size: 20px;
+	font-weight: lighter;
+	margin-left: 40px;
+	margin-top: 20px;
 }
 h6 {
 	font-size: 12px;
@@ -442,14 +449,6 @@ ul li {
 	margin-left: 10px;
 	width: 200px;
 }
-#footer .ground .block {
-	width: 400px;
-	float: left;
-	padding-right: 20px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 #idiomas {
 	width: 100%;
@@ -469,21 +468,26 @@ ul li {
 	font-weight: bold;
 }
 
+.block {
+	float: left;
+}
+
 #socialButtons {
-	height: 64px;
+	height: 27px;
 	overflow: hidden;
 	float: right;
+	margin: 20px 130px 80px 200px;
 }
 #socialButtons div, #socialButtons span {
-	height: 64px;
-	width: 75px;
+	height: 27px;
+	width: 32px;
 	cursor: pointer;
 	background-repeat: no-repeat;
 	background-image: url('../img/social.png');
 	float: left;
 }
 #socialButtons span {
-	background-position-y: -64px;
+	background-position-y: -27px;
 	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-o-transition: opacity 0.5s ease-in-out;
@@ -496,8 +500,73 @@ ul li {
 	background-position-x: 0px;
 }
 #socialButtons .twitter {
-	background-position-x: -75px;
+	background-position-x: -32px;
 }
 #socialButtons .facebook {
-	background-position-x: -150px;
+	background-position-x: -64px;
+}
+
+#sponsorButtons {
+	height: 250px;
+	overflow: hidden;
+	float: left;
+}
+#sponsorButtons div, #sponsorButtons span {
+	height: 75px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url('../img/sponsors.png');
+	float: left;
+}
+#sponsorButtons span {
+	background-position-y: -75px;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+#sponsorButtons span:hover {
+	opacity: 0;
+}
+#sponsorButtons .karapatrov {
+	width: 98px;
+}
+#sponsorButtons .agilaz {
+	width: 98px;
+}
+#sponsorButtons .tattoo {
+	width: 75px;
+}
+#sponsorButtons .canefano {
+	width: 79px;
+}
+#sponsorButtons .crechas {
+	width: 88px;
+}
+#sponsorButtons .karapatrov {
+	background-position-x: -341px;
+}
+#sponsorButtons .agilaz {
+	background-position-x: -243px;
+}
+#sponsorButtons .tattoo {
+	background-position-x: -167px;
+}
+#sponsorButtons .canefano {
+	background-position-x: -88px;
+}
+#sponsorButtons .crechas {
+	background-position-x: 0px;
+}
+
+#contributorsButtons {
+	height: 400px;
+	overflow: hidden;
+	float: left;
+}
+
+#hostsButtons {
+	height: 400px;
+	overflow: hidden;
+	float: left;
 }

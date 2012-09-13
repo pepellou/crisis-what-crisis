@@ -157,21 +157,50 @@
 		<div class="moto"></div>
 		<div style="width: 100%; background: black;">
 			<div class="ground">
-				<div class="block">
+				<!--
 					<img src="img/sponsors/karapatrov.png" /><br/><br/><br/><br/>
 					<img src="img/sponsors/agil-az.png" />
+				-->
+				<div class="block" style="width:285px">
+					<div id="sponsorButtons">
+					<p class="title">SPONSORS</p>
+						<div class="crechas">
+							<a href="http://www.casadascrechas.com" target="blank">
+								<span class="crechas"></span>
+							</a>
+						</div>
+						<div class="canefano">
+							<a href="#" target="blank">
+								<span class="canefano"></span>
+							</a>
+						</div>
+						<div class="tattoo">
+							<a href="#" target="blank">
+								<span class="tattoo"></span>
+							</a>
+						</div>
+						<div class="agilaz">
+							<a href="http://www.agil-az.com" target="blank">
+								<span class="agilaz"></span>
+							</a>
+						</div>
+						<div class="karapatrov">
+							<a href="http://www.karapatrov.com" target="blank">
+								<span class="karapatrov"></span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="block">
-					<h2>Dossier</h2>
-					<object style="width:420px;height:210px" >
-						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
-						<param name="allowfullscreen" value="true"/>
-						<param name="menu" value="false"/>
-						<param name="wmode" value="transparent"/>
-						<embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:420px;height:210px" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
-					</object>
-					<div style="width:420px;text-align:left;">
-						<a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div></div>
+				<div class="block" style="width:190px">
+					<div id="contributorsButtons">
+					<p class="title">CONTRIBUTORS</p>
+					</div>
+				</div>
+				<div class="block" style="width:100px">
+					<div id="hostsButtons">
+					<p class="title">HOSTS</p>
+					</div>
+				</div>
 				<div id="socialButtons">
 					<div class="google">
 						<a href="https://plus.google.com/u/0/b/106162106682797002853/106162106682797002853/posts" target="blank">
@@ -189,6 +218,17 @@
 						</a>
 					</div>
 				</div>
+				<div class="block" style="float:right;margin-left:200px;margin-right:30px">
+					<h2>D o s s i e r</h2>
+					<object>
+						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
+						<param name="allowfullscreen" value="true"/>
+						<param name="menu" value="false"/>
+						<param name="wmode" value="transparent"/>
+						<embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
+					</object>
+					<div style="width:300px;text-align:left;font-size:12px">
+						<a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div></div>
 			</div>
 		</div>
 	</div>
