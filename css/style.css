@@ -518,21 +518,26 @@ ul li {
 	background-image: url('../img/sponsors.png');
 	float: left;
 }
-#sponsorButtons span {
+#sponsorButtons div {
 	background-position-y: -75px;
+}
+#sponsorButtons span {
+	opacity: 0;
 	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
 	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
 }
 #sponsorButtons span:hover {
-	opacity: 0;
+	opacity: 1;
 }
 #sponsorButtons .karapatrov {
 	width: 98px;
+	height: 60px;
 }
 #sponsorButtons .agilaz {
 	width: 98px;
+	height: 60px;
 }
 #sponsorButtons .tattoo {
 	width: 75px;
