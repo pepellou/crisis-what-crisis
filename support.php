@@ -12,7 +12,7 @@
 			$headers .= "From: info@galdoo.com\r\n" 
 				."Reply-To: no-reply@galdoo.com\r\n" 
 				."X-Mailer: PHP/".phpversion();
-			if (mail("dlagosuarez@gmail.com",
+			if (mail("project@crisis-whatcrisis.com",
 				"Crisis What Crisis",
 				"<h1>Nombre: ".$_POST['contact-name']."</h1><br>".
 				"<h2>Telf: ".$_POST['contact-phone']."</h2><br>".
