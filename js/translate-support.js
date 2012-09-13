@@ -52,7 +52,7 @@ var translations = {
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
-					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
+					<input type="hidden" name="business" value="project@crisis-whatcrisis.com">\
 					<input type="hidden" name="currency_code" value="EUR">\
 					<input type="hidden" name="lc" value="ES">\
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
@@ -119,7 +119,7 @@ var translations = {
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
-					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
+					<input type="hidden" name="business" value="project@crisis-whatcrisis.com">\
 					<input type="hidden" name="currency_code" value="EUR">\
 					<input type="hidden" name="lc" value="ES">\
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
@@ -186,7 +186,7 @@ var translations = {
 				</form>',
 		formDonation: '<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
 					<input type="hidden" name="cmd" value="_donations">\
-					<input type="hidden" name="business" value="xavierbelho@xavierbelho.com">\
+					<input type="hidden" name="business" value="project@crisis-whatcrisis.com">\
 					<input type="hidden" name="currency_code" value="EUR">\
 					<input type="hidden" name="lc" value="ES">\
 					<input type="hidden" name="item_name" value="Crisis What Crisis">\
