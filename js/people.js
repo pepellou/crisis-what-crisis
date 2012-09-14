@@ -22,33 +22,6 @@ people = [
 	},
 ]
 
-/*
-function exampleLog() {
-	for (i in people) {
-		console.log(people[i].who);
-		console.log(people[i].where);
-		console.log(people[i].what);
-		console.log(people[i].why);
-		console.log(people[i].how);
-		console.log(people[i].web);
-		console.log(people[i].contact);
-		for (y in people[i].links) {
-			console.log(people[i].links[y]);
-		}
-		console.log(people[i].photo);
-		for (y in people[i].images) {
-			console.log(people[i].images[y]);
-		}
-		console.log(people[i].lat);
-		console.log(people[i].lng);
-	}
-}
-
-$(function() {
-	exampleLog();
-});
-*/
-
 function showPeople(
 	people
 ) {
