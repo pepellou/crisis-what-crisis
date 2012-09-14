@@ -167,7 +167,7 @@ function drawMarker(
 				position: new google.maps.LatLng(point.lat, point.lng),
 				map: map_points,
 				icon: new google.maps.MarkerImage(
-					'/img/pin-' + point.type + '.png',
+					'/crisis/img/pin-' + point.type + '.png',
 					new google.maps.Size(50, 50),
 					new google.maps.Point(0,0),
 					pinLocation

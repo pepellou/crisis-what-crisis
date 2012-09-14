@@ -36,6 +36,7 @@ function showPeople(
 		$("#people .web").html("web: <a href='" + people.web + "' target='blank'>" + people.web + "</a>");
 		$("#people .contact").html("contact: <a href='mailto:" + people.contact + "'>" + people.contact + "</a>");
 		$("#people .photo").css("background-image","url(" + people.photo + ")");
+		$("#people .links").html("");
 		for (i in people.links) {
 			$("#people .links").append("<a href='" + people.links[i] + "' target='blank'><div class='link'>" + people.links[i] + "</div></a>");
 		}
