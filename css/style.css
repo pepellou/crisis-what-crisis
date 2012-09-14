@@ -607,3 +607,85 @@ ul li {
 	font-family: 'TungstenMedium';
 	font-size: 22;
 }
+
+#people {
+	background-color: #1C1C1B;
+	position: fixed;
+	top: 40px;
+	width: 990px;
+	min-height: 750px;
+	display: none;
+	z-index: 1050;
+	border-top: 21px solid white;
+	border-bottom: 21px solid white;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+}
+#people .logo img {
+	width: 85px;
+	position: absolute;
+	right: 62px;
+	top: 10px;
+}
+#people .photo {
+	position: absolute;
+	top: 124px;
+	left: 66px;
+	width: 208px;
+	height: 256px;
+	background-color: white;
+}
+#people a {
+	text-decoration: none;
+	color: white;
+}
+#people a:hover {
+	text-decoration: underline;
+}
+#people h1 {
+	color: white;
+	font-weight: lighter;
+	margin: 0px;
+	width: 104px;
+	left: -39px;
+	position: relative;
+	text-align: right;
+	top: 32px;
+	margin-top: -32px;
+}
+#people .text {
+	color: white;
+	font-size: 12px;
+	left: 86px;
+	position: relative;
+	top: -5px;
+	width: 525px;
+}
+#people .web {
+	color: white;
+	font-size: 12px;
+}
+#people .links {
+	color: white;
+	font-size: 12px;
+}
+#people .links .link {
+	margin-left: 12px;
+}
+#people .contact {
+	color: white;
+	font-size: 12px;
+}
+#people .table-left {
+	position: relative;
+	width: 200px;
+	left: 58px;
+	top: 386px;
+	margin: 8px;
+}
+#people .table-right {
+	position: relative;
+	width: 575px;
+	left: 352px;
+	top: 30px;
+}

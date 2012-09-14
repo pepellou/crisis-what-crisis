@@ -116,6 +116,9 @@ function clickOnMarker(
 		if (currentMap == 'photos') {
 			showPhoto(marker);
 		}
+		if (currentMap == 'people') {
+			showPeople(marker);
+		}
 	};
 }
 
@@ -148,7 +151,7 @@ function showPoints(
 	clearMap();
         for (var i in points) {
 		drawMarker(points[i]);
-        }   
+   	}   
 }
 
 function drawMarker(
@@ -180,6 +183,12 @@ function drawMarker(
 		clickOnMarker(marker)
 	);
 	pt_markers.push(marker);
+}
+
+function drawPeople(
+) {
+	clearMap();
+	showPoints(people);
 }
 
 function drawPhotos(
@@ -258,6 +267,8 @@ function drawCurrentMap(
 		drawVideos();
 	} else if (currentMap == 'photos') {
 		drawPhotos();
+	} else if (currentMap == 'people') {
+		drawPeople();
 	} else {
 		clearMap();
 	}

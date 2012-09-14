@@ -30,6 +30,7 @@
 	<script language="javascript" src="js/modal.js"></script>
 	<script language="javascript" src="js/photos.js"></script>
 	<script language="Javascript" src="js/money.js"></script>
+	<script language="Javascript" src="js/people.js"></script>
 	<script language="javascript" src="js/translate.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
@@ -121,6 +122,38 @@
 				</div>
 			</div>
 	<?php 	} ?>
+	</div>
+
+	<div id="people" class="modal">
+		<div class="logo"><img src="img/logo.png"></div>
+		<div class="photo"></div>
+		<div class="table-left">
+			<div class="web"></div>
+			<div class="links">links: </div>
+			<div class="contact"></div>
+		</div>
+		<div class="table-right">
+			<div class="who">
+				<h1>WHO</h1>
+				<div class="text">&nbsp;</div>
+			</div>
+			<div class="where">
+				<h1>WHERE</h1>
+				<div class="text">&nbsp;</div>
+			</div>
+			<div class="what">
+				<h1>WHAT</h1>
+				<div class="text">&nbsp;</div>
+			</div>
+			<div class="why">
+				<h1>WHY</h1>
+				<div class="text">&nbsp;</div>
+			</div>
+			<div class="how">
+				<h1>HOW</h1>
+				<div class="text">&nbsp;</div>
+			</div>
+		</div>
 	</div>
 
 	<div id="previewVideo" class="modal">
