@@ -252,7 +252,7 @@
 				<div class="block" style="float:right;margin-left:200px;margin-right:30px">
 					<h2>Dossier</h2>
 					<object>
-						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
+						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
 						<param name="allowfullscreen" value="true"/>
 						<param name="menu" value="false"/>
 						<param name="wmode" value="transparent"/>
