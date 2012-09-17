@@ -73,7 +73,7 @@
 		<a href="#" name="idioma_gl">galego</a> |
 		<a href="#" name="idioma_es">espa&ntilde;ol</a>
 	</div>
-	<div id="sheet" style="height:1200px">
+	<div id="sheet" style="height:1300px">
 		<img src="img/header.png" />
 		<div id="contact" class="modal">
 			<div style="float:left;width:100%">

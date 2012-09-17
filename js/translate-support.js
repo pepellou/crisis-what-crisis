@@ -62,7 +62,14 @@ var translations = {
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. The fast and secure way to pay online.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
-				</form>',
+				</form>\
+				<div style="margin-bottom:15px">\
+					<p style="text-align:center;margin:0px;font-size:12px">Or transfer to:</p>\
+					<p style="text-align:center;margin:0px;font-size:14px;font-weight:bold">2080-0395-60-3040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">IBAN - ES3320800395603040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
+				</div>',
 	},
 	"gl": { 
 		infoContact: '<h1>Como podes colaborar?</h1>\
@@ -129,7 +136,14 @@ var translations = {
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. A forma rápida e segura de pagar en Internet.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
-				</form>',
+				</form>\
+				<div style="margin-bottom:15px">\
+					<p style="text-align:center;margin:0px;font-size:12px">Ou transferencia a:</p>\
+					<p style="text-align:center;margin:0px;font-size:14px;font-weight:bold">2080-0395-60-3040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">IBAN - ES3320800395603040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
+				</div>',
 	},
 	"es": { 
 		infoContact: '<h1>¿Cómo puedes colaborar?</h1>\
@@ -196,7 +210,14 @@ var translations = {
 					<input type="hidden" name="cancel_return" value="http://www.crisis-whatcrisis.com">\
 					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">\
 					<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">\
-				</form>',
+				</form>\
+				<div style="margin-bottom:15px">\
+					<p style="text-align:center;margin:0px;font-size:12px">O transferencia a:</p>\
+					<p style="text-align:center;margin:0px;font-size:14px;font-weight:bold">2080-0395-60-3040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">IBAN - ES3320800395603040002377</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
+					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
+				</div>',
 	},
 };
 
