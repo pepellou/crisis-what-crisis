@@ -225,6 +225,11 @@
 				<div class="block" style="width:190px">
 					<div id="contributorsButtons">
 					<p class="title">CONTRIBUTORS</p>
+					<ul>
+						<li>Francho Joven Araus</li>
+						<li>Pepe Doval</li>
+						<li>Camabou</li>
+					</ul>
 					</div>
 				</div>
 				<div class="block" style="width:100px">

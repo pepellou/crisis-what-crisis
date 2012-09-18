@@ -689,3 +689,7 @@ ul li {
 	left: 352px;
 	top: 30px;
 }
+
+#contributorsButtons ul li {
+	font-size: 12px;
+}
