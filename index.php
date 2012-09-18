@@ -229,6 +229,7 @@
 						<li>Francho Joven Araus</li>
 						<li>Pepe Doval</li>
 						<li>Camabou</li>
+						<li>Adri&aacute;n Moreno Pe&ntilde;a</li>
 					</ul>
 					</div>
 				</div>
