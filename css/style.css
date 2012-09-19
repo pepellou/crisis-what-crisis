@@ -693,3 +693,37 @@ ul li {
 #contributorsButtons ul li {
 	font-size: 12px;
 }
+
+.motorbike {
+	position: relative;
+	left: 560px;
+	top: 200px;
+	width: 625px;
+	height: 62px;
+}
+.motorbike img {
+	position: absolute;
+	left: 0px;
+}
+.km {
+	position: relative;
+	left: 560px;
+	top: 160px;
+	width: 625px;
+	height: 62px;
+}
+.km_blue {
+	background-image: url("../img/kilometros.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 625px;
+	height: 62px;
+}
+.km_yellow {
+	background-image: url("../img/kilometros_hover.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 0px;
+	height: 62px;
+	top: 9px;
+}

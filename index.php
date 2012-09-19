@@ -73,7 +73,15 @@
 				<div class="digit">8</div>
 			</div>
 		</div>
-		<div id="money"> </div>
+		
+		<div class="motorbike">
+			<img src="img/icon_bikemotor.png">
+		</div>
+		<div class="km">
+			<div class="km_blue"></div>
+			<div class="km_yellow"></div>
+		</div>
+		
 	</div>
 
 	<div id="idiomas">

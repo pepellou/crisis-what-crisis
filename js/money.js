@@ -1,13 +1,8 @@
 $(function() {
-	var money = new Array(
-		[2500, '€ Estimated', '#2c4390'],
-		[574,  '€ Collected so far', '#666']
-	);
-	$('#money').jqBarGraph({
-		data: money,
-		colors: ['#2c4390'] ,
-		showValuesColor: '#2c4390',
-		width: 320,
-		height: 280
-	});
+	var money = 574;
+	var width = $('.km').width();
+	var widthMoto = $('.motorbike img').width();
+
+	$('.km_yellow').css("width", money * (width/3000) + "px");
+	$('.motorbike img').css("left", (money * (width/3000)-(widthMoto/2)) + "px");
 });
