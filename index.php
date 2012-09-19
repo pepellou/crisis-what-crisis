@@ -192,7 +192,7 @@
 		<div class="things"></div>
 		<div class="road"></div>
 		<div class="moto"></div>
-		<div style="width: 100%; background: black; float: left;">
+		<div style="width: 100%; background: black; float: left; padding-bottom: 20px;">
 			<div class="ground">
 				<div class="block" style="width:285px">
 					<div id="sponsorButtons">
