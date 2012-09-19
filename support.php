@@ -89,7 +89,13 @@
 			<div style="float:left;width:100%">
 				<div id="infoPayment" style="float:left"></div>
 				<div style="float:right;margin-right:85px;margin-top:30px">
-					<div id="money"></div>
+					<div class="motorbike" style="left:-200px;top:80px;">
+						<img src="img/icon_bikemotor.png">
+					</div>
+					<div class="km" style="left:-200px;top:40px;">
+						<div class="km_blue"></div>
+						<div class="km_yellow"></div>
+					</div>
 				</div>
 			</div>
 		</div>
