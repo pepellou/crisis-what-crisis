@@ -201,6 +201,14 @@ ol li {
 	margin: 0px 42px 0px 22px;
 }
 
+#infoContact p {
+	text-align: justify;
+}
+
+#contactList span {
+	text-align: justify;
+}
+
 form[name="contact"] {
 	background: red;
 	width: 440px;
@@ -388,9 +396,6 @@ ul li {
 	height: 270px;
 	float: left;
 	margin-left: 0px;
-}
-#money {
-	float: left;
 }
 
 #footer {
