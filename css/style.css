@@ -439,7 +439,7 @@ ul li {
 	margin-top: -245px;
 }
 #footer .ground {
-	height: 400px;
+	min-height: 250px;
 	width: 100%;
 	width: 1200px;
 	margin: auto;
@@ -507,7 +507,6 @@ ul li {
 }
 
 #sponsorButtons {
-	height: 250px;
 	overflow: hidden;
 	float: left;
 }
@@ -565,13 +564,11 @@ ul li {
 }
 
 #contributorsButtons {
-	height: 400px;
 	overflow: hidden;
 	float: left;
 }
 
 #hostsButtons {
-	height: 400px;
 	overflow: hidden;
 	float: left;
 }
