@@ -238,6 +238,18 @@
 					<p class="title">HOSTS</p>
 					</div>
 				</div>
+				<div class="block" style="float:right;margin-left:20px;margin-right:20px">
+					<p class="title">DOSSIER</p>
+					<object>
+						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
+						<param name="allowfullscreen" value="true"/>
+						<param name="menu" value="false"/>
+						<param name="wmode" value="transparent"/>
+						<embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
+					</object>
+					<div style="width:300px;text-align:right;font-size:12px">
+						<a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div>
+				</div>
 				<div id="socialButtons">
 					<div class="google">
 						<a href="https://plus.google.com/u/0/b/106162106682797002853/106162106682797002853/posts" target="blank">
@@ -255,17 +267,6 @@
 						</a>
 					</div>
 				</div>
-				<div class="block" style="float:right;margin-left:200px;margin-right:30px">
-					<h2>Dossier</h2>
-					<object>
-						<param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
-						<param name="allowfullscreen" value="true"/>
-						<param name="menu" value="false"/>
-						<param name="wmode" value="transparent"/>
-						<embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
-					</object>
-					<div style="width:300px;text-align:left;font-size:12px">
-						<a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div></div>
 			</div>
 		</div>
 	</div>
