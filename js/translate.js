@@ -87,6 +87,14 @@ var translations = {
 			title: 'Show trip stops',
 			text: 'TRIP'
 		},
+		money: '<h2 style="color:white;margin-bottom:20px">Your Support</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 	"gl": { 
 		countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
@@ -175,6 +183,14 @@ var translations = {
 			title: 'Amosar paradas da viaxe',
 			text: 'VIAXE'
 		},
+		money: '<h2 style="color:white;margin-bottom:20px">O Teu Apoio</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 	"es": { 
 		countDownTitle: 'Cuenta Atr&aacute;s para el Viaje',
@@ -260,9 +276,17 @@ var translations = {
 			text: 'GENTE'
 		},
 		control_TRIP: { 
-			title: 'Mostrar paraads del viaje',
+			title: 'Mostrar paradas del viaje',
 			text: 'VIAJE'
 		},
+		money: '<h2 style="color:white;margin-bottom:20px">Tu Apoyo</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 };
 
@@ -284,11 +308,13 @@ function translate(
 	$('#infoPayment').html(translation.infoPayment);
 	$('#formContact').html(translation.formContact);
 	$('#formDonation').html(translation.formDonation);
+	$('.money').html(translation.money);
 	for (var c in map_controls) {
 		var theControl = map_controls[c];
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
 		theControl.controlText.innerHTML = translation['control_' + theControl.name].text;
 	};
+	calculateMoney();
 }
 
 $(function() {

@@ -70,6 +70,14 @@ var translations = {
 					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
 					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
 				</div>',
+		money: '<h2 style="color:white;margin-bottom:20px">Your Support</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 	"gl": { 
 		infoContact: '<h1>Como podes colaborar?</h1>\
@@ -144,6 +152,14 @@ var translations = {
 					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
 					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
 				</div>',
+		money: '<h2 style="color:white;margin-bottom:20px">O Teu Apoio</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 	"es": { 
 		infoContact: '<h1>¿Cómo puedes colaborar?</h1>\
@@ -218,6 +234,14 @@ var translations = {
 					<p style="text-align:center;margin:0px;font-size:12px">Swift/BIC - CAGLESMMXXX</p>\
 					<p style="text-align:center;margin:0px;font-size:12px">Novagalicia Banco</p>\
 				</div>',
+		money: '<h2 style="color:white;margin-bottom:20px">Tu Apoyo</h2>\
+			<div class="motorbike">\
+				<img src="img/icon_bikemotor.png">\
+			</div>\
+			<div class="km">\
+				<div class="km_blue"></div>\
+				<div class="km_yellow"></div>\
+			</div>',
 	},
 };
 
@@ -232,6 +256,8 @@ function translate(
 	$('#infoPayment').html(translation.infoPayment);
 	$('#formContact').html(translation.formContact);
 	$('#formDonation').html(translation.formDonation);
+	$('.money').html(translation.money);
+	calculateMoney();
 }
 
 $(function() {
