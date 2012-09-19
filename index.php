@@ -85,9 +85,11 @@
 	</div>
 
 	<div id="idiomas">
-		<a href="#" class="selected" name="idioma_en">english</a> |
-		<a href="#" name="idioma_gl">galego</a> |
-		<a href="#" name="idioma_es">espa&ntilde;ol</a>
+		<div style="padding: 0 16px;">
+			<a href="#" class="selected" name="idioma_en">english</a> |
+			<a href="#" name="idioma_gl">galego</a> |
+			<a href="#" name="idioma_es">espa&ntilde;ol</a>
+		</div>
 	</div>
 	<div id="sheet">
 		<img src="img/header.png" />
