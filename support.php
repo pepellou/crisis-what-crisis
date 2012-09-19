@@ -88,11 +88,12 @@
 			</div>
 			<div style="float:left;width:100%">
 				<div id="infoPayment" style="float:left"></div>
-				<div style="float:right;margin-right:85px;margin-top:30px">
-					<div class="motorbike" style="left:-200px;top:80px;">
+				<div class="money" style="margin-top:120px;margin-left:300px">
+					<h2 style="color:white;margin-bottom:20px">Your Support</h2>
+					<div class="motorbike">
 						<img src="img/icon_bikemotor.png">
 					</div>
-					<div class="km" style="left:-200px;top:40px;">
+					<div class="km">
 						<div class="km_blue"></div>
 						<div class="km_yellow"></div>
 					</div>

@@ -694,12 +694,14 @@ ul li {
 	font-size: 12px;
 }
 
+.money {
+	position: relative;
+	float: left;
+	width: 625px;
+}
 .motorbike {
 	position: relative;
-	left: 560px;
-	top: 200px;
-	width: 625px;
-	height: 62px;
+	height: 25px;
 }
 .motorbike img {
 	position: absolute;
@@ -707,23 +709,20 @@ ul li {
 }
 .km {
 	position: relative;
-	left: 560px;
-	top: 160px;
 	width: 625px;
-	height: 62px;
+	height: 60px;
 }
 .km_blue {
 	background-image: url("../img/kilometros.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 625px;
-	height: 62px;
+	height: 60px;
 }
 .km_yellow {
 	background-image: url("../img/kilometros_hover.png");
 	background-repeat: no-repeat;
 	position: absolute;
-	width: 0px;
 	height: 62px;
 	top: 9px;
 }
