@@ -692,7 +692,7 @@ ul li {
 	top: 30px;
 }
 
-#contributorsButtons ul li {
+#contributorsButtons ul li, #hostsButtons ul li {
 	font-size: 12px;
 }
 
