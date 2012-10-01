@@ -1,5 +1,5 @@
 function calculateMoney() {
-	var money = 574;
+	var money = 700;
 	var width = $('.km').width();
 	var widthMoto = $('.motorbike img').width();
 

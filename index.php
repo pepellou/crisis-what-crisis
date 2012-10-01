@@ -116,7 +116,7 @@
 	<div id="black-background" class="modal"></div>
 
 	<div id="videos">
-	<?php 	foreach (getVideos("pepellou", "music") as $video) { ?>
+	<?php 	foreach (getVideos("anajimandro", "CRISIS") as $video) { ?>
 			<div class="video">
 				<div name="title"><?php echo $video['title']; ?></div>
 				<div name="link"><?php echo $video['link']; ?></div>
@@ -228,18 +228,23 @@
 				</div>
 				<div class="block" style="width:190px">
 					<div id="contributorsButtons">
-					<p class="title">CONTRIBUTORS</p>
-					<ul>
-						<li>Francho Joven Araus</li>
-						<li>Pepe Doval</li>
-						<li>Camabou</li>
-						<li>Adri&aacute;n Moreno Pe&ntilde;a</li>
-					</ul>
+						<p class="title">CONTRIBUTORS</p>
+						<ul>
+							<li>Francho Joven Araus</li>
+							<li>Pepe Doval</li>
+							<li>Camabou</li>
+							<li>Adri&aacute;n Moreno Pe&ntilde;a</li>
+							<li>Gonzalo Su&aacute;rez</li>
+							<li>Jorge Garc&iacute;a</li>
+						</ul>
 					</div>
 				</div>
 				<div class="block" style="width:100px">
 					<div id="hostsButtons">
-					<p class="title">HOSTS</p>
+						<p class="title">HOSTS</p>
+						<ul>
+							<li>Carlos Garc&iacute;a Garc&iacute;a</li>
+						</ul>
 					</div>
 				</div>
 				<div class="block" style="float:right;">
