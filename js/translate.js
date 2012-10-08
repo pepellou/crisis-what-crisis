@@ -95,6 +95,23 @@ var translations = {
 				<div class="km_blue"></div>\
 				<div class="km_yellow"></div>\
 			</div>',
+		roubaron: '<p>\
+				Last friday the 5th, in the late night, a group of heartless offenders \
+				entered our office and stole all necessary materials for the project \
+				( Canon 7D camera + \
+				camera lenses + H4N recorder + macbook pro 15" laptop).\
+			</p>\
+			<p>\
+				This situation won\'t prevent us from carrying out the documentary \
+				but it will delay the departure until we recover those materials.\
+			</p>\
+			<p>\
+				Thus, this count-down will be stopped till 1 week before departure. \
+				We rely on your understanding and support.\
+			</p>\
+			<p>\
+				Regards\
+			</p>',
 	},
 	"gl": { 
 		countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
@@ -191,6 +208,24 @@ var translations = {
 				<div class="km_blue"></div>\
 				<div class="km_yellow"></div>\
 			</div>',
+		roubaron: '<p>\
+				O venres 5, de madrugada, unha banda de desalmados entrou \
+				na nosa oficina roubando todo o material necesario para a \
+				realizaci&oacute;n do proxecto ( c&aacute;mara Canon 7D + \
+				obxectivos + gravadora H4N + port&aacute;til macbook pro 15").\
+			</p>\
+			<p>\
+				Esta situaci&oacute;n nom vai impedir que o documental se leve \
+				a cabo pero si vai a retrasar a sa&iacute;da ate que recuperemos \
+				este material. \
+			</p>\
+			<p>\
+				Por tanto este contador estar&aacute; detido ate 1 semana antes \
+				da sa&iacute;da. Confiamos na vosa comprensi&oacute;n e apoio.\
+			</p>\
+			<p>\
+				Sa&uacute;dos\
+			</p>',
 	},
 	"es": { 
 		countDownTitle: 'Cuenta Atr&aacute;s para el Viaje',
@@ -287,6 +322,24 @@ var translations = {
 				<div class="km_blue"></div>\
 				<div class="km_yellow"></div>\
 			</div>',
+		roubaron: '<p>\
+				El viernes 5, de madrugada, una banda de desalmados entr&oacute; \
+				en nuestra oficina robando todo el material necesario para la \
+				realizaci&oacute;n del proyecto ( c&aacute;mara Canon 7D + \
+				objetivos + grabadora H4N + port&aacute;til macbook pro 15").\
+			</p>\
+			<p>\
+				Esta situaci&oacute;n no va a impedir que el documental se lleve \
+				a cabo pero s&iacute; va a retrasar su salida hasta que recuperemos \
+				este material. \
+			</p>\
+			<p>\
+				Por tanto este contador estar&aacute; detenido hasta 1 semana antes \
+				de la salida. Confiamos en vuestra comprensi&oacute;n y apoyo.\
+			</p>\
+			<p>\
+				Saludos\
+			</p>',
 	},
 };
 
@@ -314,6 +367,7 @@ function translate(
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
 		theControl.controlText.innerHTML = translation['control_' + theControl.name].text;
 	};
+	$('#beenRobbed').html(translation.roubaron);
 	calculateMoney();
 }
 
