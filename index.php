@@ -19,6 +19,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
 	<meta property="og:title" content="Crisis - What crisis?" />
+	<meta property="og:description" content= "<p>It\'s a documentary portraying the 2012\'s Europe.  </p> <p> A trip from Galicia, in the Iberian Peninsula\'s Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It\'s a critical eye to the CRISIS.  </p> <p> A practical and brave answer to that questions we should ask:<br/> What is the crisis? <br/> Where does it come from?<br/> Where does it lead us? <br/> And now what?</p>" />
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
