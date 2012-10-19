@@ -17,8 +17,11 @@
 	<!-- Developed by Pepe Doval - http://about.me/pepellou -->
 </head>
 <body>
-	<img src="mobil.png" />
+	<img id="bgImage" src="mobil.png" />
 	<a href="mailto:xavierbelho@gmail.com">
-		<img src="mailto.png" />
+		<img id="mailto" src="mailto.png" />
+	</a>
+	<a href="http://www.youtube.com/watch?v=ln3tGnzGT9k" target="_blank">
+		<img id="play_video" src="play_video.png" />
 	</a>
 </body>

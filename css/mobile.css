@@ -5,13 +5,17 @@ body {
 	padding: 0;
 	margin: 0;
 }
-img {
+img { float: left }
+#bgImage {
 	width: 100%;
-	float: left;
 }
-a img {
+#mailto {
 	width: 31%;
 	margin-left: 23.5%;
 	margin-top: -35.5%;
-	float: left;
+}
+#play_video {
+	width: 12.7%;
+	margin-left: 73.6%;
+	margin-top: -713%;
 }
