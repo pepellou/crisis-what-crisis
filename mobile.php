@@ -18,4 +18,7 @@
 </head>
 <body>
 	<img src="mobil.png" />
+	<a href="mailto:xavierbelho@gmail.com">
+		<img src="mailto.png" />
+	</a>
 </body>
