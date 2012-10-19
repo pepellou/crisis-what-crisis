@@ -1,7 +1,36 @@
+@media (max-width: 623px) {
+	html { font-size: 23px; }
+	input[type='image'] { width: 300px; }
+	#donate { margin-top: -249px; }
+}
+
+@media (min-width: 702px) {
+	html { font-size: 26px; }
+	input[type='image'] { width: 338px; }
+	#donate { margin-top: -281px; }
+}
+
+@media (min-width: 724px) {
+	html { font-size: 29px; }
+	input[type='image'] { width: 375px; }
+	#donate { margin-top: -313px; }
+}
+
+@media (min-width: 780px) {
+	html { font-size: 32px; }
+	input[type='image'] { width: 412px; }
+	#donate { margin-top: -344px; }
+}
+
+@media (min-width: 858px) {
+	html { font-size: 35px; }
+	input[type='image'] { width: 450px; }
+	#donate { margin-top: -375px; }
+}
+
 body {
 	background: #aaa;
 	font-family: 'AvenirLTBook';
-	font-size: 16px;
 	padding: 0;
 	margin: 0;
 }
@@ -18,4 +47,10 @@ img { float: left }
 	width: 12.7%;
 	margin-left: 73.6%;
 	margin-top: -713%;
+}
+#donate {
+	float: right;
+	text-align: center;
+	width: 50%;
+	color: white;
 }
