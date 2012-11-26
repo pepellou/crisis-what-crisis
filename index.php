@@ -294,6 +294,7 @@
 							<li>Jorge Garc&iacute;a</li>
 							<li>Eviroula Dourou</li>
 							<li><a target="_blank" href="http://www.dirtysocks.es/" style="color: white;">Dirty Socks</a></li>
+							<li>Maurizio Galli</li>
 						</ul>
 					</div>
 				</div>
