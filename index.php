@@ -73,29 +73,6 @@
 				<div class="digit">1</div>
 				<div class="digit">8</div>
 			</div>
-			<style>
-				#countdown_dashboard div {
-					z-index: -1;
-				}
-				#beenRobbed {
-					position: fixed;
-					top: 50%;
-					left: 50%;
-					z-index: 1050;
-					overflow: auto;
-					margin: -250px 0 0 -280px;
-					width: 560px;
-					padding: 30px;
-					display: none;
-					background-color: rgba(1, 1, 1, 0.8);
-					border-radius: 10px;
-					color: white;
-					font-size: 25px;
-				}
-			</style>
-			<a href="#" id="whyWeFreeze" style="margin-top: -53px; z-index: 1; margin-left: 261px; position: absolute;">
-				<img src="frozen.png" />
-			</a>
 		</div>
 
 		<div class="money" style="margin-top:120px;margin-left:70px"></div>
@@ -196,27 +173,6 @@
 		<div class="right"></div>
 	</div>
 
-	<div id="beenRobbed" class="modal">
-		<p>
-			O venres 5, de madrugada, unha banda de desalmados entrou 
-			na nosa oficina roubando todo o material necesario para a 
-			realizaci&oacute;n do proxecto ( c&aacute;mara Canon 7D + 
-			obxectivos + gravadora H4N + port&aacute;til macbook pro 15").
-		</p>
-		<p>
-			Esta situaci&oacute;n nom vai impedir que o documental se leve 
-			a cabo pero si vai a retrasar a sa&iacute;da ate que recuperemos 
-			este material. 
-		</p>
-		<p>
-			Por tanto este contador estar&aacute; detido ate 1 semana antes 
-			da sa&iacute;da. Confiamos na vosa comprensi&oacute;n e apoio.
-		</p>
-		<p>
-			Sa&uacute;dos
-		</p>
-	</div>
-
 	<script language="javascript" type="text/javascript">
 		$(function() {
 			var freeze = true;
@@ -230,14 +186,6 @@
 						'min': 0,
 						'sec': 7
 					}
-				});
-			} else {
-				$('#whyWeFreeze').click(function () {
-					doModal(function () {
-						$('#beenRobbed').css({
-							"display": "block"
-						});
-					});
 				});
 			}
 		});
