@@ -13,19 +13,16 @@
 @media (min-width: 724px) {
 	html { font-size: 29px; }
 	input[type='image'] { width: 375px; }
-	#donate { margin-top: -313px; }
 }
 
 @media (min-width: 780px) {
 	html { font-size: 32px; }
 	input[type='image'] { width: 412px; }
-	#donate { margin-top: -344px; }
 }
 
 @media (min-width: 858px) {
 	html { font-size: 35px; }
 	input[type='image'] { width: 450px; }
-	#donate { margin-top: -375px; }
 }
 
 body {
@@ -41,16 +38,10 @@ img { float: left }
 #mailto {
 	width: 31%;
 	margin-left: 23.5%;
-	margin-top: -35.5%;
+	margin-top: -30%;
 }
 #play_video {
 	width: 12.7%;
 	margin-left: 73.6%;
-	margin-top: -713%;
-}
-#donate {
-	float: right;
-	text-align: center;
-	width: 50%;
-	color: white;
+	margin-top: -665%;
 }
