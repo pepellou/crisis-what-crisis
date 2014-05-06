@@ -320,17 +320,14 @@ function translate(
 $(function() {
 	$('a[name="idioma_en"]').click(function () { 
 		translate("en"); 
-		$('#linkSupport').attr('href','support.php?lan=en');
 		return false; 
 	});
 	$('a[name="idioma_gl"]').click(function () { 
 		translate("gl"); 
-		$('#linkSupport').attr('href','support.php?lan=gl');
 		return false; 
 	});
 	$('a[name="idioma_es"]').click(function () { 
 		translate("es"); 
-		$('#linkSupport').attr('href','support.php?lan=es');
 		return false; 
 	});
 	translate("en");

@@ -90,7 +90,7 @@
 		<img src="img/header.png" />
 		<div id="map_canvas"></div>
 		<div id="map_cover"></div>
-		<a id="linkSupport" href="support.php?lan=en" target="blank"><img id="collaborate_button" src="img/donate_ing.png" class="donateImg" /></a>
+		<img id="collaborate_button" src="img/donate_ing.png" class="donateImg" />
 		<div id="slider">
 			<img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" />
 		</div>
