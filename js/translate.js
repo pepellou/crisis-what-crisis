@@ -303,11 +303,6 @@ function translate(
 	$('.box.who').html(translation.who);
 	$('.box.where').html(translation.where);
 	$('.box.how').html(translation.how);
-	$('#infoContact').html(translation.infoContact);
-	$('#contactList').html(translation.contactList);
-	$('#infoPayment').html(translation.infoPayment);
-	$('#formContact').html(translation.formContact);
-	$('#formDonation').html(translation.formDonation);
 	$('.money').html(translation.money);
 	for (var c in map_controls) {
 		var theControl = map_controls[c];

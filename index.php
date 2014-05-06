@@ -285,6 +285,12 @@
 						</a>
 					</div>
 				</div>
+				<div id="formContact" style="float: left">
+					<p class="title">Contact us:</p>
+					<p style="margin-left: 40px">
+						<a href="mailto:project@crisis-whatcrisis.com" style="color:white; font-size:14px">project@crisis-whatcrisis.com</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
