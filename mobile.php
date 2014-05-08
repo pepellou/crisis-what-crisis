@@ -18,7 +18,7 @@
 </head>
 <body>
 	<img id="bgImage" src="mobil.png" />
-	<a href="mailto:xavierbelho@gmail.com">
+	<a href="mailto:projetcrisiswhatcrisis@gmail.com">
 		<img id="mailto" src="mailto.png" />
 	</a>
 	<a href="http://www.youtube.com/watch?v=ln3tGnzGT9k" target="_blank">

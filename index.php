@@ -288,7 +288,7 @@
 				<div id="formContact" style="float: left">
 					<p class="title">Contact us:</p>
 					<p style="margin-left: 40px">
-						<a href="mailto:project@crisis-whatcrisis.com" style="color:white; font-size:14px">project@crisis-whatcrisis.com</a>
+						<a href="mailto:projetcrisiswhatcrisis@gmail.com" style="color:white; font-size:14px">projetcrisiswhatcrisis@gmail.com</a>
 					</p>
 				</div>
 			</div>
