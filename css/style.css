@@ -409,6 +409,14 @@ ul li {
 		background-position-x: 0px;
 	}
 }
+@-moz-keyframes mountains {
+	0% {
+		background-position: 2980px 0;
+	}
+	100% {
+		background-position: 0px 0;
+	}
+}
 @-webkit-keyframes road {
 	0% {
 		background-position-x: 24px;
@@ -417,11 +425,20 @@ ul li {
 		background-position-x: 0px;
 	}
 }
+@-moz-keyframes road {
+	0% {
+		background-position: 24px 0;
+	}
+	100% {
+		background-position: 0px 0;
+	}
+}
 #footer .mountains {
 	background: url('../img/skyline_mountains.png') repeat;
 	height: 245px;
 	width: 100%;
 	-webkit-animation: mountains 250s infinite linear;
+	-moz-animation: mountains 250s infinite linear;
 }
 #footer .things {
 	background: url('../img/skyline_zings.png') repeat;
@@ -429,6 +446,7 @@ ul li {
 	width: 100%;
 	margin-top: -245px;
 	-webkit-animation: mountains 124s infinite linear;
+	-moz-animation: mountains 124s infinite linear;
 }
 #footer .road {
 	background: url('../img/skyline_road.png') repeat;
@@ -436,6 +454,7 @@ ul li {
 	width: 100%;
 	margin-top: -245px;
 	-webkit-animation: road 1s infinite linear;
+	-moz-animation: road 1s infinite linear;
 }
 #footer .moto {
 	background: url('../img/skyline_bike.png') no-repeat;
