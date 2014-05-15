@@ -521,13 +521,22 @@ ul li {
 	opacity: 0;
 }
 #socialButtons .google {
-	background-position-x: 0px;
+	background-position: 0px -27px;
 }
 #socialButtons .twitter {
-	background-position-x: -32px;
+	background-position: -32px -27px;
 }
 #socialButtons .facebook {
-	background-position-x: -64px;
+	background-position: -64px -27px;
+}
+#socialButtons .google:hover {
+	background-position: 0px 0px;
+}
+#socialButtons .twitter:hover {
+	background-position: -32px 0;
+}
+#socialButtons .facebook:hover {
+	background-position: -64px 0;
 }
 
 #sponsorButtons {
@@ -572,19 +581,34 @@ ul li {
 	width: 88px;
 }
 #sponsorButtons .karapatrov {
-	background-position-x: -341px;
+	background-position: -341px -75px;
 }
 #sponsorButtons .agilaz {
-	background-position-x: -243px;
+	background-position: -243px -75px;
 }
 #sponsorButtons .tattoo {
-	background-position-x: -167px;
+	background-position: -167px -75px;
 }
 #sponsorButtons .canefano {
-	background-position-x: -88px;
+	background-position: -88px -75px;
 }
 #sponsorButtons .crechas {
-	background-position-x: 0px;
+	background-position: 0px -75px;
+}
+#sponsorButtons .karapatrov:hover {
+	background-position: -341px 0;
+}
+#sponsorButtons .agilaz:hover {
+	background-position: -243px 0;
+}
+#sponsorButtons .tattoo:hover {
+	background-position: -167px 0;
+}
+#sponsorButtons .canefano:hover {
+	background-position: -88px 0;
+}
+#sponsorButtons .crechas:hover {
+	background-position: 0px 0px;
 }
 
 #contributorsButtons {
