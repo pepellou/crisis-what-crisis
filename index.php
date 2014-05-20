@@ -1,6 +1,6 @@
 <?php
+    $lan = isset($_GET['lan'])?$_GET['lan']:'en';
 	require_once dirname(__FILE__)."/mobile-detection.php";
-
 	require_once dirname(__FILE__)."/get-videos.php";
 ?>
 <!DOCTYPE html>
