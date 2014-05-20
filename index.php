@@ -87,12 +87,12 @@
 		</div>
 	</div>
 	<div id="sheet">
-		<img src="img/header.png" />
+		<img src="img/header.png" alt="Web logo: Crisis What Crisis - An optimistic answer"/>
 		<div id="map_canvas"></div>
 		<div id="map_cover"></div>
-		<img id="collaborate_button" src="img/donate_ing.png" class="donateImg" />
+		<img id="collaborate_button" src="img/donate_ing.png" alt="support" class="donateImg" />
 		<div id="slider">
-			<img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" />
+			<img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" alt="motorbike license plate with the web logo on it" />
 		</div>
 		<div id="menu">
 			<ul>
@@ -102,15 +102,15 @@
 				<li><a href="#" name="where"> Where </a></li>
 				<li><a href="#" name="how">   How   </a></li>
 		</div>
-		<img class="line what" src="img/lineto-what.png" />
+		<img class="line what" src="img/lineto-what.png" alt="line" />
 		<div class="box what"> </div>
-		<img class="line why" src="img/lineto-why.png" />
+		<img class="line why" src="img/lineto-why.png" alt="line" />
 		<div class="box why"> </div>
-		<img class="line who" src="img/lineto-who.png" />
+		<img class="line who" src="img/lineto-who.png" alt="line" />
 		<div class="box who"> </div>
-		<img class="line where" src="img/lineto-where.png" />
+		<img class="line where" src="img/lineto-where.png" alt="line" />
 		<div class="box where"> </div>
-		<img class="line how" src="img/lineto-how.png" />
+		<img class="line how" src="img/lineto-how.png" alt="line" />
 		<div class="box how"> </div>
 	</div>
 
@@ -130,7 +130,7 @@
 	</div>
 
 	<div id="people" class="modal">
-		<div class="logo"><img src="img/logo.png"></div>
+		<div class="logo"><img src="img/logo.png" alt="small web logo"></div>
 		<div class="photo"></div>
 		<div class="table-left">
 			<div class="web"></div>
