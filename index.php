@@ -20,6 +20,10 @@
 	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
 	<meta property="og:title" content="Crisis - What crisis?" />
 	<meta property="og:description" content= "It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?" />
+    <meta name="description" content="It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?"> 
+    <meta name="keywords" content="crisis, what crisis, pigs, P.I.G.S."> 
+    <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion"> 
+    <meta name="language" content="en, english"> 
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
