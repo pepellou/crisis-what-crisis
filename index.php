@@ -270,7 +270,7 @@
 				</div>
 				<div id="socialButtons">
 					<div class="google">
-						<a href="https://plus.google.com/u/0/b/106162106682797002853/106162106682797002853/posts" target="blank">
+						<a href="https://plus.google.com/106162106682797002853" rel="publisher" target="blank">
 							<span class="google"></span>
 						</a>
 					</div>
