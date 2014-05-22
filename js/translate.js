@@ -71,6 +71,7 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		money: 'Your Support',
 		control_VIDEOS: { 
 			title: 'Show videos',
 			text: 'VIDEOS'
@@ -87,14 +88,6 @@ var translations = {
 			title: 'Show trip stops',
 			text: 'TRIP'
 		},
-		money: '<h2 style="color:white;margin-bottom:20px">Your Support</h2>\
-			<div class="motorbike">\
-				<img src="img/icon_bikemotor.png">\
-			</div>\
-			<div class="km">\
-				<div class="km_blue"></div>\
-				<div class="km_yellow"></div>\
-			</div>',
 	},
 	"gl": { 
 		countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
@@ -167,6 +160,7 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		money: 'O Teu Apoio',
 		control_VIDEOS: { 
 			title: 'Amosar videos',
 			text: 'VIDEOS'
@@ -183,14 +177,6 @@ var translations = {
 			title: 'Amosar paradas da viaxe',
 			text: 'VIAXE'
 		},
-		money: '<h2 style="color:white;margin-bottom:20px">O Teu Apoio</h2>\
-			<div class="motorbike">\
-				<img src="img/icon_bikemotor.png">\
-			</div>\
-			<div class="km">\
-				<div class="km_blue"></div>\
-				<div class="km_yellow"></div>\
-			</div>',
 	},
 	"es": { 
 		countDownTitle: 'Cuenta Atr&aacute;s para el Viaje',
@@ -263,6 +249,7 @@ var translations = {
 					</li>\
 				</ol>\
 			</p>',
+		money: 'Tu Apoyo',
 		control_VIDEOS: { 
 			title: 'Mostrar videos',
 			text: 'VIDEOS'
@@ -279,14 +266,6 @@ var translations = {
 			title: 'Mostrar paradas del viaje',
 			text: 'VIAJE'
 		},
-		money: '<h2 style="color:white;margin-bottom:20px">Tu Apoyo</h2>\
-			<div class="motorbike">\
-				<img src="img/icon_bikemotor.png">\
-			</div>\
-			<div class="km">\
-				<div class="km_blue"></div>\
-				<div class="km_yellow"></div>\
-			</div>',
 	},
 };
 
@@ -303,7 +282,7 @@ function translate(
 	$('.box.who').html(translation.who);
 	$('.box.where').html(translation.where);
 	$('.box.how').html(translation.how);
-	$('.money').html(translation.money);
+	$('.money h2').html(translation.money);
 	for (var c in map_controls) {
 		var theControl = map_controls[c];
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
@@ -325,5 +304,5 @@ $(function() {
 		translate("es"); 
 		return false; 
 	});
-	translate("en");
+    translate("en");
 });
