@@ -1,0 +1,65 @@
+body {
+    height: 100%;
+    overflow: scroll;
+    background: #888;
+}
+div {
+    width: 6975px;
+    position: absolute;
+    bottom: 0;
+}
+#road {
+    background: #222;
+    height: 150px;
+    z-index: 10;
+}
+#roadline {
+    background: #222;
+    height: 20px;
+    bottom: 100px;
+    border-top: 10px dashed #fff;
+    z-index: 15;
+}
+#mountains {
+    background: url("../img/skyline_mountains.png") repeat;
+    height: 245px;
+    bottom: 10px;
+    z-index: 5;
+}
+#xavi {
+    position: fixed;
+    background: transparent url(../img/skyline_bike.png) no-repeat;
+    width: 78px;
+    height: 245px;
+    left: 0;
+    z-index: 20;
+    -webkit-transform: translate3d(0,0,0);  /* fix for Safari z-index quirk */
+}
+
+div#speechBubble {
+    bottom: 180px;
+    margin-left: 10px;
+    display: none;
+    background: transparent url(../img/speechbubble.png) no-repeat bottom left;
+    padding: 20px 20px 55px 20px;
+    width: 200px;
+    color: #fff;
+    line-height: 1.5;
+    -webkit-transform: translate3d(0,0,0);
+}
+div#speechBubble h1 {
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+div.milestone {
+    bottom: 150px;
+    margin-left: 100px;
+    background: transparent url(../img/sign.png) no-repeat bottom center;
+    padding: 15px 20px 75px 20px;
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    line-height: 1.5;
+    -webkit-transform: translate3d(0,0,0);
+}

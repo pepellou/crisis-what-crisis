@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1280, maximum-scale=1.0" />	
+	<link href="countdown/style/dark.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="css/money.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="css/roadmap.css" media="screen" rel="stylesheet" type="text/css" >
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Crisis - What Crisis</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta property="og:image" content="http://www.crisis-whatcrisis.com/img/logo.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
+	<meta property="og:title" content="Crisis - What crisis?" />
+	<meta property="og:description" content= "It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script type="text/javascript" 
+		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
+	</script>
+		
+	<!-- Developed by Pepe Doval - see http://www.crisis-whatcrisis.com/humans.txt -->
+
+	<script language="javascript">
+        var speechBubbles = [
+            {
+                start: 250,
+                milestone: '1/1/1901',
+                text: 'Ola ke ase!'
+            },
+            {
+                start: 750,
+                milestone: '31/12/2013',
+                text: 'Blah blah'
+            },
+            {
+                start: 1350,
+                milestone: '26/5/2014',
+                text: 'Un blah blah más, pero de varias líneas, para comprobar que el bocadillo del diálogo se ve bien a pesar de ello...'
+            }
+        ];
+
+        function scrollEventHandler(position) {
+            var v = Math.ceil(position/80);
+            var xPos = (v - Math.floor(v/4) * 4) * -40;
+            $('#xavi-img').css('background-position-x', xPos);
+
+            var currentBubble = null;
+            speechBubbles.forEach(function(bubble) {
+                if (position >= bubble.start && position <= bubble.start + 300) {
+                    currentBubble = bubble;
+                }
+            });
+            if (currentBubble == null) {
+                $('#speechBubble').css('display', 'none');
+            } else {
+                $('#speechBubble').html('<h1>' + currentBubble.milestone + '</h1>' + currentBubble.text);
+                $('#speechBubble').css('display', 'block');
+            }
+        }
+        $(function() {
+            speechBubbles.forEach(function(bubble) {
+                $('#milestones').append('<div class="milestone" style="margin-left: ' + bubble.start + 'px">' + bubble.milestone + '</div>');
+            });
+            setTimeout(function() {
+                scrollEventHandler($(window).scrollLeft());
+                setTimeout(arguments.callee, 20);
+            }, 20);
+            $(window).bind('mousewheel', function(e){
+                $(window).scrollLeft($(window).scrollLeft() - e.originalEvent.wheelDelta/5);
+            });
+            $(window).bind('keydown keypress', function(e) {
+                if (e.keyCode == 38) {
+                    e.preventDefault();
+                    $(window).scrollLeft($(window).scrollLeft() - 40);
+                }
+                if (e.keyCode == 40) {
+                    e.preventDefault();
+                    $(window).scrollLeft($(window).scrollLeft() + 40);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="xavi">
+        <div id="speechBubble" style="display: none;"></div>
+    </div>
+    <div id="road">
+        <div id="roadline"></div>
+    </div>
+    <div id="mountains"></div>
+    <div id="milestones"></div>
+</body>
+</html>
