@@ -29,7 +29,7 @@
 	<link href="css/money.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
 	<link rel="icon" type="image/png" href="favicon.png">
-	<title>Crisis - What Crisis</title>
+	<title>Crisis - What Crisis: <?php echo SUBTITLE;?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta property="og:image" content="http://www.crisis-whatcrisis.com/img/logo.png" />
 	<meta property="og:type" content="website" />

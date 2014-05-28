@@ -3,6 +3,7 @@
     define (LANG_EN, Inglés);
     define (LANG_GL, Galego);
     define (COUNT_DOWN_TITLE, 'Conta Atr&aacute;s para a Viaxe');
+    define (SUBTITLE, 'Unha resposta optimista');
     define (COLLABORATE_BUTTON, 'img/donate.png');
     define (META_KEYWORDS, 'documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.');
     define (META_LANGUAGE, 'gl, galego');

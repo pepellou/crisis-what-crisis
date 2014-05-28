@@ -3,6 +3,7 @@
     define (LANG_EN, 'Inglés');
     define (LANG_GL, 'Gallego');
     define (COUNT_DOWN_TITLE, 'Cuenta Atr&aacute;s para el Viaje');
+    define (SUBTITLE, 'Una respuesta optimista');
     define (COLLABORATE_BUTTON, 'img/donate.png');
     define (META_KEYWORDS, 'documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.');
     define (META_LANGUAGE, 'es, español');
