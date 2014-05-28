@@ -35,7 +35,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
 	<meta property="og:title" content="Crisis - What crisis?" />
-	<meta property="og:description" content= "It's a documentary portraying the 2014's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?" />
+	<meta property="og:description" content= "<?php echo META_DESCRIPTION;?>"/>
     <meta name="description" content="<?php echo META_DESCRIPTION;?>">
     <meta name="keywords" content="<?php echo META_KEYWORDS?>">
     <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion">
