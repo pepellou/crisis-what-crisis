@@ -274,15 +274,15 @@ function translate(
 ) {
 	var translation = translations[to];
 	$('#idiomas a').removeClass('selected');
-	$('a[name="idioma_' + to + '"]').addClass('selected');
-	$('#countdown_dashboard h1').html(translation.countDownTitle);
-	$('#collaborate_button').attr("src", translation.collaborateButton);
-	$('.box.what').html(translation.what);
-	$('.box.why').html(translation.why);
-	$('.box.who').html(translation.who);
-	$('.box.where').html(translation.where);
-	$('.box.how').html(translation.how);
-	$('.money h2').html(translation.money);
+	//$('a[name="idioma_' + to + '"]').addClass('selected');
+	//$('#countdown_dashboard h1').html(translation.countDownTitle);
+	//$('#collaborate_button').attr("src", translation.collaborateButton);
+	//$('.box.what').html(translation.what);
+	//$('.box.why').html(translation.why);
+	//$('.box.who').html(translation.who);
+	//$('.box.where').html(translation.where);
+	//$('.box.how').html(translation.how);
+	//$('.money h2').html(translation.money);
 	for (var c in map_controls) {
 		var theControl = map_controls[c];
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
@@ -291,18 +291,23 @@ function translate(
 	calculateMoney();
 }
 
+function getCookie(cname)
+{
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) 
+    {
+        var c = ca[i].trim();
+        if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
 $(function() {
-	$('a[name="idioma_en"]').click(function () { 
-		translate("en"); 
-		return false; 
-	});
-	$('a[name="idioma_gl"]').click(function () { 
-		translate("gl"); 
-		return false; 
-	});
-	$('a[name="idioma_es"]').click(function () { 
-		translate("es"); 
-		return false; 
-	});
-    translate("en");
+    $(document).ready(function(){
+        var navLang = x=window.navigator.language||navigator.browserLanguage
+        var cookieLang = getCookie("lan");
+        var finalLang = (cookieLang=="")?navLang:cookieLang;
+        translate(finalLang);
+    });
 });

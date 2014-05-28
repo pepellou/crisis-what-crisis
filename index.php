@@ -1,7 +1,23 @@
 <?php
-    $lan = isset($_GET['lan'])?$_GET['lan']:'en';
 	require_once dirname(__FILE__)."/mobile-detection.php";
 	require_once dirname(__FILE__)."/get-videos.php";
+
+    $idioma = isset($_COOKIE['lan']) ? $_COOKIE['lan'] : "";
+    $subpag = "";
+
+    if ($idioma == "") {
+        $idioma = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+        $idioma = substr($idioma, 0, 2);
+    }
+    if ($idioma == "es") {
+        require_once(dirname(__FILE__)."/langs/es".$subpag.".php");
+    }
+    elseif ($idioma == "en") {
+        require_once(dirname(__FILE__)."/langs/en".$subpag.".php");
+    }
+    elseif ($idioma == "gl") {
+        require_once(dirname(__FILE__)."/langs/gl".$subpag.".php");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,10 +36,10 @@
 	<meta property="og:url" content="http://www.crisis-whatcrisis.com" />
 	<meta property="og:title" content="Crisis - What crisis?" />
 	<meta property="og:description" content= "It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?" />
-    <meta name="description" content="It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?"> 
-    <meta name="keywords" content="crisis, what crisis, pigs, P.I.G.S."> 
-    <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion"> 
-    <meta name="language" content="en, english"> 
+    <meta name="description" content="<?php echo META_DESCRIPTION;?>">
+    <meta name="keywords" content="<?php echo META_KEYWORDS?>">
+    <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion">
+    <meta name="language" content="<?php echo META_LANGUAGE;?>">
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
@@ -40,6 +56,21 @@
 	<script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
 	<script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl']").click(function(event){
+                var lang = $(this).attr("name");
+                language = lang.substr(lang.length -2, 2);
+                var d = new Date();
+                var days = 7;
+                d.setTime(d.getTime()+(days*24*60*60*1000));
+
+                event.preventDefault();
+                document.cookie = "lan=" + language + "; expires=" + d.toGMTString() + "; path=/";
+                window.location.href=window.location.href;
+            });
+        });
+    </script>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
 
@@ -47,7 +78,7 @@
 <body>
 	<div id="top_block">
 		<div id="countdown_dashboard">
-			<h1 style="color: white">Count-Down for the Trip</h1>
+			<h1 style="color: white"><?php echo COUNT_DOWN_TITLE;?></h1>
 			<div class="dash weeks_dash">
 				<span class="dash_title">weeks</span>
 				<div class="digit">0</div>
@@ -80,7 +111,7 @@
 		</div>
 
 		<div class="money" style="margin-top:120px;margin-left:70px;">
-		    <h2 style="color:white;margin-bottom:20px"></h2>
+		    <h2 style="color:white;margin-bottom:20px"><?php echo MONEY;?></h2>
 			<div class="motorbike">
 				<img src="img/icon_bikemotor.png" width="43px;">
 			</div>
@@ -94,9 +125,9 @@
 
 	<div id="idiomas">
 		<div style="padding: 0 16px;">
-			<a href="#" class="selected" name="idioma_en">english</a> |
-			<a href="#" name="idioma_gl">galego</a> |
-			<a href="#" name="idioma_es">espa&ntilde;ol</a>
+			<a href="" class="<?php echo ($idioma=='en')?'selected':'';?>" name="idioma_en"><?php echo LANG_EN; ?></a> |
+			<a href="" class="<?php echo ($idioma=='gl')?'selected':'';?>" name="idioma_gl"><?php echo LANG_GL; ?></a> |
+			<a href="" class="<?php echo ($idioma=='es')?'selected':'';?>" name="idioma_es"><?php echo LANG_ES; ?></a>
 		</div>
 	</div>
 	<div id="sheet">
@@ -116,15 +147,15 @@
 				<li><a href="#" name="how">   How   </a></li>
 		</div>
 		<img class="line what" src="img/lineto-what.png" alt="line" />
-		<div class="box what"> </div>
+		<div class="box what"><?php echo WHAT;?></div>
 		<img class="line why" src="img/lineto-why.png" alt="line" />
-		<div class="box why"> </div>
+		<div class="box why"><?php echo WHY;?> </div>
 		<img class="line who" src="img/lineto-who.png" alt="line" />
-		<div class="box who"> </div>
+		<div class="box who"><?php echo WHO;?> </div>
 		<img class="line where" src="img/lineto-where.png" alt="line" />
-		<div class="box where"> </div>
+		<div class="box where"><?php echo WHERE;?> </div>
 		<img class="line how" src="img/lineto-how.png" alt="line" />
-		<div class="box how"> </div>
+		<div class="box how"><?php echo HOW;?> </div>
 	</div>
 
 	<div id="black-background" class="modal"></div>
