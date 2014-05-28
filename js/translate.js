@@ -3,7 +3,7 @@ var translations = {
 		countDownTitle: 'Count-Down for the Trip',
 		collaborateButton: 'img/donate_ing.png',
 		what: '<p>\
-				It\'s a documentary portraying the 2012\'s Europe.\
+				It\'s a documentary portraying the 2014\'s Europe.\
 			</p>\
 			<p>\
 				A trip from Galicia, in the Iberian Peninsula\'s Northwest extreme, \
@@ -93,7 +93,7 @@ var translations = {
 		countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
 		collaborateButton: 'img/donate.png',
 		what: '<p>\
-				Un documental que retrata a Europa de 2012.\
+				Un documental que retrata a Europa de 2014.\
 			</p>\
 			<p>\
 				Unha viaxe en moto que parte de Galicia, no extremo Noroeste da Pen&iacute;nsula ib&eacute;rica \
@@ -182,7 +182,7 @@ var translations = {
 		countDownTitle: 'Cuenta Atr&aacute;s para el Viaje',
 		collaborateButton: 'img/donate.png',
 		what: '<p>\
-				Un documental que retrata la Europa de 2012.\
+				Un documental que retrata la Europa de 2014.\
 			</p>\
 			<p>\
 				Un viaje en moto que parte de Galicia, en el extremo Noroeste de la Pen&iacute;nsula ib&eacute;rica \
