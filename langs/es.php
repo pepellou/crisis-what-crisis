@@ -19,7 +19,7 @@
 			<p>
 				Una respuesta pr&aacute;ctica y valiente a las preguntas que si no nos hacemos deber&iacute;amos hacernos:<br/>
 				Qu&eacute; es la crisis? <br/>
-				De d&oacute;onde viene?<br/>
+				De d&oacute;nde viene?<br/>
 				A d&oacute;nde nos lleva? <br/>
 				Y ahora, qu&eacute;?
 			</p>');
