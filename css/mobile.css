@@ -34,6 +34,7 @@ body {
 img { float: left }
 #bgImage {
 	width: 100%;
+    float: left;
 }
 #mailto {
 	width: 31%;
@@ -42,6 +43,30 @@ img { float: left }
 }
 #play_video {
 	width: 12.7%;
-	margin-left: 73.6%;
-	margin-top: -665%;
+    margin-left: -25%;
+    margin-top: 107%;
+    position: absolute;
+}
+h2 {
+    font-family: 'TungstenMedium';
+    font-weight: normal;
+    font-size: 14em;
+    line-height: 50%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    background: #1c1c1b;
+    text-align: center;
+    padding-top: 0.3em;
+	width: 100%;
+    float: left;
+}
+.content {
+    padding: 6%;
+    background: #1c1c1b;
+    margin: 2em 0;
+    color: white;
+    font-size: 1.5em;
+    float: left;
 }

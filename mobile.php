@@ -35,24 +35,28 @@
 	<!-- Developed by Pepe Doval - http://about.me/pepellou -->
 </head>
 <body>
-	<img id="bgImage" src="mobil.png" />
-	<a href="mailto:projetcrisiswhatcrisis@gmail.com">
-		<img id="mailto" src="mailto.png" />
-	</a>
+	<img id="bgImage" src="mobil_header.png" />
 	<a href="http://www.youtube.com/watch?v=ln3tGnzGT9k" target="_blank">
 		<img id="play_video" src="play_video.png" />
 	</a>
-    <div style="position: absolute; z-index: -1; color: #aaa;">
-        <h1>Crisis what crisis: <?php echo SUBTITLE;?></h2>
-        <h2>what</h2>
-		<?php echo WHAT;?>
-        <h2>why</h2> <p>
-		<?php echo WHY;?>
-        <h2>who</h2> <p>
-		<?php echo WHO;?>
-        <h2>where</h2>
-		<?php echo WHERE;?>
-        <h2>how</h2>
-		<?php echo HOW;?>
+    <h2>what</h2>
+    <div class="content">
+        <?php echo WHAT;?>
+    </div>
+    <h2>why</h2> <p>
+    <div class="content">
+        <?php echo WHY;?>
+    </div>
+    <h2>who</h2> <p>
+    <div class="content">
+        <?php echo WHO;?>
+    </div>
+    <h2>where</h2>
+    <div class="content">
+        <?php echo WHERE;?>
+    </div>
+    <h2>how</h2>
+    <div class="content">
+        <?php echo HOW;?>
     </div>
 </body>
