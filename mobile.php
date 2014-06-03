@@ -36,10 +36,12 @@
 </head>
 <body>
 	<img id="bgImage" src="mobil_header.png" />
-	<a href="http://www.youtube.com/watch?v=ln3tGnzGT9k" target="_blank">
-		<img id="play_video" src="play_video.png" />
-	</a>
-    <h2>what</h2>
+    <div class="header">
+        <h2>what</h2>
+        <a href="http://www.youtube.com/watch?v=ln3tGnzGT9k" target="_blank">
+            <img id="play_video" src="play_video.png" />
+        </a>
+    </div>
     <div class="content">
         <?php echo WHAT;?>
     </div>
@@ -59,4 +61,10 @@
     <div class="content">
         <?php echo HOW;?>
     </div>
+    <footer>
+        <p>
+            <?php echo CONTACT;?>
+            <a href="mailto:projetcrisiswhatcrisis@gmail.com">xavierbelho@gmail.com</a>
+        </p>
+    </footer>
 </body>
