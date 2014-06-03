@@ -22,6 +22,9 @@
 				Where does it come from?<br/>
 				Where does it lead us? <br/>
 				And now what?
+			</p>
+			<p>
+                * PORTUGAL, ITALY, GREECE, SPAIN ...
 			</p>');
     define (WHY, '<p>
 				The crisis that was a deceleration and now seems an hecatomb
@@ -78,4 +81,5 @@
 				</ol>
 			</p>');
     define (MONEY, 'Your Support');
+    define (CONTACT, 'Contact me at ');
 ?>

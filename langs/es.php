@@ -22,6 +22,9 @@
 				De d&oacute;nde viene?<br/>
 				A d&oacute;nde nos lleva? <br/>
 				Y ahora, qu&eacute;?
+			</p>
+			<p>
+                * PORTUGAL, ITALY, GREECE, SPAIN ...
 			</p>');
     define (WHY, '<p>
 				La crisis que fue desaceleraci&oacute;n y ahora parece hecatombe ten&iacute;a que durar dos a&ntilde;os
@@ -77,4 +80,5 @@
 				</ol>
 			</p>');
     define (MONEY, 'Tu apoyo');
+    define (CONTACT, 'Contacta conmigo en ');
 ?>
