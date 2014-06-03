@@ -15,6 +15,18 @@
     elseif ($idioma == "gl") {
         require_once(dirname(__FILE__)."/langs/gl".$subpag.".php");
     }
+    elseif ($idioma == "it") {
+        require_once(dirname(__FILE__)."/langs/it".$subpag.".php");
+    }
+    elseif ($idioma == "el") {
+        require_once(dirname(__FILE__)."/langs/el".$subpag.".php");
+    }
+    elseif ($idioma == "pt") {
+        require_once(dirname(__FILE__)."/langs/pt".$subpag.".php");
+    }
+    elseif ($idioma == "ca") {
+        require_once(dirname(__FILE__)."/langs/ca".$subpag.".php");
+    }
 ?>
 <!DOCTYPE html>
 <html>
