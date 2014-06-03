@@ -667,10 +667,16 @@ ul li {
 	border-right: 5px solid white;
 }
 .person img {
-	width: 85px;
+	width: 100px;
 	position: absolute;
-	right: 62px;
-	top: 10px;
+	right: 40px;
+	top: 40px;
+    border: 2px solid white;
+}
+.person p {
+    color: #aaa;
+    font-size: 1em;
+    margin: 0 200px;
 }
 .person .photo {
 	position: absolute;
@@ -687,16 +693,14 @@ ul li {
 .person a:hover {
 	text-decoration: underline;
 }
-.person h1 {
+.modal h1 {
 	color: white;
 	font-weight: lighter;
-	margin: 0px;
-	width: 104px;
-	left: -39px;
+	margin: -5px 0;
+	width: 150px;
 	position: relative;
 	text-align: right;
 	top: 32px;
-	margin-top: -32px;
 }
 .person .text {
 	color: white;
@@ -708,14 +712,14 @@ ul li {
 }
 .person .web {
 	color: white;
-	font-size: 12px;
+	font-weight: bold;
 }
 .person .links {
 	color: white;
-	font-size: 12px;
+	font-weight: bold;
+    margin: 0 160px;
 }
 .person .links .link {
-	margin-left: 12px;
 }
 .person .contact {
 	color: white;
