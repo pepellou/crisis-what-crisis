@@ -20,6 +20,19 @@
     elseif ($idioma == "gl") {
         require_once(dirname(__FILE__)."/langs/gl".$subpag.".php");
     }
+    elseif ($idioma == "it") {
+        require_once(dirname(__FILE__)."/langs/it".$subpag.".php");
+    }
+    elseif ($idioma == "el") {
+        require_once(dirname(__FILE__)."/langs/el".$subpag.".php");
+    }
+    elseif ($idioma == "pt") {
+        require_once(dirname(__FILE__)."/langs/pt".$subpag.".php");
+    }
+    elseif ($idioma == "ca") {
+        require_once(dirname(__FILE__)."/langs/ca".$subpag.".php");
+    }
+    echo $idioma;
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,7 +91,7 @@
 	<script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl']").click(function(event){
+            $("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl'],a[name='idioma_ca'],a[name='idioma_pt'],a[name='idioma_it'],a[name='idioma_gr']").click(function(event){
                 var lang = $(this).attr("name");
                 language = lang.substr(lang.length -2, 2);
                 var d = new Date();
@@ -145,9 +158,13 @@
 
 	<div id="idiomas">
 		<div style="padding: 0 16px;">
-			<a href="" class="<?php echo ($idioma=='en')?'selected':'';?>" name="idioma_en"><?php echo LANG_EN; ?></a> |
-			<a href="" class="<?php echo ($idioma=='gl')?'selected':'';?>" name="idioma_gl"><?php echo LANG_GL; ?></a> |
-			<a href="" class="<?php echo ($idioma=='es')?'selected':'';?>" name="idioma_es"><?php echo LANG_ES; ?></a>
+			<a href="" class="<?php echo ($idioma=='en')?'selected':'';?>" name="idioma_en">English</a> |
+			<a href="" class="<?php echo ($idioma=='es')?'selected':'';?>" name="idioma_es">Español</a>
+			<a href="" class="<?php echo ($idioma=='ca')?'selected':'';?>" name="idioma_ca">Català</a> |
+			<a href="" class="<?php echo ($idioma=='gl')?'selected':'';?>" name="idioma_gl">Galego</a> |
+			<a href="" class="<?php echo ($idioma=='pt')?'selected':'';?>" name="idioma_pt">Português</a> |
+			<a href="" class="<?php echo ($idioma=='it')?'selected':'';?>" name="idioma_it">Italiano</a> |
+			<a href="" class="<?php echo ($idioma=='gr')?'selected':'';?>" name="idioma_gr">ελληνικά</a>
 		</div>
 	</div>
 	<div id="sheet">
