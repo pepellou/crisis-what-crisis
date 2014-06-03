@@ -233,12 +233,8 @@
                 <li><?php echo $link; ?></li>
             <?php } ?>
             </ul>
-            <h1>GPS</h1>
-            <p class="name"><?php echo $person->gps->lat; ?></p>
-            <p class="name"><?php echo $person->gps->lng; ?></p>
         </div>
     <? } ?>
-
     <div id="previewVideo" class="modal">
         <div class="left"></div>
         <div class="theVideo"></div>
