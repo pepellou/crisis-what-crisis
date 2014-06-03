@@ -18,11 +18,13 @@
 			</p>
 			<p>
 				A practical and brave answer to that questions we should ask:<br/>
-				What is the crisis? <br/>
-				Where does it come from?<br/>
-				Where does it lead us? <br/>
-				And now what?
 			</p>
+			<ul>
+				<li>What is the crisis? </li>
+				<li>Where does it come from?</li>
+				<li>Where does it lead us? </li>
+				<li>And now what?</li>
+			</ul>
 			<p>
                 * PORTUGAL, ITALY, GREECE, SPAIN ...
 			</p>');

@@ -18,10 +18,12 @@
 			</p>
 			<p>
 				Unha resposta pr&aacute;ctica e valente &aacute;s preguntas que se non nos facemos deberiamos facernos:<br/>
-				Que &eacute; a crise? <br/>
-				De onde ven?<br/>
-				Cara a onde nos leva? <br/>
-				E agora, que?
+			<ul>
+				<li>Que &eacute; a crise?</li>
+				<li>De onde ven?</li>
+				<li>Cara a onde nos leva?</li>
+				<li>E agora, que?</li>
+			</ul>
 			</p>
 			<p>
                 * PORTUGAL, ITALY, GREECE, SPAIN ...
