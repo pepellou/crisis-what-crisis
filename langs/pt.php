@@ -42,43 +42,48 @@
                 se nunca os imaginarmos nunca seremos capazes de os tornar realidade.
 			</p>');
     define (WHO, '<p>
-				O creador gr&aacute;fico e audiovisual Xavier Belho dirixe a moto e a c&aacute;mara. 
+                O meu nome é Xavier Belho e dedico-me ao design gráfico e à produção audiovisual.
+                Farei uma viagem em moto, para rodar o documentário que me levará desde Finisterra
+                na Galiza até às portas do Ocidente, através dos países protagonistas da CRISE. 
 			</p>
 			<p>
-				Acomp&aacute;&ntilde;ano, dende Galicia, os Irm&aacute;ns Karapatrov e o colectivo N&oacute;Com&uacute;n.
+                Contarei com o apoio, entre outros, dos ExHermanos Karapatrov e do colectivo NóComún, Casa das Crechas,
+                Associação Cidade Vella de Compostela, dos Dirty Socks na banda sonora e outros colectivos e pessoas
+                que manifestaram publicamente o seu apoio no momento de iniciar esta aventura.
 			</p>
 			<p>
-				E polo cami&ntilde;o ir&aacute; co&ntilde;ecendo aos protagonistas desta historia:
-				habitantes dos PIGS que se negan a verse reflectidos no espello da 
-				desesperaci&oacute;n e que afrontan a crise con valent&iacute;a e boas ideas.
+                Pelo caminho irei conhecer os protagonistas desta história:
+                habitantes dos países designados PIGS que se negam a ver-se reflectidos
+                no espelho do desespero e que enfrentam a crise com valentia e boas ideias. 
 			</p>');
     define (WHERE, '<p>
-				Al&iacute; onde haxa unha resposta intelixente e innovadora &aacute; crise.
+                Ali onde houver uma resposta inteligente e inovadora para a crise. 
 			</p>
 			<p>
-				En principio a ruta pasar&aacute; por ou preto das seguintes cidades:
+                Em principio a rota da viagem passará pelas seguintes cidades: 
 			</p>
 			<p>
-				<strong>Santiago de Compostela - Vigo - Oporto - Viseu - Salamanca - Madrid - Toledo - 
-				Valencia - Tarragona - Barcelona - Roma - Napoles - Bari - Brindisi - Patras - Atenas</strong>
+				<strong>Santiago de Compostela-Vigo- Porto-Viseu-Salamanca-Madrid-Toledo-Valência-Tarragona-
+                Barcelona-Roma-Nápoles-Bari-Brindisi-Patras-Atenas-Thessaloniki</strong>
 			</p>');
     define (HOW, '<p>
-				O proxecto plant&eacute;xase como unha construcci&oacute;n modular con d&uacute;as etapas diferenciadas:
+                    O projecto será uma construção modular com etapas diferentes: 
+			</p>
+			<p>
 				<ol>
 					<li>
-						Os protagonistas contar&aacute;n a s&uacute;a historia, al&iacute; onde a desenvolven,
-						directamente &aacute; c&aacute;mara (unha Canon 7D), a trav&eacute;s de pequenas
-						entrevistas tipo videomat&oacute;n. Estas microentrevistas ir&aacute;nse subindo
-						&aacute; web e &aacute;s redes sociais, creando as&iacute; un mapa interactivo da
-						viaxe co que o p&uacute;blico poder&aacute; interactuar, practicamente, en directo.
+                        Os protagonistas contarão a sua história, nos próprio local onde estas se desenrolam,
+                        directamente para a câmara, através de pequenas entrevistas tipo videomatón. Estas
+                        micro-entrevistas vão sendo partilhadas na web e nas redes sociais, criando assim um
+                        mapa interactivo da viagem com o público que pode interagir praticamente em directo. 
 					</li>
 					<li>
-						Unha vez rematada a viaxe, montar&aacute;se un documental narrativo no que se
-						complementar&aacute;n declaraci&oacute;ns seleccionadas dos protagonistas con
-						informaci&oacute;n e imaxes do contexto no que desenvolven a s&uacute;a actividade.
+                        Assim que a viagem terminar, irá editar-se o documentário narrativo que será complementado
+                        com declarações seleccionadas dos protagonistas e com informação e imagens dos contextos
+                        nos quais desenvolvem a sua actividade.
 					</li>
 				</ol>
 			</p>');
-    define (MONEY, 'O Teu Apoio');
-    define (CONTACT, 'Fálame en ');
+    define (MONEY, 'Sua contribuição');
+    define (CONTACT, 'contacte-me em ');
 ?>
