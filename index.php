@@ -32,7 +32,6 @@
     elseif ($idioma == "ca") {
         require_once(dirname(__FILE__)."/langs/ca".$subpag.".php");
     }
-    echo $idioma;
 ?>
 <!DOCTYPE html>
 <html>
