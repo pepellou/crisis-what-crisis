@@ -2,6 +2,8 @@
 	require_once dirname(__FILE__)."/mobile-detection.php";
 	require_once dirname(__FILE__)."/get-videos.php";
 
+	require_once dirname(__FILE__)."/people.php";
+
     $idioma = isset($_COOKIE['lan']) ? $_COOKIE['lan'] : "";
     $subpag = "";
 
@@ -43,6 +45,24 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript" 
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
+	</script>
+	<script>
+		people = [
+			{
+				"type": "people",
+				'id': 'fatima_garcia_doval',
+				'name': 'XXXX',
+				"lat" : "42.884974",
+				"lng" : "-8.556708"
+			},
+			{
+				"type": "people",
+				'id': 'xavi_gost',
+				"name": "Xavi Gost",
+				"lat" : "39.488443",
+				"lng" : "-0.360331"
+			}
+		];
 	</script>
 	<script language="javascript" src="js/map/trip.js"></script>
 	<script language="javascript" src="js/map-style.js"></script>
@@ -173,37 +193,34 @@
 	<?php 	} ?>
 	</div>
 
-	<div id="people" class="modal">
-		<div class="logo"><img src="img/logo.png" alt="small web logo"></div>
-		<div class="photo"></div>
-		<div class="table-left">
-			<div class="web"></div>
-			<div class="links">links: </div>
-			<div class="contact"></div>
+	<?php foreach (People::all() as $person) { ?>
+		<div id="person_<?php echo $person->id; ?>" class="person modal">
+			<img src="data/people_images/<?php echo $person->id; ?>.png"></img>
+			<h1>WHO</h1>
+			<p class="name"><?php echo $person->name; ?></p>
+			<h1>WHERE</h1>
+			<p class="location"><?php echo $person->location; ?></p>
+			<h1>WHAT</h1>
+			<p class="what"><?php echo $person->what; ?></p>
+			<h1>WHY</h1>
+			<p class="why"><?php echo $person->why; ?></p>
+			<h1>HOW</h1>
+			<p class="how"><?php echo $person->how; ?></p>
+			<h1>WEB</h1>
+			<p class="web"><?php echo $person->web; ?></p>
+			<h1>MAIL</h1>
+			<p class="mail"><?php echo $person->mail; ?></p>
+			<h1>LINKS</h1>
+			<ul class="links">
+			<?php foreach ($person->links as $link) { ?>
+				<li><?php echo $link; ?></li>
+			<?php } ?>
+			</ul>
+			<h1>GPS</h1>
+			<p class="name"><?php echo $person->gps->lat; ?></p>
+			<p class="name"><?php echo $person->gps->lng; ?></p>
 		</div>
-		<div class="table-right">
-			<div class="who">
-				<h1>WHO</h1>
-				<div class="text">&nbsp;</div>
-			</div>
-			<div class="where">
-				<h1>WHERE</h1>
-				<div class="text">&nbsp;</div>
-			</div>
-			<div class="what">
-				<h1>WHAT</h1>
-				<div class="text">&nbsp;</div>
-			</div>
-			<div class="why">
-				<h1>WHY</h1>
-				<div class="text">&nbsp;</div>
-			</div>
-			<div class="how">
-				<h1>HOW</h1>
-				<div class="text">&nbsp;</div>
-			</div>
-		</div>
-	</div>
+	<? } ?>
 
 	<div id="previewVideo" class="modal">
 		<div class="left"></div>

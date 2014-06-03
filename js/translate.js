@@ -272,17 +272,8 @@ var translations = {
 function translate(
 	to
 ) {
-	var translation = translations[to];
+	var translation = translations[to.substring(0, 2)];
 	$('#idiomas a').removeClass('selected');
-	//$('a[name="idioma_' + to + '"]').addClass('selected');
-	//$('#countdown_dashboard h1').html(translation.countDownTitle);
-	//$('#collaborate_button').attr("src", translation.collaborateButton);
-	//$('.box.what').html(translation.what);
-	//$('.box.why').html(translation.why);
-	//$('.box.who').html(translation.who);
-	//$('.box.where').html(translation.where);
-	//$('.box.how').html(translation.how);
-	//$('.money h2').html(translation.money);
 	for (var c in map_controls) {
 		var theControl = map_controls[c];
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
