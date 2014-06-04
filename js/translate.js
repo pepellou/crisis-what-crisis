@@ -272,9 +272,11 @@ var translations = {
 function translate(
     to
 ) {
-    var translation = translations[to.substring(0, 2)];
+    var to = to.substring(0, 2);
+    var translation = translations[to];
     if (window.$) {
         $('#idiomas a').removeClass('selected');
+        $('#idiomas a[name=idioma_' + to + ']').addClass('selected');
     }
     for (var c in map_controls) {
         var theControl = map_controls[c];

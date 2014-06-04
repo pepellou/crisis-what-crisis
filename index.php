@@ -4,33 +4,24 @@
 
     require_once dirname(__FILE__)."/people.php";
 
+    $languages = array(
+        'English' => 'en',
+        'Español' => 'es',
+        'Català' => 'ca',
+        'Galego' => 'gl',
+        'Português' => 'pt',
+        'Italiano' => 'it',
+        'ελληνικά' => 'gr'
+    );
+
     $idioma = isset($_COOKIE['lan']) ? $_COOKIE['lan'] : "";
-    $subpag = "";
 
     if ($idioma == "") {
         $idioma = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-        $idioma = substr($idioma, 0, 2);
     }
-    if ($idioma == "es") {
-        require_once(dirname(__FILE__)."/langs/es".$subpag.".php");
-    }
-    elseif ($idioma == "en") {
-        require_once(dirname(__FILE__)."/langs/en".$subpag.".php");
-    }
-    elseif ($idioma == "gl") {
-        require_once(dirname(__FILE__)."/langs/gl".$subpag.".php");
-    }
-    elseif ($idioma == "it") {
-        require_once(dirname(__FILE__)."/langs/it".$subpag.".php");
-    }
-    elseif ($idioma == "el") {
-        require_once(dirname(__FILE__)."/langs/el".$subpag.".php");
-    }
-    elseif ($idioma == "pt") {
-        require_once(dirname(__FILE__)."/langs/pt".$subpag.".php");
-    }
-    elseif ($idioma == "ca") {
-        require_once(dirname(__FILE__)."/langs/ca".$subpag.".php");
+    $idioma = substr($idioma, 0, 2);
+    if (in_array($idioma, $languages)) {
+        require_once(dirname(__FILE__).'/langs/'.$idioma.".php");
     }
 ?>
 <!DOCTYPE html>
@@ -158,13 +149,14 @@
 
     <div id="idiomas">
         <div style="padding: 0 16px;">
-            <a href="" class="<?php echo ($idioma=='en')?'selected':'';?>" name="idioma_en">English</a> |
-            <a href="" class="<?php echo ($idioma=='es')?'selected':'';?>" name="idioma_es">Español</a>
-            <a href="" class="<?php echo ($idioma=='ca')?'selected':'';?>" name="idioma_ca">Català</a> |
-            <a href="" class="<?php echo ($idioma=='gl')?'selected':'';?>" name="idioma_gl">Galego</a> |
-            <a href="" class="<?php echo ($idioma=='pt')?'selected':'';?>" name="idioma_pt">Português</a> |
-            <a href="" class="<?php echo ($idioma=='it')?'selected':'';?>" name="idioma_it">Italiano</a> |
-            <a href="" class="<?php echo ($idioma=='gr')?'selected':'';?>" name="idioma_gr">ελληνικά</a>
+            <?php
+                $lang_links = array();
+                foreach($languages as $name => $code) { 
+                    $class = ($idioma==$code) ? 'selected' : '';
+                    $lang_links []= "<a href='' class='$class' name='idioma_$code'>$name</a>";
+                }
+                echo implode(' | ', $lang_links);
+            ?>
         </div>
     </div>
     <div id="sheet">
