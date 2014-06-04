@@ -21,6 +21,7 @@ var photos = [];
 var map_points;
 var map_controls = [];
 var pt_markers = [];
+var tripLines = [];
 
 function setUpMap(
 ) {
@@ -31,7 +32,7 @@ function setUpMap(
 
 function createMap(
 ) {
-        map = new google.maps.Map(
+    map = new google.maps.Map(
         document.getElementById("map_canvas"),
         { 
             zoom: 5,
@@ -100,11 +101,14 @@ function AddControl(title, text, map, index, callback) {
 
 function clearMap(
 ) {
-        for (var i in pt_markers) {
-                marker = pt_markers[i];
-                marker.setMap(null);
-        }   
-        pt_markers = []; 
+    tripLines.forEach(function(line) {
+        line.setMap(null);
+    });
+    for (var i in pt_markers) {
+        marker = pt_markers[i];
+        marker.setMap(null);
+    }   
+    pt_markers = []; 
 }
 
 function clickOnMarker(
@@ -150,9 +154,9 @@ function showPoints(
         points
 ) {
     clearMap();
-        for (var i in points) {
+    for (var i in points) {
         drawMarker(points[i]);
-       }   
+    }   
 }
 
 function drawMarker(
@@ -222,24 +226,6 @@ function drawVideos(
 
 function drawTrip(
 ) {
-    var itinerary = [];
-    for (var p in trip) {
-        var point = trip[p];
-        itinerary.push(new google.maps.LatLng(point.lat, point.lng));
-    }
-    new google.maps.Polyline({
-        path: itinerary,
-        strokeColor: "#2c4390",
-        strokeOpacity: 1.0,
-        strokeWeight: 9
-    }).setMap(map_points);
-    new google.maps.Polyline({
-        path: itinerary,
-        strokeColor: "#ffec00",
-        strokeOpacity: 1.0,
-        strokeWeight: 5
-    }).setMap(map_points);
-
     if (map_points.getZoom() > 5) {
             showPoints(trip);
     } else {
@@ -247,6 +233,27 @@ function drawTrip(
             return (index % 2 == 0 && index != array.length - 2) || (index == array.length - 1);
         }));
     }
+
+    var itinerary = [];
+    for (var p in trip) {
+        var point = trip[p];
+        itinerary.push(new google.maps.LatLng(point.lat, point.lng));
+    }
+    tripLines.push(new google.maps.Polyline({
+        path: itinerary,
+        strokeColor: "#2c4390",
+        strokeOpacity: 1.0,
+        strokeWeight: 9
+    }));
+    tripLines.push(new google.maps.Polyline({
+        path: itinerary,
+        strokeColor: "#ffec00",
+        strokeOpacity: 1.0,
+        strokeWeight: 5
+    }));
+    tripLines.forEach(function(line) {
+        line.setMap(map_points);
+    });
 }
 
 var currentMap = "trip";
