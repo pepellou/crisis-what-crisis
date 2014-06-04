@@ -477,7 +477,7 @@ ul li {
 #idiomas {
 	width: 100%;
 	height: 40px;
-	color: white;
+	color: black;
 	margin: auto;
 	width: 1200px;
 	text-align: right;
@@ -485,11 +485,14 @@ ul li {
 	line-height: 40px;
 }
 #idiomas a {
-	color: white;
+	color: #aaa;
+    text-decoration: none;
+}
+#idiomas a:hover {
+	color: #F9E600;
 }
 #idiomas a.selected {
-	color: #050505;
-	font-weight: bold;
+	color: white;
 }
 
 .block {
