@@ -7,11 +7,11 @@
     $languages = array(
         'English' => 'en',
         'Español' => 'es',
-        'Català' => 'ca',
+        //'Català' => 'ca',
         'Galego' => 'gl',
         'Português' => 'pt',
-        'Italiano' => 'it',
-        'ελληνικά' => 'gr'
+        //'Italiano' => 'it',
+        //'ελληνικά' => 'gr'
     );
 
     $idioma = isset($_COOKIE['lan']) ? $_COOKIE['lan'] : "";
