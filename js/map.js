@@ -1,25 +1,26 @@
-$(function() {
-	setUpMap();
-	var fadeMap = setInterval(
-		function () {
-			var theOpacity = $('#map_cover').css('opacity');
-			if (theOpacity < 0.02) {
-				$('#map_cover').css('display', 'none');
-				clearInterval(fadeMap);
-			} else {
-				$('#map_cover').css('opacity', theOpacity - 0.01);
-			}
-		},
-		10
-	);
-});
+if (window.$) {
+	$(function() {
+		setUpMap();
+		var fadeMap = setInterval(
+			function () {
+				var theOpacity = $('#map_cover').css('opacity');
+				if (theOpacity < 0.02) {
+					$('#map_cover').css('display', 'none');
+					clearInterval(fadeMap);
+				} else {
+					$('#map_cover').css('opacity', theOpacity - 0.01);
+				}
+			},
+			10
+		);
+	});
+}
 
 var photos = [];
 
 var map_points;
 var map_controls = [];
 var pt_markers = [];
-var centerMap = new google.maps.LatLng(40.5472, 6);
 
 function setUpMap(
 ) {
@@ -34,7 +35,7 @@ function createMap(
 		document.getElementById("map_canvas"),
 		{ 
 			zoom: 5,
-			center: centerMap,
+			center: new google.maps.LatLng(40.5472, 6),
 			mapTypeControl: false,
 			scrollwheel: false,
 			scaleControl: false,

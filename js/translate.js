@@ -273,7 +273,9 @@ function translate(
 	to
 ) {
 	var translation = translations[to.substring(0, 2)];
-	$('#idiomas a').removeClass('selected');
+	if (window.$) {
+		$('#idiomas a').removeClass('selected');
+	}
 	for (var c in map_controls) {
 		var theControl = map_controls[c];
 		theControl.controlUI.title = translation['control_' + theControl.name].title;
@@ -294,11 +296,9 @@ function getCookie(cname)
     return "";
 }
 
-$(function() {
-    $(document).ready(function(){
-        var navLang = x=window.navigator.language||navigator.browserLanguage
-        var cookieLang = getCookie("lan");
-        var finalLang = (cookieLang=="")?navLang:cookieLang;
-        translate(finalLang);
-    });
+$(document).ready(function(){
+    var navLang = x=window.navigator.language||navigator.browserLanguage
+    var cookieLang = getCookie("lan");
+    var finalLang = (cookieLang=="")?navLang:cookieLang;
+    translate(finalLang);
 });

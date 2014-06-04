@@ -1,24 +1,26 @@
-$(function() {
-	$.ajax({ 
-		type: "POST", 
-		url:  "get-photos.php",
-		data: "",
-		success: function(msg) { 
-			var thePhotos = eval( "(" + msg + ")" );
-			for (var p in thePhotos) {
-				var photo = thePhotos[p];
-				$.ajax({ 
-					type: "POST", 
-					url:  "get-photos.php",
-					data: "photo_link=" + photo.link,
-					success: function(msg) { 
-						addPhoto(eval("(" + msg + ")" ));
-					}
-				});
-			}
-		}           
+if (window.$) {
+	$(function() {
+		$.ajax({ 
+			type: "POST", 
+			url:  "get-photos.php",
+			data: "",
+			success: function(msg) { 
+				var thePhotos = eval( "(" + msg + ")" );
+				for (var p in thePhotos) {
+					var photo = thePhotos[p];
+					$.ajax({ 
+						type: "POST", 
+						url:  "get-photos.php",
+						data: "photo_link=" + photo.link,
+						success: function(msg) { 
+							addPhoto(eval("(" + msg + ")" ));
+						}
+					});
+				}
+			}           
+		});
 	});
-});
+}
 
 function addPhoto(
 	photo

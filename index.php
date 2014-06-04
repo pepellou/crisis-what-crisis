@@ -89,19 +89,21 @@
 	<script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
 	<script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl'],a[name='idioma_ca'],a[name='idioma_pt'],a[name='idioma_it'],a[name='idioma_gr']").click(function(event){
-                var lang = $(this).attr("name");
-                language = lang.substr(lang.length -2, 2);
-                var d = new Date();
-                var days = 7;
-                d.setTime(d.getTime()+(days*24*60*60*1000));
+        if (window.$) {
+            $(function() {
+            	$("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl'],a[name='idioma_ca'],a[name='idioma_pt'],a[name='idioma_it'],a[name='idioma_gr']").click(function(event){
+                    var lang = $(this).attr("name");
+                    language = lang.substr(lang.length -2, 2);
+                    var d = new Date();
+                    var days = 7;
+                    d.setTime(d.getTime()+(days*24*60*60*1000));
 
-                event.preventDefault();
-                document.cookie = "lan=" + language + "; expires=" + d.toGMTString() + "; path=/";
-                window.location.href=window.location.href;
+                    event.preventDefault();
+                    document.cookie = "lan=" + language + "; expires=" + d.toGMTString() + "; path=/";
+                    window.location.href=window.location.href;
+                });
             });
-        });
+        }
     </script>
 		
 	<!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
@@ -251,21 +253,23 @@
 	</div>
 
 	<script language="javascript" type="text/javascript">
-		$(function() {
-			var freeze = true;
-			if (!freeze) {
-				$('#countdown_dashboard').countDown({
-					targetDate: {
-						'day': 15,
-						'month': 10,
-						'year': 2012,
-						'hour': 7,
-						'min': 0,
-						'sec': 7
-					}
-				});
-			}
-		});
+		if (window.$) {
+			$(function() {
+				var freeze = true;
+				if (!freeze) {
+					$('#countdown_dashboard').countDown({
+						targetDate: {
+							'day': 15,
+							'month': 10,
+							'year': 2012,
+							'hour': 7,
+							'min': 0,
+							'sec': 7
+						}
+					});
+				}
+			});
+		}
 	</script>
 
 	<div id="footer">
