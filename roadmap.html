@@ -26,18 +26,21 @@
 	<script language="javascript">
         var speechBubbles = [
             {
-                start: 250,
+                start: 400,
                 milestone: '1/1/1901',
+                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
                 text: 'Ola ke ase!'
             },
             {
-                start: 750,
+                start: 900,
                 milestone: '31/12/2013',
+                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
                 text: 'Blah blah'
             },
             {
-                start: 1350,
+                start: 1400,
                 milestone: '26/5/2014',
+                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
                 text: 'Un blah blah más, pero de varias líneas, para comprobar que el bocadillo del diálogo se ve bien a pesar de ello...'
             }
         ];
@@ -49,20 +52,20 @@
 
             var currentBubble = null;
             speechBubbles.forEach(function(bubble) {
-                if (position >= bubble.start && position <= bubble.start + 300) {
+                if (position >= bubble.start-340 && position <= bubble.start + 100) {
                     currentBubble = bubble;
                 }
             });
             if (currentBubble == null) {
                 $('#speechBubble').css('display', 'none');
             } else {
-                $('#speechBubble').html('<h1>' + currentBubble.milestone + '</h1>' + currentBubble.text);
+                $('#speechBubble').html('<div><h1>' + currentBubble.milestone + '</h1><a href="' + currentBubble.link + '"><img src="img/play_alpha.png"></a></div><span>' + currentBubble.text + '</span>');
                 $('#speechBubble').css('display', 'block');
             }
         }
         $(function() {
             speechBubbles.forEach(function(bubble) {
-                $('#milestones').append('<div class="milestone" style="margin-left: ' + bubble.start + 'px">' + bubble.milestone + '</div>');
+                $('#milestones').append('<div class="milestone" style="margin-left: ' + bubble.start + 'px"><div class="signalTop">CWC</div><div class="signalBot">' + bubble.milestone + '</div><div class="signalStick"></div></div>');
             });
             setTimeout(function() {
                 scrollEventHandler($(window).scrollLeft());
