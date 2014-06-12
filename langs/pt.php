@@ -2,12 +2,12 @@
     define (LANG_ES, Español);
     define (LANG_EN, Inglés);
     define (LANG_GL, Galego);
-    define (COUNT_DOWN_TITLE, 'Conta Atr&aacute;s para a Viaxe');
-    define (SUBTITLE, 'Unha resposta optimista');
+    define (COUNT_DOWN_TITLE, 'contagem regressiva para a viagem');
+    define (SUBTITLE, 'uma resposta otimista');
     define (COLLABORATE_BUTTON, 'img/donate.png');
-    define (META_KEYWORDS, 'documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.');
-    define (META_LANGUAGE, 'gl, galego');
-    define (META_DESCRIPTION, 'Un documental que retrata a Europa de 2012. Unha viaxe en moto que parte de Galicia, no extremo Noroeste da Pen&iacute;nsula ib&eacute;rica e chega ata o Pireo, en Grecia, pasando por Portugal, Espa&ntilde;a e Italia (PIGS)*. Unha ollada cr&iacute;tica cara &aacute; CRISE. Unha resposta pr&aacute;ctica e valente &aacute;s preguntas que se non nos facemos deberiamos facernos: Que &eacute; a crise? De onde ven? Cara a onde nos leva? E agora, que?');
+    define (META_KEYWORDS, 'documental, viagem, otimismo, inovação, idéias, criatividade, crise, crisis, what crisis, pigs, P.I.G.S.');
+    define (META_LANGUAGE, 'pt, portuguese');
+    define (META_DESCRIPTION, 'Uma viagem de moto solitária que começa na Galiza, no extremo noroeste da Península Ibérica, e termina no Pireo (Atenas), na Grécia, passando por Portugal, Espanha e Itália (PIGS)*. É um olhar crítico sobre a CRISE. Uma resposta práctica e valente às perguntas que, se não estamos a fazer, deveríamos fazer-nos: O que &eacute; a crise? De onde vem? Até onde nos leva? E agora?');
     define (WHAT, '<p>
                 É um documentário que retrata a Europa de 2014.
 			</p>
