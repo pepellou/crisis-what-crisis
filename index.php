@@ -7,7 +7,7 @@
     $languages = array(
         'English' => 'en',
         'Español' => 'es',
-        //'Català' => 'ca',
+        'Català' => 'ca',
         'Galego' => 'gl',
         'Português' => 'pt',
         //'Italiano' => 'it',
