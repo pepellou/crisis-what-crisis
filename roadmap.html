@@ -46,10 +46,11 @@
         ];
 
         function scrollEventHandler(position) {
+            /*
             var v = Math.ceil(position/80);
             var xPos = (v - Math.floor(v/4) * 4) * -40;
             $('#xavi-img').css('background-position-x', xPos);
-
+            */
             var currentBubble = null;
             speechBubbles.forEach(function(bubble) {
                 if (position >= bubble.start-340 && position <= bubble.start + 100) {
@@ -71,9 +72,24 @@
                 scrollEventHandler($(window).scrollLeft());
                 setTimeout(arguments.callee, 20);
             }, 20);
-            $(window).bind('mousewheel', function(e){
-                $(window).scrollLeft($(window).scrollLeft() - e.originalEvent.wheelDelta/5);
-            });
+
+//            $(window).bind('mousewheel', function(e) {
+//                $(window).scrollLeft($(window).scrollLeft() - e.originalEvent.wheelDelta/5);
+//            });
+
+            function displayWheel(e) {
+                var evt = window.event || e;
+                var delta = evt.detail? evt.detail*(-40) : evt.wheelDelta;
+                $(window).scrollLeft($(window).scrollLeft() - delta/3);
+            }
+
+            var mouseWheelEvt = (/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel";
+     
+            if (document.attachEvent)
+                document.attachEvent("on" + mouseWheelEvt, displayWheel);
+            else if (document.addEventListener)
+                document.addEventListener(mouseWheelEvt, displayWheel, false);
+
             $(window).bind('keydown keypress', function(e) {
                 if (e.keyCode == 38) {
                     e.preventDefault();
