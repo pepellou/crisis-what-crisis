@@ -89,6 +89,42 @@ var translations = {
             text: 'TRIP'
         },
     },
+    "ca": { 
+        control_VIDEOS: { 
+            title: 'Mostra videos',
+            text: 'VIDEOS'
+        },
+        control_PHOTOS: { 
+            title: 'Mostra fotos',
+            text: 'FOTOS'
+        },
+        control_PEOPLE: { 
+            title: 'Mostra gent',
+            text: 'GENT'
+        },
+        control_TRIP: { 
+            title: 'mostra parades del viatge',
+            text: 'VIATGE'
+        },
+    },
+    "pt": { 
+        control_VIDEOS: { 
+            title: 'Mostra videos',
+            text: 'VIDEOS'
+        },
+        control_PHOTOS: { 
+            title: 'Mostra fotos',
+            text: 'FOTOS'
+        },
+        control_PEOPLE: { 
+            title: 'Mostra pessoas',
+            text: 'PESSOAS'
+        },
+        control_TRIP: { 
+            title: 'Mostra paradas da viajem',
+            text: 'VIAJEM'
+        },
+    },
     "gl": { 
         countDownTitle: 'Conta Atr&aacute;s para a Viaxe',
         collaborateButton: 'img/donate.png',
