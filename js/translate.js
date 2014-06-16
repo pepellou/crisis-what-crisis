@@ -107,6 +107,24 @@ var translations = {
             text: 'VIATGE'
         },
     },
+    "it": {
+        control_VIDEOS: {
+            title: 'Mostra video',
+            text: 'VIDEO'
+        },
+        control_PHOTOS: {
+            title: 'Mostra foto',
+            text: 'FOTO'
+        },
+        control_PEOPLE: {
+            title: 'Mostra persone',
+            text: 'PERSONE'
+        },
+        control_TRIP: {
+            title: 'Mostra le fermate di viaggio',
+            text: 'VIAGGIO'
+        },
+    },
     "pt": { 
         control_VIDEOS: { 
             title: 'Mostra videos',

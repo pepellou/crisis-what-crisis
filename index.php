@@ -10,7 +10,7 @@
         'Català' => 'ca',
         'Galego' => 'gl',
         'Português' => 'pt',
-        //'Italiano' => 'it',
+        'Italiano' => 'it',
         //'ελληνικά' => 'gr'
     );
 
