@@ -82,5 +82,6 @@
 				</ol>
 			</p>');
     define (MONEY, 'O Teu Apoio');
+    define (THE_TRIP, 'A Viaxe');
     define (CONTACT, 'Fálame en ');
 ?>

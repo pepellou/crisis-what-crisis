@@ -85,5 +85,6 @@
 				</ol>
 			</p>');
     define (MONEY, 'Sua contribuição');
+    define (THE_TRIP, 'A Viagem');
     define (CONTACT, 'contacte-me em ');
 ?>

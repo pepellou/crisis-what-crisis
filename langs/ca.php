@@ -80,5 +80,6 @@
                 </li>
             </ol>');
     define (MONEY, 'El teu suport');
+    define (THE_TRIP, 'El Viatge');
     define (CONTACT, 'Posa\'t en contacte amb mi ');
 ?>

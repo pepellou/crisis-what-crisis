@@ -134,8 +134,11 @@
             </div>
         </div>
 
-        <div class="money" style="margin-top:120px;margin-left:70px;">
-            <h2 style="color:white;margin-bottom:20px"><?php echo MONEY;?></h2>
+        <div class="money">
+            <div class="money_header">
+                <h2 style="float:left;"><?php echo MONEY;?></h2>
+                <a href="roadmap.html"><?php echo THE_TRIP;?></a>
+            </div>
             <div class="motorbike">
                 <img src="img/icon_bikemotor.png" width="43px;">
             </div>
