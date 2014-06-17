@@ -100,56 +100,6 @@
 
 </head>
 <body>
-    <div id="top_block">
-        <div id="countdown_dashboard">
-            <h1 style="color: white"><?php echo COUNT_DOWN_TITLE;?></h1>
-            <div class="dash weeks_dash">
-                <span class="dash_title">weeks</span>
-                <div class="digit">0</div>
-                <div class="digit">0</div>
-            </div>
-
-            <div class="dash days_dash">
-                <span class="dash_title">days</span>
-                <div class="digit">0</div>
-                <div class="digit">9</div>
-            </div>
-
-            <div class="dash hours_dash">
-                <span class="dash_title">hours</span>
-                <div class="digit">1</div>
-                <div class="digit">1</div>
-            </div>
-
-            <div class="dash minutes_dash">
-                <span class="dash_title">minutes</span>
-                <div class="digit">3</div>
-                <div class="digit">9</div>
-            </div>
-
-            <div class="dash seconds_dash">
-                <span class="dash_title">seconds</span>
-                <div class="digit">1</div>
-                <div class="digit">8</div>
-            </div>
-        </div>
-
-        <div class="money">
-            <div class="money_header">
-                <h2 style="float:left;"><?php echo MONEY;?></h2>
-                <a href="roadmap.html"><?php echo THE_TRIP;?></a>
-            </div>
-            <div class="motorbike">
-                <img src="img/icon_bikemotor.png" width="43px;">
-            </div>
-            <div class="km">
-                <div class="km_blue"></div>
-                <div class="km_yellow"></div>
-            </div>
-        </div>
-        
-    </div>
-
     <div id="idiomas">
         <div style="padding: 0 16px;">
             <?php
@@ -167,9 +117,6 @@
         <div id="map_canvas"></div>
         <div id="map_cover"></div>
         <img id="collaborate_button" src="img/donate_ing.png" alt="support" class="donateImg" />
-        <div id="slider">
-            <img width="1200px" style="margin-top: -285px;" src="http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg" alt="motorbike license plate with the web logo on it" />
-        </div>
         <div id="menu">
             <ul>
                 <li><a href="#" name="what">  What  </a></li>
