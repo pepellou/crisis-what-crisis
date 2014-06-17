@@ -41,14 +41,14 @@ h6 {
 	margin-bottom: 100px;
 }
 #map_cover {
-	height: 365px;
+	height: 420px;
 	width: 1200px;
 	background: black;
-	margin-top: -365px;
+	margin-top: -420px;
 	position: absolute;
 }
 #map_canvas {
-	height: 365px;
+	height: 420px;
 	width: 1200px;
 }
 #map_canvas label { width: auto; display: inline; }

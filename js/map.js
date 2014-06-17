@@ -36,6 +36,12 @@ function createMap(
         document.getElementById("map_canvas"),
         { 
             zoom: 5,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL,
+                position: google.maps.ControlPosition.LEFT_TOP
+            },
+            panControl: false,
             center: new google.maps.LatLng(40.5472, 6),
             mapTypeControl: false,
             scrollwheel: false,
@@ -65,7 +71,7 @@ function addControlButtons(
 function AddControl(title, text, map, index, callback) {
     var controlDiv = document.createElement('div');
 
-    controlDiv.style.padding = '5px';
+    controlDiv.style.padding = '10px';
 
     var controlUI = document.createElement('div');
     controlUI.style.backgroundColor = '#1c1c1b';
@@ -75,7 +81,7 @@ function AddControl(title, text, map, index, callback) {
     controlUI.style.cursor = 'pointer';
     controlUI.style.textAlign = 'center';
     controlUI.style.height = '64px';
-    controlUI.style.marginTop = '6px';
+    controlUI.style.marginTop = '10px';
     controlUI.title = title;
     controlDiv.appendChild(controlUI);
 
@@ -92,7 +98,7 @@ function AddControl(title, text, map, index, callback) {
     });
 
     controlDiv.index = index;
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlDiv);
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(controlDiv);
 
     map_controls.push(
         { name: text, controlUI: controlUI, controlText: controlText }
