@@ -91,11 +91,11 @@
                 document.addEventListener(mouseWheelEvt, displayWheel, false);
 
             $(window).bind('keydown keypress', function(e) {
-                if (e.keyCode == 38) {
+                if ((e.keyCode == 37)||(e.keyCode == 38)) {
                     e.preventDefault();
                     $(window).scrollLeft($(window).scrollLeft() - 40);
                 }
-                if (e.keyCode == 40) {
+                if ((e.keyCode == 39)||(e.keyCode == 40)) {
                     e.preventDefault();
                     $(window).scrollLeft($(window).scrollLeft() + 40);
                 }
