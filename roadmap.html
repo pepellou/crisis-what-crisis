@@ -60,7 +60,9 @@
             if (currentBubble == null) {
                 $('#speechBubble').css('display', 'none');
             } else {
-                $('#speechBubble').html('<div><h1>' + currentBubble.milestone + '</h1><a href="' + currentBubble.link + '"><img src="img/play_alpha.png"></a></div><span>' + currentBubble.text + '</span>');
+                $('#speechBubble div h1').html(currentBubble.milestone);
+                $('#speechBubble div a').attr('href', currentBubble.link);
+                $('#speechBubble span').html(currentBubble.text);
                 $('#speechBubble').css('display', 'block');
             }
         }
@@ -106,7 +108,13 @@
 </head>
 <body>
     <div id="xavi">
-        <div id="speechBubble" style="display: none;"></div>
+        <div id="speechBubble" style="display: none;">
+            <div style="z-index: 20;">
+                <h1></h1>
+                <a href="' + currentBubble.link + '" target="_blank"><img src="img/play_alpha.png"></a>
+            </div>
+            <span></span>
+        </div>
     </div>
     <div id="road">
         <div id="roadline"></div>
