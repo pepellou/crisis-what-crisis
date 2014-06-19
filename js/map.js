@@ -46,6 +46,7 @@ function createMap(
             mapTypeControl: false,
             scrollwheel: false,
             scaleControl: false,
+            streetViewControl: false,
             mapTypeId: 'trip'
         }
     );
