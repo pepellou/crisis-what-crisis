@@ -61,29 +61,34 @@ h6 {
 }
 
 #menu {
-	height: 154px;
+	float: left;
 	width: 100%;
 	background: #1c1c1b;
 }
 #menu ul {
-	margin: 0px;
+    margin: 0 auto;
 	padding: 0px;
 	text-align: center;
-	width: 100%;
+    width: 90%;
 }
 #menu ul li {
 	display: inline;
 	list-style: none;
-	padding: 0px 16px;
 }
 #menu ul li a {
 	font-family: 'TungstenMedium';
 	font-weight: normal;
 	font-size: 120px;
-	line-height: 190px;
+	line-height: 1;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
+    float: left;
+    padding: 15px 20px 0;
+}
+#menu ul li a:hover {
+    background-color: #264896;
+    color: white;
 }
 #menu ul li a strong {
 	font-family: 'TungstenBold';
