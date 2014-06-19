@@ -44,6 +44,9 @@ h6 {
     background-position: bottom;
     background-size: 100%;
 }
+#header_image {
+    display: block;
+}
 #map_cover {
 	height: 420px;
 	width: 1200px;

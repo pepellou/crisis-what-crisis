@@ -113,7 +113,7 @@
         </div>
     </div>
     <div id="sheet">
-        <img src="img/header.png" alt="Web logo: Crisis What Crisis - An optimistic answer"/>
+        <img id="header_image" src="img/header.png" alt="Web logo: Crisis What Crisis - An optimistic answer"/>
         <div id="map_canvas"></div>
         <div id="map_cover"></div>
         <img id="collaborate_button" src="img/donate_ing.png" alt="support" class="donateImg" />
