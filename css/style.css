@@ -39,6 +39,10 @@ h6 {
 	margin: auto;
 	background: #ececec;
 	margin-bottom: 100px;
+    background-image: url(http://farm9.staticflickr.com/8036/7969876764_9d76db9536_b.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 #map_cover {
 	height: 420px;
