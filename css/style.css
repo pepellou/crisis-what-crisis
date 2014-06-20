@@ -70,7 +70,8 @@ h6 {
 #menu {
 	float: left;
 	width: 100%;
-	background: #1c1c1b;
+	background: black;
+    opacity: 0.85;
 }
 #menu ul {
     margin: 0 auto;
@@ -105,11 +106,13 @@ h6 {
 
 .box {
 	background: #1c1c1b;
+	background: black;
+	opacity: 0.85;
 	padding: 44px;
 	float: left;
 	color: white;
 	text-align: justify;
-	font-size: 30px;
+	font-size: 28px;
 	text-align: left;
 }
 .box .left {
