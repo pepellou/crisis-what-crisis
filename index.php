@@ -214,100 +214,99 @@
         <div class="things"></div>
         <div class="road"></div>
         <div class="moto"></div>
-        <div style="width: 100%; background: black; float: left; padding-bottom: 20px;">
+        <div class="footerlinks">
             <div class="ground">
-                <div class="block" style="width:285px">
-                    <div id="sponsorButtons">
+                <div class="block3">
                     <p class="title">SPONSORS</p>
-                        <section style="margin-left:40px">
-                            <div class="crechas">
-                                <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
-                                    <span class="crechas"></span>
-                                </a>
-                            </div>
-                            <div class="canefano">
-                                <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
-                                    <span class="canefano"></span>
-                                </a>
-                            </div>
-                            <div class="tattoo">
-                                <a href="http://www.behance.net/xavierbelho" target="blank">
-                                    <span class="tattoo"></span>
-                                </a>
-                            </div>
-                            <div class="agilaz">
-                                <a href="http://www.agil-az.com" target="blank">
-                                    <span class="agilaz"></span>
-                                </a>
-                            </div>
-                            <div class="karapatrov">
-                                <a href="http://www.karapatrov.com" target="blank">
-                                    <span class="karapatrov"></span>
-                                </a>
-                            </div>
-                        </section>
-                    </div>
+                    <section id="sponsorButtons">
+                        <div class="crechas">
+                            <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
+                                <span class="crechas"></span>
+                            </a>
+                        </div>
+                        <div class="canefano">
+                            <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
+                                <span class="canefano"></span>
+                            </a>
+                        </div>
+                        <div class="tattoo">
+                            <a href="http://www.behance.net/xavierbelho" target="blank">
+                                <span class="tattoo"></span>
+                            </a>
+                        </div>
+                        <div class="agilaz">
+                            <a href="http://www.agil-az.com" target="blank">
+                                <span class="agilaz"></span>
+                            </a>
+                        </div>
+                        <div class="karapatrov">
+                            <a href="http://www.karapatrov.com" target="blank">
+                                <span class="karapatrov"></span>
+                            </a>
+                        </div>
+                    </section>
                 </div>
-                <div class="block" style="width:190px">
-                    <div id="contributorsButtons">
-                        <p class="title">CONTRIBUTORS</p>
-                        <ul>
-                            <li>Francho Joven Araus</li>
-                            <li>Pepe Doval</li>
-                            <li>Camabou</li>
-                            <li>Adri&aacute;n Moreno Pe&ntilde;a</li>
-                            <li>Gonzalo Su&aacute;rez</li>
-                            <li>Jorge Garc&iacute;a</li>
-                            <li>Eviroula Dourou</li>
-                            <li><a target="_blank" href="http://www.dirtysocks.es/" style="color: white;">Dirty Socks</a></li>
-                            <li>Maurizio Galli</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="block" style="width:190px">
-                    <div id="hostsButtons">
-                        <p class="title">HOSTS</p>
-                        <ul>
-                            <li>Carlos Garc&iacute;a Garc&iacute;a</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="block" style="float:right;">
+                <div class="block3">
                     <p class="title">DOSSIER</p>
-                    <div style="margin-left:40px;margin-right:40px">
-                        <object>
+                    <div class="text-center">
+                        <object height="100">
                             <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
                             <param name="allowfullscreen" value="true"/>
                             <param name="menu" value="false"/>
                             <param name="wmode" value="transparent"/>
                             <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
                         </object>
-                        <div style="width: 100%;text-align:center;font-size:12px">
-                            <a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank" style="color: white;">Open publication</a> - Free <a href="http://issuu.com" target="_blank" style="color: white;">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank" style="color: white;">More crisis</a></div>
-                    </div>
-                </div>
-                <div id="socialButtons">
-                    <div class="google">
-                        <a href="https://plus.google.com/106162106682797002853" rel="publisher" target="blank">
-                            <span class="google"></span>
-                        </a>
-                    </div>
-                    <div class="twitter">
-                        <a href="http://www.twitter.com/crisisWcrisis" target="blank">
-                            <span class="twitter"></span>
-                        </a>
-                    </div>
-                    <div class="facebook">
-                        <a href="http://www.facebook.com/crisiswcrisis" target="blank">
-                            <span class="facebook"></span>
-                        </a>
-                    </div>
-                </div>
-                <div id="formContact" style="float: left">
-                    <p class="title">Contact us:</p>
-                    <p style="margin-left: 40px">
-                        <a href="mailto:projetcrisiswhatcrisis@gmail.com" style="color:white; font-size:14px">projetcrisiswhatcrisis@gmail.com</a>
+                    <p class="text-center">
+                            <a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank">More crisis</a></div>
                     </p>
+                </div>
+                <div class="block3">
+                    <p class="title">CONTACT US:</p>
+                    <div id="socialButtons">
+                        <div class="google">
+                            <a href="https://plus.google.com/106162106682797002853" rel="publisher" target="blank">
+                                <span class="google"></span>
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a href="http://www.twitter.com/crisisWcrisis" target="blank">
+                                <span class="twitter"></span>
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="http://www.facebook.com/crisiswcrisis" target="blank">
+                                <span class="facebook"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        <a href="mailto:projetcrisiswhatcrisis@gmail.com">projetcrisiswhatcrisis@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <div class="ground">
+                <h2>CRISIS WHAT CRISIS</h2>
+                <div id="contributorsButtons">
+                    <p class="title">CONTRIBUTORS</p>
+                    <ul>
+                        <li>Francho Joven Araus</li>
+                        <li>Pepe Doval</li>
+                        <li>Camabou</li>
+                        <li>Adri&aacute;n Moreno Pe&ntilde;a</li>
+                        <li>Gonzalo Su&aacute;rez</li>
+                        <li>Jorge Garc&iacute;a</li>
+                        <li>Eviroula Dourou</li>
+                        <li><a target="_blank" href="http://www.dirtysocks.es/">Dirty Socks</a></li>
+                        <li>Maurizio Galli</li>
+                    </ul>
+                </div>
+                <div id="hostsButtons">
+                    <p class="title">HOSTS</p>
+                    <ul>
+                        <li>Carlos Garc&iacute;a Garc&iacute;a</li>
+                    </ul>
                 </div>
             </div>
         </div>
