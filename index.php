@@ -125,16 +125,18 @@
                 <li><a href="#" name="where"> Where </a></li>
                 <li><a href="#" name="how">   How   </a></li>
         </div>
-        <img class="line what" src="img/lineto-what.png" alt="line" />
-        <div class="box what"><?php echo WHAT;?></div>
-        <img class="line why" src="img/lineto-why.png" alt="line" />
-        <div class="box why"><?php echo WHY;?> </div>
-        <img class="line who" src="img/lineto-who.png" alt="line" />
-        <div class="box who"><?php echo WHO;?> </div>
-        <img class="line where" src="img/lineto-where.png" alt="line" />
-        <div class="box where"><?php echo WHERE;?> </div>
-        <img class="line how" src="img/lineto-how.png" alt="line" />
-        <div class="box how"><?php echo HOW;?> </div>
+        <div id="main_content">
+            <img class="line what" src="img/lineto-what.png" alt="line" />
+            <div class="box what"><?php echo WHAT;?></div>
+            <img class="line why" src="img/lineto-why.png" alt="line" />
+            <div class="box why"><?php echo WHY;?> </div>
+            <img class="line who" src="img/lineto-who.png" alt="line" />
+            <div class="box who"><?php echo WHO;?> </div>
+            <img class="line where" src="img/lineto-where.png" alt="line" />
+            <div class="box where"><?php echo WHERE;?> </div>
+            <img class="line how" src="img/lineto-how.png" alt="line" />
+            <div class="box how"><?php echo HOW;?> </div>
+        </div>
     </div>
 
     <div id="black-background" class="modal"></div>

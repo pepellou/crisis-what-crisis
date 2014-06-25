@@ -43,18 +43,19 @@ h6 {
 }
 #sheet {
 	width: 1200px;
-	height: 1590px;
 	margin: auto;
 	background: #ececec;
 	margin-bottom: 100px;
+}
+#header_image {
+    display: block;
+}
+#main_content {
     background-image: url(../img/text_background.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
-    border-bottom: 1px solid white;
-}
-#header_image {
-    display: block;
+	height: 920px;
 }
 #map_cover {
 	height: 420px;
