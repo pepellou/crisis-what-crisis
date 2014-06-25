@@ -16,7 +16,7 @@ h1 {
 h2 {
 	margin-bottom: 0px;
 }
-#footer a {
+#footer a, .credits a {
 	color: white;
 	font-size: 14px;
 }
@@ -30,22 +30,21 @@ h2 {
 	font-size: 19px;
 	font-weight: lighter;
 	margin: 20px 0px 15px 40px;
-	opacity: 0.8;
 }
 h6 {
 	font-size: 12px;
 }
 .footerlinks {
+    border-top: 1px solid white;
     width: 100%;
     background: black;
     float: left;
-    padding-bottom: 30px;
+    padding: 20px 0 30px;
 }
 #sheet {
 	width: 1200px;
 	margin: auto;
 	background: #ececec;
-	margin-bottom: 100px;
 }
 #header_image {
     display: block;
@@ -454,6 +453,10 @@ ul li {
 		background-position: 0px 0;
 	}
 }
+@-webkit-keyframes marquee {
+    0%   { -webkit-transform: translate(0, 0); }
+    100% { -webkit-transform: translate(-100%, 0); }
+}
 #footer .mountains {
 	background: url('../img/skyline_mountains.png') repeat;
 	height: 245px;
@@ -493,20 +496,23 @@ ul li {
 	margin-left: 10px;
 	width: 200px;
 }
-#footer .credits {
-    background: black;
+.credits {
+    background: #2e2e2e;
 	width: 100%;
 	margin: auto;
 	color: white;
+	margin-bottom: 20px;
+}
+.credits .title {
+    margin: 10px 5% 0;
     float: left;
-    padding: 50px 0;
+    width: 10%;
+    text-align: right;
+    font-family: 'TungstenMedium';
+    font-size: 19px;
 }
-#footer .credits .title {
-    margin: 20px 10px 15px;
-}
-#footer .credits ul {
+.credits ul {
     margin: 10px;
-    padding: 0;
 }
 #idiomas {
 	width: 100%;
@@ -648,17 +654,11 @@ ul li {
 }
 
 #contributorsButtons {
-	overflow: hidden;
-	float: left;
-    text-align: right;
-    width: 50%;
+    width: 70%;
 }
 
 #hostsButtons {
-	overflow: hidden;
-	float: left;
-    text-align: left;
-    width: 50%;
+    width: 70%;
 }
 
 .responseMail {
@@ -764,11 +764,15 @@ ul li {
 	color: white;
 	font-size: 12px;
 }
-
 #contributorsButtons ul li, #hostsButtons ul li {
-	font-size: 12px;
+	font-size: 14px;
+    display: inline;
+    padding: 0 40px 0 0;
+    cursor: default;
 }
-
+#contributorsButtons ul li:hover, #hostsButtons ul li:hover {
+    font-weight: bold;
+}
 .money {
 	position: relative;
 	float: left;
@@ -821,4 +825,20 @@ ul li {
 	position: absolute;
 	height: 62px;
 	top: 9px;
+}
+.marquee1, .marquee2 {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee1 ul, .marquee2 ul {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+}
+.marquee1 ul {
+    -webkit-animation: marquee 30s linear infinite;
+}
+.marquee2 ul {
+    -webkit-animation: marquee 30s linear infinite reverse;
 }

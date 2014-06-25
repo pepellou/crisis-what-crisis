@@ -211,6 +211,30 @@
         }
     </script>
 
+    <div class="credits">
+        <div class="ground">
+            <p class="title">CONTRIBUTORS</p>
+            <div class="marquee1" id="contributorsButtons">
+                <ul>
+                    <li>Francho Joven Araus</li>
+                    <li>Pepe Doval</li>
+                    <li>Camabou</li>
+                    <li>Adri&aacute;n Moreno Pe&ntilde;a</li>
+                    <li>Gonzalo Su&aacute;rez</li>
+                    <li>Jorge Garc&iacute;a</li>
+                    <li>Eviroula Dourou</li>
+                    <li><a target="_blank" href="http://www.dirtysocks.es/">Dirty Socks</a></li>
+                    <li>Maurizio Galli</li>
+                </ul>
+            </div>
+            <p class="title">HOSTS</p>
+            <div class="marquee2" id="hostsButtons">
+                <ul>
+                    <li>Carlos Garc&iacute;a Garc&iacute;a</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id="footer">
         <div class="mountains"></div>
         <div class="things"></div>
@@ -284,31 +308,6 @@
                     <p class="text-center">
                         <a href="mailto:projetcrisiswhatcrisis@gmail.com">projetcrisiswhatcrisis@gmail.com</a>
                     </p>
-                </div>
-            </div>
-        </div>
-        <div class="credits">
-            <div class="ground">
-                <h2>CRISIS WHAT CRISIS</h2>
-                <div id="contributorsButtons">
-                    <p class="title">CONTRIBUTORS</p>
-                    <ul>
-                        <li>Francho Joven Araus</li>
-                        <li>Pepe Doval</li>
-                        <li>Camabou</li>
-                        <li>Adri&aacute;n Moreno Pe&ntilde;a</li>
-                        <li>Gonzalo Su&aacute;rez</li>
-                        <li>Jorge Garc&iacute;a</li>
-                        <li>Eviroula Dourou</li>
-                        <li><a target="_blank" href="http://www.dirtysocks.es/">Dirty Socks</a></li>
-                        <li>Maurizio Galli</li>
-                    </ul>
-                </div>
-                <div id="hostsButtons">
-                    <p class="title">HOSTS</p>
-                    <ul>
-                        <li>Carlos Garc&iacute;a Garc&iacute;a</li>
-                    </ul>
                 </div>
             </div>
         </div>
