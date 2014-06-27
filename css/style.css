@@ -501,7 +501,7 @@ ul li {
 	width: 100%;
 	margin: auto;
 	color: white;
-	margin-bottom: 20px;
+	margin-bottom: 120px;
 }
 .credits .title {
     margin: 10px 5% 0;
@@ -655,10 +655,12 @@ ul li {
 
 #contributorsButtons {
     width: 70%;
+    float: left;
 }
 
 #hostsButtons {
     width: 70%;
+    float: left;
 }
 
 .responseMail {
@@ -767,7 +769,7 @@ ul li {
 #contributorsButtons ul li, #hostsButtons ul li {
 	font-size: 14px;
     display: inline;
-    padding: 0 40px 0 0;
+    padding: 0 45px 0 0;
     cursor: default;
 }
 #contributorsButtons ul li:hover, #hostsButtons ul li:hover {

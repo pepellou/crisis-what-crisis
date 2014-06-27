@@ -214,7 +214,7 @@
     <div class="credits">
         <div class="ground">
             <p class="title">CONTRIBUTORS</p>
-            <div class="marquee1" id="contributorsButtons">
+            <div class="" id="contributorsButtons">
                 <ul>
                     <li>Francho Joven Araus</li>
                     <li>Pepe Doval</li>
@@ -228,7 +228,7 @@
                 </ul>
             </div>
             <p class="title">HOSTS</p>
-            <div class="marquee2" id="hostsButtons">
+            <div class="" id="hostsButtons">
                 <ul>
                     <li>Carlos Garc&iacute;a Garc&iacute;a</li>
                 </ul>
