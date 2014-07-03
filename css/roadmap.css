@@ -34,9 +34,8 @@ div {
     height: 245px;
     left: 200px;
     z-index: 20;
-    -webkit-transform: translate3d(0,0,0);  /* fix for Safari z-index quirk */
+    -webkit-transform: translate3d(0,0,0);
 }
-
 div#speechBubble {
     bottom: 265px;
     margin-left: 30px;
