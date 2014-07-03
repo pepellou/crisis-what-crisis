@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 div {
-    width: 6975px;
+    width: 12000px;
     position: absolute;
     bottom: 0;
 }
@@ -124,11 +124,10 @@ div.milestone .signalStick {
     position: fixed;
     width: 100%;
     left: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
-    background-size: cover;
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
 }
 .gradient {
     bottom: 150px;
