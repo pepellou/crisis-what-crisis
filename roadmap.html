@@ -24,6 +24,8 @@
 	<!-- Developed by Pepe Doval - see http://www.crisis-whatcrisis.com/humans.txt -->
 
 	<script language="javascript">
+        var lastPosition = 0;
+        var opacity = 0;
         var lastBubble = null;
         var speechBubbles = [
             {
@@ -50,19 +52,30 @@
         ];
 
         function scrollEventHandler(position) {
-
             /*
                 var v = Math.ceil(position/80);
                 var xPos = (v - Math.floor(v/4) * 4) * -40;
                 $('#xavi-img').css('background-position-x', xPos);
             */
-
+            var bikePosition = position + 400;
             var currentBubble = null;
+            var offset = 0;
             speechBubbles.forEach(function(bubble) {
-                if (position >= bubble.start-340 && position <= bubble.start+250) {
+                if (bikePosition >= bubble.start && bikePosition <= bubble.start + 800) {
                     currentBubble = bubble;
                 }
             });
+            if ((position != lastPosition) && (currentBubble != null)) {
+                offset = bikePosition - currentBubble.start;
+                if ((0 <= offset) && (offset <= 200)) {
+                    opacity = offset/200;
+                }
+                if ((600 <= offset) && (offset <= 800)) {
+                    opacity = 1 - (offset-600)/200;
+                }
+                $('.background_front').css('opacity',opacity);
+            }
+            lastPosition = position;
             if (currentBubble != lastBubble) {
                 if (currentBubble == null) {
                     $('#speechBubble').css('display', 'none');
@@ -72,14 +85,11 @@
                     $('#speechBubble div a').attr('href', currentBubble.link);
                     $('#speechBubble span').html(currentBubble.text);
                     $('#speechBubble').css('display', 'block');
-                    if (currentBubble != lastBubble) {
-                        $img = $('<img/>').attr('src', 'img/roadmap/roadmap_'+(currentBubble.id)+'.jpg').load(function() {
-                            $('.background_front').attr('src','img/roadmap/roadmap_'+(currentBubble.id)+'.jpg');
-                            $('.background_front').css('opacity','1');
-                            $(this).remove(); // prevent memory leaks
-                            $img = null;
-                        });
-                    }
+                    $img = $('<img/>').attr('src', 'img/roadmap/roadmap_'+(currentBubble.id)+'.jpg').load(function() {
+                        $('.background_front').attr('src','img/roadmap/roadmap_'+(currentBubble.id)+'.jpg');
+                        $(this).remove();
+                        $img = null;
+                    });
                 }
                 lastBubble = currentBubble;
             }
