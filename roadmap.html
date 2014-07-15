@@ -152,10 +152,6 @@
                 setTimeout(arguments.callee, 20);
             }, 20);
 
-//            $(window).bind('mousewheel', function(e) {
-//                $(window).scrollLeft($(window).scrollLeft() - e.originalEvent.wheelDelta/5);
-//            });
-
             function displayWheel(e) {
                 var evt = window.event || e;
                 var delta = evt.detail? evt.detail*(-40) : evt.wheelDelta;
