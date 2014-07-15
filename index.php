@@ -116,7 +116,7 @@
         <img id="header_image" src="img/header.png" alt="Web logo: Crisis What Crisis - An optimistic answer"/>
         <div id="map_canvas"></div>
         <div id="map_cover"></div>
-        <a id="roadmap_button" href="roadmap.html"><img src="img/roadmaplink.png" alt="support" class="roadmap_link" /></a>
+        <a id="roadmap_button" href="roadmap.php"><img src="img/roadmaplink.png" alt="support" class="roadmap_link" /></a>
         <div id="menu">
             <ul>
                 <li><a href="#" name="what">  What  </a></li>
