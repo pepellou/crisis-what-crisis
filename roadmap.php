@@ -56,7 +56,7 @@
                 <div class="signalTop"><?php echo $milestone->start; ?></div>
                 <div class="signalBot"><?php echo $milestone->date; ?></div>
                 <div class="signalStick"></div>
-                <div class="hidden" name="id"><?php echo $milestone->id; ?></div>
+                <div class="hidden" name="image"><?php echo $milestone->image; ?></div>
                 <div class="hidden" name="link"><?php echo $milestone->link; ?></div>
                 <div class="hidden" name="text"><?php echo $milestone->text; ?></div>
             </div>

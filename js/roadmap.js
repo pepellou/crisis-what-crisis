@@ -3,7 +3,7 @@ $(function() {
 
     $('#milestones .milestone').each(function() {
         speechBubbles.push({
-            id: $(this).find('[name="id"]').text(),
+            image: $(this).find('[name="image"]').text(),
             start: $(this).find('[name="start"]').text(),
             start: parseInt($(this).css('margin-left')),
             milestone: $(this).find('[class="signalBot"]').text(),
@@ -45,8 +45,8 @@ $(function() {
                 $('#speechBubble div a').attr('href', currentBubble.link);
                 $('#speechBubble span').html(currentBubble.text);
                 $('#speechBubble').css('display', 'block');
-                $img = $('<img/>').attr('src', 'img/roadmap/roadmap_'+(currentBubble.id)+'.jpg').load(function() {
-                    $('.background_front').attr('src','img/roadmap/roadmap_'+(currentBubble.id)+'.jpg');
+                $img = $('<img/>').attr('src', 'img/roadmap/' + currentBubble.image).load(function() {
+                    $('.background_front').attr('src','img/roadmap/' + currentBubble.image);
                     $(this).remove();
                     $img = null;
                 });

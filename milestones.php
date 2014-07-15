@@ -3,7 +3,8 @@
 class Milestone {
 
     public function __construct(&$data) {
-        list($this->start, $this->date, $this->id) = explode(' ', trim(array_shift($data)));
+        list($this->start, $this->date) = explode(' ', trim(array_shift($data)));
+        $this->image = trim(array_shift($data));
         $this->link = trim(array_shift($data));
         $this->text = trim(array_shift($data));
         array_shift($data);
