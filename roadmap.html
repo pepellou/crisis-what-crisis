@@ -24,126 +24,67 @@
 	<!-- Developed by Pepe Doval - see http://www.crisis-whatcrisis.com/humans.txt -->
 
 	<script language="javascript">
-        var lastPosition = 0;
-        var opacity = 0;
-        var lastBubble = null;
-        var speechBubbles = [
-            {
-                id: 1,
-                start: 1000,
-                milestone: 'May/2012',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Idea inicial en Hermanos karapatrov y Nacimiento del proyecto. Fruto de mi amor por las motos, mi relación sentimental con Grecia y la experiencia con Hermanos Karapatrov nace la idea de un viaje en busca de respuestas optimistas a la Crisis.'
-            },
-            {
-                id: 2,
-                start: 2000,
-                milestone: 'Jul/2012',
-                link: '/index.php',
-                text: 'Creación web inicial. Implicación en el proyecto de Pepe Doval y Eduardo Álvarez (Agil-AZ) dan cómo fruto la primera versión de la web.'
-            },
-            {
-                id: 3,
-                start: 3000,
-                milestone: 'Ago-Sep/2012',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Primeras donaciones y exponsorizaciones, La presentación del proyecto boca a boca produce la implicación económica de diferentes personas y empresas.'
-            },
-            {
-                id: 4,
-                start: 4000,
-                milestone: '15/10/2012',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Fecha inicial para el comienzo del viaje. Se toma la decisión de financiar el viaje a través de aportaciones de personas y empresas durante el propio viaje y se decide que el mejor momento es Octubre.'
-            },
-            {
-                id: 1,
-                start: 5000,
-                milestone: 'Sep/2012',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Se produce un robo en las instlaciones de Hermanos Karapatrov y pierdo todo mi equipo, lo que me obliga a suspender el viaje.'
-            },
-            {
-                id: 5,
-                start: 6000,
-                milestone: '03/12/2012',
-                link: 'https://www.facebook.com/photo.php?fbid=521458461206291&set=a.520953107923493.125056.224773427541464&type=1&theater',
-                text: 'Presentación en Culturgal. A pesar del robo cumplo con el compromiso de presentación en culturgal. La presentación es un éxito de público. Planifico volver a intentarlo en mayo del año siguiente.'
-            },
-            {
-                id: 3,
-                start: 7000,
-                milestone: '05/02/2013',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Nacimiento de Helena. Me dedico por completo a su cuidado y tomo la decisión de aplazar de nuevo el viaje hasta 2014.'
-            },
-            {
-                id: 4,
-                start: 8000,
-                milestone: 'Mayo/2014',
-                link: '/index.php',
-                text: 'Presento el proyecto en dos plataformas de crowdfounding a las que intera la idea. Retomo el proyecto con energías renovadas. Helena ya puede andar, lo que me da más libertad para trabajar. Junto con Pepe y Eduardo, se actualiza la web.'
-            },
-            {
-                id: 1,
-                start: 9000,
-                milestone: 'Mayo/2014',
-                link: 'http://www.crtvg.es/rg/hora-a-hora/fecha:26-05-2014/hora:10:00',
-                text: 'Presentación en radio galega, Kiko Novoa en su programa "Galicia por Diante" presenta mi proyecto entrevistándome.'
-            },
-            {
-                id: 2,
-                start: 10000,
-                milestone: 'Junio/2014',
-                link: 'https://www.youtube.com/watch?v=ln3tGnzGT9k',
-                text: 'Se acerca la fecha del viaje y se hace más necesario incorporar gente al equipo que apoye en tareas de comunicación y producción. A través de Pepe contactamos con Alba y Mercedes a las que entusiasma el proyecto. Gracias a ellas iniciamos una fase más profunda de investigación.'
-            }
-        ];
-
-        function scrollEventHandler(position) {
-            /*
-                var v = Math.ceil(position/80);
-                var xPos = (v - Math.floor(v/4) * 4) * -40;
-                $('#xavi-img').css('background-position-x', xPos);
-            */
-            var bikePosition = position + 400;
-            var currentBubble = null;
-            var offset = 0;
-            speechBubbles.forEach(function(bubble) {
-                if (bikePosition >= bubble.start && bikePosition <= bubble.start + 800) {
-                    currentBubble = bubble;
-                }
-            });
-            if ((position != lastPosition) && (currentBubble != null)) {
-                offset = bikePosition - currentBubble.start;
-                if ((0 <= offset) && (offset <= 200)) {
-                    opacity = offset/200;
-                }
-                if ((600 <= offset) && (offset <= 800)) {
-                    opacity = 1 - (offset-600)/200;
-                }
-                $('.background_front').css('opacity',opacity);
-            }
-            lastPosition = position;
-            if (currentBubble != lastBubble) {
-                if (currentBubble == null) {
-                    $('#speechBubble').css('display', 'none');
-                    $('.background_front').css('opacity','0');
-                } else {
-                    $('#speechBubble div h1').html(currentBubble.milestone);
-                    $('#speechBubble div a').attr('href', currentBubble.link);
-                    $('#speechBubble span').html(currentBubble.text);
-                    $('#speechBubble').css('display', 'block');
-                    $img = $('<img/>').attr('src', 'img/roadmap/roadmap_'+(currentBubble.id)+'.jpg').load(function() {
-                        $('.background_front').attr('src','img/roadmap/roadmap_'+(currentBubble.id)+'.jpg');
-                        $(this).remove();
-                        $img = null;
-                    });
-                }
-                lastBubble = currentBubble;
-            }
-        }
         $(function() {
+            var speechBubbles = [];
+
+            $('#milestones-data .milestone').each(function() {
+                speechBubbles.push({
+                    id: $(this).find('[name="id"]').text(),
+                    start: $(this).find('[name="start"]').text(),
+                    milestone: $(this).find('[name="milestone"]').text(),
+                    link: $(this).find('[name="link"]').text(),
+                    text: $(this).find('[name="text"]').text()
+                });
+            });
+
+            var lastPosition = 0;
+            var opacity = 0;
+            var lastBubble = null;
+
+            function scrollEventHandler(position) {
+                /*
+                    var v = Math.ceil(position/80);
+                    var xPos = (v - Math.floor(v/4) * 4) * -40;
+                    $('#xavi-img').css('background-position-x', xPos);
+                */
+                var bikePosition = position + 400;
+                var currentBubble = null;
+                var offset = 0;
+                speechBubbles.forEach(function(bubble) {
+                    if (bikePosition >= bubble.start && bikePosition <= bubble.start + 800) {
+                        currentBubble = bubble;
+                    }
+                });
+                if ((position != lastPosition) && (currentBubble != null)) {
+                    offset = bikePosition - currentBubble.start;
+                    if ((0 <= offset) && (offset <= 200)) {
+                        opacity = offset/200;
+                    }
+                    if ((600 <= offset) && (offset <= 800)) {
+                        opacity = 1 - (offset-600)/200;
+                    }
+                    $('.background_front').css('opacity',opacity);
+                }
+                lastPosition = position;
+                if (currentBubble != lastBubble) {
+                    if (currentBubble == null) {
+                        $('#speechBubble').css('display', 'none');
+                        $('.background_front').css('opacity','0');
+                    } else {
+                        $('#speechBubble div h1').html(currentBubble.milestone);
+                        $('#speechBubble div a').attr('href', currentBubble.link);
+                        $('#speechBubble span').html(currentBubble.text);
+                        $('#speechBubble').css('display', 'block');
+                        $img = $('<img/>').attr('src', 'img/roadmap/roadmap_'+(currentBubble.id)+'.jpg').load(function() {
+                            $('.background_front').attr('src','img/roadmap/roadmap_'+(currentBubble.id)+'.jpg');
+                            $(this).remove();
+                            $img = null;
+                        });
+                    }
+                    lastBubble = currentBubble;
+                }
+            }
+
             speechBubbles.forEach(function(bubble) {
                 $('#milestones').append('<div class="milestone" style="margin-left: ' + bubble.start + 'px"><div class="signalTop">CWC</div><div class="signalBot">' + bubble.milestone + '</div><div class="signalStick"></div></div>');
             });
@@ -201,6 +142,79 @@
         <div id="roadline"></div>
     </div>
     <div id="mountains"></div>
-    <div id="milestones"></div>
+    <div id="milestones-data" class="hidden">
+        <div class="milestone">
+            <div name="id">1</div>
+            <div name="start">1000</div>
+            <div name="milestone">May/2012</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Idea inicial en Hermanos karapatrov y Nacimiento del proyecto. Fruto de mi amor por las motos, mi relación sentimental con Grecia y la experiencia con Hermanos Karapatrov nace la idea de un viaje en busca de respuestas optimistas a la Crisis.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">2</div>
+            <div name="start">2000</div>
+            <div name="milestone">Jul/2012</div>
+            <div name="link">/index.php</div>
+            <div name="text">Creación web inicial. Implicación en el proyecto de Pepe Doval y Eduardo Álvarez (Agil-AZ) dan cómo fruto la primera versión de la web.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">3</div>
+            <div name="start">3000</div>
+            <div name="milestone">Ago-Sep/2012</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Primeras donaciones y exponsorizaciones, La presentación del proyecto boca a boca produce la implicación económica de diferentes personas y empresas.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">4</div>
+            <div name="start">4000</div>
+            <div name="milestone">15/10/2012</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Fecha inicial para el comienzo del viaje. Se toma la decisión de financiar el viaje a través de aportaciones de personas y empresas durante el propio viaje y se decide que el mejor momento es Octubre.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">1</div>
+            <div name="start">5000</div>
+            <div name="milestone">Sep/2012</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Se produce un robo en las instlaciones de Hermanos Karapatrov y pierdo todo mi equipo, lo que me obliga a suspender el viaje.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">5</div>
+            <div name="start">6000</div>
+            <div name="milestone">03/12/2012</div>
+            <div name="link">https://www.facebook.com/photo.php?fbid=521458461206291&set=a.520953107923493.125056.224773427541464&type=1&theater</div>
+            <div name="text">Presentación en Culturgal. A pesar del robo cumplo con el compromiso de presentación en culturgal. La presentación es un éxito de público. Planifico volver a intentarlo en mayo del año siguiente.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">3</div>
+            <div name="start">7000</div>
+            <div name="milestone">05/02/2013</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Nacimiento de Helena. Me dedico por completo a su cuidado y tomo la decisión de aplazar de nuevo el viaje hasta 2014.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">4</div>
+            <div name="start">8000</div>
+            <div name="milestone">Mayo/2014</div>
+            <div name="link">/index.php</div>
+            <div name="text">Presento el proyecto en dos plataformas de crowdfounding a las que intera la idea. Retomo el proyecto con energías renovadas. Helena ya puede andar, lo que me da más libertad para trabajar. Junto con Pepe y Eduardo, se actualiza la web.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">1</div>
+            <div name="start">9000</div>
+            <div name="milestone">Mayo/2014</div>
+            <div name="link">http://www.crtvg.es/rg/hora-a-hora/fecha:26-05-2014/hora:10:00</div>
+            <div name="text">Presentación en radio galega, Kiko Novoa en su programa "Galicia por Diante" presenta mi proyecto entrevistándome.</div>
+        </div>
+        <div class="milestone">
+            <div name="id">2</div>
+            <div name="start">10000</div>
+            <div name="milestone">Junio/2014</div>
+            <div name="link">https://www.youtube.com/watch?v=ln3tGnzGT9k</div>
+            <div name="text">Se acerca la fecha del viaje y se hace más necesario incorporar gente al equipo que apoye en tareas de comunicación y producción. A través de Pepe contactamos con Alba y Mercedes a las que entusiasma el proyecto. Gracias a ellas iniciamos una fase más profunda de investigación.</div>
+        </div>
+    </div>
+    <div id="milestones">
+    </div>
 </body>
 </html>
