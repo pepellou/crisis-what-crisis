@@ -1,17 +1,30 @@
-var position = {
+var Position = {
 
     get: function() {
         return $(window).scrollLeft();
     },
 
     reset: function() {
-        $(window).scrollLeft(0);
+        Position._set(0);
         repaint();
     },
 
     move: function(delta) {
-        $(window).scrollLeft($(window).scrollLeft() + delta);
+        Position._set(Position.get() + delta);
         repaint();
+    },
+
+    place: function(location) {
+        if (location == 'begin') {
+            Position.reset();
+        }
+        if (location == 'end') {
+            Position._set($('#road').width() - $(window).width());
+        }
+    },
+
+    _set: function(position) {
+        return $(window).scrollLeft(position);
     }
 
 };

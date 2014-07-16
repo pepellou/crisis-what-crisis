@@ -27,7 +27,7 @@
     <script language="Javascript" src="js/roadmap/SpeechBubble.js"></script>
     <script language="Javascript" src="js/roadmap/BackgroundImage.js"></script>
     <script language="Javascript" src="js/roadmap/Milestone.js"></script>
-    <script language="Javascript" src="js/roadmap/user_input.js"></script>
+    <script language="Javascript" src="js/roadmap/UserInput.js"></script>
     <script language="Javascript" src="js/roadmap/Position.js"></script>
     <script language="Javascript" src="js/roadmap/roadmap.js"></script>
 

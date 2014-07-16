@@ -2,7 +2,7 @@ var milestones = [];
 
 function repaint() {
 
-    var bikePosition = position.get() + 400;
+    var bikePosition = Position.get() + 400;
 
     var currentMilestone = null;
     milestones.forEach(function(milestone) {
@@ -26,11 +26,16 @@ $(function() {
         milestones.push(new Milestone(this));
     });
 
-    position.reset();
+    Position.reset();
     repaint();
 
-    UserInput.onMove(function(delta) {
-        position.move(delta);
+    UserInput.onMove(function(movement) {
+        if (movement.position) {
+            Position.place(movement.position);
+        }
+        if (movement.delta) {
+            Position.move(movement.delta);
+        }
     });
 
     $('#road').focus();

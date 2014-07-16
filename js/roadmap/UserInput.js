@@ -31,11 +31,19 @@ var UserInput = {
             switch (e.keyCode) {
                 case Keys.LEFT:
                 case Keys.UP:
-                    callback(-40);
+                case Keys.PAGE_UP:
+                    callback({ delta: -40 });
                     break;
                 case Keys.RIGHT:
                 case Keys.DOWN:
-                    callback(40);
+                case Keys.PAGE_DOWN:
+                    callback({ delta: 40 });
+                    break;
+                case Keys.HOME:
+                    callback({ position: 'begin' });
+                    break;
+                case Keys.END:
+                    callback({ position: 'end' });
                     break;
             }
         });
