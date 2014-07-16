@@ -24,7 +24,7 @@ var Position = {
     },
 
     _set: function(position) {
-        return $(window).scrollLeft(position);
+        $(window).scrollLeft(position);
     }
 
 };
