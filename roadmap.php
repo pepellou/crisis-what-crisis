@@ -24,7 +24,12 @@
 		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
 	</script>
 		
-    <script language="Javascript" src="js/roadmap.js"></script>
+    <script language="Javascript" src="js/roadmap/SpeechBubble.js"></script>
+    <script language="Javascript" src="js/roadmap/BackgroundImage.js"></script>
+    <script language="Javascript" src="js/roadmap/Milestone.js"></script>
+    <script language="Javascript" src="js/roadmap/user_input.js"></script>
+    <script language="Javascript" src="js/roadmap/Position.js"></script>
+    <script language="Javascript" src="js/roadmap/roadmap.js"></script>
 
 	<!-- Developed by Pepe Doval - see http://www.crisis-whatcrisis.com/humans.txt -->
 </head>
@@ -53,7 +58,7 @@
     <div id="milestones">
         <?php foreach (Milestones::all() as $milestone) { ?>
             <div class="milestone" style="margin-left: <?php echo $milestone->start; ?>px">
-                <div class="signalTop"><?php echo $milestone->start; ?></div>
+                <div class="signalTop">CWC</div>
                 <div class="signalBot"><?php echo $milestone->date; ?></div>
                 <div class="signalStick"></div>
                 <div class="hidden" name="image"><?php echo $milestone->image; ?></div>
