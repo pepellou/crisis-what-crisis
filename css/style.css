@@ -121,12 +121,11 @@ h6 {
 	background: #1c1c1b;
 	background: black;
 	opacity: 0.85;
-	padding: 44px;
+	padding: 20px 30px;
 	float: left;
 	color: white;
 	text-align: justify;
-	font-size: 28px;
-	text-align: left;
+	font-size: 20px;
 }
 .box .left {
 	float: left;
@@ -141,13 +140,13 @@ h6 {
 	margin-left: 300px;
 }
 .box.why {
-	width: 850px;
+	width: 880px;
 	margin-left: 131px;
 	margin-top: -470px;
 }
 .box.who {
-	width: 740px;
-	margin-left: 300px;
+	width: 880px;
+	margin-left: 130px;
 }
 .box.where {
 	width: 670px;
@@ -155,14 +154,16 @@ h6 {
 	margin-top: -300px;
 }
 .box.how {
-	width: 775px;
-	margin-left: 50px;
+	width: 820px;
+	margin-left: 120px;
 	margin-top: -385px;
 }
 
 p {
 	padding-top: 0px;
-	margin-top: 0px;
+	margin-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 ol li {
