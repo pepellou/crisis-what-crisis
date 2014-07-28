@@ -306,7 +306,7 @@
                         </div>
                     </div>
                     <p class="text-center">
-                        <a href="mailto:projetcrisiswhatcrisis@gmail.com">projetcrisiswhatcrisis@gmail.com</a>
+                        <a href="mailto:team@crisis-whatcrisis.com">team@crisis-whatcrisis.com</a>
                     </p>
                 </div>
             </div>

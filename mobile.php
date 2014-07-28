@@ -76,7 +76,7 @@
     <footer>
         <p>
             <?php echo CONTACT;?>
-            <a href="mailto:projetcrisiswhatcrisis@gmail.com">xavierbelho@gmail.com</a>
+            <a href="mailto:team@crisis-whatcrisis.com">team@crisis-whatcrisis.com</a>
         </p>
     </footer>
 </body>
