@@ -5,12 +5,12 @@
     require_once dirname(__FILE__)."/people.php";
 
     $languages = array(
-        'English' => 'en',
+        //'English' => 'en',
         'Español' => 'es',
-        'Català' => 'ca',
+        //'Català' => 'ca',
         'Galego' => 'gl',
-        'Português' => 'pt',
-        'Italiano' => 'it',
+        //'Português' => 'pt',
+        //'Italiano' => 'it',
         //'ελληνικά' => 'gr'
     );
 
