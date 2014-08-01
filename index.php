@@ -52,6 +52,13 @@
         people = [
             {
                 "type": "people",
+                'id': 'xavier_belho',
+                'name': 'Xavier Belho',
+                "lat" : "37.984413",
+                "lng" : "23.727915"
+/*            },
+            {
+                "type": "people",
                 'id': 'fatima_garcia_doval',
                 'name': 'XXXX',
                 "lat" : "42.884974",
@@ -63,7 +70,7 @@
                 "name": "Xavi Gost",
                 "lat" : "39.488443",
                 "lng" : "-0.360331"
-            }
+*/            }
         ];
     </script>
     <script language="javascript" src="js/map/trip.js"></script>
