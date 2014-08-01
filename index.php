@@ -273,7 +273,7 @@
                             </a>
                         </div>
                         <div class="karapatrov">
-                            <a href="http://www.karapatrov.com" target="blank">
+                            <a href="">
                                 <span class="karapatrov"></span>
                             </a>
                         </div>
