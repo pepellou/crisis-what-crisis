@@ -273,7 +273,7 @@
                             </a>
                         </div>
                         <div class="karapatrov">
-                            <a href="">
+                            <a href="javascript:void(0)">
                                 <span class="karapatrov"></span>
                             </a>
                         </div>
