@@ -297,7 +297,7 @@
                     <p class="title">CONTACT US:</p>
                     <div id="socialButtons">
                         <div class="google">
-                            <a href="https://plus.google.com/106162106682797002853" rel="publisher" target="blank">
+                            <a href="https://plus.google.com/+Crisiswhatcrisis2014" rel="publisher" target="blank">
                                 <span class="google"></span>
                             </a>
                         </div>
