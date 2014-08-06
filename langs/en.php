@@ -3,7 +3,7 @@
     define (LANG_EN, English);
     define (LANG_GL, Galician);
     define (COUNT_DOWN_TITLE, 'Count-Down for the Trip');
-    define (SUBTITLE, 'An optimistic answer');
+    define (SUBTITLE, 'A journey through optimistic answers');
     define (COLLABORATE_BUTTON, 'img/donate_ing.png');
     define (META_KEYWORDS, 'documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.');
     define (META_LANGUAGE, 'en, english');

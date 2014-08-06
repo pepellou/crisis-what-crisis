@@ -3,7 +3,7 @@
     define (LANG_EN, Inglés);
     define (LANG_GL, Galego);
     define (COUNT_DOWN_TITLE, 'Conto per i viaggi');
-    define (SUBTITLE, 'Una risposta ottimistica');
+    define (SUBTITLE, 'Un viaggio attraverso le risposte ottimistiche');
     define (COLLABORATE_BUTTON, 'img/donate.png');
     define (META_KEYWORDS, 'documentari, viaggi, l\'ottimismo, l\'innovazione, idee, creatività, crisi, crisis, what crisis, pigs, P.I.G.S.');
     define (META_LANGUAGE, 'it, italiano');

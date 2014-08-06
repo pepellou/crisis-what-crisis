@@ -3,7 +3,7 @@
     define (LANG_EN, Inglés);
     define (LANG_GL, Galego);
     define (COUNT_DOWN_TITLE, 'Compte enrere per al viatge');
-    define (SUBTITLE, 'Una resposta optimista');
+    define (SUBTITLE, 'Un viatge a través de respostes optimistes');
     define (COLLABORATE_BUTTON, 'img/donate.png');
     define (META_KEYWORDS, 'documental, viatge, optimisme, innovació, idees, creativitat, crisi, crisis, what crisis, pigs, P.I.G.S.');
     define (META_LANGUAGE, 'ca, catalan');
