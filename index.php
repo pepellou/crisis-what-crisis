@@ -33,6 +33,7 @@
     <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
     <link href="css/money.css" media="screen" rel="stylesheet" type="text/css" >
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/cookies.css" media="screen" rel="stylesheet" type="text/css" >
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Crisis - What Crisis: <?php echo SUBTITLE;?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -77,6 +78,7 @@
     <script language="javascript" src="js/map-style.js"></script>
     <script language="javascript" src="js/map.js"></script>
     <script language="javascript" src="js/menu.js"></script>
+    <script language="javascript" src="js/cookies.js"></script>
     <script language="javascript" src="js/modal.js"></script>
     <script language="javascript" src="js/photos.js"></script>
     <script language="Javascript" src="js/money.js"></script>
@@ -107,6 +109,10 @@
 
 </head>
 <body>
+    <div class="cookies" id="cookiebox">
+        Esta web utiliza cookies. Si continuas navegando estás aceptándo nuestra <a href="cookiespolicy.html">política de cookies</a>. 
+        <button class="btn" onclick="controlcookies()">Aceptar</button>
+    </div>
     <div id="idiomas">
         <div style="padding: 0 16px;">
             <?php

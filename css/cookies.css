@@ -1,0 +1,47 @@
+.cookies{ 
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    clear: both;
+    font-weight: strong;
+    background-color: #000;
+    color: #FFF;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    text-align: center;
+    z-index:999999999;
+}
+.cookies:hover{
+    opacity: 1;
+}
+.cookies a {
+    color: #F9E600;
+}
+.btn {
+    color: white;
+    background-color: #264896;
+    -webkit-border-top-left-radius:5px;
+    -moz-border-radius-topleft:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topright:5px;
+    border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-radius-bottomright:5px;
+    border-bottom-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius-bottomleft:5px;
+    border-bottom-left-radius:5px;
+    text-indent:0;
+    display:inline-block;
+    text-decoration:none;
+    text-align:center;
+    border: 1px solid white;
+}
+.btn:hover {
+    background-color: #F9E600;
+    color: #264896;
+}
