@@ -110,7 +110,7 @@
 </head>
 <body>
     <div class="cookies" id="cookiebox">
-        Esta web utiliza cookies. Si continuas navegando estás aceptándo nuestra <a href="cookiespolicy.html">política de cookies</a>. 
+        Esta web utiliza cookies. Si continuas navegando estás aceptándo nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. 
         <button class="btn" onclick="controlcookies()">Aceptar</button>
     </div>
     <div id="idiomas">
