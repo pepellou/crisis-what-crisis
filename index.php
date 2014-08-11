@@ -132,11 +132,11 @@
         <a id="roadmap_button" href="roadmap.php"><img src="img/roadmaplink.png" alt="support" class="roadmap_link" /></a>
         <div id="menu">
             <ul>
-                <li><a href="#" name="what">  What  </a></li>
-                <li><a href="#" name="why">   Why   </a></li>
-                <li><a href="#" name="who">   Who   </a></li>
-                <li><a href="#" name="where"> Where </a></li>
-                <li><a href="#" name="how">   How   </a></li>
+                <li><a href="javascript:void(0)" name="what">  What  </a></li>
+                <li><a href="javascript:void(0)" name="why">   Why   </a></li>
+                <li><a href="javascript:void(0)" name="who">   Who   </a></li>
+                <li><a href="javascript:void(0)" name="where"> Where </a></li>
+                <li><a href="javascript:void(0)" name="how">   How   </a></li>
         </div>
         <div id="main_content">
             <img class="line what" src="img/lineto-what.png" alt="line" />
