@@ -24,7 +24,7 @@ var trip = [
 		type: 'trip'
 	},
 	{   
-		name: "Caceres",
+		name: "Cáceres",
 		lat: 39.4752562,
 		lng: -6.4412633,
 		type: 'trip'

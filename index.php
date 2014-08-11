@@ -5,7 +5,7 @@
     require_once dirname(__FILE__)."/people.php";
 
     $languages = array(
-        //'English' => 'en',
+        'English' => 'en',
         'Español' => 'es',
         //'Català' => 'ca',
         'Galego' => 'gl',

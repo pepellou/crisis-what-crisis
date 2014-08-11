@@ -59,8 +59,7 @@ momento de iniciar la aventura.
 				En principio la ruta pasar&aacute; por o cerca de las siguientes ciudades:
 			</p>
 			<p>
-				<strong>Santiago de Compostela - Vigo - Oporto - Viseu - Salamanca - Madrid - Toledo - 
-				Valencia - Tarragona - Barcelona - Roma - Napoles - Bari - Brindisi - Patras - Atenas</strong>
+				<strong>Santiago de Compostela - Oporto - Lisboa - Badajoz - Cáceres - Madrid -	Valencia - Barcelona - Roma - Brindisi - Patras - Atenas - Thessalonika - Pireo</strong>
 			</p>');
     define (HOW, '<p>
 Desde niño me han gustado los libros de viajes, desde Julio Verne a Joseph Conrad y particularmente el libro de Ted Simon, Los viajes de Jupiter, que narra su vuelta al mundo en moto y su vivencia a lo largo del viaje. Mi afición por las motos nace del cine y de una película en partícular, Easy Rider, dónde la moto y el viaje son uno.
