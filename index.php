@@ -15,7 +15,6 @@
     );
 
     $idioma = isset($_COOKIE['lan']) ? $_COOKIE['lan'] : "";
-
     if ($idioma == "") {
         $idioma = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
     }
@@ -46,6 +45,7 @@
     <meta name="keywords" content="<?php echo META_KEYWORDS?>">
     <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion">
     <meta name="language" content="<?php echo META_LANGUAGE;?>">
+    <script language="javascript" src="js/cookies.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
     </script>
@@ -78,7 +78,6 @@
     <script language="javascript" src="js/map-style.js"></script>
     <script language="javascript" src="js/map.js"></script>
     <script language="javascript" src="js/menu.js"></script>
-    <script language="javascript" src="js/cookies.js"></script>
     <script language="javascript" src="js/modal.js"></script>
     <script language="javascript" src="js/photos.js"></script>
     <script language="Javascript" src="js/money.js"></script>
@@ -109,8 +108,8 @@
 
 </head>
 <body>
-    <div class="cookies" id="cookiebox">
-        Esta web utiliza cookies. Si continuas navegando estás aceptándo nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. 
+    <div class="cookies" id="cookiebox" style="display: <?php if ($_COOKIE["cookie"]=="true") echo "none" ?>">
+        Esta web utiliza cookies. Si continúas navegando estás aceptando nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. 
         <button class="btn" onclick="controlcookies()">Aceptar</button>
     </div>
     <div id="idiomas">
