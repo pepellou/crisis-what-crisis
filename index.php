@@ -171,13 +171,13 @@
             <p class="web"><a href="<?php echo $person->web; ?>" target="_blank"><?php echo $person->web; ?></a></p>
             <?php if ($person->mail != 'no-mail') { ?>
                 <h1>MAIL</h1>
-                <p class="mail"><?php echo $person->mail; ?></p>
+                <p class="mail"><a href="mailto:<?php echo $person->mail; ?>"><?php echo $person->mail; ?></a></p>
             <?php } ?>
             <?php if (count($person->links) > 0) { ?>
                 <h1>LINKS</h1>
                 <ul class="links">
                 <?php foreach ($person->links as $link) { ?>
-                    <li><?php echo $link; ?></li>
+                    <li><a href="<?php echo $link; ?>" target="_blank"><?php echo $link; ?></a></li>
                 <?php } ?>
                 </ul>
             <?php } ?>
