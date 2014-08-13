@@ -51,27 +51,15 @@
     </script>
     <script>
         people = [
-            {
-                "type": "people",
-                'id': 'xavier_belho',
-                'name': 'Xavier Belho',
-                "lat" : "37.984413",
-                "lng" : "23.727915"
-/*            },
-            {
-                "type": "people",
-                'id': 'fatima_garcia_doval',
-                'name': 'XXXX',
-                "lat" : "42.884974",
-                "lng" : "-8.556708"
-            },
-            {
-                "type": "people",
-                'id': 'xavi_gost',
-                "name": "Xavi Gost",
-                "lat" : "39.488443",
-                "lng" : "-0.360331"
-*/            }
+            <?php foreach (People::all() as $person) { ?>
+                {
+                    'type': 'people',
+                    'id': '<?php echo $person->id; ?>',
+                    'name': '<?php echo $person->name; ?>',
+                    'lat' : '<?php echo $person->gps->lat; ?>',
+                    'lng' : '<?php echo $person->gps->lng; ?>'
+                },
+            <?php } ?>
         ];
     </script>
     <script language="javascript" src="js/map/trip.js"></script>
@@ -180,15 +168,19 @@
             <h1>HOW</h1>
             <p class="how"><?php echo $person->how; ?></p>
             <h1>WEB</h1>
-            <p class="web"><?php echo $person->web; ?></p>
-            <h1>MAIL</h1>
-            <p class="mail"><?php echo $person->mail; ?></p>
-            <h1>LINKS</h1>
-            <ul class="links">
-            <?php foreach ($person->links as $link) { ?>
-                <li><?php echo $link; ?></li>
+            <p class="web"><a href="<?php echo $person->web; ?>" target="_blank"><?php echo $person->web; ?></a></p>
+            <?php if ($person->mail != 'no-mail') { ?>
+                <h1>MAIL</h1>
+                <p class="mail"><?php echo $person->mail; ?></p>
             <?php } ?>
-            </ul>
+            <?php if (count($person->links) > 0) { ?>
+                <h1>LINKS</h1>
+                <ul class="links">
+                <?php foreach ($person->links as $link) { ?>
+                    <li><?php echo $link; ?></li>
+                <?php } ?>
+                </ul>
+            <?php } ?>
         </div>
     <? } ?>
     <div id="previewVideo" class="modal">

@@ -3,8 +3,9 @@
 class Person {
 
     public function __construct(&$data) {
-        list($this->name, $this->location) = explode('(', str_replace(')', '(', array_shift($data)));
+        list($this->name, $this->location, $this->publish) = explode('(', str_replace(')', '(', array_shift($data)));
         $this->name = trim($this->name);
+        $this->publish = trim($this->publish);
         $line = trim(array_shift($data));
         $this->why = substr($line, 1, strlen($line) - 2);
         $line = trim(array_shift($data));
@@ -50,16 +51,21 @@ class Person {
 class People {
 
     private static $all = array();
+    private static $published = array();
 
     public static function read() {
         $data = file(dirname(__FILE__).'/data/people.txt');
         while (count($data) > 0) {
-            self::$all []= new Person($data);
+            $person = new Person($data);
+            self::$all []= $person;
+            if ($person->publish == 'PUBLISH') {
+                self::$published []= $person;
+            }
         }
     }
 
     public static function all() {
-        return self::$all;
+        return (isset($_GET['show']) && $_GET['show'] == 'all') ? self::$all : self::$published;
     }
 
 }

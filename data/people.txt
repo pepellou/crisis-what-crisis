@@ -1,39 +1,26 @@
-Fátima García Doval (Santiago de Compostela)
-  "Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo."
-  Accegal:
-    En la actualidad el trabajo está centrado en la comunicación,
-    especialmente alternativa y aumentativa. Trabajamos conjuntamente
-    con otros centros, asociaciones y particulares, de modo totalmente
-    desinteresado y sin ánimo de lucro para que nuestras aplicaciones
-    sean gratuitas y funcionen en dispositivos de bajo costo.
-  http://www.accegal.org/
-    https://es-es.facebook.com/Accegal
-    http://www.youtube.com/user/accegal
-    https://twitter.com/Accegal
-  contacto@accegal.org
-  42.884974, -8.556708
-
-Xavi Gost (Valencia)
-  "Hazlo tú mismo, rechaza los dogmas y desconfía de las modas"
-  La Cova de Benimaclet:
-    En La Cueva de Benimaclet hay programadores haciendo software,
-    pero también cursos de magia, talleres para aprender a radiar
-    ruedas de bicicleta, cajas de verdura ecológica, cine, mercaditos
-    de trueque, cursos de formación, talleres de desobediencia civil...
-  https://www.facebook.com/lacuevadebenimaclet
-    https://trello.com/b/wYQZxmvz/la-cueva
-    https://www.google.com/calendar/embed?src=6u8npmhel4qp5djn6bvl140hvk%40group.calendar.google.com&ctz=Europe%2FMadrid
-    https://twitter.com/XLaCovaX
-  lacovadebenimaclet@gmail.com
-  39.488443, -0.360331
-
-Xavier Belho (Atenas)
+Xavier Belho (Atenas) PUBLISH
   "Hay vida más allá de la crisis"
-  Documental optimista en el que se busca iniciativas innovadoras frente a la crisis.
-    Viaja en moto en solitario partiendo de Galicia, en el extremo noroeste de la Península Ibérica y llegando hasta el Pireo (Atenas), en Grecia, pasando por Portugal, España e Italia, paises conocidos como PIGS.
+  Crisis? What Crisis?:
+    Documental optimista en el que se buscan iniciativas
+    innovadoras frente a la crisis.
+    Viaja en moto en solitario partiendo de Galicia, 
+    en el extremo noroeste de la Península Ibérica y llegando 
+    hasta el Pireo (Atenas), en Grecia, pasando por Portugal, 
+    España e Italia, paises conocidos como PIGS.
   http://www.crisis-whatcrisis.com/
     https://www.facebook.com/crisiswcrisis
     https://twitter.com/xavierbelho
   xavierbelho@gmail.com
   37.984413, 23.727915
 
+Pedro Rincón (Sevilla)
+  "Lo más importante son las personas"
+  Tarifas Blancas:
+    Es un sitio web que tiene como misión generar y difundir descuentos y ofertas para desempleados.
+    Para TarifasBlancas.com lo más importante son las personas. Ayudamos a generar ofertas que cubran
+    sus necesidades a precios más reducidos y fomentamos los descuentos en formación y autoempleo
+    para contribuir a que pasen el menor tiempo posible en desempleo.
+    También estamos al lado del comercio que pasa por dificultades
+  http://www.tarifasblancas.com
+  no-mail
+  37.38, -5.99
