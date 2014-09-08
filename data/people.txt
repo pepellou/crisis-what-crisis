@@ -13,7 +13,7 @@ Xavier Belho (Atenas) PUBLISH
   xavierbelho@gmail.com
   37.984413, 23.727915
 
-Pedro Rincón (Sevilla)
+Pedro Rincón (Sevilla) PUBLISH
   "Lo más importante son las personas"
   Tarifas Blancas:
     Es un sitio web que tiene como misión generar y difundir descuentos y ofertas para desempleados.
@@ -23,4 +23,146 @@ Pedro Rincón (Sevilla)
     También estamos al lado del comercio que pasa por dificultades
   http://www.tarifasblancas.com
   no-mail
-  37.38, -5.99
+  37.380000, -5.990000
+
+Juan Penalta (Galicia) PUBLISH
+  "Hackeando na creativade dos máis cativos"
+  Rapazada Hacklab:
+    Hacklab especialmente creado para niños 
+  https://plus.google.com/communities/115380823557120304964/members
+  jpenalta@gmail.com
+  42.84, -8.57
+
+WeKco (A Coruña) PUBLISH
+  "Un ecosistema que inspira, conecta e impulsa"
+  WeKco:
+    Es un espacio que fomenta la confianza, la colaboración y el sentido de comunidad entre emprendedores, autónomos, teletrabajadores y microempresas.
+    Un espacio profesional compartido en el marco de una "informalidad organizada", flexible a tus necesidades y que te facilitará sacar adelante ese proyecto profesional y/o de empresa que tienes.
+  http://wekco.net 
+  welcome@wekco.net
+  43.326153, -8.432307
+
+BricoLabs (A Coruña) PUBLISH
+  "Labs"
+  BricoLabs:
+    Es un grupo de personas con inquietudes relacionadas con la electrónica y el Hardware Libre que se reúnen periódicamente para intercambiar conocimiento
+    ¿Por Qué? Aprovechamiento de sinergias, Emprender proyectos tecnológicos, Organizar eventos divulgativos, Facilitar acceso a la tecnología, Difusión del Hardware Libre. ¿Que hacemos? Impresoras 3D, Domótica, Robótica, Electrónica & Música, Eventos
+  http://bricolabs.cc/                                                                    
+  bricolabs@gmail.com
+  43.3618741,-8.4126837
+
+Carlos García (Arteixo) PUBLISH
+  "Si eres desarrollador/a, diseñador/a web o móvil, trabajas con contenidos digitales, eres webmaster de una tienda online, … y te gusta el movimiento asociativo y asambleario, este es tu espacio!"
+  Árticos: 
+    Árticos es un espacio de coworking asociativo. No está gestionado por ningún gestor sino que es la propia asociación Arteixo TIC y nosotros sus socios los que decidimos lo que queremos que sea el espacio en todo momento.
+    Por eso las tarifas las vamos adecuando a la realidad del espacio y no tenemos ningún ánimo de lucro.
+    Árticos es una asociación y un espacio de profesionales que tenemos en las TIC el nexo y pasión común. En la asociación, además de colaborar y compartir el espacio de coworking, organizamos lo que a cada uno de nosotros nos apetece. Como talleres de scratch, open spaces, coding dojos, talleres de diseño web, etc.
+  http://articos.eu
+  carlisgg@gmail.com
+  43.304189,-8.515649 
+
+Fátima García Doval (Santiago) PUBLISH
+  "Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo"
+  Accegal:
+    Accegal es un proyecto de colaboración entre el Centro de Educación Especial Manuel López Navalón y el Grupo de Tecnologías de la Información (GTI) de la Escuela de Ingeniería de Telecomunicación (Universidad de Vigo) para la elaboración de soluciones de accesibilidad basadas en dispositivos móviles.
+    En la actualidad el trabajo está centrado en la comunicación, especialmente alternativa y aumentativa.
+    Trabajamos conjuntamente con otros centros, asociaciones y particulares, de modo totalmente desinteresado y sin ánimo de lucro para que nuestras aplicaciones sean gratuitas y funcionen en dispositivos de bajo costo."
+  http://www.accegal.org/
+  fmgdoval@gmail.com
+  42.849084, -8.574164
+
+Chus Prol (Santiago) PUBLISH
+  "The way you work"
+  Doutro Xeito:
+    Doutroxeito non e só un servizo de oficinas compartidas senón que o acompaña un matiz social: os coworkers son emprendedores que se acompañan entre sí, que precisan da relación profesional e persoal para mellor traballar e para seren máis produtivos.
+    Doutroxeito nace da evolución natural das formas de traballar e quere ser un ecosistema útil para as persoas que, cada vez máis, optan por traballar para sí mesmas, sexa dende unha oficina particular ou dende os seus fogares. Para estes traballadores existe o Coworking. En cada un deles está a opción de traballar á maneira tradicional ou … destoutro xeito.
+  http://www.doutroxeito.com/
+  doutroxeitocwk@gmail.com
+  42.876195,-8.5440045
+
+Sonia Díaz (Santiago) PUBLISH
+  "Pensamos, facemos, comunicamos, cultura"
+  Nocomun:
+    En Nócomún facemos realidade as ideas , as propias e as dos nosos clientes. Somos traballadores incansables da xestión e da difusión cultural e damos solucións eficientes a todo tipo de propostas creativas, ofrecendo unha mirada estratéxica sobre todo o proceso e poñendo o acento na xestión e na administración dos equipos de traballo. A nosa misión é contribuír á construción dunha ponte sólida entre a creación cultural e a sociedade e para facelo confiamos na forza da innovación, da imaxinación e do compromiso. Cremos que a comunicación e a cultura son dous polos indivisibles e poñemos a nosa mirada, os nosos coñecementos e a nosa paixón ao seu servizo.
+  http://www.nocomun.com/
+  info@nocomun.com
+  42.87,-8.54
+
+Arroelo (Pontevedra) PUBLISH
+  "hai que roelo"
+  Espacio Arroelo:
+    Espacio Arroelo nace con el fin de dar respuesta a la demanda de un lugar común de trabajo para autónomos, freelance ó pymes de Pontevedra.
+    Un entorno único, la tercera planta de un edificio de lineas clásicas,. Más de 400m2 que dan cabida no sólo a nuestros coworkers, sino a aquellos que quieran hacer uso de sus cuatro salas de reunión, sala de juntas y salón de actos, tanto para recepción de clientes, como para desarrollar cursos, talleres ó seminarios.
+    En pleno corazón de Pontevedra, en una de sus calles más emblemáticas, pretende convertirse en un referente en la ciudad, y servir de plataforma para el fomento de las relaciones entre profesionales, no sólo a nivel local sino también a nivel nacional e internacional, con la promoción de talleres propios y exposiciones periódicas de artistas locales y foráneos.
+    Con el espíritu del "hai que roelo" pontevedrés, nuestro Espacio Arroelo aspira a hacer de la unión de los pequeños un gran grupo humano, competitivo y capaz de afrontar los nuevos retos del momento.
+  http://www.espacioarroelo.com/
+  info@espacioarroelo.es
+  42.4338608, -8.6393456
+
+Magma Espacio (Ourense) PUBLISH
+  "Colaborar para crecer, unir fuerzas para evolucionar, hacer equipo para transformar"
+  Magma Espacio:
+    Es la primera plataforma colaborativa multidisciplinar en el centro de Ourense.
+    Es un entorno de trabajo destinado a profesionales (autonomos, freelance, emprendedores y pequeña empresa) de diferentes campos donde pueden desarrollar sus proyectos, ademas de relacionarse con el resto de los coworkers.
+    Siendo principalmente un lugar en el que compartir ideas, proyectos y sinergias, es también un nuevo espacio social donde asistir a diversos eventos (exposiciones, cursos, proyecciones, conferencias...)"
+  http://www.magmaespacio.es/ 
+  hola@magmaespacio.es
+  42.339098,-7.860425
+
+Numax (Santiago) PUBLISH
+  "Un cinema, unha libraría e un laboratorio de deseño, comunicación e produción audiovisual"
+  Numax:
+    NUMAX somos unha cooperativa de traballo 
+    asociado sen ánimo de lucro formada por 
+    persoas procedentes de diversos ámbitos da 
+    creación e difusión cultural que decidimos 
+    colaborar para facermos xuntos o que 
+    estamos afeitos a facer por separado.
+    NUMAX materialízase nun proxecto cultural, 
+    localizado na contorna da cidade vella 
+    de Compostela, que reúne nun mesmo 
+    espazo de 190 m2 unha sala de cinema 
+    con ambigú, unha libraría de arte e 
+    humanidades e un estudio de deseño 
+    gráfico e produción audiovisual.
+  http://www.numax.org/
+  numax@numax.org
+  42.8910386,-8.5292779
+
+Antón Recio (Cáceres) PUBLISH
+  "El protagonismo de Factoría lo tienes tú!"
+  Factor innovation:
+    Somos una comunidad virtual de emprendedores/as, empresarios/as y personas inquietas, obsesionadas con conectar innovación y talento para generar nuevas oportunidades de negocio. Principalmente pertenecemos a la región de Extremadura y la zona del Alentejo Portugués, aunque cada vez contamos con miembros de más regiones españolas.
+  http://www.factorinnovation.eu/
+  info-fdi@ayto-caceres.es
+  39.4716366,-6.3907192
+                                                                 
+Gonzalo Palomo (Cáceres) PUBLISH
+  "Somos granjeros y urbanitas en transición"
+  BBBFarming:
+    Nace como plataforma online para la promoción y la formación al servicio de la agroecología, el consumo responsable, la soberanía alimentaria y la transformación social.    
+    La comunidad BBBFarming pretende situar lo rural en un lugar estratégico de cara al nuevo escenario postcapitalista que favorece la vuelta al campo, las prácticas agropecuarias respetuosas con el medio ambiente y la producción de alimentos de calidad diferenciada y salubridad contrastada; necesarios no sólo para alimentar a través del estomago sino también de la cabeza y el corazón.
+  http://www.bbbfarming.net/
+  gonzalo.palomo@gmail.com
+  39.4693502,-6.4186726
+
+        pepe    si  Madrid / A Coruña   David Bonilla   david.bonilla@gmail.com @david_bonilla  Emprendedor contracorriente                     Uno de sus proyectos "innovadores" es la venta de empanada gallega por Internet para toda España: http://www.milandopico.com/                                                                       
+    ok (con revisión)   pepe    si  Madrid (Malasaña)   Rebrota Malasaña    rebrota@rojomenta.com   Medioambiente                       "REBROTA MALASAÑA es una iniciativa social para reverdecer las calles del madrileño barrio de Malasaña a través de jardines y huertas ecológicas en sus balcones.
+
+Es un proyecto de Rojomenta ( http://www.rojomenta.com/ ), que se dedican a la jardinería y el arte floral.
+
+El proyecto ganó el concurso 2013 de ""Proyectos con espíritu"", del coworking Espíritu23"  http://rebrotamalasana.com/                                                                 
+        xavier  si  Madrid  Diagonal     Fe, 10. 28012. Madrid  prensa                      un medio de comunicación crítico e independiente, sin directores ni jefes, sustentado sobre la base de miles de suscripciones.  https://www.diagonalperiodico.net/                                                                  
+        pepe    si  Madrid  HealthEye   jonathanyrula@healtheye.es  Integración y calidad de vida                       HealthEye es la Red Social para unir a personas con la misma enfermedad rara, con una filosofía principal de compartir todo lo que conocen sobre ella para sentirse apoyados y sobre todo, informados.  http://healtheye.es                                                                 
+        pepe    si  Madrid  Pablo Echenique pablo.echenique.robba@gmail.com @pnique Retrón, científico del CSIC y ahora europarlamentario por PODEMOS                                                                                               
+        pepe    si  Valencia    Olhöps  info@olhops.com Producto artesanal                      "Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
+
+¿Pero esto es una tienda de cervezas?
+
+No. Es un marketplace. El lugar donde cualquier persona, en cualquier parte de España, puede vender su cerveza artesanal, a cualquier persona, en cualquier parte España. Sólo con una condición, la cerveza tiene que gustarle primero a nuestro equipo. Criterio de calidad y experiencia de consumo asegurada. Sin más interés de que todo el mundo siga bebiendo sin perder la dignidad en nuestra fiesta." http://www.olhops.com/                                                                  
+                                                                                                                            
+si  ok  pepe    si  Barcelona   Afables     Integración y calidad de vida                       El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes.  http://www.afables.com/                                                                 
+    ok  pepe    si  Barcelona   Vailets Hacklabs    vailets.hacklab@gmail.com   Educación e infancia                        """Treballem perquè els vailets siguin co-creadors del seu futur""
+
+(lo mismo que el Zagales Hacklab de Zaragoza pero en Barcelona)"    http://vailets-hacklab.org/                                                                 
+                Madrid  mmodulus    info@mmodulus.com juan.freire@gmail.com                                                                                                 
