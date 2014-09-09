@@ -532,6 +532,16 @@ ul li {
 	font-size: 20px;
 	line-height: 40px;
 }
+#shareThis {
+    height: 40px;
+    color: black;
+    margin: auto;
+    width: 1200px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: -40px;
+}
 #idiomas a {
 	color: #aaa;
     text-decoration: none;

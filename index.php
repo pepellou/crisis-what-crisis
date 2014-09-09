@@ -91,11 +91,22 @@
             });
         }
     </script>
-        
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-f97ca0-e046-8744-a2ac-c443671fe277", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
     <!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
-
 </head>
+
 <body>
+    <div id="shareThis">
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_pinterest_large' displayText='Pinterest'></span>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_email_large' displayText='Email'></span>
+    </div>
+
     <div class="cookies" id="cookiebox" style="display: <?php if ($_COOKIE["cookie"]=="true") echo "none" ?>">
         Esta web utiliza cookies. Si continúas navegando estás aceptando nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. 
         <button class="btn" onclick="controlcookies()">Aceptar</button>
