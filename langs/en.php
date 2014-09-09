@@ -9,31 +9,32 @@
     define (META_LANGUAGE, 'en, english');
     define (META_DESCRIPTION, "It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?");
     define (WHAT, '<p>
-Crisis What Crisis is a motorcycle trip through the countries of crisis protagonists (PIGS)*. We want to make visible the people and projects that are taking an optimistic and innovative response. "Crisis What Crisis: A journey through optimistic answers" is a constructive answer against the crisis. A practical and courageous response to new forms of organization and production. 
+Crisis What Crisis is a motorcycle trip through the countries starring in the *CRISIS* (PIGS). We want to reveal people and projects which give an optimistic and innovative answer to it. Crisis What Crisis: a journey through optimistic answers is a constructive stare towards the crisis. A practical and brave answer on new forms of social organization and open production. Our trip is about shared search through collectives and people who enjoy more from experience than from money.
 			</p>
 			<p>
-Ours is a journey of shared search by groups and individuals who enjoy the experience more than money. We Will track organizations promoting open knowledge, consumption and cooperation based on a sustainable business model in long-term. Happiness is not what they told us, is what we are expecting.
+We’ll track organizations promoting open knowledge, self-consumption and cooperation based on a sustainable long-term transformative business model.
+Happiness is not what they told us, it’s what we’re telling us.
 			</p>
 			<p>
                 * PORTUGAL, ITALY, GREECE, SPAIN ...
 			</p>');
     define (WHY, '<p>
-We live in Southern Europe, in some countries with an authoritarian tradition of which we have recently emerged, with political classes subject to economic power and they have done nothing to improve the welfare of their peoples. They have used policy to generate fast business supported by banking and economic powers. 
+We live in South Europe, in countries with a authoritarian tradition from which we’ve just got away, with political classes dominated by economic power and having done anything to improve their population’s welfare. They’ve used the politics to produce quick business helped by banks and economic powers.
 			</p>
 			<p>
-The crisis has been created by the global economic speculation of financial and political sectors. There isn\'t therefore a crisis caused by people and their lack of worker or innovative spirit. The PIGS are not the people who suffer such speculative movements of economic and political power, the PIGS are peoples who have suffered authoritarian regimes, civil wars, repression and violence, and yet are creative, innovative and social people. 
+This way CWC is born to demonstrate that a wide base movement exists which shakes the system tower, this quoted, with new ideas and ways to relate based on sustainability, solidarity, cooperation and freedom.
 			</p>
 			<p>
-“The adult domestic pig has a rounded heavy body, long and flexible snout, short legs with hooves (four fingers) and a short tail. Skin thick but tender, it is partly covered with rough bristles and exhibits a wide variety of colors and patterns. Despite its appearance are agile, quick and intelligent animals.”
+“PIGS: The adult domestic pig has a heavy and rounded body, comparatively long and flexible snout, short hoofed feet (four fingers) and a short tail. The skin, thick but sensitive, is partly covered with rough bristles and exhibits a wide variety of colours and drawings. Despite its appearance they’re agile, quick and clever animals.”
 			</p>
 			<p>
-Here borns CWC to demonstrate that there are a broad based movement that shakes the system tower, this in quotes, with new ideas and ways of relating that are based on sustainability, solidarity, cooperation and freedom. 
+We need to visualize other answers, other possible futures, because if we don’t imagine them we’ll never be able to make them happen.
 			</p>
 			<p>
-We need to visualize alternative answers, other possible futures, because if we don\'t imagine them, we will never be able to make them happen.
+This project is therefore addressed to each person seeking new ways of living out of the production standards, with interest in transforming from participation, solidarity and betting on a more open and sustainable world.
 			</p>
 			<p>
-In February 2013 my daughter Helena was born. This documentary is also a gift for her and all this generation. So that when she can see it with analysis capacity she can understand the world she was born and its context, hoping it to serve them in some way to deal with their life.
+In february 2013 my daughter Helena is born. This documentary is also a gift for her and all that generation, so that when she can watch it with analysis capabilities she can see the world and the context where she was born, hoping that it serves her somehow to face her own life.
 			</p>');
     define (WHO, '<p>
 My name is Xavier Belho and I work in graphic design and audiovisual production. At 23 I left my parents\' house. From that moment I started to do all kinds of activities in order to eat. I sold hams, gave remedial classes to primary school children, I led a pub and I ended up being a Branch Manager. I even worked as graphic designer for a audiovisual production company and mounted a production company with three partners. All these activities were successful and failure ... but none filled me ... until now. So, I\'ve fallen and I always woke up with an idea in his head and little support. At the end of the day ... I am an optimist. Anybody there? The answer I hope to find it in CWC. 
