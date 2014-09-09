@@ -31,7 +31,7 @@ Juan Penalta (Galicia)
     Hacklab especialmente creado para niños 
   https://plus.google.com/communities/115380823557120304964/members
   jpenalta@gmail.com
-  42.84, -8.57
+  42.8673166,-8.5449038
 
 WeKco (A Coruña)
   "Un ecosistema que inspira, conecta e impulsa"
@@ -69,7 +69,7 @@ Fátima García Doval (Santiago)
     Trabajamos conjuntamente con otros centros, asociaciones y particulares, de modo totalmente desinteresado y sin ánimo de lucro para que nuestras aplicaciones sean gratuitas y funcionen en dispositivos de bajo costo."
   http://www.accegal.org/
   fmgdoval@gmail.com
-  42.849084, -8.574164
+  42.9735304,-8.4409964
 
 Chus Prol (Santiago)
   "The way you work"
@@ -197,7 +197,7 @@ mmodulus (Madrid)
 
 Olhops (Valencia)
   "Ecommerce de cervezas artesanas de España ¡Crea tu caja Olhöps!"
-  Olhöps:
+  Olhops:
     Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
     ¿Pero esto es una tienda de cervezas? No. Es un marketplace. El lugar donde cualquier persona, en cualquier parte de España, puede vender su cerveza artesanal, a cualquier persona, en cualquier parte España. Sólo con una condición, la cerveza tiene que gustarle primero a nuestro equipo. Criterio de calidad y experiencia de consumo asegurada. Sin más interés de que todo el mundo siga bebiendo sin perder la dignidad en nuestra fiesta.
   http://www.olhops.com/
@@ -209,6 +209,7 @@ Afables (Barcelona)
   Afables:
     El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes
   http://www.afables.com/
+  no-mail
   41.3478188, 1.6968496
 
 Vailets Hacklab (Barcelona)
