@@ -13,7 +13,7 @@ Xavier Belho (Atenas) PUBLISH
   xavierbelho@gmail.com
   37.984413, 23.727915
 
-Pedro Rincón (Sevilla) PUBLISH
+Pedro Rincón (Sevilla)
   "Lo más importante son las personas"
   Tarifas Blancas:
     Es un sitio web que tiene como misión generar y difundir descuentos y ofertas para desempleados.
@@ -25,7 +25,7 @@ Pedro Rincón (Sevilla) PUBLISH
   no-mail
   37.380000, -5.990000
 
-Juan Penalta (Galicia) PUBLISH
+Juan Penalta (Galicia)
   "Hackeando na creativade dos máis cativos"
   Rapazada Hacklab:
     Hacklab especialmente creado para niños 
@@ -33,7 +33,7 @@ Juan Penalta (Galicia) PUBLISH
   jpenalta@gmail.com
   42.84, -8.57
 
-WeKco (A Coruña) PUBLISH
+WeKco (A Coruña)
   "Un ecosistema que inspira, conecta e impulsa"
   WeKco:
     Es un espacio que fomenta la confianza, la colaboración y el sentido de comunidad entre emprendedores, autónomos, teletrabajadores y microempresas.
@@ -42,7 +42,7 @@ WeKco (A Coruña) PUBLISH
   welcome@wekco.net
   43.326153, -8.432307
 
-BricoLabs (A Coruña) PUBLISH
+BricoLabs (A Coruña)
   "Labs"
   BricoLabs:
     Es un grupo de personas con inquietudes relacionadas con la electrónica y el Hardware Libre que se reúnen periódicamente para intercambiar conocimiento
@@ -51,7 +51,7 @@ BricoLabs (A Coruña) PUBLISH
   bricolabs@gmail.com
   43.3618741, -8.4126837
 
-Carlos García (Arteixo) PUBLISH
+Carlos García (Arteixo)
   "Si eres desarrollador/a, diseñador/a web o móvil, trabajas con contenidos digitales, eres webmaster de una tienda online, … y te gusta el movimiento asociativo y asambleario, este es tu espacio!"
   Árticos: 
     Árticos es un espacio de coworking asociativo. No está gestionado por ningún gestor sino que es la propia asociación Arteixo TIC y nosotros sus socios los que decidimos lo que queremos que sea el espacio en todo momento.
@@ -61,7 +61,7 @@ Carlos García (Arteixo) PUBLISH
   carlisgg@gmail.com
   43.304189, -8.515649 
 
-Fátima García Doval (Santiago) PUBLISH
+Fátima García Doval (Santiago)
   "Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo"
   Accegal:
     Accegal es un proyecto de colaboración entre el Centro de Educación Especial Manuel López Navalón y el Grupo de Tecnologías de la Información (GTI) de la Escuela de Ingeniería de Telecomunicación (Universidad de Vigo) para la elaboración de soluciones de accesibilidad basadas en dispositivos móviles.
@@ -71,7 +71,7 @@ Fátima García Doval (Santiago) PUBLISH
   fmgdoval@gmail.com
   42.849084, -8.574164
 
-Chus Prol (Santiago) PUBLISH
+Chus Prol (Santiago)
   "The way you work"
   Doutro Xeito:
     Doutroxeito non e só un servizo de oficinas compartidas senón que o acompaña un matiz social: os coworkers son emprendedores que se acompañan entre sí, que precisan da relación profesional e persoal para mellor traballar e para seren máis produtivos.
@@ -80,7 +80,7 @@ Chus Prol (Santiago) PUBLISH
   doutroxeitocwk@gmail.com
   42.876195, -8.5440045
 
-Sonia Díaz (Santiago) PUBLISH
+Sonia Díaz (Santiago)
   "Pensamos, facemos, comunicamos, cultura"
   Nocomun:
     En Nócomún facemos realidade as ideas , as propias e as dos nosos clientes. Somos traballadores incansables da xestión e da difusión cultural e damos solucións eficientes a todo tipo de propostas creativas, ofrecendo unha mirada estratéxica sobre todo o proceso e poñendo o acento na xestión e na administración dos equipos de traballo. A nosa misión é contribuír á construción dunha ponte sólida entre a creación cultural e a sociedade e para facelo confiamos na forza da innovación, da imaxinación e do compromiso. Cremos que a comunicación e a cultura son dous polos indivisibles e poñemos a nosa mirada, os nosos coñecementos e a nosa paixón ao seu servizo.
@@ -88,7 +88,7 @@ Sonia Díaz (Santiago) PUBLISH
   info@nocomun.com
   42.87, -8.54
 
-Arroelo (Pontevedra) PUBLISH
+Arroelo (Pontevedra)
   "hai que roelo"
   Espacio Arroelo:
     Espacio Arroelo nace con el fin de dar respuesta a la demanda de un lugar común de trabajo para autónomos, freelance ó pymes de Pontevedra.
@@ -99,7 +99,7 @@ Arroelo (Pontevedra) PUBLISH
   info@espacioarroelo.es
   42.4338608, -8.6393456
 
-Magma Espacio (Ourense) PUBLISH
+Magma Espacio (Ourense)
   "Colaborar para crecer, unir fuerzas para evolucionar, hacer equipo para transformar"
   Magma Espacio:
     Es la primera plataforma colaborativa multidisciplinar en el centro de Ourense.
@@ -109,7 +109,7 @@ Magma Espacio (Ourense) PUBLISH
   hola@magmaespacio.es
   42.339098, -7.860425
 
-Numax (Santiago) PUBLISH
+Numax (Santiago)
   "Un cinema, unha libraría e un laboratorio de deseño, comunicación e produción audiovisual"
   Numax:
     NUMAX somos unha cooperativa de traballo 
@@ -129,7 +129,7 @@ Numax (Santiago) PUBLISH
   numax@numax.org
   42.8910386, -8.5292779
 
-Antón Recio (Cáceres) PUBLISH
+Antón Recio (Cáceres)
   "El protagonismo de Factoría lo tienes tú!"
   Factor innovation:
     Somos una comunidad virtual de emprendedores/as, empresarios/as y personas inquietas, obsesionadas con conectar innovación y talento para generar nuevas oportunidades de negocio. Principalmente pertenecemos a la región de Extremadura y la zona del Alentejo Portugués, aunque cada vez contamos con miembros de más regiones españolas.
@@ -137,7 +137,7 @@ Antón Recio (Cáceres) PUBLISH
   info-fdi@ayto-caceres.es
   39.4716366, -6.3907192
                                                                  
-Gonzalo Palomo (Cáceres) PUBLISH
+Gonzalo Palomo (Cáceres)
   "Somos granjeros y urbanitas en transición"
   BBBFarming:
     Nace como plataforma online para la promoción y la formación al servicio de la agroecología, el consumo responsable, la soberanía alimentaria y la transformación social.    
@@ -146,7 +146,7 @@ Gonzalo Palomo (Cáceres) PUBLISH
   gonzalo.palomo@gmail.com
   39.4693502, -6.4186726
 
-David Bonilla (Madrid) PUBLISH
+David Bonilla (Madrid)
   "Emprendedor contracorriente"
   Milandopico:
     Proyectos innovador de venta de empanada gallega por Internet para toda España.
@@ -154,7 +154,7 @@ David Bonilla (Madrid) PUBLISH
   david.bonilla@gmail.com
   40.4378271, -3.6795367
 
-Rebrota Malasana (Malasaña) PUBLISH
+Rebrota Malasana (Malasaña)
   "¡Transforma las calles con tu balcón!"
   Rebrota Malasaña:
     Es una iniciativa social para reverdecer las calles del madrileño barrio de Malasaña a través de jardines y huertas ecológicas en sus balcones.
@@ -163,7 +163,7 @@ Rebrota Malasana (Malasaña) PUBLISH
   rebrota@rojomenta.com
   40.4253205, -3.7083574
 
-Diagonal (Madrid) PUBLISH
+Diagonal (Madrid)
   "Un medio de comunicación crítico e independiente, sin directores ni jefes, sustentado sobre la base de miles de suscripciones"
   Diagonal: 
     Un proyecto con muchas personas detrás: un colectivo editor y una extensa red de colaboradores y mecenas. Hacemos periodismo situado, trabajamos en red con otros colectivos y formamos parte de una comunidad que apuesta por la economía social. Gracias a ello, producimos contenidos informativos y los compartimos bajo licencias libres.
@@ -171,7 +171,7 @@ Diagonal (Madrid) PUBLISH
   no-mail
   40.4089404, -3.7000348
 
-Jonathan Yrula (Madrid) PUBLISH
+Jonathan Yrula (Madrid)
   "La Red Social de las Enfermedades Raras"
   HealthEye:
     HealthEye es la Red Social para unir a personas con la misma enfermedad rara, con una filosofía principal de compartir todo lo que conocen sobre ella para sentirse apoyados y sobre todo, informados
@@ -179,7 +179,7 @@ Jonathan Yrula (Madrid) PUBLISH
   jonathanyrula@healtheye.es
   40.4,-3.7
 
-Pablo Echenique (Madrid) PUBLISH
+Pablo Echenique (Madrid)
   "¡Es la hora de la gente!"
   Pablo Echenique:
     Retrón, científico del CSIC y ahora europarlamentario por PODEMOS
@@ -187,7 +187,7 @@ Pablo Echenique (Madrid) PUBLISH
   pablo.echenique.robba@gmail.com
   40.4097595,-3.6988735
 
-mmodulus (Madrid) PUBLISH
+mmodulus (Madrid)
   "Muebles modulares reconfigurables"
   mmodulus:
     mmodulUS es un marca de muebles modulares reconfigurables que quiere ayudar a las personas que desean ser protagonistas en la creación de sus espacios cotidianos, de manera que éstos sean más vivos y humanos. Promovemos un diseño libre, personalizado y participativo. Desde su inicio mmodulUS ha sido pensado como un instrumento para cultivar las relaciones sociales. Nuestro manifiesto explica las razones por las que creemos en el diseño de código abierto y la participación activa de los usuarios.
@@ -195,7 +195,7 @@ mmodulus (Madrid) PUBLISH
   info@mmodulus.com
   40.413253, -3.706301
 
-Olhops (Valencia) PUBLISH
+Olhops (Valencia)
   "Ecommerce de cervezas artesanas de España ¡Crea tu caja Olhöps!"
   Olhöps:
     Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
@@ -204,14 +204,14 @@ Olhops (Valencia) PUBLISH
   info@olhops.com
   39.4077852, -0.3615113
                                                                                                                             
-Afables (Barcelona) PUBLISH
+Afables (Barcelona)
   "Nunca estaremos preparados, de antemano, a los cambios que nos tiene preparados la vida"
   Afables:
     El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes
   http://www.afables.com/
   41.3478188, 1.6968496
 
-Vailets Hacklab (Barcelona) PUBLISH
+Vailets Hacklab (Barcelona)
   "Treballem perquè els vailets siguin co-creadors del seu futur"
   Vailets Hacklabs:
     Us proposem compartir un espai i un temps en els que els vostres fills podran crear els seus primers experiments, jocs i projectes a travès de la informàtica.
