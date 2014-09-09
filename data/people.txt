@@ -49,7 +49,7 @@ BricoLabs (A Coruña) PUBLISH
     ¿Por Qué? Aprovechamiento de sinergias, Emprender proyectos tecnológicos, Organizar eventos divulgativos, Facilitar acceso a la tecnología, Difusión del Hardware Libre. ¿Que hacemos? Impresoras 3D, Domótica, Robótica, Electrónica & Música, Eventos
   http://bricolabs.cc/                                                                    
   bricolabs@gmail.com
-  43.3618741,-8.4126837
+  43.3618741, -8.4126837
 
 Carlos García (Arteixo) PUBLISH
   "Si eres desarrollador/a, diseñador/a web o móvil, trabajas con contenidos digitales, eres webmaster de una tienda online, … y te gusta el movimiento asociativo y asambleario, este es tu espacio!"
@@ -59,7 +59,7 @@ Carlos García (Arteixo) PUBLISH
     Árticos es una asociación y un espacio de profesionales que tenemos en las TIC el nexo y pasión común. En la asociación, además de colaborar y compartir el espacio de coworking, organizamos lo que a cada uno de nosotros nos apetece. Como talleres de scratch, open spaces, coding dojos, talleres de diseño web, etc.
   http://articos.eu
   carlisgg@gmail.com
-  43.304189,-8.515649 
+  43.304189, -8.515649 
 
 Fátima García Doval (Santiago) PUBLISH
   "Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo"
@@ -78,7 +78,7 @@ Chus Prol (Santiago) PUBLISH
     Doutroxeito nace da evolución natural das formas de traballar e quere ser un ecosistema útil para as persoas que, cada vez máis, optan por traballar para sí mesmas, sexa dende unha oficina particular ou dende os seus fogares. Para estes traballadores existe o Coworking. En cada un deles está a opción de traballar á maneira tradicional ou … destoutro xeito.
   http://www.doutroxeito.com/
   doutroxeitocwk@gmail.com
-  42.876195,-8.5440045
+  42.876195, -8.5440045
 
 Sonia Díaz (Santiago) PUBLISH
   "Pensamos, facemos, comunicamos, cultura"
@@ -86,7 +86,7 @@ Sonia Díaz (Santiago) PUBLISH
     En Nócomún facemos realidade as ideas , as propias e as dos nosos clientes. Somos traballadores incansables da xestión e da difusión cultural e damos solucións eficientes a todo tipo de propostas creativas, ofrecendo unha mirada estratéxica sobre todo o proceso e poñendo o acento na xestión e na administración dos equipos de traballo. A nosa misión é contribuír á construción dunha ponte sólida entre a creación cultural e a sociedade e para facelo confiamos na forza da innovación, da imaxinación e do compromiso. Cremos que a comunicación e a cultura son dous polos indivisibles e poñemos a nosa mirada, os nosos coñecementos e a nosa paixón ao seu servizo.
   http://www.nocomun.com/
   info@nocomun.com
-  42.87,-8.54
+  42.87, -8.54
 
 Arroelo (Pontevedra) PUBLISH
   "hai que roelo"
@@ -107,7 +107,7 @@ Magma Espacio (Ourense) PUBLISH
     Siendo principalmente un lugar en el que compartir ideas, proyectos y sinergias, es también un nuevo espacio social donde asistir a diversos eventos (exposiciones, cursos, proyecciones, conferencias...)"
   http://www.magmaespacio.es/ 
   hola@magmaespacio.es
-  42.339098,-7.860425
+  42.339098, -7.860425
 
 Numax (Santiago) PUBLISH
   "Un cinema, unha libraría e un laboratorio de deseño, comunicación e produción audiovisual"
@@ -127,7 +127,7 @@ Numax (Santiago) PUBLISH
     gráfico e produción audiovisual.
   http://www.numax.org/
   numax@numax.org
-  42.8910386,-8.5292779
+  42.8910386, -8.5292779
 
 Antón Recio (Cáceres) PUBLISH
   "El protagonismo de Factoría lo tienes tú!"
@@ -135,7 +135,7 @@ Antón Recio (Cáceres) PUBLISH
     Somos una comunidad virtual de emprendedores/as, empresarios/as y personas inquietas, obsesionadas con conectar innovación y talento para generar nuevas oportunidades de negocio. Principalmente pertenecemos a la región de Extremadura y la zona del Alentejo Portugués, aunque cada vez contamos con miembros de más regiones españolas.
   http://www.factorinnovation.eu/
   info-fdi@ayto-caceres.es
-  39.4716366,-6.3907192
+  39.4716366, -6.3907192
                                                                  
 Gonzalo Palomo (Cáceres) PUBLISH
   "Somos granjeros y urbanitas en transición"
@@ -144,25 +144,78 @@ Gonzalo Palomo (Cáceres) PUBLISH
     La comunidad BBBFarming pretende situar lo rural en un lugar estratégico de cara al nuevo escenario postcapitalista que favorece la vuelta al campo, las prácticas agropecuarias respetuosas con el medio ambiente y la producción de alimentos de calidad diferenciada y salubridad contrastada; necesarios no sólo para alimentar a través del estomago sino también de la cabeza y el corazón.
   http://www.bbbfarming.net/
   gonzalo.palomo@gmail.com
-  39.4693502,-6.4186726
+  39.4693502, -6.4186726
 
-        pepe    si  Madrid / A Coruña   David Bonilla   david.bonilla@gmail.com @david_bonilla  Emprendedor contracorriente                     Uno de sus proyectos "innovadores" es la venta de empanada gallega por Internet para toda España: http://www.milandopico.com/                                                                       
-    ok (con revisión)   pepe    si  Madrid (Malasaña)   Rebrota Malasaña    rebrota@rojomenta.com   Medioambiente                       "REBROTA MALASAÑA es una iniciativa social para reverdecer las calles del madrileño barrio de Malasaña a través de jardines y huertas ecológicas en sus balcones.
+David Bonilla (Madrid) PUBLISH
+  "Emprendedor contracorriente"
+  Milandopico:
+    Proyectos innovador de venta de empanada gallega por Internet para toda España.
+  http://www.milandopico.com/                                                                       
+  david.bonilla@gmail.com
+  40.4378271, -3.6795367
 
-Es un proyecto de Rojomenta ( http://www.rojomenta.com/ ), que se dedican a la jardinería y el arte floral.
+Rebrota Malasana (Malasaña) PUBLISH
+  "¡Transforma las calles con tu balcón!"
+  Rebrota Malasaña:
+    Es una iniciativa social para reverdecer las calles del madrileño barrio de Malasaña a través de jardines y huertas ecológicas en sus balcones.
+    El proyecto ganó el concurso 2013 de ""Proyectos con espíritu"", del coworking Espíritu23"
+  http://rebrotamalasana.com/                                                                 
+  rebrota@rojomenta.com
+  40.4253205, -3.7083574
 
-El proyecto ganó el concurso 2013 de ""Proyectos con espíritu"", del coworking Espíritu23"  http://rebrotamalasana.com/                                                                 
-        xavier  si  Madrid  Diagonal     Fe, 10. 28012. Madrid  prensa                      un medio de comunicación crítico e independiente, sin directores ni jefes, sustentado sobre la base de miles de suscripciones.  https://www.diagonalperiodico.net/                                                                  
-        pepe    si  Madrid  HealthEye   jonathanyrula@healtheye.es  Integración y calidad de vida                       HealthEye es la Red Social para unir a personas con la misma enfermedad rara, con una filosofía principal de compartir todo lo que conocen sobre ella para sentirse apoyados y sobre todo, informados.  http://healtheye.es                                                                 
-        pepe    si  Madrid  Pablo Echenique pablo.echenique.robba@gmail.com @pnique Retrón, científico del CSIC y ahora europarlamentario por PODEMOS                                                                                               
-        pepe    si  Valencia    Olhöps  info@olhops.com Producto artesanal                      "Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
+Diagonal (Madrid) PUBLISH
+  "Un medio de comunicación crítico e independiente, sin directores ni jefes, sustentado sobre la base de miles de suscripciones"
+  Diagonal: 
+    Un proyecto con muchas personas detrás: un colectivo editor y una extensa red de colaboradores y mecenas. Hacemos periodismo situado, trabajamos en red con otros colectivos y formamos parte de una comunidad que apuesta por la economía social. Gracias a ello, producimos contenidos informativos y los compartimos bajo licencias libres.
+  https://www.diagonalperiodico.net/
+  no-mail
+  40.4089404, -3.7000348
 
-¿Pero esto es una tienda de cervezas?
+Jonathan Yrula (Madrid) PUBLISH
+  "La Red Social de las Enfermedades Raras"
+  HealthEye:
+    HealthEye es la Red Social para unir a personas con la misma enfermedad rara, con una filosofía principal de compartir todo lo que conocen sobre ella para sentirse apoyados y sobre todo, informados
+  http://healtheye.es
+  jonathanyrula@healtheye.es
+  40.4,-3.7
 
-No. Es un marketplace. El lugar donde cualquier persona, en cualquier parte de España, puede vender su cerveza artesanal, a cualquier persona, en cualquier parte España. Sólo con una condición, la cerveza tiene que gustarle primero a nuestro equipo. Criterio de calidad y experiencia de consumo asegurada. Sin más interés de que todo el mundo siga bebiendo sin perder la dignidad en nuestra fiesta." http://www.olhops.com/                                                                  
+Pablo Echenique (Madrid) PUBLISH
+  "¡Es la hora de la gente!"
+  Pablo Echenique:
+    Retrón, científico del CSIC y ahora europarlamentario por PODEMOS
+  http://podemos.info/
+  pablo.echenique.robba@gmail.com
+  40.4097595,-3.6988735
+
+mmodulus (Madrid) PUBLISH
+  "Muebles modulares reconfigurables"
+  mmodulus:
+    mmodulUS es un marca de muebles modulares reconfigurables que quiere ayudar a las personas que desean ser protagonistas en la creación de sus espacios cotidianos, de manera que éstos sean más vivos y humanos. Promovemos un diseño libre, personalizado y participativo. Desde su inicio mmodulUS ha sido pensado como un instrumento para cultivar las relaciones sociales. Nuestro manifiesto explica las razones por las que creemos en el diseño de código abierto y la participación activa de los usuarios.
+  http://www.mmodulus.com/
+  info@mmodulus.com
+  40.413253, -3.706301
+
+Olhops (Valencia) PUBLISH
+  "Ecommerce de cervezas artesanas de España ¡Crea tu caja Olhöps!"
+  Olhöps:
+    Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
+    ¿Pero esto es una tienda de cervezas? No. Es un marketplace. El lugar donde cualquier persona, en cualquier parte de España, puede vender su cerveza artesanal, a cualquier persona, en cualquier parte España. Sólo con una condición, la cerveza tiene que gustarle primero a nuestro equipo. Criterio de calidad y experiencia de consumo asegurada. Sin más interés de que todo el mundo siga bebiendo sin perder la dignidad en nuestra fiesta.
+  http://www.olhops.com/
+  info@olhops.com
+  39.4077852, -0.3615113
                                                                                                                             
-si  ok  pepe    si  Barcelona   Afables     Integración y calidad de vida                       El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes.  http://www.afables.com/                                                                 
-    ok  pepe    si  Barcelona   Vailets Hacklabs    vailets.hacklab@gmail.com   Educación e infancia                        """Treballem perquè els vailets siguin co-creadors del seu futur""
+Afables (Barcelona) PUBLISH
+  "Nunca estaremos preparados, de antemano, a los cambios que nos tiene preparados la vida"
+  Afables:
+    El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes
+  http://www.afables.com/
+  41.3478188, 1.6968496
 
-(lo mismo que el Zagales Hacklab de Zaragoza pero en Barcelona)"    http://vailets-hacklab.org/                                                                 
-                Madrid  mmodulus    info@mmodulus.com juan.freire@gmail.com                                                                                                 
+Vailets Hacklab (Barcelona) PUBLISH
+  "Treballem perquè els vailets siguin co-creadors del seu futur"
+  Vailets Hacklabs:
+    Us proposem compartir un espai i un temps en els que els vostres fills podran crear els seus primers experiments, jocs i projectes a travès de la informàtica.
+  http://vailets-hacklab.org/                                                                 
+  vailets.hacklab@gmail.com
+  41.428441, 2.187083
+
