@@ -98,6 +98,11 @@
 </head>
 
 <body>
+    <div class="centered">
+    <div id="goteo">
+        <iframe frameborder="0" height="480px" src="https://goteo.org/widget/project/crisis-what-crisis" width="250px" scrolling="no"></iframe>
+    </div>
+    <div class="wrapper-content">
     <div id="shareThis">
         <span class='st_sharethis_large' displayText='ShareThis'></span>
         <span class='st_facebook_large' displayText='Facebook'></span>
@@ -250,6 +255,8 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <div id="footer">
         <div class="mountains"></div>
         <div class="things"></div>
@@ -297,9 +304,10 @@
                             <param name="wmode" value="transparent"/>
                             <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
                         </object>
-                    <p class="text-center">
-                            <a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank">More crisis</a></div>
-                    </p>
+                        <p class="text-center">
+                                <a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank">More crisis</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="block3">
                     <p class="title">CONTACT US:</p>
