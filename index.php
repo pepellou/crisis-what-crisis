@@ -288,8 +288,8 @@
                     </section>
                 </div>
                 <div class="block3">
-                    <p class="title">DOSSIER</p>
-                    <div class="text-center">
+                    <p class="title" style="color: black;">DOSSIER</p>
+                    <div class="text-center" style="display: none;">
                         <object height="100">
                             <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
                             <param name="allowfullscreen" value="true"/>
