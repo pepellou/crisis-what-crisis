@@ -17,9 +17,6 @@ html=$(cat $tempFile | wc -c)
 text=$(cat $tempFile | sed 's/<[^>]\+>//g' | wc -c)
 ratio=$(expr 100 \* $text \/ $html)
 
-echo "Text: $text chars"
-echo "Html: $html chars"
-echo
-echo "text / html: $ratio%"
+echo $ratio
 
 rm -rf $tempFile
