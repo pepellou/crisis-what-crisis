@@ -25,6 +25,7 @@ h2 {
     position: fixed;
     top: 80px;
     z-index: 50;
+    background: #e7e7e7;
 }
 #footer a, .credits a {
 	color: white;
@@ -62,7 +63,7 @@ h6 {
 #sheet {
 	width: 1200px;
 	margin: auto;
-	background: #ececec;
+	background: #e7e7e7;
 }
 #header_image {
     display: block;

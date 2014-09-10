@@ -100,6 +100,7 @@
 <body>
     <div class="centered">
     <div id="goteo">
+        <h1>Support us!</h1>
         <iframe frameborder="0" height="480px" src="https://goteo.org/widget/project/crisis-what-crisis" width="250px" scrolling="no"></iframe>
     </div>
     <div class="wrapper-content">
