@@ -21,6 +21,7 @@ h2 {
 	margin-bottom: 0px;
 }
 #goteo {
+    width: 250px;
     float: left;
     position: fixed;
     top: 80px;
