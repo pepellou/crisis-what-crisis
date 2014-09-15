@@ -33,7 +33,7 @@ Juan Penalta (Galicia)
   jpenalta@gmail.com
   42.8673166,-8.5449038
 
-WeKco (A Coruña)
+WeKco (A Coruña) PUBLISH
   "Un ecosistema que inspira, conecta e impulsa"
   WeKco:
     Es un espacio que fomenta la confianza, la colaboración y el sentido de comunidad entre emprendedores, autónomos, teletrabajadores y microempresas.
@@ -42,7 +42,7 @@ WeKco (A Coruña)
   welcome@wekco.net
   43.326153, -8.432307
 
-BricoLabs (A Coruña)
+BricoLabs (A Coruña) PUBLISH
   "Labs"
   BricoLabs:
     Es un grupo de personas con inquietudes relacionadas con la electrónica y el Hardware Libre que se reúnen periódicamente para intercambiar conocimiento
@@ -51,7 +51,7 @@ BricoLabs (A Coruña)
   bricolabs@gmail.com
   43.3618741, -8.4126837
 
-Carlos García (Arteixo)
+Carlos García (Arteixo) PUBLISH
   "Si eres desarrollador/a, diseñador/a web o móvil, trabajas con contenidos digitales, eres webmaster de una tienda online, … y te gusta el movimiento asociativo y asambleario, este es tu espacio!"
   Árticos: 
     Árticos es un espacio de coworking asociativo. No está gestionado por ningún gestor sino que es la propia asociación Arteixo TIC y nosotros sus socios los que decidimos lo que queremos que sea el espacio en todo momento.
@@ -61,7 +61,7 @@ Carlos García (Arteixo)
   carlisgg@gmail.com
   43.304189, -8.515649 
 
-Fátima García Doval (Santiago)
+Fátima García Doval (Santiago) PUBLISH
   "Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo"
   Accegal:
     Accegal es un proyecto de colaboración entre el Centro de Educación Especial Manuel López Navalón y el Grupo de Tecnologías de la Información (GTI) de la Escuela de Ingeniería de Telecomunicación (Universidad de Vigo) para la elaboración de soluciones de accesibilidad basadas en dispositivos móviles.
@@ -71,7 +71,7 @@ Fátima García Doval (Santiago)
   fmgdoval@gmail.com
   42.9735304,-8.4409964
 
-Chus Prol (Santiago)
+Chus Prol (Santiago) PUBLISH
   "The way you work"
   Doutro Xeito:
     Doutroxeito non e só un servizo de oficinas compartidas senón que o acompaña un matiz social: os coworkers son emprendedores que se acompañan entre sí, que precisan da relación profesional e persoal para mellor traballar e para seren máis produtivos.
@@ -88,7 +88,7 @@ Sonia Díaz (Santiago)
   info@nocomun.com
   42.87, -8.54
 
-Arroelo (Pontevedra)
+Arroelo (Pontevedra) PUBLISH
   "hai que roelo"
   Espacio Arroelo:
     Espacio Arroelo nace con el fin de dar respuesta a la demanda de un lugar común de trabajo para autónomos, freelance ó pymes de Pontevedra.
@@ -99,7 +99,7 @@ Arroelo (Pontevedra)
   info@espacioarroelo.es
   42.4338608, -8.6393456
 
-Magma Espacio (Ourense)
+Magma Espacio (Ourense) PUBLISH
   "Colaborar para crecer, unir fuerzas para evolucionar, hacer equipo para transformar"
   Magma Espacio:
     Es la primera plataforma colaborativa multidisciplinar en el centro de Ourense.
@@ -109,7 +109,7 @@ Magma Espacio (Ourense)
   hola@magmaespacio.es
   42.339098, -7.860425
 
-Numax (Santiago)
+Numax (Santiago) PUBLISH
   "Un cinema, unha libraría e un laboratorio de deseño, comunicación e produción audiovisual"
   Numax:
     NUMAX somos unha cooperativa de traballo 
@@ -195,7 +195,7 @@ mmodulus (Madrid)
   info@mmodulus.com
   40.413253, -3.706301
 
-Olhops (Valencia)
+Olhops (Valencia) PUBLISH
   "Ecommerce de cervezas artesanas de España ¡Crea tu caja Olhöps!"
   Olhops:
     Olhöps es un marketplace que va a centralizar todas las cervezas artesanales de España.
@@ -204,7 +204,7 @@ Olhops (Valencia)
   info@olhops.com
   39.4077852, -0.3615113
                                                                                                                             
-Afables (Barcelona)
+Afables (Barcelona) PUBLISH
   "Nunca estaremos preparados, de antemano, a los cambios que nos tiene preparados la vida"
   Afables:
     El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida de muchas personas, especialmente aquellas dependientes de atención domiciliaria. Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen entorno a las personas, los usuarios y los ayudantes
@@ -212,7 +212,7 @@ Afables (Barcelona)
   no-mail
   41.3478188, 1.6968496
 
-Vailets Hacklab (Barcelona)
+Vailets Hacklab (Barcelona) PUBLISH
   "Treballem perquè els vailets siguin co-creadors del seu futur"
   Vailets Hacklabs:
     Us proposem compartir un espai i un temps en els que els vostres fills podran crear els seus primers experiments, jocs i projectes a travès de la informàtica.
