@@ -20,7 +20,9 @@
     }
     $idioma = substr($idioma, 0, 2);
     if (in_array($idioma, $languages)) {
-        require_once(dirname(__FILE__).'/langs/'.$idioma.".php");
+        require_once(dirname(__FILE__).'/langs/'.$idioma.'.php');
+    } else {
+        require_once(dirname(__FILE__).'/langs/en.php');
     }
 ?>
 <!DOCTYPE html>
