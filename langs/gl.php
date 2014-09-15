@@ -1,8 +1,9 @@
 <?php
-    define (LANG_ES, Español);
-    define (LANG_EN, Inglés);
-    define (LANG_GL, Galego);
+    define (LANG_ES, 'Español');
+    define (LANG_EN, 'English');
+    define (LANG_GL, 'Galego');
     define (COUNT_DOWN_TITLE, 'Conta Atr&aacute;s para a Viaxe');
+    define (COOKIE_INFO, 'Esta web emprega cookies que se instalan ao navegar por ela, para a internacionalización e servizos de terceiros de mapas e analíticas. Se continúas navegando estás aceptando a nosa <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. <button class="btn" onclick="controlcookies()">Aceptar</button>');
     define (SUBTITLE, 'Unha viaxe a través de respostas optimistas');
     define (COLLABORATE_BUTTON, 'img/donate.png');
     define (META_KEYWORDS, 'documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.');

@@ -1,7 +1,8 @@
 <?php
-    define (LANG_ES, Español);
-    define (LANG_EN, Inglés);
-    define (LANG_GL, Galego);
+    define (LANG_ES, 'Español');
+    define (LANG_EN, 'English');
+    define (LANG_GL, 'Galego');
+    define (COOKIE_INFO, 'Esta web utiliza cookies que se instalan al navegar por ella, para la internacionalización y servicios de terceros de mapas y analíticas. Si continúas navegando estás aceptando nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. <button class="btn" onclick="controlcookies()">Aceptar</button>');
     define (COUNT_DOWN_TITLE, 'Compte enrere per al viatge');
     define (SUBTITLE, 'Un viatge a través de respostes optimistes');
     define (COLLABORATE_BUTTON, 'img/donate.png');

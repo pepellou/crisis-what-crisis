@@ -1,7 +1,8 @@
 <?php
-    define (LANG_ES, Español);
-    define (LANG_EN, Inglés);
-    define (LANG_GL, Galego);
+    define (LANG_ES, 'Español');
+    define (LANG_EN, 'English');
+    define (LANG_GL, 'Galego');
+    define (COOKIE_INFO, 'This website uses cookies that are installed by browsing it, with the purposes of internationalization and third-party services of maps and analytics. By browsing this website you\'re accepting our <a href="cookiespolicy.html" target= "_blank">cookies policy</a>. <button class="btn" onclick="controlcookies()">Accept</button>');
     define (COUNT_DOWN_TITLE, 'Conto per i viaggi');
     define (SUBTITLE, 'Un viaggio attraverso le risposte ottimistiche');
     define (COLLABORATE_BUTTON, 'img/donate.png');

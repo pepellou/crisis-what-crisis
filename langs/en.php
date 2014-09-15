@@ -1,7 +1,8 @@
 <?php
-    define (LANG_ES, Spanish);
-    define (LANG_EN, English);
-    define (LANG_GL, Galician);
+    define (LANG_ES, 'Español');
+    define (LANG_EN, 'English');
+    define (LANG_GL, 'Galego');
+    define (COOKIE_INFO, 'This website uses cookies that are installed by browsing it, with the purposes of internationalization and third-party services of maps and analytics. By browsing this website you\'re accepting our <a href="cookiespolicy.html" target= "_blank">cookies policy</a>. <button class="btn" onclick="controlcookies()">Accept</button>');
     define (COUNT_DOWN_TITLE, 'Count-Down for the Trip');
     define (SUBTITLE, 'A journey through optimistic answers');
     define (COLLABORATE_BUTTON, 'img/donate_ing.png');

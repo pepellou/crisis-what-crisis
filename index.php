@@ -115,10 +115,7 @@
         <span class='st_email_large' displayText='Email'></span>
     </div>
 
-    <div class="cookies" id="cookiebox" style="display: <?php if ($_COOKIE["cookie"]=="true") echo "none" ?>">
-        Esta web utiliza cookies. Si continúas navegando estás aceptando nuestra <a href="cookiespolicy.html" target= "_blank">política de cookies</a>. 
-        <button class="btn" onclick="controlcookies()">Aceptar</button>
-    </div>
+    <div class="cookies" id="cookiebox" style="display: <?php if ($_COOKIE["cookie"]=="true") echo "none" ?>"> <?php echo COOKIE_INFO;?> </div>
     <div id="idiomas">
         <div style="padding: 0 16px;">
             <?php
