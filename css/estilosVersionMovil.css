@@ -1,0 +1,175 @@
+body{background:#2E2E2E; position:absolute; padding:0px; border:0px; margin:0px; width:240px;}
+#headerImage{width:100%; height: 90px;}
+#map {width:100%; height:140px;} 
+#diario{display:block; position:absolute; padding-left:37%; top:213px; width:23%;}
+#bgMoto{width:100%; padding:0; border:0; margin:0; display: block;} 
+/*Estilo container de pestañas de seleccion:*/
+.tab{display:block; float:left; width:100%; height:30px; text-align:center; padding-left:6%;}
+/*Estilo individual propio de cada pestaña:*/ 
+.tab a{background:rgb(38,72,150); display:block; float:left;  
+       border:3px solid white;  border-radius: 10px; width: auto; height:20px; 
+       font-weight:900; color:white; font-size:50%; text-decoration:none;padding-left:2%;
+       padding-top:2%; padding-bottom:0%;padding-right:2%;  }
+.tab a:first-child{display:none;}
+.clear{ clear:both;}
+/*Ahora varios css de estilo para "contenidos desplegados" por acción sobre las pestañas:*/ 
+#empty{ background-image:url("fondoTextos.png"); background-size:100%; background-repeat:no-repeat; height:360px;}
+#what,#why,#who,
+#where,#how,
+#support{ background-image:url("fondoTextos.png"); background-size: 100%;
+          background-repeat:no-repeat; clear:both; display:block; width:84%; padding:2% 8%; 
+          color:white; line-height: 150%;  font-size:100%;}
+#support p{text-align:center;padding-top:16%;}
+#support p a{text-align:center;color:white;}
+#retorno{display:block;text-align:center;color:blue;}
+/*Y ahora ya sólo quedan los mediaQueries: */
+@media (min-width: 320px) and (orientation: portrait),(min-height: 320px) and (orientation: landscape){
+body{width: 320px;}
+#headerImage{height: 90px;}
+#map {height:180px;}
+#diario{top:245px;}
+.tab{padding-left:4.5%;}
+.tab a{font-size:50%;padding-top: 3%;padding-bottom: 0%;padding-right:1%;padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:130%;}
+#empty{height:330px;}
+}
+@media (min-width: 480px) and (orientation: portrait),(min-height: 480px) and (orientation: landscape){
+body{width:480px;}
+#headerImage{height:140px;}
+#diario{top:285px;}
+#map {height:180px;}
+.tab{padding-left:5%;}
+.tab a{font-size:105%; padding-top:2%; padding-bottom:1%; padding-right:2%;}
+#what,#why,#who,#where,#how,#support{font-size:140%;}
+#empty{height:340px;}
+}
+@media (min-width: 540px) and (orientation: portrait),(min-height: 540px) and (orientation: landscape){
+body{width: 540px;}
+#headerImage{height:140px;}
+#diario{top:355px;}
+#map {height:260px;}
+.tab{padding-left:4.5%;}
+.tab a{font-size:135%; padding-top:1%; padding-bottom:1.5%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:160%;}
+#empty{height:360px;}
+}
+@media (min-width: 640px) and (orientation: portrait),(min-height: 640px) and (orientation: landscape){
+body{width: 640px;}
+#headerImage{height:175px;}
+#diario{top:385px;}
+#map {height:260px;}
+.tab{padding-left:4.2%;}
+.tab a{font-size:135%; padding-top:1%; padding-bottom:1.5%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:160%;}
+#empty{height:400px;}
+}
+@media (min-width: 720px) and (orientation: portrait),(min-height: 720px) and (orientation: landscape){
+body{width: 720px;}
+#headerImage{height:190px;}
+#diario{top:390px;}
+#map {height:260px;}
+.tab{padding-left:4.2%;}
+.tab a{font-size:181.5%; padding-top:1%; padding-bottom:2%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:180%;}
+#empty{height:445px;}
+}
+@media (min-width: 750px) and (orientation: portrait),(min-height: 750px) and (orientation: landscape){
+body{width: 750px;}
+#headerImage{height:190px;}
+#diario{top:410px;}
+#map {height:280px;}
+.tab{padding-left:4%;}
+.tab a{font-size:185.5%; padding-top:1%; padding-bottom:2%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:180%;}
+#empty{height:465px;}
+}
+@media (min-width: 768px) and (orientation: portrait),(min-height: 768px) and (orientation: landscape){
+body{width: 768px;}
+#headerImage{height:190px;}
+#diario{top:410px;}
+#map {height:280px;}
+.tab{padding-left:5%;}
+.tab a{font-size:188%; padding-top:1%; padding-bottom:2%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:180%;}
+#empty{height:490px;}
+}
+@media (min-width: 800px) and (orientation: portrait),(min-height: 800px) and (orientation: landscape){
+body{width: 800px;}
+#headerImage{height:190px;}
+#diario{top:395px;}
+#map {height:270px;}
+.tab{padding-left:5%;}
+.tab a{font-size:200%; padding-top:1%; padding-bottom:2%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:200%;}
+#empty{height:520px;}
+}
+@media (min-width: 854px) and (orientation: portrait),(min-height: 854px) and (orientation: landscape){
+body{width: 854px;} 
+#headerImage{height:195px;}
+#diario{top:415px;}
+#map {height:290px;}  
+.tab{padding-left:4.3%;}
+.tab a{font-size:215%; padding-top:1%; padding-bottom:2%; padding-right:1%; padding-left:1%;}
+#what,#why,#who,#where,#how,#support{font-size:225%;}
+#empty{height:565px;}
+}
+@media (min-width: 960px) and (orientation: portrait),(min-height: 960px) and (orientation: landscape){
+body{width: 960px;}
+#headerImage{height:200px;}
+#diario{top:480px;}
+#map {height:360px;}
+.tab{padding-left:4.25%;}
+.tab a{font-size:225%; padding-top:1%; padding-bottom:3%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:250%;}
+#empty{height:640px;}
+}
+@media (min-width: 1080px) and (orientation: portrait),(min-height: 1080px) and (orientation: landscape){
+body{width: 1080px;}
+#headerImage{height:220px;}
+#diario{top:530px;}
+#map {height:400px;}
+.tab{padding-left:4.25%;}
+.tab a{font-size:254%; padding-top:1%; padding-bottom:3%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:270%;}
+#empty{height:730px;}
+}
+@media (min-width: 1136px) and (orientation: portrait),(min-height: 1136px) and (orientation: landscape){
+body{width: 1136px;}
+#headerImage{height:240px;}
+#diario{top:544px;}
+#map {height:400px;}
+.tab{padding-left:4.75%;}
+.tab a{font-size:265%; padding-top:1%; padding-bottom:3%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:290%;}
+#empty{height:800px;}
+}
+@media (min-width: 1280px) and (orientation: portrait),(min-height: 1280px) and (orientation: landscape){
+body{width: 1280px;}
+#headerImage{height:250px;}
+#diario{top:590px;}
+#map {height:450px;}
+.tab{padding-left:4.75%;}
+.tab a{font-size:298%; padding-top:1%; padding-bottom:3%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:330%;}
+#empty{height:900px;}
+}
+@media (min-width: 1334px) and (orientation: portrait),(min-height: 1334px) and (orientation: landscape){
+body{width: 1334px;}
+#headerImage{height:260px;}
+#diario{top:620px;}
+#map {height:470px;}
+.tab{padding-left:4.75%;}
+.tab a{font-size:310%; padding-top:1%; padding-bottom:3%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:340%;}
+#empty{height:900px;}
+}
+@media only screen (min-width: 1920px) and (orientation: portrait),(min-height: 1920px) and (orientation: landscape){
+body{width: 1920px;}
+#headerImage{height:390px;}
+#diario{top:875px;}
+#map {height:650px;}
+.tab{padding-left:4.8%;}
+.tab a{font-size:446%; padding-top:1%; padding-bottom:4%; padding-right:1.5%; padding-left:1.5%;}
+#what,#why,#who,#where,#how,#support{font-size:400%;}
+#empty{height:1100px;}
+}

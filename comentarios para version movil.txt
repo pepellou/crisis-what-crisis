@@ -1,0 +1,20 @@
+/* Previsión de anchos de pantalla en base a las resoluciones genéricas y la posibilidad de pasar a modo horizontal de:
+ancho x alto en vertical,240x320,320x240,320x480,480x800,480x854,540x960,640x960,640x1136,720x1280,750x1334,768x1280,1080x1920
+Definiendo pues los estilos adecuados a los siguientes intervalos de anchos:
+<=319 (pensado para estándar 240px)
+320-479
+480-539
+540-639
+640-719
+720-749
+750-767
+768-799
+800-853
+854-959
+960-1079
+1080-1135
+1136-1279
+1280-1333
+1334-1919
+>=1920 (aunque la idea será no derivar aquí desde "mobile-detection.php" a ipadmini2-3-air ni tablets de resoluciones similares: 2048-by-1536)
+*/
