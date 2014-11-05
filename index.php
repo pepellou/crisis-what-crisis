@@ -332,6 +332,15 @@
                         <a href="mailto:team@crisis-whatcrisis.com">team@crisis-whatcrisis.com</a>
                     </p>
                 </div>
+                <div class="newsponsors">
+                    <img src="img/sponsors/cidadevella.png" title="Cidade Vella A.C."/>
+                    <img src="img/sponsors/contreras.png" title="Clínica dental Contreras"/>
+                    <img src="img/sponsors/dezaseis.png" title="O Dezaseis - Casa de Xantar"/>
+                    <img src="img/sponsors/halcones.png" title="Halcones B.G.O. Aquilea"/>
+                    <img src="img/sponsors/lalin.png" title="Concello de Lalín"/>
+                    <img src="img/sponsors/motonity.png" title="Motonity"/>
+                    <img src="img/sponsors/lkm0.png" title="Lalínkmcero"/>
+                </div>
             </div>
         </div>
     </div>

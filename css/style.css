@@ -619,6 +619,20 @@ ul li {
 #socialButtons .facebook:hover {
 	background-position: -64px 0;
 }
+.newsponsors {
+    float: left;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+#footer .newsponsors img {
+    height: 50px;
+    width: initial;
+    margin: 0 20px;
+}
 #sponsorButtons {
     margin: 5px 50px 0 50px;
 }
