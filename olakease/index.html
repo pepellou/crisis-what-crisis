@@ -1,18 +1,45 @@
 <html>
+
 	<head>
 		<title>Administras o ke ase</title>
+
+    		<link rel="stylesheet" href="admin.css">
+
 		<script src="lib/firebase.js"></script>
 		<script src="lib/ICanHaz.min.js"></script>
 		<script src="lib/jquery.min.js"></script>
+
 		<script src="admin.js"></script>
 	</head>
-	<body>
-      		<h1>Videos</h1>
-		<div id="videos"></div>
 
-		<script id="video_tpl" type="text/html">
+	<body>
+
+		<section name="videos">
+      			<h1>Videos</h1>
+			<div>
+				<div class="left">
+      					<h2>Web</h2>
+					<div id="videos_web">Loading...</div>
+				</div>
+
+				<div class="right">
+      					<h2>Youtube</h2>
+					<div id="videos_yt">Loading...</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- templates -->
+		<script id="item_tpl" type="text/html">
 			<a href="{{link}}">{{title}}</a><br/>
 		</script>
 
+		<!-- youtube feed -->
+		<script 
+			type="text/javascript" 
+			src="http://gdata.youtube.com/feeds/users/anajimandro/uploads?alt=json-in-script&format=5&callback=loadYoutube">
+		</script>
+
 	</body>
+
 </html>
