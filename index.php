@@ -245,6 +245,68 @@
                     <li>Eviroula Dourou</li>
                     <li><a target="_blank" href="http://www.dirtysocks.es/">Dirty Socks</a></li>
                     <li>Maurizio Galli</li>
+
+                    <li>Laura</li>
+                    <li>Galan Jr</li>
+                    <li>Xenfo</li>
+                    <li>Nasos Markou</li>
+                    <li>George Krommidas</li>
+                    <li>Xan Villamel</li>
+                    <li>António Martinez</li>
+                    <li>Manuel Ortuño</li>
+                    <li>Sonia Díaz</li>
+                    <li>josemari</li>
+                    <li>Suso Coba</li>
+                    <li>Andrés García Bastón</li>
+                    <li>David Bonilla</li>
+                    <li>Sandra Lema</li>
+                    <li>María Santos Peña</li>
+                    <li>Camilo Franco</li>
+                    <li>Mario G. Cortizo</li>
+                    <li>Gonzalo Suarez</li>
+                    <li>maitai</li>
+                    <li>Alberto Fortes</li>
+                    <li>Juan Penalta Rodríguez</li>
+                    <li>Julian Canaves</li>
+                    <li>Najla Shami</li>
+                    <li>César Goldi</li>
+                    <li>Brais Fortes</li>
+                    <li>Isis Castro</li>
+                    <li>kaderno</li>
+                    <li>Sonia Díaz</li>
+                    <li>Vítor Belho</li>
+                    <li>Rodriguez Eusebio</li>
+                    <li>Miguel Angel Fernández</li>
+                    <li>Marina Carracedo</li>
+                    <li>Manolo33</li>
+                    <li>Juan Diego Pereiro Areán</li>
+                    <li>MariCarmen Gomez Grille</li>
+                    <li>javier creus</li>
+                    <li>Sergio Lago</li>
+                    <li>bea.micelios</li>
+                    <li>Carlos A. Montilla Cortizo</li>
+                    <li>Begoña Sebastian</li>
+                    <li>Alvaro</li>
+                    <li>Alberte A. Pereira</li>
+                    <li>Jesús Tamayo</li>
+                    <li>pablo vicente</li>
+                    <li>Cunque</li>
+                    <li>Alejandro Aradas García</li>
+                    <li>Miguel Patiño</li>
+                    <li>Kiko Novoa</li>
+                    <li>Jaime Perera Merino</li>
+                    <li>Iñaki Quenerapú</li>
+                    <li>dvilchez</li>
+                    <li>Iñaki</li>
+                    <li>Miguel Reboiro Jato</li>
+                    <li>Daniel Alonso</li>
+                    <li>Acuarian0</li>
+                    <li>Niti Laíño</li>
+                    <li>Nuria Moreiras</li>
+                    <li>Ignacio Cid</li>
+                    <li>Sabela Novoa Vazquez</li>
+                    <li>pablo doval "tubas"</li>
+                    <li>Gabriel Contreras Contrino</li>
                 </ul>
             </div>
             <p class="title">HOSTS</p>
