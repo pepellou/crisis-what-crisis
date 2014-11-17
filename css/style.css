@@ -627,6 +627,7 @@ ul li {
     padding: 20px 30px;
     box-sizing: border-box;
     margin-right: 30px;
+    width: 100%;
 }
 #footer .newsponsors img {
     height: 50px;
