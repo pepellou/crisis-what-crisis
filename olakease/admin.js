@@ -24,14 +24,18 @@ $(function() {
 	}, errors);
 });
 
+var firstVideoDate = '2014-09-14';
+
 var loadYoutube = function(data) {
 	var entries = data.feed.entry || [];
 	$(function() {
 		for (var i = 0; i < entries.length; i++) {
-			Videos.youtube.push({
-				title: entries[i].title.$t,
-				link: '?'
-			});
+			if (entries[i].published.$t >= firstVideoDate) {
+				Videos.youtube.push({
+					title: entries[i].title.$t,
+					link: '?'
+				});
+			}
 			Paint.list('#videos_yt', Videos.youtube);
 		}
 	});
