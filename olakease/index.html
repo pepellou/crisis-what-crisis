@@ -3,8 +3,6 @@
 	<head>
 		<title>Administras o ke ase</title>
 
-    		<link rel="stylesheet" href="admin.css">
-
 		<script src="lib/firebase.js"></script>
 		<script src="lib/ICanHaz.min.js"></script>
 		<script src="lib/jquery.min.js"></script>
@@ -16,22 +14,29 @@
 
 		<section name="videos">
       			<h1>Videos</h1>
-			<div>
-				<div class="left">
-      					<h2>Web</h2>
-					<div id="videos_web">Loading...</div>
-				</div>
 
-				<div class="right">
-      					<h2>Youtube</h2>
-					<div id="videos_yt">Loading...</div>
-				</div>
-			</div>
+      			<h2>Publicados en la Web</h2>
+			<div id="videos_web">Loading...</div>
+
+      			<h2>En Youtube</h2>
+			<div id="videos_yt">Loading...</div>
 		</section>
 
 		<!-- templates -->
 		<script id="item_tpl" type="text/html">
-			<a href="{{link}}">{{title}}</a><br/>
+			<div>
+				<a href="{{link}}" target="_blank">{{title}}</a>
+				({{published}})<br/>
+				{{description}}<br/>
+				{{#thumbs}}
+					<img src="{{url}}"></img>
+				{{/thumbs}}
+				<br/>
+				{{#actions}}
+					<a href="#" name="{{name}}">{{message}}</a>
+				{{/actions}}
+				<hr/>
+			</div>
 		</script>
 
 		<!-- youtube feed -->
