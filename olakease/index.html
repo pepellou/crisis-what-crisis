@@ -25,13 +25,17 @@
 		<!-- templates -->
 		<script id="item_tpl" type="text/html">
 			<div>
-				<a href="{{link}}" target="_blank">{{title}}</a>
-				({{published}})<br/>
 				{{description}}<br/>
+				{{#gps}}
+				<iframe width="200" height="150"
+					frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed/v1/place?q={{lat}}%2C%20{{lng}}&key=AIzaSyDB-JuyfNbO4QlzYoxmZt1ftt-NqppTInU"></iframe>
+				{{/gps}}
 				{{#thumbs}}
-					<img src="{{url}}"></img>
+					<img width="200" height="150" src="{{url}}"></img>
 				{{/thumbs}}
 				<br/>
+				<a href="{{link}}" target="_blank">{{title}}</a> ({{published}})<br/>
 				{{#actions}}
 					<a href="#" name="{{name}}">{{message}}</a>
 				{{/actions}}

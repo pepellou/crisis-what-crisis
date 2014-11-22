@@ -17,29 +17,26 @@ var YT_VIDEO_ACTIONS = [
 ];
 
 var Paint = {
-	list: function(where, list, actions) {
+	list: function(where, list) {
 		$(where).html('');
-		list.forEach(function(item) {
-			console.log(actions);
-			item.actions = actions;
-			console.log(item);
+		for (var id in list) {
+			var item = list[id];
 			$(where).append(ich.item_tpl(item));
-		});
+		};
 	}
 };
 
 $(function() {
-	videos.on("child_added", function(video) {
-		Videos.web.push(new Video({ web: video.val() }));
-		Paint.list(
-			'#videos_web',
-			Videos.web,
-			WEB_VIDEO_ACTIONS
-		);
+	videos.on("child_added", function(child) {
+		var video = new Video({ web: child.val() });
+		Videos.web[video.id] = video;
+		Paint.list('#videos_web', Videos.web);
+		if (Videos.youtube[video.id]) {
+			delete Videos.youtube[video.id];
+			Paint.list('#videos_yt', Videos.youtube);
+		}
 	}, errors);
 });
-
-var firstVideoDate = '2014-09-14';
 
 function Video(options) {
 	options = options || {};
@@ -56,13 +53,10 @@ function Video(options) {
 	};
 
 	self._createFromWeb = function(data) {
-		self.title = data.title;
-		self.published = data.published;
-		self.id = data.id;
-		self.link = data.link;
-		self.description = data.description;
-		self.thumbs = data.thumbs;
-		self.duration = data.duration;
+		for (var field in data) {
+			self[field] = data[field];
+		}
+		self.actions = WEB_VIDEO_ACTIONS;
 	};
 
 	self._createFromYoutube = function(data) {
@@ -81,6 +75,23 @@ function Video(options) {
 			self.thumbs.push(thumbnail);
 		});
 		self.duration = data.media$group.yt$duration.seconds;
+
+		self.gps = { lat: 0, lng: 0 };
+		if (data.georss$where) {
+			var gps = data.georss$where.gml$Point.gml$pos.$t.split(' ');
+			self.gps = {
+				lat: gps[0],
+				lng: gps[1]
+			};
+		}
+
+		self.actions = YT_VIDEO_ACTIONS;
+	};
+
+	self.isEligible = function() {
+		var firstVideoDate = '2014-09-14';
+		return self.published >= firstVideoDate
+			|| self.title.substr(0, 3) == 'CWC';
 	};
 
 	return self.init();
@@ -91,14 +102,10 @@ var loadYoutube = function(data) {
 	$(function() {
 		for (var i = 0; i < entries.length; i++) {
 			var video = new Video({ youtube: entries[i] });
-			if (video.published >= firstVideoDate) {
-				Videos.youtube.push(video);
+			if (video.isEligible() && !(Videos.web[video.id])) {
+				Videos.youtube[video.id] = video;
 			}
-			Paint.list(
-				'#videos_yt',
-				Videos.youtube,
-				YT_VIDEO_ACTIONS
-			);
+			Paint.list('#videos_yt', Videos.youtube);
 		}
 	});
 };
