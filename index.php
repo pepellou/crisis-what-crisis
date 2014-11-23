@@ -47,6 +47,10 @@
     <meta name="keywords" content="<?php echo META_KEYWORDS?>">
     <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion">
     <meta name="language" content="<?php echo META_LANGUAGE;?>">
+
+    <script src="olakease/lib/firebase.js"></script>
+    <script src="olakease/lib/ICanHaz.min.js"></script>
+
     <script language="javascript" src="js/cookies.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
@@ -157,18 +161,7 @@
 
     <div id="black-background" class="modal"></div>
 
-    <div id="videos">
-        <?php foreach (getVideos("anajimandro", "CRISIS") as $video) { ?>
-            <div class="video">
-                <div name="title"><?php echo $video['title']; ?></div>
-                <div name="link"><?php echo $video['link']; ?></div>
-                <div name="gps">
-                    <div name="lat"><?php echo $video['lat']; ?></div>
-                    <div name="lng"><?php echo $video['lng']; ?></div>
-                </div>
-            </div>
-        <?php } ?>
-    </div>
+    <div id="videos"> </div>
 
     <?php foreach (People::all() as $person) { ?>
         <div id="person_<?php echo $person->id; ?>" class="person modal">
@@ -406,6 +399,75 @@
             </div>
         </div>
     </div>
+
+    <!-- templates -->
+    <script id="video_tpl" type="text/html">
+        <div class="video">
+            <div name="title">{{title}}</div>
+            <div name="link">{{link}}</div>
+            {{#gps}}
+                <div name="gps">
+                    <div name="lat">{{lat}}</div>
+                    <div name="lng">{{lng}}</div>
+                </div>
+            {{/gps}}
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        var DB = new Firebase("https://crisis-whatcrisis.firebaseio.com");
+        
+        var videos = DB.child('videos');
+
+        var allTheVideos = [];
+
+        var errors = function(error) {
+            console.log("Error: " + error.code);
+        };
+
+        var normalizeYtLink = function(link) {
+            return link
+                .replace('https', 'http')
+                .replace('&feature=youtube_gdata', '')
+                .replace('.com/embed/', '.com/')
+                .replace('.com/', '.com/embed/')
+                .replace('watch?v=', '');
+        };
+
+        $(function() {
+            videos.on("child_added", function(child) {
+                $('#videos').append(ich.video_tpl(child.val()));
+                allTheVideos.push(child.val());
+            }, errors);
+
+	    $('#previewVideo .left').click(function() {
+		    var found = -1;
+		    allTheVideos.forEach(function(elem, index) {
+			    if (normalizeYtLink(elem.link) == normalizeYtLink($('#previewVideo iframe').attr('src'))) {
+				    found = index;
+			    }
+		    });
+		    if (found > -1) {
+			    previous = found > 0 ? found - 1 : allTheVideos.length - 1;
+			    $('#previewVideo .theVideo > iframe').attr('src', normalizeYtLink(allTheVideos[previous].link));
+		    }
+            });
+
+	    $('#previewVideo .right').click(function() {
+		    var found = -1;
+		    allTheVideos.forEach(function(elem, index) {
+			    if (normalizeYtLink(elem.link) == normalizeYtLink($('#previewVideo iframe').attr('src'))) {
+				    found = index;
+			    }
+		    });
+		    if (found > -1) {
+			    next = found < allTheVideos.length - 1 ? found + 1 : 0;
+			    $('#previewVideo .theVideo > iframe').attr('src', normalizeYtLink(allTheVideos[next].link));
+		    }
+            });
+        });
+    </script>
+
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-22545594-5']);
