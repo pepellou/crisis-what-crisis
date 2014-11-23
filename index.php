@@ -58,8 +58,8 @@
                     'type': 'people',
                     'id': '<?php echo $person->id; ?>',
                     'name': '<?php echo $person->name; ?>',
-                    'lat' : '<?php echo $person->gps->lat; ?>',
-                    'lng' : '<?php echo $person->gps->lng; ?>'
+                    'lat' : '<?php echo $person->gps_lat; ?>',
+                    'lng' : '<?php echo $person->gps_lng; ?>'
                 },
             <?php } ?>
         ];

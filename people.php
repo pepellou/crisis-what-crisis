@@ -24,7 +24,7 @@ class Person {
             $line = array_shift($data);
         }
         $this->mail = trim($line);
-        list($this->gps->lat, $this->gps->lng) = explode(',', trim(array_shift($data)));
+        list($this->gps_lat, $this->gps_lng) = explode(',', trim(array_shift($data)));
         array_shift($data);
 
         $this->id = $this->computeId();
