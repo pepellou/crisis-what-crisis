@@ -1,0 +1,45 @@
+div {
+	float: left
+}
+
+.video {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#videos_yt .video {
+	border: 2px solid #f87;
+	background-color: #fdd;
+}
+
+#videos_web .video {
+	border: 2px solid #78f;
+	background-color: #ddf;
+}
+
+.video > .left {
+	width: 25%;
+	height: 25%; 
+}
+
+.video > .right {
+	width: 69%;
+	padding: 0 3%;
+}
+
+.video .map, .video .thumbs {
+	width: 50%;
+	height: 100%;
+}
+
+.video .thumbs > .thumb {
+	width: 50%;
+	height: 50%;
+}
+
+.video .map > iframe, .video .thumb > img {
+	width: 100%;
+	height: 100%;
+}

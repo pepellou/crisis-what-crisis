@@ -3,6 +3,8 @@
 	<head>
 		<title>Administras o ke ase</title>
 
+    		<link href="admin.css" media="screen" rel="stylesheet" type="text/css" />
+
 		<script src="lib/firebase.js"></script>
 		<script src="lib/ICanHaz.min.js"></script>
 		<script src="lib/jquery.min.js"></script>
@@ -24,22 +26,27 @@
 
 		<!-- templates -->
 		<script id="item_tpl" type="text/html">
-			<div>
-				{{description}}<br/>
-				{{#gps}}
-				<iframe width="200" height="150"
-					frameborder="0" style="border:0"
-					src="https://www.google.com/maps/embed/v1/place?q={{lat}}%2C%20{{lng}}&key=AIzaSyDB-JuyfNbO4QlzYoxmZt1ftt-NqppTInU"></iframe>
-				{{/gps}}
-				{{#thumbs}}
-					<img width="200" height="150" src="{{url}}"></img>
-				{{/thumbs}}
-				<br/>
-				<a href="{{link}}" target="_blank">{{title}}</a> ({{published}})<br/>
-				{{#actions}}
-					<a href="#" name="{{name}}" data-video="{{id}}">{{message}}</a>
-				{{/actions}}
-				<hr/>
+			<div class="video">
+				<div class="left">
+					<div class="map">
+						{{#gps}}
+						<iframe frameborder="0" style="border:0"
+							src="https://www.google.com/maps/embed/v1/place?q={{lat}}%2C%20{{lng}}&key=AIzaSyDB-JuyfNbO4QlzYoxmZt1ftt-NqppTInU"></iframe>
+						{{/gps}}
+					</div>
+					<div class="thumbs">
+						{{#thumbs}}
+							<div class="thumb"> <img src="{{url}}"></img> </div>
+						{{/thumbs}}
+					</div>
+				</div>
+				<div class="right">
+					<a href="{{link}}" target="_blank">{{title}}</a> ({{published}})<br/>
+					{{description}}<br/>
+					{{#actions}}
+						<strong><a href="#" name="{{name}}" data-video="{{id}}">{{message}}</a></strong>
+					{{/actions}}
+				</div>
 			</div>
 		</script>
 
