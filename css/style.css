@@ -20,14 +20,6 @@ h1 {
 h2 {
 	margin-bottom: 0px;
 }
-#goteo {
-    width: 250px;
-    float: left;
-    position: fixed;
-    top: 80px;
-    z-index: 50;
-    background: #e7e7e7;
-}
 #footer a, .credits a {
 	color: white;
 	font-size: 14px;
@@ -53,18 +45,10 @@ h6 {
     float: left;
     padding: 20px 0 30px;
 }
-.centered {
-    margin: 0 auto;
-    width: 1460px;
-}
-.wrapper-content {
-    width: 1200px;
-    float: right;
-}
 #sheet {
 	width: 1200px;
 	margin: auto;
-	background: #e7e7e7;
+	background: #ececec;
 }
 #header_image {
     display: block;
@@ -280,14 +264,28 @@ form[name="contact"] {
 
 #roadmap_button {
 	cursor: pointer;
+	float: left;
 }
 
 .roadmap_link {
 	position: relative;
 	z-index: 20;
 	float: left;
-	margin-top: -245px;
+	margin-top: -140px;
 	margin-left: 10px;
+}
+
+#linkSupport {
+	position: relative;
+	z-index: 20;
+	float: left;
+	margin-top: -360px;
+	margin-left: 10px;
+}
+#linkSupport img {
+	width: 200px;
+	height: 200px;
+	float: left;
 }
 
 ul {
@@ -443,7 +441,6 @@ ul li {
 #footer {
 	width: 100%;
     float: left;
-    z-index: 100;
 }
 @-webkit-keyframes mountains {
 	0% {
@@ -515,9 +512,6 @@ ul li {
 	width: 1200px;
 	margin: auto;
 	color: white;
-}
-#footer .ground {
-    padding-left: 260px;
 }
 #footer .ground img {
 	margin-left: 10px;
