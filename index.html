@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1280, maximum-scale=1.0" />    
+    <link href="countdown/style/dark.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/money.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/cookies.css" media="screen" rel="stylesheet" type="text/css" >
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Crisis - What Crisis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta property="og:image" content="http://www.crisis-whatcrisis.com/img/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.crisis-whatcrisis.com" />
+    <meta property="og:title" content="Crisis - What crisis?" />
+    <meta property="og:description" content= "It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?"/>
+    <meta name="description" content="It's a documentary portraying the 2012's Europe. A trip from Galicia, in the Iberian Peninsula's Northwest extreme, to the Pireo in Greece, across Portugal, Spain and Italy (PIGS)*.  It's a critical eye to the CRISIS. A practical and brave answer to that questions we should ask: What is the crisis? Where does it come from? Where does it lead us? AND NOW WHAT?">
+    <meta name="keywords" content="documental, viaje, optimismo, innovación, ideas, creatividad, crisis, what crisis, pigs, P.I.G.S.">
+    <meta name="classification" content="Information society, communication, information, audiovisual, telecommunications, public opinion">
+    <meta name="language" content="en, english">
+
+    <script src="olakease/lib/firebase.js"></script>
+    <script src="olakease/lib/ICanHaz.min.js"></script>
+
+    <script language="javascript" src="js/cookies.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8VKWnsMR8-zmp5dW7YOInsVjib26h840&sensor=false">
+    </script>
+    <script>
+        people = [
+            {
+                'type': 'people',
+                'id': 'xavier_belho',
+                'name': 'Xavier Belho',
+                'lat' : '37.984413',
+                'lng' : '23.727915'
+            },
+            {
+                'type': 'people',
+                'id'  : 'wekco',
+                'name': 'WeKco',
+                'lat' : '43.326153',
+                'lng' : '-8.432307'
+            },
+            {
+                'type': 'people',
+                'id'  : 'bricolabs',
+                'name': 'BricoLabs',
+                'lat' : '43.3618741',
+                'lng' : '-8.4126837'
+            },
+            {
+                'type': 'people',
+                'id'  : 'carlos_garcia',
+                'name': 'Carlos García',
+                'lat' : '43.304189',
+                'lng' : '-8.515649 '
+            },
+            {
+                'type': 'people',
+                'id'  : 'fatima_garcia_doval',
+                'name': 'Fátima García Doval',
+                'lat' : '42.9735304',
+                'lng' : '8.4409964'
+            },
+            {
+                'type': 'people',
+                'id'  : 'chus_prol',
+                'name': 'Chus Prol',
+                'lat' : '42.876195',
+                'lng' : '-8.5440045'
+            },
+            {
+                'type': 'people',
+                'id'  : 'arroelo',
+                'name': 'Arroelo',
+                'lat' : '42.4338608',
+                'lng' : '-8.6393456'
+            },
+            {
+                'type': 'people',
+                'id'  : 'magma_espacio',
+                'name': 'Magma Espacio',
+                'lat' : '42.339098',
+                'lng' : '-7.860425'
+            },
+            {
+                'type': 'people',
+                'id'  : 'numax',
+                'name': 'Numax',
+                'lat' : '42.8910386',
+                'lng' : '-8.5292779'
+            },
+            {
+                'type': 'people',
+                'id'  : 'olhops',
+                'name': 'Olhops',
+                'lat' : '39.4077852',
+                'lng' : '-0.3615113'
+                                                                                                                                        },
+            {
+                'type': 'people',
+                'id'  : 'afables',
+                'name': 'Afables',
+                'lat' : '41.3478188',
+                'lng' : '1.6968496'
+            },
+            {
+                'type': 'people',
+                'id'  : 'vailets_hacklab',
+                'name': 'Vailets Hacklab',
+                'lat' : '41.428441',
+                'lng' : '2.187083'
+            },
+        ];
+    </script>
+    <script language="javascript" src="js/map/trip.js"></script>
+    <script language="javascript" src="js/map-style.js"></script>
+    <script language="javascript" src="js/map.js"></script>
+    <script language="javascript" src="js/menu.js"></script>
+    <script language="javascript" src="js/modal.js"></script>
+    <script language="javascript" src="js/photos.js"></script>
+    <script language="Javascript" src="js/money.js"></script>
+    <script language="Javascript" src="js/people.js"></script>
+    <script language="javascript" src="js/translate.js"></script>
+    <script language="Javascript" type="text/javascript" src="countdown/js/jquery.lwtCountdown-1.0.js"></script>
+    <script language="Javascript" type="text/javascript" src="countdown/js/misc.js"></script>
+    <script language="Javascript" type="text/javascript" src="js/jqBarGraph.1.1.min.js"></script>
+    <script type="text/javascript">
+        if (window.$) {
+            $(function() {
+                $("a[name='idioma_en'],a[name='idioma_es'],a[name='idioma_gl'],a[name='idioma_ca'],a[name='idioma_pt'],a[name='idioma_it'],a[name='idioma_gr']").click(function(event){
+                    var lang = $(this).attr("name");
+                    language = lang.substr(lang.length -2, 2);
+                    var d = new Date();
+                    var days = 7;
+                    d.setTime(d.getTime()+(days*24*60*60*1000));
+
+                    event.preventDefault();
+                    document.cookie = "lan=" + language + "; expires=" + d.toGMTString() + "; path=/";
+                    window.location.href=window.location.href;
+                });
+            });
+        }
+    </script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-f97ca0-e046-8744-a2ac-c443671fe277", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <!-- Developed by Hermanos Karapatrov - see http://www.crisis-whatcrisis.com/humans.txt -->
+</head>
+
+<body>
+    <div id="shareThis">
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_pinterest_large' displayText='Pinterest'></span>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_email_large' displayText='Email'></span>
+    </div>
+
+    <div class="cookies" id="cookiebox">This website uses cookies that are installed by browsing it, with the purposes of internationalization and third-party services of maps and analytics. By browsing this website you're accepting our <a href="cookiespolicy.html" target= "_blank">cookies policy</a>. <button class="btn" onclick="controlcookies()">Accept</button></div>
+    <div id="idiomas">
+        <div style="padding: 0 16px;">
+            <a href='' class='selected' name='idioma_en'>English</a> |
+            <a href='' class='' name='idioma_es'>Español</a> |
+            <a href='' class='' name='idioma_gl'>Galego</a>
+        </div>
+    </div>
+    <div id="sheet">
+        <img id="header_image" src="img/header.png" alt="Web logo: Crisis What Crisis - An optimistic answer"/>
+        <div id="map_canvas"></div>
+        <div id="map_cover"></div>
+        <a id="linkSupport" href="support.php?lan=en" target="blank"><img id="collaborate_button" src="img/donate_ing.png" class="donateImg" /></a>
+        <a id="roadmap_button" href="roadmap.php"><img src="img/roadmaplink.png" alt="support" class="roadmap_link" /></a>
+        <div id="menu">
+            <ul>
+                <li><a href="javascript:void(0)" name="what">  What  </a></li>
+                <li><a href="javascript:void(0)" name="why">   Why   </a></li>
+                <li><a href="javascript:void(0)" name="who">   Who   </a></li>
+                <li><a href="javascript:void(0)" name="where"> Where </a></li>
+                <li><a href="javascript:void(0)" name="how">   How   </a></li>
+        </div>
+        <div id="main_content">
+            <img class="line what" src="img/lineto-what.png" alt="line" />
+            <div class="box what">
+                <p>
+                    Crisis What Crisis is a motorcycle trip through the countries starring in the
+                    *CRISIS* (PIGS). We want to reveal people and projects which give an optimistic
+                    and innovative answer to it. Crisis What Crisis: a journey through optimistic
+                    answers is a constructive stare towards the crisis.
+                    A practical and brave answer on new forms of social organization and open production.
+                    Our trip is about shared search through collectives and people who enjoy more
+                    from experience than from money.
+                </p>
+                <p>
+                    We’ll track organizations promoting open knowledge, self-consumption and
+                    cooperation based on a sustainable long-term transformative business model.
+                    Happiness is not what they told us, it’s what we’re telling us.
+                </p>
+                <p>
+                    * PORTUGAL, ITALY, GREECE, SPAIN ...
+                </p>
+            </div>
+            <img class="line why" src="img/lineto-why.png" alt="line" />
+            <div class="box why">
+                <p>
+                    We live in South Europe, in countries with a authoritarian tradition from
+                    which we’ve just got away, with political classes dominated by economic power
+                    and having done anything to improve their population’s welfare.
+                    They’ve used the politics to produce quick business helped by banks and
+                    economic powers.
+                </p>
+                <p>
+                    This way CWC is born to demonstrate that a wide base movement exists which
+                    shakes the system tower, this quoted, with new ideas and ways to relate based
+                    on sustainability, solidarity, cooperation and freedom.
+                </p>
+                <p>
+                    “PIGS: The adult domestic pig has a heavy and rounded body, comparatively long
+                    and flexible snout, short hoofed feet (four fingers) and a short tail.
+                    The skin, thick but sensitive, is partly covered with rough bristles and exhibits
+                    a wide variety of colours and drawings. Despite its appearance they’re agile,
+                    quick and clever animals.”
+                </p>
+                <p>
+                    We need to visualize other answers, other possible futures, because if we don’t
+                    imagine them we’ll never be able to make them happen.
+                </p>
+                <p>
+                    This project is therefore addressed to each person seeking new ways of living out
+                    of the production standards, with interest in transforming from participation,
+                    solidarity and betting on a more open and sustainable world.
+                </p>
+                <p>
+                    In february 2013 my daughter Helena is born. This documentary is also a gift
+                    for her and all that generation, so that when she can watch it with analysis
+                    capabilities she can see the world and the context where she was born,
+                    hoping that it serves her somehow to face her own life.
+                </p>
+            </div>
+            <img class="line who" src="img/lineto-who.png" alt="line" />
+            <div class="box who">
+                <p>
+                    My name is Xavier Belho and I work in graphic design and audiovisual production.
+                    At 23 I left my parents' house. From that moment I started to do all kinds of
+                    activities in order to eat. I sold hams, gave remedial classes to primary school
+                    children, I led a pub and I ended up being a Banch Manager.
+                    I even worked as graphic designer for a audiovisual production company and mounted
+                    a production company with three partners. All these activities were successful and
+                    failure ... but none filled me ... until now.
+                    So, I've fallen and I always woke up with an idea in his head and little support.
+                    At the end of the day ... I am an optimist.
+                    Anybody there?
+                    The answer I hope to find it in CWC. 
+                </p>
+                <p>
+                    If I get launch this project with your help I will make with my Yamaha Virago 1100 '97
+                    third-hand a motorcycle trip to make a documentary that will take me from the Galicia
+                    Finisterre to the gates of the West, through the countries protagonists of the CRISIS
+                    (PIGS).
+                    CWC is a documentary that portrays the Europe 2014.
+                    A motorcycle trip that part from Galicia, in the northwest corner of the Iberian
+                    Peninsula and reaches the Piraeus (Athens) in Greece, through Portugal, Spain and Italy (PIGS) *. 
+                </p>
+                <p>
+                    I count on the support of the Karapatrov ExBrothers (some of them collaborate unconditionally
+                    in the project) and the NóComún collective (they helped in the early stages and help us
+                    in spreading), Casa das Crechas (economic and contacts help) Association Cidade Vella
+                    de Compostela (disseminate the project), the Dirty Socks with the soundtrack (they are
+                    a group of young people who make music in English and with which I collaborated with
+                    some designs), NARF (wild musician with whom I went to London to do a photo shoot, to
+                    Mozambique to record a video and with who I walk through life with optimism.
+                    He will help me in whatever I need), among other groups and individuals who will
+                    publicly express their support when the adventure begins.
+                </p>
+            </div>
+            <img class="line where" src="img/lineto-where.png" alt="line" />
+            <div class="box where">
+                <p>
+                    There where there is an intelligent answer to the crisis.
+                </p>
+                <p>
+                    For now, the route will pass close to these cities:
+                </p>
+                <p>
+                    <strong>
+                        Santiago de Compostela
+                        - Oporto
+                        - Lisboa
+                        - Badajoz
+                        - Cáceres
+                        - Madrid
+                        - Valencia
+                        - Barcelona
+                        - Roma
+                        - Brindisi
+                        - Patras
+                        - Atenas
+                        - Thessalonika
+                        - Pireo
+                    </strong>
+                </p>
+            </div>
+            <img class="line how" src="img/lineto-how.png" alt="line" />
+            <div class="box how">
+                <p>
+                    Since childhood I have liked the travel books, from Jules Verne to
+                    Joseph Conrad and particularly Ted Simon's book, Jupiter's Travels,
+                    which narrates his motorcycle trip around the world and their experience
+                    along the journey. My love for motorbikes borns from cinema and from a
+                    particular movie, Easy Rider, where the motorbike and the trip are one. 
+                </p>
+                <p>
+                    Now it's my turn of take a trip on my old bike, across southern Europe
+                    how she did in the fourth century the Egeria traveler, and discover this
+                    new world that is being built day day with optimism for a future ruled
+                    by truly human values. 
+                </p>
+                <p>
+                    Traveling by bike I can not afford to carry a bulky team: I will have a
+                    small camera that will record video and photos in full HD, one mini
+                    sound equipment and a laptop to edit some pictures and upload them to
+                    the network as I go along.
+                </p>
+                <p>
+                    The project is planned as a modular construction with two distinct stages:
+                    <ol>
+                        <li>
+                            The main characters will tell their stories, where they are developing their projects,
+                            directly to the camera (Canon 7D), through little videobooth style interviews.
+                            These microinterviews will be uploaded to the Web and Social networks, thus building an
+                            interactive map of the trip, so the audience will be able to interact almost on realtime.
+                        </li>
+                        <li>
+                            At the end of the trip, a narrative documentary will be built complementing
+                            selected statements of the main characters with contextual information and images.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="black-background" class="modal"></div>
+
+    <div id="videos"> </div>
+
+    <div id="person_xavier_belho" class="person modal">
+        <img src="data/people_images/xavier_belho.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Xavier Belho</p>
+        <h1>WHERE</h1>
+        <p class="location">Atenas</p>
+        <h1>WHAT</h1>
+        <p class="what">Crisis? What Crisis?</p>
+        <h1>WHY</h1>
+        <p class="why">Hay vida más allá de la crisis</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Documental optimista en el que se buscan iniciativas
+            innovadoras frente a la crisis.
+            Viaja en moto en solitario partiendo de Galicia, 
+            en el extremo noroeste de la Península Ibérica y llegando 
+            hasta el Pireo (Atenas), en Grecia, pasando por Portugal, 
+            España e Italia, paises conocidos como PIGS.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.crisis-whatcrisis.com/" target="_blank">http://www.crisis-whatcrisis.com/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:xavierbelho@gmail.com">xavierbelho@gmail.com</a></p>
+        <h1>LINKS</h1>
+        <ul class="links">
+            <li><a href="https://www.facebook.com/crisiswcrisis" target="_blank">https://www.facebook.com/crisiswcrisis</a></li>
+            <li><a href="https://twitter.com/xavierbelho" target="_blank">https://twitter.com/xavierbelho</a></li>
+        </ul>
+    </div>
+    <div id="person_wekco" class="person modal">
+        <img src="data/people_images/wekco.png"></img>
+        <h1>WHO</h1>
+        <p class="name">WeKco</p>
+        <h1>WHERE</h1>
+        <p class="location">A Coruña</p>
+        <h1>WHAT</h1>
+        <p class="what">WeKco</p>
+        <h1>WHY</h1>
+        <p class="why">Un ecosistema que inspira, conecta e impulsa</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Es un espacio que fomenta la confianza, la colaboración y
+            el sentido de comunidad entre emprendedores, autónomos,
+            teletrabajadores y microempresas.
+           
+            Un espacio profesional compartido en el marco de una
+            "informalidad organizada", flexible a tus necesidades y
+            que te facilitará sacar adelante ese proyecto profesional
+            y/o de empresa que tienes.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://wekco.net" target="_blank">http://wekco.net</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:welcome@wekco.net">welcome@wekco.net</a></p>
+    </div>
+    <div id="person_bricolabs" class="person modal">
+        <img src="data/people_images/bricolabs.png"></img>
+        <h1>WHO</h1>
+        <p class="name">BricoLabs</p>
+        <h1>WHERE</h1>
+        <p class="location">A Coruña</p>
+        <h1>WHAT</h1>
+        <p class="what">BricoLabs</p>
+        <h1>WHY</h1>
+        <p class="why">Labs</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Es un grupo de personas con inquietudes relacionadas con la
+            electrónica y el Hardware Libre que se reúnen periódicamente
+            para intercambiar conocimiento
+            ¿Por Qué?
+            Aprovechamiento de sinergias, Emprender proyectos tecnológicos,
+            Organizar eventos divulgativos, Facilitar acceso a la tecnología,
+            Difusión del Hardware Libre.
+            ¿Que hacemos?
+            Impresoras 3D, Domótica, Robótica, Electrónica & Música, Eventos
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://bricolabs.cc/" target="_blank">http://bricolabs.cc/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:bricolabs@gmail.com">bricolabs@gmail.com</a></p>
+    </div>
+    <div id="person_carlos_garcia" class="person modal">
+        <img src="data/people_images/carlos_garcia.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Carlos García</p>
+        <h1>WHERE</h1>
+        <p class="location">Arteixo</p>
+        <h1>WHAT</h1>
+        <p class="what">Árticos:</p>
+        <h1>WHY</h1>
+        <p class="why">Si eres desarrollador/a, diseñador/a web o móvil, trabajas con contenidos digitales, eres webmaster de una tienda online, … y te gusta el movimiento asociativo y asambleario, este es tu espacio!</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Árticos es un espacio de coworking asociativo. No está gestionado por
+            ningún gestor sino que es la propia asociación Arteixo TIC y nosotros
+            sus socios los que decidimos lo que queremos que sea el espacio en
+            todo momento.
+           
+            Por eso las tarifas las vamos adecuando a la realidad del espacio y
+            no tenemos ningún ánimo de lucro.
+           
+            Árticos es una asociación y un espacio de profesionales que tenemos
+            en las TIC el nexo y pasión común. En la asociación, además de colaborar
+            y compartir el espacio de coworking, organizamos lo que a cada uno
+            de nosotros nos apetece.
+            Como talleres de scratch, open spaces, coding dojos, talleres de
+            diseño web, etc.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://articos.eu" target="_blank">http://articos.eu</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:carlisgg@gmail.com">carlisgg@gmail.com</a></p>
+    </div>
+    <div id="person_fatima_garcia_doval" class="person modal">
+        <img src="data/people_images/fatima_garcia_doval.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Fátima García Doval</p>
+        <h1>WHERE</h1>
+        <p class="location">Santiago</p>
+        <h1>WHAT</h1>
+        <p class="what">Accegal</p>
+        <h1>WHY</h1>
+        <p class="why">Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, puede cambiar el mundo</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Accegal es un proyecto de colaboración entre el Centro de Educación
+            Especial Manuel López Navalón y el Grupo de Tecnologías de la Información
+            (GTI) de la Escuela de Ingeniería de Telecomunicación (Universidad de Vigo)
+            para la elaboración de soluciones de accesibilidad basadas en dispositivos
+            móviles.
+           
+            En la actualidad el trabajo está centrado en la comunicación, especialmente
+            alternativa y aumentativa.
+           
+            Trabajamos conjuntamente con otros centros, asociaciones y particulares,
+            de modo totalmente desinteresado y sin ánimo de lucro para que nuestras
+            aplicaciones sean gratuitas y funcionen en dispositivos de bajo costo.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.accegal.org/" target="_blank">http://www.accegal.org/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:fmgdoval@gmail.com">fmgdoval@gmail.com</a></p>
+    </div>
+    <div id="person_chus_prol" class="person modal">
+        <img src="data/people_images/chus_prol.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Chus Prol</p>
+        <h1>WHERE</h1>
+        <p class="location">Santiago</p>
+        <h1>WHAT</h1>
+        <p class="what">Doutro Xeito</p>
+        <h1>WHY</h1>
+        <p class="why">The way you work</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Doutroxeito non e só un servizo de oficinas compartidas senón que o
+            acompaña un matiz social: os coworkers son emprendedores que se acompañan
+            entre sí, que precisan da relación profesional e persoal para mellor
+            traballar e para seren máis produtivos.
+           
+            Doutroxeito nace da evolución natural das formas de traballar e quere
+            ser un ecosistema útil para as persoas que, cada vez máis, optan por
+            traballar para sí mesmas, sexa dende unha oficina particular ou dende os
+            seus fogares. Para estes traballadores existe o Coworking.
+            En cada un deles está a opción de traballar á maneira tradicional
+            ou … destoutro xeito.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.doutroxeito.com/" target="_blank">http://www.doutroxeito.com/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:doutroxeitocwk@gmail.com">doutroxeitocwk@gmail.com</a></p>
+    </div>
+    <div id="person_arroelo" class="person modal">
+        <img src="data/people_images/arroelo.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Arroelo</p>
+        <h1>WHERE</h1>
+        <p class="location">Pontevedra</p>
+        <h1>WHAT</h1>
+        <p class="what">Espacio Arroelo</p>
+        <h1>WHY</h1>
+        <p class="why">hai que roelo</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Espacio Arroelo nace con el fin de dar respuesta a la demanda de un
+            lugar común de trabajo para autónomos, freelance ó pymes de
+            Pontevedra.
+           
+            Un entorno único, la tercera planta de un edificio de lineas clásicas.
+            Más de 400m2 que dan cabida no sólo a nuestros coworkers, sino a aquellos
+            que quieran hacer uso de sus cuatro salas de reunión, sala de juntas y
+            salón de actos, tanto para recepción de clientes, como para desarrollar
+            cursos, talleres ó seminarios.  En pleno corazón de Pontevedra, en una
+            de sus calles más emblemáticas, pretende convertirse en un referente en
+            la ciudad, y servir de plataforma para el fomento de las relaciones
+            entre profesionales, no sólo a nivel local sino también a nivel nacional
+            e internacional, con la promoción de talleres propios y exposiciones
+            periódicas de artistas locales y foráneos.  Con el espíritu del "hai
+            que roelo" pontevedrés, nuestro Espacio Arroelo aspira a hacer de la
+            unión de los pequeños un gran grupo humano, competitivo y capaz de
+            afrontar los nuevos retos del momento.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.espacioarroelo.com/" target="_blank">http://www.espacioarroelo.com/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:info@espacioarroelo.es">info@espacioarroelo.es</a></p>
+    </div>
+    <div id="person_magma_espacio" class="person modal">
+        <img src="data/people_images/magma_espacio.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Magma Espacio</p>
+        <h1>WHERE</h1>
+        <p class="location">Ourense</p>
+        <h1>WHAT</h1>
+        <p class="what">Magma Espacio</p>
+        <h1>WHY</h1>
+        <p class="why">Colaborar para crecer, unir fuerzas para evolucionar, hacer equipo para transformar</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Es la primera plataforma colaborativa multidisciplinar en el centro de
+            Ourense.
+           
+            Es un entorno de trabajo destinado a profesionales (autonomos, freelance,
+            emprendedores y pequeña empresa) de diferentes campos donde pueden
+            desarrollar sus proyectos, ademas de relacionarse con el resto de los
+            coworkers.
+           
+            Siendo principalmente un lugar en el que compartir ideas, proyectos y
+            sinergias, es también un nuevo espacio social donde asistir a diversos
+            eventos (exposiciones, cursos, proyecciones, conferencias...)
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.magmaespacio.es/" target="_blank">http://www.magmaespacio.es/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:hola@magmaespacio.es">hola@magmaespacio.es</a></p>
+    </div>
+    <div id="person_numax" class="person modal">
+        <img src="data/people_images/numax.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Numax</p>
+        <h1>WHERE</h1>
+        <p class="location">Santiago</p>
+        <h1>WHAT</h1>
+        <p class="what">Numax</p>
+        <h1>WHY</h1>
+        <p class="why">Un cinema, unha libraría e un laboratorio de deseño, comunicación e produción audiovisual</p>
+        <h1>HOW</h1>
+        <p class="how">
+            NUMAX somos unha cooperativa de traballo asociado sen ánimo de lucro formada por
+            persoas procedentes de diversos ámbitos da creación e difusión cultural que
+            decidimos colaborar para facermos xuntos o que estamos afeitos a facer por
+            separado.
+           
+            NUMAX materialízase nun proxecto cultural, localizado na contorna da cidade
+            vella de Compostela, que reúne nun mesmo espazo de 190 m2 unha sala de cinema
+            con ambigú, unha libraría de arte e humanidades e un estudio de deseño gráfico
+            e produción audiovisual.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.numax.org/" target="_blank">http://www.numax.org/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:numax@numax.org">numax@numax.org</a></p>
+    </div>
+    <div id="person_olhops" class="person modal">
+        <img src="data/people_images/olhops.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Olhops</p>
+        <h1>WHERE</h1>
+        <p class="location">Valencia</p>
+        <h1>WHAT</h1>
+        <p class="what">Olhops</p>
+        <h1>WHY</h1>
+        <p class="why">Ecommerce de cervezas artesanas de España ¡Crea tu caja Olhöps!</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Olhöps es un marketplace que va a centralizar todas las cervezas artesanales
+            de España.
+           
+            ¿Pero esto es una tienda de cervezas? No. Es un marketplace. El lugar donde
+            cualquier persona, en cualquier parte de España, puede vender su cerveza
+            artesanal, a cualquier persona, en cualquier parte España. Sólo con una
+            condición, la cerveza tiene que gustarle primero a nuestro equipo.
+            Criterio de calidad y experiencia de consumo asegurada. Sin más interés
+            de que todo el mundo siga bebiendo sin perder la dignidad en nuestra
+            fiesta.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.olhops.com/" target="_blank">http://www.olhops.com/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:info@olhops.com">info@olhops.com</a></p>
+    </div>
+    <div id="person_afables" class="person modal">
+        <img src="data/people_images/afables.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Afables</p>
+        <h1>WHERE</h1>
+        <p class="location">Barcelona</p>
+        <h1>WHAT</h1>
+        <p class="what">Afables</p>
+        <h1>WHY</h1>
+        <p class="why">Nunca estaremos preparados, de antemano, a los cambios que nos tiene preparados la vida</p>
+        <h1>HOW</h1>
+        <p class="how">
+            El primer recomendador social de la ayuda a domicilio. Busca mejorar la vida
+            de muchas personas, especialmente aquellas dependientes de atención domiciliaria.
+            Con el objetivo de mejorar la calidad de estos servicios, busca que funcionen
+            entorno a las personas, los usuarios y los ayudantes
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://www.afables.com/" target="_blank">http://www.afables.com/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:no-mail">no-mail</a></p>
+    </div>
+    <div id="person_vailets_hacklab" class="person modal">
+        <img src="data/people_images/vailets_hacklab.png"></img>
+        <h1>WHO</h1>
+        <p class="name">Vailets Hacklab</p>
+        <h1>WHERE</h1>
+        <p class="location">Barcelona</p>
+        <h1>WHAT</h1>
+        <p class="what">Vailets Hacklabs</p>
+        <h1>WHY</h1>
+        <p class="why">Treballem perquè els vailets siguin co-creadors del seu futur</p>
+        <h1>HOW</h1>
+        <p class="how">
+            Us proposem compartir un espai i un temps en els que els vostres fills podran
+            crear els seus primers experiments, jocs i projectes a travès de la informàtica.
+        </p>
+        <h1>WEB</h1>
+        <p class="web"><a href="http://vailets-hacklab.org/" target="_blank">http://vailets-hacklab.org/</a></p>
+        <h1>MAIL</h1>
+        <p class="mail"><a href="mailto:vailets.hacklab@gmail.com">vailets.hacklab@gmail.com</a></p>
+    </div>
+
+    <div id="previewVideo" class="modal">
+        <div class="left"></div>
+        <div class="theVideo"></div>
+        <div class="right"></div>
+    </div>
+
+    <div id="previewPhoto" class="modal">
+        <div class="left"></div>
+        <div class="thePhoto"></div>
+        <div class="right"></div>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        if (window.$) {
+            $(function() {
+                var freeze = true;
+                if (!freeze) {
+                    $('#countdown_dashboard').countDown({
+                        targetDate: {
+                            'day': 15,
+                            'month': 10,
+                            'year': 2012,
+                            'hour': 7,
+                            'min': 0,
+                            'sec': 7
+                        }
+                    });
+                }
+            });
+        }
+    </script>
+
+    <div class="credits">
+        <div class="ground">
+            <p class="title">CONTRIBUTORS</p>
+            <div class="" id="contributorsButtons">
+                <ul>
+                    <li>Francho Joven Araus</li>
+                    <li>Pepe Doval</li>
+                    <li>Camabou</li>
+                    <li>Adri&aacute;n Moreno Pe&ntilde;a</li>
+                    <li>Gonzalo Su&aacute;rez</li>
+                    <li>Jorge Garc&iacute;a</li>
+                    <li>Eviroula Dourou</li>
+                    <li><a target="_blank" href="http://www.dirtysocks.es/">Dirty Socks</a></li>
+                    <li>Maurizio Galli</li>
+
+                    <li>Laura</li>
+                    <li>Galan Jr</li>
+                    <li>Xenfo</li>
+                    <li>Nasos Markou</li>
+                    <li>George Krommidas</li>
+                    <li>Xan Villamel</li>
+                    <li>António Martinez</li>
+                    <li>Manuel Ortuño</li>
+                    <li>Sonia Díaz</li>
+                    <li>josemari</li>
+                    <li>Suso Coba</li>
+                    <li>Andrés García Bastón</li>
+                    <li>David Bonilla</li>
+                    <li>Sandra Lema</li>
+                    <li>María Santos Peña</li>
+                    <li>Camilo Franco</li>
+                    <li>Mario G. Cortizo</li>
+                    <li>Gonzalo Suarez</li>
+                    <li>maitai</li>
+                    <li>Alberto Fortes</li>
+                    <li>Juan Penalta Rodríguez</li>
+                    <li>Julian Canaves</li>
+                    <li>Najla Shami</li>
+                    <li>César Goldi</li>
+                    <li>Brais Fortes</li>
+                    <li>Isis Castro</li>
+                    <li>kaderno</li>
+                    <li>Sonia Díaz</li>
+                    <li>Vítor Belho</li>
+                    <li>Rodriguez Eusebio</li>
+                    <li>Miguel Angel Fernández</li>
+                    <li>Marina Carracedo</li>
+                    <li>Manolo33</li>
+                    <li>Juan Diego Pereiro Areán</li>
+                    <li>MariCarmen Gomez Grille</li>
+                    <li>javier creus</li>
+                    <li>Sergio Lago</li>
+                    <li>bea.micelios</li>
+                    <li>Carlos A. Montilla Cortizo</li>
+                    <li>Begoña Sebastian</li>
+                    <li>Alvaro</li>
+                    <li>Alberte A. Pereira</li>
+                    <li>Jesús Tamayo</li>
+                    <li>pablo vicente</li>
+                    <li>Cunque</li>
+                    <li>Alejandro Aradas García</li>
+                    <li>Miguel Patiño</li>
+                    <li>Kiko Novoa</li>
+                    <li>Jaime Perera Merino</li>
+                    <li>Iñaki Quenerapú</li>
+                    <li>dvilchez</li>
+                    <li>Iñaki</li>
+                    <li>Miguel Reboiro Jato</li>
+                    <li>Daniel Alonso</li>
+                    <li>Acuarian0</li>
+                    <li>Niti Laíño</li>
+                    <li>Nuria Moreiras</li>
+                    <li>Ignacio Cid</li>
+                    <li>Sabela Novoa Vazquez</li>
+                    <li>pablo doval "tubas"</li>
+                    <li>Gabriel Contreras Contrino</li>
+                </ul>
+            </div>
+            <p class="title">HOSTS</p>
+            <div class="" id="hostsButtons">
+                <ul>
+                    <li>Carlos Garc&iacute;a Garc&iacute;a</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="mountains"></div>
+        <div class="things"></div>
+        <div class="road"></div>
+        <div class="moto"></div>
+        <div class="footerlinks">
+            <div class="ground">
+                <div class="block3">
+                    <p class="title">SPONSORS</p>
+                    <section id="sponsorButtons">
+                        <div class="crechas">
+                            <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
+                                <span class="crechas"></span>
+                            </a>
+                        </div>
+                        <div class="canefano">
+                            <a href="http://www.casadascrechas.com/central/080409joomla" target="blank">
+                                <span class="canefano"></span>
+                            </a>
+                        </div>
+                        <div class="tattoo">
+                            <a href="http://www.behance.net/xavierbelho" target="blank">
+                                <span class="tattoo"></span>
+                            </a>
+                        </div>
+                        <div class="agilaz">
+                            <a href="http://www.agil-az.com" target="blank">
+                                <span class="agilaz"></span>
+                            </a>
+                        </div>
+                        <div class="karapatrov">
+                            <a href="javascript:void(0)">
+                                <span class="karapatrov"></span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="block3">
+                    <p class="title" style="color: black;">DOSSIER</p>
+                    <div class="text-center" style="display: none;">
+                        <object height="100">
+                            <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120917102501-50fad23ffff54f8f99dca6d42d4c6aab" />
+                            <param name="allowfullscreen" value="true"/>
+                            <param name="menu" value="false"/>
+                            <param name="wmode" value="transparent"/>
+                            <embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" flashvars="mode=mini&amp;embedBackground=%23000000&amp;backgroundColor=%23222222&amp;documentId=120911185036-2adc3ed03adc429ba9f572db6189c3b5" />
+                        </object>
+                    <p class="text-center">
+                            <a href="http://issuu.com/xavierbelho7/docs/crisiswhatcrisis1?mode=window&amp;backgroundColor=%23222222" target="_blank">Open publication</a> - Free <a href="http://issuu.com" target="_blank">publishing</a> - <a href="http://issuu.com/search?q=crisis" target="_blank">More crisis</a></div>
+                    </p>
+                </div>
+                <div class="block3">
+                    <p class="title">CONTACT US:</p>
+                    <div id="socialButtons">
+                        <div class="google">
+                            <a href="https://plus.google.com/+Crisiswhatcrisis2014" rel="publisher" target="blank">
+                                <span class="google"></span>
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a href="http://www.twitter.com/crisisWcrisis" target="blank">
+                                <span class="twitter"></span>
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="http://www.facebook.com/crisiswcrisis" target="blank">
+                                <span class="facebook"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        <a href="mailto:team@crisis-whatcrisis.com">team@crisis-whatcrisis.com</a>
+                    </p>
+                </div>
+                <div class="newsponsors">
+                    <img src="img/sponsors/cidadevella.png" title="Cidade Vella A.C."/>
+                    <img src="img/sponsors/contreras.png" title="Clínica dental Contreras"/>
+                    <img src="img/sponsors/dezaseis.png" title="O Dezaseis - Casa de Xantar"/>
+                    <img src="img/sponsors/halcones.png" title="Halcones B.G.O. Aquilea"/>
+                    <img src="img/sponsors/lalin.png" title="Concello de Lalín"/>
+                    <img src="img/sponsors/motonity.png" title="Motonity"/>
+                    <img src="img/sponsors/lkm0.png" title="Lalínkmcero"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- templates -->
+    <script id="video_tpl" type="text/html">
+        <div class="video">
+            <div name="title">{{title}}</div>
+            <div name="link">{{link}}</div>
+            {{#gps}}
+                <div name="gps">
+                    <div name="lat">{{lat}}</div>
+                    <div name="lng">{{lng}}</div>
+                </div>
+            {{/gps}}
+        </div>
+    </script>
+
+    <script type="text/javascript">
+        var DB = new Firebase("https://crisis-whatcrisis.firebaseio.com");
+        
+        var videos = DB.child('videos');
+
+        var allTheVideos = [];
+
+        var errors = function(error) {
+            console.log("Error: " + error.code);
+        };
+
+        var normalizeYtLink = function(link) {
+            return link
+                .replace('https', 'http')
+                .replace('&feature=youtube_gdata', '')
+                .replace('.com/embed/', '.com/')
+                .replace('.com/', '.com/embed/')
+                .replace('watch?v=', '');
+        };
+
+        $(function() {
+            videos.on("child_added", function(child) {
+                $('#videos').append(ich.video_tpl(child.val()));
+                allTheVideos.push(child.val());
+            }, errors);
+
+        $('#previewVideo .left').click(function() {
+            var found = -1;
+            allTheVideos.forEach(function(elem, index) {
+                if (normalizeYtLink(elem.link) == normalizeYtLink($('#previewVideo iframe').attr('src'))) {
+                    found = index;
+                }
+            });
+            if (found > -1) {
+                previous = found > 0 ? found - 1 : allTheVideos.length - 1;
+                $('#previewVideo .theVideo > iframe').attr('src', normalizeYtLink(allTheVideos[previous].link));
+            }
+            });
+
+        $('#previewVideo .right').click(function() {
+            var found = -1;
+            allTheVideos.forEach(function(elem, index) {
+                if (normalizeYtLink(elem.link) == normalizeYtLink($('#previewVideo iframe').attr('src'))) {
+                    found = index;
+                }
+            });
+            if (found > -1) {
+                next = found < allTheVideos.length - 1 ? found + 1 : 0;
+                $('#previewVideo .theVideo > iframe').attr('src', normalizeYtLink(allTheVideos[next].link));
+            }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22545594-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

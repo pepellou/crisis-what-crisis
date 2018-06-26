@@ -356,5 +356,6 @@ $(document).ready(function(){
     var navLang = x=window.navigator.language||navigator.browserLanguage
     var cookieLang = getCookie("lan");
     var finalLang = (cookieLang=="")?navLang:cookieLang;
-    translate(finalLang);
+    //translate(finalLang);
+    translate("en");
 });
